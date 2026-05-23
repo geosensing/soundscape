@@ -65,7 +65,9 @@ def process(
         raise FileNotFoundError(f"Readings file not found: {readings_path}")
 
     print(f"Merging readings from {readings_path}...")
-    result_path = merge_readings_into_manifest(manifest_path, readings_path, output_path)
+    result_path = merge_readings_into_manifest(
+        manifest_path, readings_path, output_path
+    )
     print(f"  -> {result_path}")
 
     return result_path

@@ -194,7 +194,12 @@ def process_videos(
     max_spread_meters: float = 50,
     skip_existing: bool = True,
 ) -> list[Path]:
-    """Process all videos and extract GPS telemetry."""
+    """Process all videos and extract GPS telemetry.
+
+    Outputs:
+    - Individual JSON files per video in output/gps/
+    - Combined JSONL file with all GPS data: output/gps.jsonl
+    """
     config = load_config()
     if output_dir is None:
         output_dir = Path(config["output_dir"])
@@ -205,6 +210,7 @@ def process_videos(
     ensure_output_dirs(output_dir)
     videos = find_videos(input_path)
     output_files = []
+    all_gps = []
 
     for video in videos:
         prefix = build_output_prefix(video)
@@ -213,6 +219,8 @@ def process_videos(
         if skip_existing and output_path.exists():
             print(f"Skipping {video.name} (GPS already exists)")
             output_files.append(output_path)
+            with open(output_path) as f:
+                all_gps.append(json.load(f))
             continue
 
         print(f"Extracting GPS from {video.name}...")
@@ -227,8 +235,15 @@ def process_videos(
 
         save_gps(gps_data, output_path)
         output_files.append(output_path)
+        all_gps.append(gps_data)
 
         status = "OK" if stats.get("spread_valid") else "WARNING: spread exceeds limit"
         print(f"  -> {output_path} ({stats.get('point_count', 0)} points, {status})")
+
+    jsonl_path = output_dir / "gps.jsonl"
+    with open(jsonl_path, "w") as f:
+        for gps in all_gps:
+            f.write(json.dumps(gps) + "\n")
+    print(f"Combined JSONL: {jsonl_path} ({len(all_gps)} records)")
 
     return output_files

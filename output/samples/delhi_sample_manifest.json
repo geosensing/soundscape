@@ -1,6 +1,6 @@
 {
   "seed": 42,
-  "sample_count": 74,
+  "sample_count": 192,
   "samples": [
     {
       "video_id": "delhi_04_30_2026_60.1",
@@ -9,8 +9,8 @@
       "frame_number": 2500,
       "timestamp_seconds": 50.0,
       "gps": {
-        "latitude": 28.6252043,
-        "longitude": 77.2959708
+        "latitude": 28.57427361111111,
+        "longitude": 77.19428055555557
       }
     },
     {
@@ -20,8 +20,8 @@
       "frame_number": 850,
       "timestamp_seconds": 17.0,
       "gps": {
-        "latitude": 28.5497403,
-        "longitude": 77.1978936
+        "latitude": 28.549725000000002,
+        "longitude": 77.19764444444445
       }
     },
     {
@@ -31,8 +31,8 @@
       "frame_number": 1150,
       "timestamp_seconds": 11.5,
       "gps": {
-        "latitude": 28.5475185,
-        "longitude": 77.178246
+        "latitude": 28.537322222222222,
+        "longitude": 77.1440513888889
       }
     },
     {
@@ -42,8 +42,8 @@
       "frame_number": 5700,
       "timestamp_seconds": 57.0,
       "gps": {
-        "latitude": 28.5666333,
-        "longitude": 77.1343715
+        "latitude": 28.566658333333333,
+        "longitude": 77.13442500000001
       }
     },
     {
@@ -53,8 +53,8 @@
       "frame_number": 2750,
       "timestamp_seconds": 27.5,
       "gps": {
-        "latitude": 28.5811942,
-        "longitude": 77.1677506
+        "latitude": 28.583502777777777,
+        "longitude": 77.16472222222222
       }
     },
     {
@@ -64,8 +64,8 @@
       "frame_number": 2550,
       "timestamp_seconds": 25.5,
       "gps": {
-        "latitude": 28.5833327,
-        "longitude": 77.1643435
+        "latitude": 28.583333333333332,
+        "longitude": 77.16434444444445
       }
     },
     {
@@ -75,8 +75,8 @@
       "frame_number": 2400,
       "timestamp_seconds": 24.0,
       "gps": {
-        "latitude": 28.560766,
-        "longitude": 77.1098732
+        "latitude": 28.541769444444448,
+        "longitude": 77.11813055555555
       }
     },
     {
@@ -86,8 +86,8 @@
       "frame_number": 1850,
       "timestamp_seconds": 18.5,
       "gps": {
-        "latitude": 28.5097,
-        "longitude": 77.1197
+        "latitude": 28.509616666666666,
+        "longitude": 77.11972222222222
       }
     },
     {
@@ -97,8 +97,8 @@
       "frame_number": 3350,
       "timestamp_seconds": 33.5,
       "gps": {
-        "latitude": 28.5917,
-        "longitude": 77.295
+        "latitude": 28.591655555555555,
+        "longitude": 77.29496944444445
       }
     },
     {
@@ -108,8 +108,8 @@
       "frame_number": 1300,
       "timestamp_seconds": 13.0,
       "gps": {
-        "latitude": 28.568436,
-        "longitude": 77.2639393
+        "latitude": 28.56843611111111,
+        "longitude": 77.26393888888889
       }
     },
     {
@@ -119,8 +119,8 @@
       "frame_number": 3150,
       "timestamp_seconds": 31.5,
       "gps": {
-        "latitude": 28.5617962,
-        "longitude": 77.1582732
+        "latitude": 28.563258333333334,
+        "longitude": 77.15470555555557
       }
     },
     {
@@ -130,8 +130,8 @@
       "frame_number": 1250,
       "timestamp_seconds": 12.5,
       "gps": {
-        "latitude": 28.5633331,
-        "longitude": 77.1545756
+        "latitude": 28.563333333333333,
+        "longitude": 77.15457500000001
       }
     },
     {
@@ -141,8 +141,8 @@
       "frame_number": 2850,
       "timestamp_seconds": 28.5,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -152,8 +152,8 @@
       "frame_number": 2350,
       "timestamp_seconds": 23.5,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -163,8 +163,8 @@
       "frame_number": 1100,
       "timestamp_seconds": 11.0,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.5696,
+        "longitude": 77.29367222222223
       }
     },
     {
@@ -174,8 +174,8 @@
       "frame_number": 1050,
       "timestamp_seconds": 10.5,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -185,8 +185,8 @@
       "frame_number": 1250,
       "timestamp_seconds": 12.5,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -196,8 +196,8 @@
       "frame_number": 1650,
       "timestamp_seconds": 16.5,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -207,8 +207,8 @@
       "frame_number": 1700,
       "timestamp_seconds": 17.0,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -218,8 +218,8 @@
       "frame_number": 2600,
       "timestamp_seconds": 26.0,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -229,8 +229,8 @@
       "frame_number": 2900,
       "timestamp_seconds": 29.0,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -240,8 +240,8 @@
       "frame_number": 1050,
       "timestamp_seconds": 10.5,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -251,8 +251,8 @@
       "frame_number": 1600,
       "timestamp_seconds": 16.0,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -262,8 +262,8 @@
       "frame_number": 2700,
       "timestamp_seconds": 27.0,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.50838611111111,
+        "longitude": 77.18400833333334
       }
     },
     {
@@ -273,8 +273,8 @@
       "frame_number": 2300,
       "timestamp_seconds": 23.0,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -284,8 +284,8 @@
       "frame_number": 1700,
       "timestamp_seconds": 17.0,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -295,8 +295,8 @@
       "frame_number": 2400,
       "timestamp_seconds": 24.0,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -306,8 +306,8 @@
       "frame_number": 1850,
       "timestamp_seconds": 18.5,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -317,8 +317,8 @@
       "frame_number": 1000,
       "timestamp_seconds": 10.0,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
       }
     },
     {
@@ -328,52 +328,1350 @@
       "frame_number": 2200,
       "timestamp_seconds": 22.0,
       "gps": {
-        "latitude": 28.5799341,
-        "longitude": 77.2306277
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011959",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011959_001500.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011959_001500.jpg",
+      "frame_number": 1500,
+      "timestamp_seconds": 15.0,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011961",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011961_002350.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011961_002350.jpg",
+      "frame_number": 2350,
+      "timestamp_seconds": 23.5,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011962",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011962_002050.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011962_002050.jpg",
+      "frame_number": 2050,
+      "timestamp_seconds": 20.5,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011963",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011963_001850.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011963_001850.jpg",
+      "frame_number": 1850,
+      "timestamp_seconds": 18.5,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011964",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011964_001200.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011964_001200.jpg",
+      "frame_number": 1200,
+      "timestamp_seconds": 12.0,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011965",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011965_001650.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011965_001650.jpg",
+      "frame_number": 1650,
+      "timestamp_seconds": 16.5,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011966",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011966_002050.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011966_002050.jpg",
+      "frame_number": 2050,
+      "timestamp_seconds": 20.5,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011967",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011967_001300.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011967_001300.jpg",
+      "frame_number": 1300,
+      "timestamp_seconds": 13.0,
+      "gps": {
+        "latitude": 28.5746,
+        "longitude": 77.27526666666667
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011968",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011968_001250.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011968_001250.jpg",
+      "frame_number": 1250,
+      "timestamp_seconds": 12.5,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011970",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011970_002200.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011970_002200.jpg",
+      "frame_number": 2200,
+      "timestamp_seconds": 22.0,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011971",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011971_001300.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011971_001300.jpg",
+      "frame_number": 1300,
+      "timestamp_seconds": 13.0,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011972",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011972_002100.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011972_002100.jpg",
+      "frame_number": 2100,
+      "timestamp_seconds": 21.0,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011973",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011973_002100.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011973_002100.jpg",
+      "frame_number": 2100,
+      "timestamp_seconds": 21.0,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011974",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011974_001950.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011974_001950.jpg",
+      "frame_number": 1950,
+      "timestamp_seconds": 19.5,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011975",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011975_001400.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011975_001400.jpg",
+      "frame_number": 1400,
+      "timestamp_seconds": 14.0,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011976",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011976_001100.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011976_001100.jpg",
+      "frame_number": 1100,
+      "timestamp_seconds": 11.0,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011977",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011977_002450.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011977_002450.jpg",
+      "frame_number": 2450,
+      "timestamp_seconds": 24.5,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011978",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011978_001350.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011978_001350.jpg",
+      "frame_number": 1350,
+      "timestamp_seconds": 13.5,
+      "gps": {
+        "latitude": 28.579933333333333,
+        "longitude": 77.23062777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011979",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011979_002200.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011979_002200.jpg",
+      "frame_number": 2200,
+      "timestamp_seconds": 22.0,
+      "gps": {
+        "latitude": 28.546400000000002,
+        "longitude": 77.25367777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_04_2026_GX011981",
+      "frame_path": "output/samples/delhi_05_04_2026_GX011981_001250.jpg",
+      "original_path": "output/frames/delhi_05_04_2026_GX011981_001250.jpg",
+      "frame_number": 1250,
+      "timestamp_seconds": 12.5,
+      "gps": {
+        "latitude": 28.59508888888889,
+        "longitude": 77.25701666666667
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011982",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011982_001900.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011982_001900.jpg",
+      "frame_number": 1900,
+      "timestamp_seconds": 19.0,
+      "gps": {
+        "latitude": 28.591158333333333,
+        "longitude": 77.25914444444444
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011983",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011983_002150.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011983_002150.jpg",
+      "frame_number": 2150,
+      "timestamp_seconds": 21.5,
+      "gps": {
+        "latitude": 28.591158333333333,
+        "longitude": 77.25914444444444
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011984",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011984_002800.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011984_002800.jpg",
+      "frame_number": 2800,
+      "timestamp_seconds": 28.0,
+      "gps": {
+        "latitude": 28.591158333333333,
+        "longitude": 77.25914444444444
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011985",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011985_001600.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011985_001600.jpg",
+      "frame_number": 1600,
+      "timestamp_seconds": 16.0,
+      "gps": {
+        "latitude": 28.591158333333333,
+        "longitude": 77.25914444444444
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011986",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011986_002100.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011986_002100.jpg",
+      "frame_number": 2100,
+      "timestamp_seconds": 21.0,
+      "gps": {
+        "latitude": 28.591158333333333,
+        "longitude": 77.25914444444444
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011988",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011988_001200.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011988_001200.jpg",
+      "frame_number": 1200,
+      "timestamp_seconds": 12.0,
+      "gps": {
+        "latitude": 28.68353611111111,
+        "longitude": 77.17085
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011990",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011990_001100.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011990_001100.jpg",
+      "frame_number": 1100,
+      "timestamp_seconds": 11.0,
+      "gps": {
+        "latitude": 28.674844444444446,
+        "longitude": 77.15524444444445
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011992",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011992_002050.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011992_002050.jpg",
+      "frame_number": 2050,
+      "timestamp_seconds": 20.5,
+      "gps": {
+        "latitude": 28.684255555555556,
+        "longitude": 77.14546666666668
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011993",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011993_001350.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011993_001350.jpg",
+      "frame_number": 1350,
+      "timestamp_seconds": 13.5,
+      "gps": {
+        "latitude": 28.684291666666667,
+        "longitude": 77.14548333333335
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011994",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011994_001900.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011994_001900.jpg",
+      "frame_number": 1900,
+      "timestamp_seconds": 19.0,
+      "gps": {
+        "latitude": 28.672425,
+        "longitude": 77.13214444444444
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011995",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011995_001250.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011995_001250.jpg",
+      "frame_number": 1250,
+      "timestamp_seconds": 12.5,
+      "gps": {
+        "latitude": 28.714116666666666,
+        "longitude": 77.08616388888889
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011996",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011996_001700.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011996_001700.jpg",
+      "frame_number": 1700,
+      "timestamp_seconds": 17.0,
+      "gps": {
+        "latitude": 28.71443611111111,
+        "longitude": 77.10729722222221
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011997",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011997_001300.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011997_001300.jpg",
+      "frame_number": 1300,
+      "timestamp_seconds": 13.0,
+      "gps": {
+        "latitude": 28.71055972222222,
+        "longitude": 77.12044722222221
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX011999",
+      "frame_path": "output/samples/delhi_05_05_2026_GX011999_002200.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX011999_002200.jpg",
+      "frame_number": 2200,
+      "timestamp_seconds": 22.0,
+      "gps": {
+        "latitude": 28.70853888888889,
+        "longitude": 77.12993055555555
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX012001",
+      "frame_path": "output/samples/delhi_05_05_2026_GX012001_001850.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX012001_001850.jpg",
+      "frame_number": 1850,
+      "timestamp_seconds": 18.5,
+      "gps": {
+        "latitude": 28.729044444444444,
+        "longitude": 77.13830555555556
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX012002",
+      "frame_path": "output/samples/delhi_05_05_2026_GX012002_001700.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX012002_001700.jpg",
+      "frame_number": 1700,
+      "timestamp_seconds": 17.0,
+      "gps": {
+        "latitude": 28.708347222222223,
+        "longitude": 77.15336944444445
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX012003",
+      "frame_path": "output/samples/delhi_05_05_2026_GX012003_002000.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX012003_002000.jpg",
+      "frame_number": 2000,
+      "timestamp_seconds": 20.0,
+      "gps": {
+        "latitude": 28.73316527777778,
+        "longitude": 77.14265
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX012004",
+      "frame_path": "output/samples/delhi_05_05_2026_GX012004_002300.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX012004_002300.jpg",
+      "frame_number": 2300,
+      "timestamp_seconds": 23.0,
+      "gps": {
+        "latitude": 28.722447222222222,
+        "longitude": 77.14701111111111
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX012005",
+      "frame_path": "output/samples/delhi_05_05_2026_GX012005_001550.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX012005_001550.jpg",
+      "frame_number": 1550,
+      "timestamp_seconds": 15.5,
+      "gps": {
+        "latitude": 28.708347222222223,
+        "longitude": 77.15336944444445
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX012007",
+      "frame_path": "output/samples/delhi_05_05_2026_GX012007_001250.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX012007_001250.jpg",
+      "frame_number": 1250,
+      "timestamp_seconds": 12.5,
+      "gps": {
+        "latitude": 28.73164722222222,
+        "longitude": 77.07804444444444
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX012008",
+      "frame_path": "output/samples/delhi_05_05_2026_GX012008_001550.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX012008_001550.jpg",
+      "frame_number": 1550,
+      "timestamp_seconds": 15.5,
+      "gps": {
+        "latitude": 28.73688611111111,
+        "longitude": 77.09525277777777
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX012009",
+      "frame_path": "output/samples/delhi_05_05_2026_GX012009_002100.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX012009_002100.jpg",
+      "frame_number": 2100,
+      "timestamp_seconds": 21.0,
+      "gps": {
+        "latitude": 28.73656666666667,
+        "longitude": 77.09526666666666
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX012010",
+      "frame_path": "output/samples/delhi_05_05_2026_GX012010_001650.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX012010_001650.jpg",
+      "frame_number": 1650,
+      "timestamp_seconds": 16.5,
+      "gps": {
+        "latitude": 28.70866111111111,
+        "longitude": 77.07856944444444
+      }
+    },
+    {
+      "video_id": "delhi_05_05_2026_GX012011",
+      "frame_path": "output/samples/delhi_05_05_2026_GX012011_001850.jpg",
+      "original_path": "output/frames/delhi_05_05_2026_GX012011_001850.jpg",
+      "frame_number": 1850,
+      "timestamp_seconds": 18.5,
+      "gps": {
+        "latitude": 28.717105555555555,
+        "longitude": 77.07693611111111
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012012",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012012_001200.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012012_001200.jpg",
+      "frame_number": 1200,
+      "timestamp_seconds": 12.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012013",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012013_002900.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012013_002900.jpg",
+      "frame_number": 2900,
+      "timestamp_seconds": 29.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012015",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012015_001500.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012015_001500.jpg",
+      "frame_number": 1500,
+      "timestamp_seconds": 15.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012017",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012017_001750.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012017_001750.jpg",
+      "frame_number": 1750,
+      "timestamp_seconds": 17.5,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012018",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012018_001500.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012018_001500.jpg",
+      "frame_number": 1500,
+      "timestamp_seconds": 15.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012020",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012020_002450.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012020_002450.jpg",
+      "frame_number": 2450,
+      "timestamp_seconds": 24.5,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012021",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012021_002200.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012021_002200.jpg",
+      "frame_number": 2200,
+      "timestamp_seconds": 22.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012023",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012023_001850.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012023_001850.jpg",
+      "frame_number": 1850,
+      "timestamp_seconds": 18.5,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012026",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012026_002450.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012026_002450.jpg",
+      "frame_number": 2450,
+      "timestamp_seconds": 24.5,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012027",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012027_001700.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012027_001700.jpg",
+      "frame_number": 1700,
+      "timestamp_seconds": 17.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012028",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012028_002000.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012028_002000.jpg",
+      "frame_number": 2000,
+      "timestamp_seconds": 20.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012029",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012029_001150.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012029_001150.jpg",
+      "frame_number": 1150,
+      "timestamp_seconds": 11.5,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012030",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012030_001700.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012030_001700.jpg",
+      "frame_number": 1700,
+      "timestamp_seconds": 17.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012031",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012031_001100.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012031_001100.jpg",
+      "frame_number": 1100,
+      "timestamp_seconds": 11.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012032",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012032_002000.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012032_002000.jpg",
+      "frame_number": 2000,
+      "timestamp_seconds": 20.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012033",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012033_002250.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012033_002250.jpg",
+      "frame_number": 2250,
+      "timestamp_seconds": 22.5,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012035",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012035_001400.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012035_001400.jpg",
+      "frame_number": 1400,
+      "timestamp_seconds": 14.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012036",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012036_001100.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012036_001100.jpg",
+      "frame_number": 1100,
+      "timestamp_seconds": 11.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012037",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012037_001300.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012037_001300.jpg",
+      "frame_number": 1300,
+      "timestamp_seconds": 13.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012039",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012039_001900.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012039_001900.jpg",
+      "frame_number": 1900,
+      "timestamp_seconds": 19.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012040",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012040_001500.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012040_001500.jpg",
+      "frame_number": 1500,
+      "timestamp_seconds": 15.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012041",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012041_001300.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012041_001300.jpg",
+      "frame_number": 1300,
+      "timestamp_seconds": 13.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012043",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012043_002000.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012043_002000.jpg",
+      "frame_number": 2000,
+      "timestamp_seconds": 20.0,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012044",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012044_001750.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012044_001750.jpg",
+      "frame_number": 1750,
+      "timestamp_seconds": 17.5,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_06_2026_GX012045",
+      "frame_path": "output/samples/delhi_05_06_2026_GX012045_002250.jpg",
+      "original_path": "output/frames/delhi_05_06_2026_GX012045_002250.jpg",
+      "frame_number": 2250,
+      "timestamp_seconds": 22.5,
+      "gps": {
+        "latitude": 0.0,
+        "longitude": 0.0
+      }
+    },
+    {
+      "video_id": "delhi_05_07_2026_GX012049",
+      "frame_path": "output/samples/delhi_05_07_2026_GX012049_002450.jpg",
+      "original_path": "output/frames/delhi_05_07_2026_GX012049_002450.jpg",
+      "frame_number": 2450,
+      "timestamp_seconds": 24.5,
+      "gps": {
+        "latitude": 28.604325000000003,
+        "longitude": 77.30358333333334
+      }
+    },
+    {
+      "video_id": "delhi_05_07_2026_GX012055",
+      "frame_path": "output/samples/delhi_05_07_2026_GX012055_001450.jpg",
+      "original_path": "output/frames/delhi_05_07_2026_GX012055_001450.jpg",
+      "frame_number": 1450,
+      "timestamp_seconds": 14.5,
+      "gps": {
+        "latitude": 28.720533333333332,
+        "longitude": 77.33243888888889
+      }
+    },
+    {
+      "video_id": "delhi_05_07_2026_GX012065",
+      "frame_path": "output/samples/delhi_05_07_2026_GX012065_001800.jpg",
+      "original_path": "output/frames/delhi_05_07_2026_GX012065_001800.jpg",
+      "frame_number": 1800,
+      "timestamp_seconds": 18.0,
+      "gps": {
+        "latitude": 28.664255555555552,
+        "longitude": 77.2929361111111
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012078",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012078_001400.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012078_001400.jpg",
+      "frame_number": 1400,
+      "timestamp_seconds": 14.0,
+      "gps": {
+        "latitude": 28.65851111111111,
+        "longitude": 77.29304444444445
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012079",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012079_000150.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012079_000150.jpg",
+      "frame_number": 150,
+      "timestamp_seconds": 1.5,
+      "gps": {
+        "latitude": 28.65851111111111,
+        "longitude": 77.29304444444445
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012080",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012080_001800.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012080_001800.jpg",
+      "frame_number": 1800,
+      "timestamp_seconds": 18.0,
+      "gps": {
+        "latitude": 28.65851111111111,
+        "longitude": 77.29304444444445
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012081",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012081_002150.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012081_002150.jpg",
+      "frame_number": 2150,
+      "timestamp_seconds": 21.5,
+      "gps": {
+        "latitude": 28.65851111111111,
+        "longitude": 77.29304444444445
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012082",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012082_001900.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012082_001900.jpg",
+      "frame_number": 1900,
+      "timestamp_seconds": 19.0,
+      "gps": {
+        "latitude": 28.65851111111111,
+        "longitude": 77.29304444444445
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012083",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012083_002350.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012083_002350.jpg",
+      "frame_number": 2350,
+      "timestamp_seconds": 23.5,
+      "gps": {
+        "latitude": 28.65851111111111,
+        "longitude": 77.29304444444445
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012084",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012084_002400.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012084_002400.jpg",
+      "frame_number": 2400,
+      "timestamp_seconds": 24.0,
+      "gps": {
+        "latitude": 28.65851111111111,
+        "longitude": 77.29304444444445
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012085",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012085_001900.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012085_001900.jpg",
+      "frame_number": 1900,
+      "timestamp_seconds": 19.0,
+      "gps": {
+        "latitude": 28.65851111111111,
+        "longitude": 77.29304444444445
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012086",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012086_002250.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012086_002250.jpg",
+      "frame_number": 2250,
+      "timestamp_seconds": 22.5,
+      "gps": {
+        "latitude": 28.65851111111111,
+        "longitude": 77.29304444444445
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012087",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012087_001550.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012087_001550.jpg",
+      "frame_number": 1550,
+      "timestamp_seconds": 15.5,
+      "gps": {
+        "latitude": 28.854730555555555,
+        "longitude": 77.07392777777777
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012088",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012088_001700.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012088_001700.jpg",
+      "frame_number": 1700,
+      "timestamp_seconds": 17.0,
+      "gps": {
+        "latitude": 28.852197222222223,
+        "longitude": 77.07335555555555
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012089",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012089_001200.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012089_001200.jpg",
+      "frame_number": 1200,
+      "timestamp_seconds": 12.0,
+      "gps": {
+        "latitude": 28.854747222222223,
+        "longitude": 77.07391388888888
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012090",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012090_002550.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012090_002550.jpg",
+      "frame_number": 2550,
+      "timestamp_seconds": 25.5,
+      "gps": {
+        "latitude": 28.854747222222223,
+        "longitude": 77.07391388888888
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012091",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012091_001250.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012091_001250.jpg",
+      "frame_number": 1250,
+      "timestamp_seconds": 12.5,
+      "gps": {
+        "latitude": 28.82415972222222,
+        "longitude": 77.06902916666667
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012092",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012092_002200.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012092_002200.jpg",
+      "frame_number": 2200,
+      "timestamp_seconds": 22.0,
+      "gps": {
+        "latitude": 28.810772222222223,
+        "longitude": 77.06492222222222
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012093",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012093_001150.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012093_001150.jpg",
+      "frame_number": 1150,
+      "timestamp_seconds": 11.5,
+      "gps": {
+        "latitude": 28.758452777777777,
+        "longitude": 77.101125
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012094",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012094_001150.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012094_001150.jpg",
+      "frame_number": 1150,
+      "timestamp_seconds": 11.5,
+      "gps": {
+        "latitude": 28.754933333333334,
+        "longitude": 77.0864
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012095",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012095_001200.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012095_001200.jpg",
+      "frame_number": 1200,
+      "timestamp_seconds": 12.0,
+      "gps": {
+        "latitude": 28.752516666666665,
+        "longitude": 77.09514444444444
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012096",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012096_001500.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012096_001500.jpg",
+      "frame_number": 1500,
+      "timestamp_seconds": 15.0,
+      "gps": {
+        "latitude": 28.787236111111113,
+        "longitude": 77.11412777777777
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012097",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012097_002250.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012097_002250.jpg",
+      "frame_number": 2250,
+      "timestamp_seconds": 22.5,
+      "gps": {
+        "latitude": 28.776166666666665,
+        "longitude": 77.12382222222222
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012098",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012098_002350.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012098_002350.jpg",
+      "frame_number": 2350,
+      "timestamp_seconds": 23.5,
+      "gps": {
+        "latitude": 28.7596,
+        "longitude": 77.13122777777777
+      }
+    },
+    {
+      "video_id": "delhi_05_08_2026_GX012099",
+      "frame_path": "output/samples/delhi_05_08_2026_GX012099_001200.jpg",
+      "original_path": "output/frames/delhi_05_08_2026_GX012099_001200.jpg",
+      "frame_number": 1200,
+      "timestamp_seconds": 12.0,
+      "gps": {
+        "latitude": 28.760091666666668,
+        "longitude": 77.13580277777778
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012102",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012102_002200.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012102_002200.jpg",
+      "frame_number": 2200,
+      "timestamp_seconds": 22.0,
+      "gps": {
+        "latitude": 28.760408333333334,
+        "longitude": 77.13577777777779
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012103",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012103_001600.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012103_001600.jpg",
+      "frame_number": 1600,
+      "timestamp_seconds": 16.0,
+      "gps": {
+        "latitude": 28.760408333333334,
+        "longitude": 77.13577777777779
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012104",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012104_001950.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012104_001950.jpg",
+      "frame_number": 1950,
+      "timestamp_seconds": 19.5,
+      "gps": {
+        "latitude": 28.83277777777778,
+        "longitude": 77.16962777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012105",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012105_001700.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012105_001700.jpg",
+      "frame_number": 1700,
+      "timestamp_seconds": 17.0,
+      "gps": {
+        "latitude": 28.83666388888889,
+        "longitude": 77.16876666666667
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012107",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012107_001800.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012107_001800.jpg",
+      "frame_number": 1800,
+      "timestamp_seconds": 18.0,
+      "gps": {
+        "latitude": 28.84227222222222,
+        "longitude": 77.18595277777779
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012108",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012108_001400.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012108_001400.jpg",
+      "frame_number": 1400,
+      "timestamp_seconds": 14.0,
+      "gps": {
+        "latitude": 28.839741666666665,
+        "longitude": 77.1838
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012109",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012109_001850.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012109_001850.jpg",
+      "frame_number": 1850,
+      "timestamp_seconds": 18.5,
+      "gps": {
+        "latitude": 28.831174999999998,
+        "longitude": 77.19972777777778
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012110",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012110_001000.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012110_001000.jpg",
+      "frame_number": 1000,
+      "timestamp_seconds": 10.0,
+      "gps": {
+        "latitude": 28.812786111111112,
+        "longitude": 77.15936388888889
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012111",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012111_001350.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012111_001350.jpg",
+      "frame_number": 1350,
+      "timestamp_seconds": 13.5,
+      "gps": {
+        "latitude": 28.81316111111111,
+        "longitude": 77.15880833333334
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012112",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012112_002050.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012112_002050.jpg",
+      "frame_number": 2050,
+      "timestamp_seconds": 20.5,
+      "gps": {
+        "latitude": 28.7372,
+        "longitude": 77.16017500000001
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012113",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012113_001850.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012113_001850.jpg",
+      "frame_number": 1850,
+      "timestamp_seconds": 18.5,
+      "gps": {
+        "latitude": 28.723108333333332,
+        "longitude": 77.20584166666667
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012114",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012114_002200.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012114_002200.jpg",
+      "frame_number": 2200,
+      "timestamp_seconds": 22.0,
+      "gps": {
+        "latitude": 28.724890277777774,
+        "longitude": 77.20625555555556
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012115",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012115_002000.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012115_002000.jpg",
+      "frame_number": 2000,
+      "timestamp_seconds": 20.0,
+      "gps": {
+        "latitude": 28.71821111111111,
+        "longitude": 77.22285000000001
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012116",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012116_001500.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012116_001500.jpg",
+      "frame_number": 1500,
+      "timestamp_seconds": 15.0,
+      "gps": {
+        "latitude": 28.628725,
+        "longitude": 77.33591944444444
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012117",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012117_001350.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012117_001350.jpg",
+      "frame_number": 1350,
+      "timestamp_seconds": 13.5,
+      "gps": {
+        "latitude": 28.718605555555555,
+        "longitude": 77.22306944444445
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012119",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012119_001450.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012119_001450.jpg",
+      "frame_number": 1450,
+      "timestamp_seconds": 14.5,
+      "gps": {
+        "latitude": 28.750180555555556,
+        "longitude": 77.25166944444445
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012120",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012120_002350.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012120_002350.jpg",
+      "frame_number": 2350,
+      "timestamp_seconds": 23.5,
+      "gps": {
+        "latitude": 28.754541666666668,
+        "longitude": 77.24441388888889
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012121",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012121_001500.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012121_001500.jpg",
+      "frame_number": 1500,
+      "timestamp_seconds": 15.0,
+      "gps": {
+        "latitude": 28.70768888888889,
+        "longitude": 77.25691388888889
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012122",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012122_002450.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012122_002450.jpg",
+      "frame_number": 2450,
+      "timestamp_seconds": 24.5,
+      "gps": {
+        "latitude": 28.7156625,
+        "longitude": 77.25103055555556
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012124",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012124_001000.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012124_001000.jpg",
+      "frame_number": 1000,
+      "timestamp_seconds": 10.0,
+      "gps": {
+        "latitude": 28.672147222222222,
+        "longitude": 77.27468888888889
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012125",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012125_002150.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012125_002150.jpg",
+      "frame_number": 2150,
+      "timestamp_seconds": 21.5,
+      "gps": {
+        "latitude": 26.132905555555556,
+        "longitude": 86.02713055555556
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012126",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012126_001800.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012126_001800.jpg",
+      "frame_number": 1800,
+      "timestamp_seconds": 18.0,
+      "gps": {
+        "latitude": 28.64095,
+        "longitude": 77.28849444444444
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012127",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012127_001800.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012127_001800.jpg",
+      "frame_number": 1800,
+      "timestamp_seconds": 18.0,
+      "gps": {
+        "latitude": 28.640897222222222,
+        "longitude": 77.28860555555555
+      }
+    },
+    {
+      "video_id": "delhi_05_09_2026_GX012128",
+      "frame_path": "output/samples/delhi_05_09_2026_GX012128_002200.jpg",
+      "original_path": "output/frames/delhi_05_09_2026_GX012128_002200.jpg",
+      "frame_number": 2200,
+      "timestamp_seconds": 22.0,
+      "gps": {
+        "latitude": 28.632805555555557,
+        "longitude": 77.31415833333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012129",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012129_001500.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012129_001500.jpg",
-      "frame_number": 1500,
-      "timestamp_seconds": 15.0,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012129_001550.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012129_001550.jpg",
+      "frame_number": 1550,
+      "timestamp_seconds": 15.5,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.31415833333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012130",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012130_002350.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012130_002350.jpg",
-      "frame_number": 2350,
-      "timestamp_seconds": 23.5,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012130_001300.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012130_001300.jpg",
+      "frame_number": 1300,
+      "timestamp_seconds": 13.0,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.31415833333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012131",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012131_002050.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012131_002050.jpg",
-      "frame_number": 2050,
-      "timestamp_seconds": 20.5,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012131_001950.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012131_001950.jpg",
+      "frame_number": 1950,
+      "timestamp_seconds": 19.5,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.22046944444445
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012132",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012132_001850.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012132_001850.jpg",
-      "frame_number": 1850,
-      "timestamp_seconds": 18.5,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012132_001600.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012132_001600.jpg",
+      "frame_number": 1600,
+      "timestamp_seconds": 16.0,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.31415833333332
       }
     },
     {
@@ -383,382 +1681,382 @@
       "frame_number": 1450,
       "timestamp_seconds": 14.5,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.31415833333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012134",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012134_001650.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012134_001650.jpg",
-      "frame_number": 1650,
-      "timestamp_seconds": 16.5,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012134_002150.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012134_002150.jpg",
+      "frame_number": 2150,
+      "timestamp_seconds": 21.5,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.31415833333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012135",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012135_002500.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012135_002500.jpg",
-      "frame_number": 2500,
-      "timestamp_seconds": 25.0,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012135_002200.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012135_002200.jpg",
+      "frame_number": 2200,
+      "timestamp_seconds": 22.0,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.31415833333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012136",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012136_002050.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012136_002050.jpg",
-      "frame_number": 2050,
-      "timestamp_seconds": 20.5,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012136_001500.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012136_001500.jpg",
+      "frame_number": 1500,
+      "timestamp_seconds": 15.0,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.31415833333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012137",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012137_001300.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012137_001300.jpg",
-      "frame_number": 1300,
-      "timestamp_seconds": 13.0,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012137_001000.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012137_001000.jpg",
+      "frame_number": 1000,
+      "timestamp_seconds": 10.0,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.31415833333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012138",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012138_001250.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012138_001250.jpg",
-      "frame_number": 1250,
-      "timestamp_seconds": 12.5,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012138_002000.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012138_002000.jpg",
+      "frame_number": 2000,
+      "timestamp_seconds": 20.0,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.31415833333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012139",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012139_002200.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012139_002200.jpg",
-      "frame_number": 2200,
-      "timestamp_seconds": 22.0,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012139_002550.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012139_002550.jpg",
+      "frame_number": 2550,
+      "timestamp_seconds": 25.5,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.31415833333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012140",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012140_001300.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012140_001300.jpg",
-      "frame_number": 1300,
-      "timestamp_seconds": 13.0,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012140_001050.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012140_001050.jpg",
+      "frame_number": 1050,
+      "timestamp_seconds": 10.5,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.31415833333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012141",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012141_002100.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012141_002100.jpg",
-      "frame_number": 2100,
-      "timestamp_seconds": 21.0,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012141_001350.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012141_001350.jpg",
+      "frame_number": 1350,
+      "timestamp_seconds": 13.5,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.31415833333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012142",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012142_002350.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012142_002350.jpg",
-      "frame_number": 2350,
-      "timestamp_seconds": 23.5,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012142_002450.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012142_002450.jpg",
+      "frame_number": 2450,
+      "timestamp_seconds": 24.5,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.632758333333335,
+        "longitude": 77.31415833333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012143",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012143_002100.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012143_002100.jpg",
-      "frame_number": 2100,
-      "timestamp_seconds": 21.0,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012143_002150.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012143_002150.jpg",
+      "frame_number": 2150,
+      "timestamp_seconds": 21.5,
       "gps": {
-        "latitude": 28.6327582,
-        "longitude": 77.3141577
+        "latitude": 28.703888888888887,
+        "longitude": 77.06313333333333
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012144",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012144_002900.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012144_002900.jpg",
-      "frame_number": 2900,
-      "timestamp_seconds": 29.0,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012144_001950.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012144_001950.jpg",
+      "frame_number": 1950,
+      "timestamp_seconds": 19.5,
       "gps": {
-        "latitude": 28.703692,
-        "longitude": 77.0753807
+        "latitude": 28.704155555555555,
+        "longitude": 77.07452638888888
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012145",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012145_001400.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012145_001400.jpg",
-      "frame_number": 1400,
-      "timestamp_seconds": 14.0,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012145_001350.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012145_001350.jpg",
+      "frame_number": 1350,
+      "timestamp_seconds": 13.5,
       "gps": {
-        "latitude": 28.7040652,
-        "longitude": 77.0745636
+        "latitude": 28.709175,
+        "longitude": 77.07085555555555
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012146",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012146_002250.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012146_002250.jpg",
-      "frame_number": 2250,
-      "timestamp_seconds": 22.5,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012146_001050.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012146_001050.jpg",
+      "frame_number": 1050,
+      "timestamp_seconds": 10.5,
       "gps": {
-        "latitude": 28.7128878,
-        "longitude": 77.0723657
+        "latitude": 28.71302777777778,
+        "longitude": 77.07189444444444
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012147",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012147_001100.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012147_001100.jpg",
-      "frame_number": 1100,
-      "timestamp_seconds": 11.0,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012147_001750.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012147_001750.jpg",
+      "frame_number": 1750,
+      "timestamp_seconds": 17.5,
       "gps": {
-        "latitude": 28.7111188,
-        "longitude": 77.0639716
+        "latitude": 28.710958333333334,
+        "longitude": 77.06395277777777
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012148",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012148_002450.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012148_002450.jpg",
-      "frame_number": 2450,
-      "timestamp_seconds": 24.5,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012148_001250.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012148_001250.jpg",
+      "frame_number": 1250,
+      "timestamp_seconds": 12.5,
       "gps": {
-        "latitude": 28.7247,
-        "longitude": 77.0407
+        "latitude": 28.72465833333333,
+        "longitude": 77.04068611111111
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012149",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012149_001350.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012149_001350.jpg",
-      "frame_number": 1350,
-      "timestamp_seconds": 13.5,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012149_001250.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012149_001250.jpg",
+      "frame_number": 1250,
+      "timestamp_seconds": 12.5,
       "gps": {
-        "latitude": 28.6926,
-        "longitude": 77.0218
+        "latitude": 28.692663888888887,
+        "longitude": 77.02180277777778
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012150",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012150_002450.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012150_002450.jpg",
-      "frame_number": 2450,
-      "timestamp_seconds": 24.5,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012150_002150.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012150_002150.jpg",
+      "frame_number": 2150,
+      "timestamp_seconds": 21.5,
       "gps": {
-        "latitude": 28.6926735,
-        "longitude": 77.0217809
+        "latitude": 28.68128888888889,
+        "longitude": 77.08231388888889
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012151",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012151_001600.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012151_001600.jpg",
-      "frame_number": 1600,
-      "timestamp_seconds": 16.0,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012151_001750.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012151_001750.jpg",
+      "frame_number": 1750,
+      "timestamp_seconds": 17.5,
       "gps": {
-        "latitude": 28.6811754,
-        "longitude": 77.0823336
+        "latitude": 28.681175,
+        "longitude": 77.08233333333332
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012152",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012152_001250.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012152_001250.jpg",
-      "frame_number": 1250,
-      "timestamp_seconds": 12.5,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012152_001200.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012152_001200.jpg",
+      "frame_number": 1200,
+      "timestamp_seconds": 12.0,
       "gps": {
-        "latitude": 28.6685777,
-        "longitude": 77.1826432
+        "latitude": 28.668577777777777,
+        "longitude": 77.18264444444445
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012153",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012153_001900.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012153_001900.jpg",
-      "frame_number": 1900,
-      "timestamp_seconds": 19.0,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012153_001400.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012153_001400.jpg",
+      "frame_number": 1400,
+      "timestamp_seconds": 14.0,
       "gps": {
-        "latitude": 28.6687686,
-        "longitude": 77.1784222
+        "latitude": 28.663980555555554,
+        "longitude": 77.17880833333334
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012154",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012154_002150.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012154_002150.jpg",
-      "frame_number": 2150,
-      "timestamp_seconds": 21.5,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012154_001400.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012154_001400.jpg",
+      "frame_number": 1400,
+      "timestamp_seconds": 14.0,
       "gps": {
-        "latitude": 28.663788,
-        "longitude": 77.1792597
+        "latitude": 28.653813888888887,
+        "longitude": 77.18270555555556
       }
     },
     {
       "video_id": "delhi_05_13_2026_GX012155",
-      "frame_path": "output/samples/delhi_05_13_2026_GX012155_002800.jpg",
-      "original_path": "output/frames/delhi_05_13_2026_GX012155_002800.jpg",
-      "frame_number": 2800,
-      "timestamp_seconds": 28.0,
+      "frame_path": "output/samples/delhi_05_13_2026_GX012155_003100.jpg",
+      "original_path": "output/frames/delhi_05_13_2026_GX012155_003100.jpg",
+      "frame_number": 3100,
+      "timestamp_seconds": 31.0,
       "gps": {
-        "latitude": 28.6224956,
-        "longitude": 77.2121007
+        "latitude": 28.637780555555555,
+        "longitude": 77.20749166666667
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012156",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012156_001300.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012156_001300.jpg",
-      "frame_number": 1300,
-      "timestamp_seconds": 13.0,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012156_001750.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012156_001750.jpg",
+      "frame_number": 1750,
+      "timestamp_seconds": 17.5,
       "gps": {
-        "latitude": 28.6377815,
-        "longitude": 77.2075489
+        "latitude": 28.634686111111108,
+        "longitude": 76.94724722222223
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012157",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012157_002100.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012157_002100.jpg",
-      "frame_number": 2100,
-      "timestamp_seconds": 21.0,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012157_002500.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012157_002500.jpg",
+      "frame_number": 2500,
+      "timestamp_seconds": 25.0,
       "gps": {
-        "latitude": 28.6377815,
-        "longitude": 77.2075489
+        "latitude": 28.637780555555555,
+        "longitude": 77.08000972222223
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012158",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012158_001100.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012158_001100.jpg",
-      "frame_number": 1100,
-      "timestamp_seconds": 11.0,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012158_001850.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012158_001850.jpg",
+      "frame_number": 1850,
+      "timestamp_seconds": 18.5,
       "gps": {
-        "latitude": 28.6349171,
-        "longitude": 76.9742085
+        "latitude": 28.63350833333333,
+        "longitude": 76.96822916666667
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012159",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012159_001050.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012159_001050.jpg",
-      "frame_number": 1050,
-      "timestamp_seconds": 10.5,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012159_001250.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012159_001250.jpg",
+      "frame_number": 1250,
+      "timestamp_seconds": 12.5,
       "gps": {
-        "latitude": 28.6312322,
-        "longitude": 76.9703322
+        "latitude": 28.630986111111113,
+        "longitude": 76.9709
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012160",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012160_002050.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012160_002050.jpg",
-      "frame_number": 2050,
-      "timestamp_seconds": 20.5,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012160_001400.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012160_001400.jpg",
+      "frame_number": 1400,
+      "timestamp_seconds": 14.0,
       "gps": {
-        "latitude": 28.6312005,
-        "longitude": 76.973643
+        "latitude": 28.631280555555556,
+        "longitude": 76.97320277777779
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012161",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012161_001350.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012161_001350.jpg",
-      "frame_number": 1350,
-      "timestamp_seconds": 13.5,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012161_001800.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012161_001800.jpg",
+      "frame_number": 1800,
+      "timestamp_seconds": 18.0,
       "gps": {
-        "latitude": 28.6556,
-        "longitude": 76.9498
+        "latitude": 28.655719444444443,
+        "longitude": 76.94969722222223
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012163",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012163_001900.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012163_001900.jpg",
-      "frame_number": 1900,
-      "timestamp_seconds": 19.0,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012163_002350.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012163_002350.jpg",
+      "frame_number": 2350,
+      "timestamp_seconds": 23.5,
       "gps": {
-        "latitude": 28.6652847,
-        "longitude": 76.9426514
+        "latitude": 28.666158333333332,
+        "longitude": 76.97913055555556
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012164",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012164_001100.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012164_001100.jpg",
-      "frame_number": 1100,
-      "timestamp_seconds": 11.0,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012164_001300.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012164_001300.jpg",
+      "frame_number": 1300,
+      "timestamp_seconds": 13.0,
       "gps": {
-        "latitude": 28.6445547,
-        "longitude": 77.0176722
+        "latitude": 28.644580555555557,
+        "longitude": 77.017875
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012165",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012165_002350.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012165_002350.jpg",
-      "frame_number": 2350,
-      "timestamp_seconds": 23.5,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012165_002450.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012165_002450.jpg",
+      "frame_number": 2450,
+      "timestamp_seconds": 24.5,
       "gps": {
-        "latitude": 28.6445823,
-        "longitude": 77.017893
+        "latitude": 28.652519444444444,
+        "longitude": 77.03290555555556
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012166",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012166_001700.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012166_001700.jpg",
-      "frame_number": 1700,
-      "timestamp_seconds": 17.0,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012166_001600.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012166_001600.jpg",
+      "frame_number": 1600,
+      "timestamp_seconds": 16.0,
       "gps": {
-        "latitude": 28.6525028,
-        "longitude": 77.0328998
+        "latitude": 28.652502777777777,
+        "longitude": 77.0329
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012169",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012169_002350.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012169_002350.jpg",
-      "frame_number": 2350,
-      "timestamp_seconds": 23.5,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012169_002100.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012169_002100.jpg",
+      "frame_number": 2100,
+      "timestamp_seconds": 21.0,
       "gps": {
-        "latitude": 28.649837,
-        "longitude": 77.0504766
+        "latitude": 28.653619444444445,
+        "longitude": 77.05294166666667
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012171",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012171_001300.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012171_001300.jpg",
-      "frame_number": 1300,
-      "timestamp_seconds": 13.0,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012171_001950.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012171_001950.jpg",
+      "frame_number": 1950,
+      "timestamp_seconds": 19.5,
       "gps": {
-        "latitude": 28.6651829,
-        "longitude": 77.0145728
+        "latitude": 28.64299722222222,
+        "longitude": 77.03108888888889
       }
     },
     {
@@ -768,52 +2066,52 @@
       "frame_number": 1600,
       "timestamp_seconds": 16.0,
       "gps": {
-        "latitude": 28.6476736,
-        "longitude": 77.0381096
+        "latitude": 28.64577222222222,
+        "longitude": 77.04269027777778
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012173",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012173_001850.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012173_001850.jpg",
-      "frame_number": 1850,
-      "timestamp_seconds": 18.5,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012173_002150.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012173_002150.jpg",
+      "frame_number": 2150,
+      "timestamp_seconds": 21.5,
       "gps": {
-        "latitude": 28.6352052,
-        "longitude": 77.0332978
+        "latitude": 28.635205555555554,
+        "longitude": 77.03329722222222
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012174",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012174_002450.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012174_002450.jpg",
-      "frame_number": 2450,
-      "timestamp_seconds": 24.5,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012174_002400.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012174_002400.jpg",
+      "frame_number": 2400,
+      "timestamp_seconds": 24.0,
       "gps": {
-        "latitude": 28.6532428,
-        "longitude": 77.0352654
+        "latitude": 28.653241666666666,
+        "longitude": 77.03526666666666
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012176",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012176_017250.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012176_017250.jpg",
-      "frame_number": 17250,
-      "timestamp_seconds": 172.5,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012176_014200.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012176_014200.jpg",
+      "frame_number": 14200,
+      "timestamp_seconds": 142.0,
       "gps": {
-        "latitude": 28.6532428,
-        "longitude": 77.0352654
+        "latitude": 28.653241666666666,
+        "longitude": 77.03526666666666
       }
     },
     {
       "video_id": "delhi_05_14_2026_GX012177",
-      "frame_path": "output/samples/delhi_05_14_2026_GX012177_002150.jpg",
-      "original_path": "output/frames/delhi_05_14_2026_GX012177_002150.jpg",
-      "frame_number": 2150,
-      "timestamp_seconds": 21.5,
+      "frame_path": "output/samples/delhi_05_14_2026_GX012177_002400.jpg",
+      "original_path": "output/frames/delhi_05_14_2026_GX012177_002400.jpg",
+      "frame_number": 2400,
+      "timestamp_seconds": 24.0,
       "gps": {
-        "latitude": 28.6532428,
-        "longitude": 77.0352654
+        "latitude": 28.653241666666666,
+        "longitude": 77.03526666666666
       }
     }
   ]

@@ -1,0 +1,2499 @@
+{
+  "source_file": "data/delhi/05_06_2026/GX012029.MP4",
+  "telemetry_points": [
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:02.800",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:02.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:03.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:03.100",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:03.200",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:03.300",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:03.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:03.500",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:03.600",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:03.700",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:03.800",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:03.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:04.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:04.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:04.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:04.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:04.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:04.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:04.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:04.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:04.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:04.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:05.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:05.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:05.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:05.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:05.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:05.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:05.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:05.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:05.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:05.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:06.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:06.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:06.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:06.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:06.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:06.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:06.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:06.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:06.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:06.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:07.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:07.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:07.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:07.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:07.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:07.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:07.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:07.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:07.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:07.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:08.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:08.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:08.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:08.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:08.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:08.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:08.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:08.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:08.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:08.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:09.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:09.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:09.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:09.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:09.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:09.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:09.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:09.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:09.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:09.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:10.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:10.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:10.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:10.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:10.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:10.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:10.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:10.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:10.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:10.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:11.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:11.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:11.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:11.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:11.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:11.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:11.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:11.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:11.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:11.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:12.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:12.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:12.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:12.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:12.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:12.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:12.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:12.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:12.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:12.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:13.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:13.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:13.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:13.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:13.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:13.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:13.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:13.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:13.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:13.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:14.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:14.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:14.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:14.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:14.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:14.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:14.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:14.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:14.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:14.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:15.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:07 00:00:15.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:38.131",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:38.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:38.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:38.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:38.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:38.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:38.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:38.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:38.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:39.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:39.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:39.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:39.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:39.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:39.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:39.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:39.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:39.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:39.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:40.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:40.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:40.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:40.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:40.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:40.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:40.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:40.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:40.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:40.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:41.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:41.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:41.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:41.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:41.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:41.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:41.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:41.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:41.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:41.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:42.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:42.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:42.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:42.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:42.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:42.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:42.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:42.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:42.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:42.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:43.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:43.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:43.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:43.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:43.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:43.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:43.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:43.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2021:03:10 06:54:43.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:43.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:44.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:44.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:44.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:44.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:44.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:44.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:44.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:44.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:44.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:44.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:45.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:45.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:45.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:45.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:45.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:45.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:45.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:45.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:45.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:45.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:46.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:46.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:46.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:46.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:46.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:46.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:46.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:46.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:46.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:46.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:47.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:47.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:47.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:47.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:47.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:47.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:47.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:47.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:47.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:47.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:48.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:48.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:48.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:48.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:48.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:48.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:48.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:48.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:48.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:48.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:49.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:49.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:49.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:49.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:49.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:49.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:49.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:49.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:49.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:49.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:50.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:50.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:50.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:50.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:50.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:50.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:50.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:50.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:50.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:50.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:51.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:51.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:51.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:51.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:51.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:51.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:51.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:51.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:51.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:51.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:52.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:52.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:52.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:52.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:52.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:52.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:52.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:52.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:52.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:52.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:53.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:53.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:53.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:53.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:53.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:53.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:53.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:53.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:53.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:53.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:54.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:54.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:54.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:54.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:54.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:54.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:54.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:54.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:54.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:54.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:55.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:55.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:55.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:55.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:55.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:55.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:55.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:55.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:55.799",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:55.899",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:56.000",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:56.099",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:56.199",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:56.299",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:56.399",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:56.499",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:56.599",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    },
+    {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": null,
+      "datetime": "2026:05:06 06:54:56.699",
+      "speed": 0.0,
+      "speed_3d": 0.0
+    }
+  ],
+  "point_count": 311,
+  "median_latitude": 0.0,
+  "median_longitude": 0.0,
+  "median_altitude": null,
+  "max_spread_meters": 0.0,
+  "spread_valid": true
+}

@@ -4,64 +4,15 @@ import json
 import subprocess
 from pathlib import Path
 
-from .utils import build_output_prefix, ensure_output_dirs, find_videos, load_config
-
-
-def extract_gps_track(video_path: Path) -> list[dict]:
-    """Extract full GPS track from embedded metadata.
-
-    Uses exiftool -p format to get all GPS points, not just the first one.
-    Returns list of dicts with lat, lon, altitude, speed, datetime.
-    """
-    result = subprocess.run(
-        [
-            "exiftool",
-            "-ee",
-            "-p",
-            "$GPSLatitude,$GPSLongitude,$GPSAltitude,$GPSSpeed,$GPSDateTime",
-            "-n",
-            str(video_path),
-        ],
-        capture_output=True,
-        text=True,
-    )
-
-    gps_track = []
-    for line in result.stdout.strip().split("\n"):
-        if not line.strip():
-            continue
-        parts = line.split(",")
-        if len(parts) < 5:
-            continue
-        try:
-            lat = float(parts[0]) if parts[0] else None
-            lon = float(parts[1]) if parts[1] else None
-            altitude = float(parts[2]) if parts[2] else None
-            speed = float(parts[3]) if parts[3] else None
-            datetime_str = parts[4] if parts[4] else None
-
-            if lat is not None and lon is not None:
-                gps_track.append(
-                    {
-                        "lat": lat,
-                        "lon": lon,
-                        "altitude": altitude,
-                        "speed": speed,
-                        "datetime": datetime_str,
-                    }
-                )
-        except ValueError:
-            continue
-
-    return gps_track
+from .utils import (build_output_prefix, ensure_output_dirs, find_videos,
+                    load_config)
 
 
 def extract_exif_from_video(video_path: Path) -> dict:
     """Extract ALL EXIF metadata from a single video using exiftool.
 
     Uses -ee flag to extract embedded metadata (GPS tracks, etc.) and
-    returns complete raw exiftool output with commonly-used fields
-    normalized at the top level for convenience.
+    returns complete raw exiftool output at top level.
     """
     result = subprocess.run(
         ["exiftool", "-ee", "-json", "-n", str(video_path)],
@@ -77,24 +28,8 @@ def extract_exif_from_video(video_path: Path) -> dict:
     if not data:
         return {}
 
-    raw = data[0]
-
-    duration = raw.get("Duration")
-    frame_rate = raw.get("VideoFrameRate")
-    frame_count = raw.get("FrameCount")
-    if frame_rate and duration and not frame_count:
-        frame_count = int(frame_rate * duration)
-
-    gps_track = extract_gps_track(video_path)
-
-    exif = {
-        "source_file": str(video_path),
-        "duration_seconds": duration,
-        "frame_rate": frame_rate,
-        "frame_count": frame_count,
-        "gps_track": gps_track,
-        "raw": raw,
-    }
+    exif = data[0]
+    exif["source_file"] = str(video_path)
 
     return exif
 
@@ -110,7 +45,12 @@ def process_videos(
     output_dir: Path | None = None,
     skip_existing: bool = True,
 ) -> list[Path]:
-    """Process all videos and extract EXIF metadata."""
+    """Process all videos and extract EXIF metadata.
+
+    Outputs:
+    - Individual JSON files per video in output/exif/
+    - Combined JSONL file with all metadata: output/exif.jsonl
+    """
     config = load_config()
     if output_dir is None:
         output_dir = Path(config["output_dir"])
@@ -118,6 +58,7 @@ def process_videos(
     ensure_output_dirs(output_dir)
     videos = find_videos(input_path)
     output_files = []
+    all_exif = []
 
     for video in videos:
         prefix = build_output_prefix(video)
@@ -126,12 +67,21 @@ def process_videos(
         if skip_existing and output_path.exists():
             print(f"Skipping {video.name} (EXIF already exists)")
             output_files.append(output_path)
+            with open(output_path) as f:
+                all_exif.append(json.load(f))
             continue
 
         print(f"Extracting EXIF from {video.name}...")
         exif_data = extract_exif_from_video(video)
         save_exif(exif_data, output_path)
         output_files.append(output_path)
+        all_exif.append(exif_data)
         print(f"  -> {output_path}")
+
+    jsonl_path = output_dir / "exif.jsonl"
+    with open(jsonl_path, "w") as f:
+        for exif in all_exif:
+            f.write(json.dumps(exif) + "\n")
+    print(f"Combined JSONL: {jsonl_path} ({len(all_exif)} records)")
 
     return output_files

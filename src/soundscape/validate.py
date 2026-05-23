@@ -48,8 +48,8 @@ def validate_pipeline(
     frame_stems = set()
     for f in frame_files:
         parts = f.stem.split("_")
-        if len(parts) >= 3:
-            frame_stems.add(parts[2])
+        if len(parts) >= 5:
+            frame_stems.add(parts[4])
 
     results = {
         "video_count": len(videos),

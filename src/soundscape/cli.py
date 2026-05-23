@@ -4,17 +4,9 @@ from pathlib import Path
 
 import click
 
-from . import (
-    archive,
-    build_manifest,
-    extract_exif,
-    extract_frames,
-    extract_gps,
-    merge_readings,
-    ocr_readings,
-    sample_frames,
-    validate,
-)
+from . import (archive, build_manifest, extract_exif, extract_frames,
+               extract_gps, merge_readings, ocr_readings, sample_frames,
+               validate)
 
 
 @click.group()
@@ -350,6 +342,31 @@ def create_archives_cmd(input_dir, output_dir, prefix):
         output_dir=output_dir,
         prefix=prefix,
     )
+
+
+# =============================================================================
+# 9. Validate Pipeline
+# =============================================================================
+
+
+@main.command("validate")
+@click.option(
+    "--input",
+    "input_path",
+    type=click.Path(exists=True, path_type=Path),
+    default=None,
+    help="Input video directory (default: from config.yaml)",
+)
+@click.option(
+    "--output",
+    "output_dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Output directory (default: from config.yaml)",
+)
+def validate_cmd(input_path, output_dir):
+    """9. Validate pipeline outputs match video inputs."""
+    validate.process(input_path=input_path, output_dir=output_dir)
 
 
 if __name__ == "__main__":

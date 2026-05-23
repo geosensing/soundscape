@@ -8,7 +8,8 @@ from pathlib import Path
 
 import anthropic
 
-from .utils import get_city_from_manifest, get_city_from_sample_manifest, load_config
+from .utils import (get_city_from_manifest, get_city_from_sample_manifest,
+                    load_config)
 
 OCR_SYSTEM_PROMPT = """You are analyzing images of a sound level meter (decibel meter) display.
 Your task is to read the numerical value shown on the display.
@@ -37,7 +38,9 @@ def path_to_custom_id(frame_path: str) -> str:
     return hashlib.sha256(frame_path.encode()).hexdigest()[:64]
 
 
-def create_batch_request(frame_info: dict, custom_id: str, model: str = "claude-haiku-4-5") -> dict:
+def create_batch_request(
+    frame_info: dict, custom_id: str, model: str = "claude-haiku-4-5"
+) -> dict:
     """Create a single batch request for a frame."""
     image_path = Path(frame_info["frame_path"])
     if not image_path.exists():
@@ -99,7 +102,9 @@ def submit_batch(
             req = create_batch_request(frame, custom_id, model)
             requests.append(req)
         except Exception as e:
-            print(f"Warning: Failed to create request for {frame.get('frame_path')}: {e}")
+            print(
+                f"Warning: Failed to create request for {frame.get('frame_path')}: {e}"
+            )
 
     if not requests:
         raise ValueError("No valid requests to submit")
@@ -169,7 +174,9 @@ def parse_ocr_response(response_text: str) -> dict:
         text = response_text.strip()
         if text.startswith("```"):
             lines = text.split("\n")
-            text = "\n".join(lines[1:-1]) if lines[-1] == "```" else "\n".join(lines[1:])
+            text = (
+                "\n".join(lines[1:-1]) if lines[-1] == "```" else "\n".join(lines[1:])
+            )
 
         data = json.loads(text)
         return {
@@ -322,7 +329,9 @@ def process(
         if mapping_file.exists():
             id_to_path = load_id_mapping(mapping_file)
         else:
-            id_to_path = {path_to_custom_id(f["frame_path"]): f["frame_path"] for f in frames}
+            id_to_path = {
+                path_to_custom_id(f["frame_path"]): f["frame_path"] for f in frames
+            }
     else:
         batch_id, id_to_path = submit_batch(frames, model)
         print(f"Submitted batch: {batch_id}")
