@@ -2,11 +2,13 @@
 
 import json
 import math
+import re
 import statistics
 import subprocess
 from pathlib import Path
 
-from .utils import build_output_prefix, ensure_output_dirs, find_videos, load_config
+from .utils import (build_output_prefix, ensure_output_dirs, find_videos,
+                    load_config)
 
 
 def haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
@@ -24,19 +26,57 @@ def haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> fl
     return R * c
 
 
+def parse_dms_to_decimal(dms_str: str) -> float | None:
+    """Convert DMS coordinate string to decimal degrees.
+
+    Handles formats like:
+    - "28 deg 34' 47.76\" N"
+    - "77 deg 13' 50.26\" E"
+    """
+    if not dms_str:
+        return None
+
+    pattern = r"(\d+)\s*deg\s*(\d+)'\s*([\d.]+)\"\s*([NSEW])"
+    match = re.match(pattern, dms_str.strip())
+    if not match:
+        return None
+
+    degrees = float(match.group(1))
+    minutes = float(match.group(2))
+    seconds = float(match.group(3))
+    direction = match.group(4)
+
+    decimal = degrees + minutes / 60 + seconds / 3600
+    if direction in ("S", "W"):
+        decimal = -decimal
+
+    return decimal
+
+
+def parse_altitude(alt_str: str) -> float | None:
+    """Parse altitude string like '209.607 m' to float."""
+    if not alt_str:
+        return None
+
+    match = re.match(r"([\d.]+)\s*m", alt_str.strip())
+    if match:
+        return float(match.group(1))
+    return None
+
+
 def extract_gps_telemetry(video_path: Path) -> list[dict]:
-    """Extract embedded GPS telemetry from video using exiftool -ee flag."""
+    """Extract full GPS timeseries from GoPro video using raw exiftool output.
+
+    Uses -G flag for grouped output and parses GoPro GPS blocks with regex
+    to extract all GPS points (typically ~10 per second of video).
+    """
     result = subprocess.run(
         [
             "exiftool",
+            "-G",
             "-ee",
-            "-json",
-            "-n",
-            "-GPSLatitude",
-            "-GPSLongitude",
-            "-GPSAltitude",
-            "-GPSDateTime",
-            "-GPSSpeed",
+            "-api",
+            "LargeFileSupport=1",
             str(video_path),
         ],
         capture_output=True,
@@ -44,29 +84,54 @@ def extract_gps_telemetry(video_path: Path) -> list[dict]:
         check=True,
     )
 
-    try:
-        data = json.loads(result.stdout)
-    except json.JSONDecodeError as e:
-        raise ValueError(f"exiftool returned invalid JSON for {video_path}: {e}") from e
-    if not data:
-        return []
+    raw_output = result.stdout
+    points = []
 
-    raw = data[0]
+    gps_pattern = re.compile(
+        r"\[GoPro\]\s+GPS Latitude\s+:\s+(.+?)\n"
+        r"\[GoPro\]\s+GPS Longitude\s+:\s+(.+?)\n"
+        r"\[GoPro\]\s+GPS Altitude\s+:\s+(.+?)\n"
+        r"\[GoPro\]\s+GPS Speed\s+:\s+(.+?)\n"
+        r"\[GoPro\]\s+GPS Speed 3D\s+:\s+(.+?)\n"
+        r"\[GoPro\]\s+GPS Date Time\s+:\s+(.+?)\n",
+        re.MULTILINE,
+    )
 
-    lat = raw.get("GPSLatitude")
-    lon = raw.get("GPSLongitude")
-    if lat is not None and lon is not None:
-        return [
+    for match in gps_pattern.finditer(raw_output):
+        lat_str, lon_str, alt_str, speed_str, speed_3d_str, datetime_str = (
+            match.groups()
+        )
+
+        lat = parse_dms_to_decimal(lat_str)
+        lon = parse_dms_to_decimal(lon_str)
+
+        if lat is None or lon is None:
+            continue
+
+        alt = parse_altitude(alt_str)
+
+        try:
+            speed = float(speed_str) if speed_str else None
+        except ValueError:
+            speed = None
+
+        try:
+            speed_3d = float(speed_3d_str) if speed_3d_str else None
+        except ValueError:
+            speed_3d = None
+
+        points.append(
             {
                 "latitude": lat,
                 "longitude": lon,
-                "altitude": raw.get("GPSAltitude"),
-                "datetime": raw.get("GPSDateTime"),
-                "speed": raw.get("GPSSpeed"),
+                "altitude": alt,
+                "datetime": datetime_str.strip() if datetime_str else None,
+                "speed": speed,
+                "speed_3d": speed_3d,
             }
-        ]
+        )
 
-    return []
+    return points
 
 
 def compute_gps_stats(points: list[dict], max_spread_meters: float = 50) -> dict:
@@ -102,7 +167,9 @@ def compute_gps_stats(points: list[dict], max_spread_meters: float = 50) -> dict
     max_dist = 0.0
     for p in points:
         if p["latitude"] is not None and p["longitude"] is not None:
-            dist = haversine_distance(median_lat, median_lon, p["latitude"], p["longitude"])
+            dist = haversine_distance(
+                median_lat, median_lon, p["latitude"], p["longitude"]
+            )
             max_dist = max(max_dist, dist)
 
     return {

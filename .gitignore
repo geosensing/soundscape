@@ -2,4 +2,4 @@
 /data/delhi
 /output/frames
 /src/soundscape/__pycache__
-/output/samples
+/output/samples/*.jpg

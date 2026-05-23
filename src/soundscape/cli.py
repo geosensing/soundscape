@@ -5,6 +5,7 @@ from pathlib import Path
 import click
 
 from . import (
+    archive,
     build_manifest,
     extract_exif,
     extract_frames,
@@ -12,6 +13,7 @@ from . import (
     merge_readings,
     ocr_readings,
     sample_frames,
+    validate,
 )
 
 
@@ -207,7 +209,9 @@ def build_manifest_cmd(output_dir):
     default=5.0,
     help="Skip frames in last N seconds (default: 5.0)",
 )
-def sample_frames_cmd(manifest_path, output_dir, frames_per_video, seed, start_skip, end_skip):
+def sample_frames_cmd(
+    manifest_path, output_dir, frames_per_video, seed, start_skip, end_skip
+):
     """5. Sample random frames for manual annotation verification."""
     sample_frames.process(
         manifest_path=manifest_path,
@@ -263,7 +267,9 @@ def sample_frames_cmd(manifest_path, output_dir, frames_per_video, seed, start_s
     default=30,
     help="Seconds between status polls (default: 30)",
 )
-def ocr_readings_cmd(manifest_path, sample_manifest, output_dir, model, batch_id, poll_interval):
+def ocr_readings_cmd(
+    manifest_path, sample_manifest, output_dir, model, batch_id, poll_interval
+):
     """6. OCR sound meter readings using Claude batch API."""
     ocr_readings.process(
         manifest_path=manifest_path,
@@ -308,6 +314,41 @@ def merge_readings_cmd(manifest_path, readings_path, output_path):
         manifest_path=manifest_path,
         readings_path=readings_path,
         output_path=output_path,
+    )
+
+
+# =============================================================================
+# 8. Create Archives
+# =============================================================================
+
+
+@main.command("create-archives")
+@click.option(
+    "--input",
+    "input_dir",
+    type=click.Path(exists=True, path_type=Path),
+    required=True,
+    help="City directory containing date folders (e.g., data/delhi)",
+)
+@click.option(
+    "--output",
+    "output_dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Output directory for archives (default: data/archives)",
+)
+@click.option(
+    "--prefix",
+    type=str,
+    default=None,
+    help="Prefix for archive names (default: city folder name)",
+)
+def create_archives_cmd(input_dir, output_dir, prefix):
+    """8. Create tar.gz archives of video folders for Harvard Dataverse."""
+    archive.process_city_folder(
+        city_dir=input_dir,
+        output_dir=output_dir,
+        prefix=prefix,
     )
 
 
