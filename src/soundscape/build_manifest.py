@@ -126,7 +126,9 @@ def process(output_dir: Path | None = None) -> Path:
     output_path = output_dir / "manifest.json"
     save_manifest(manifest, output_path)
 
-    print(f"Built manifest: {manifest['video_count']} videos, {manifest['total_frame_count']} frames")
+    video_count = manifest["video_count"]
+    frame_count = manifest["total_frame_count"]
+    print(f"Built manifest: {video_count} videos, {frame_count} frames")
     print(f"  -> {output_path}")
 
     return output_path

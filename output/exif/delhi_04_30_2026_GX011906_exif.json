@@ -1,17 +1,635 @@
 {
   "source_file": "data/delhi/04_30_2026/GX011906.MP4",
-  "file_name": "GX011906.MP4",
-  "file_size_bytes": 381371695,
-  "create_date": "2026:04:30 04:41:27",
-  "modify_date": "2026:04:30 04:41:27",
   "duration_seconds": 60.94,
   "frame_rate": 50,
   "frame_count": 3047,
-  "image_width": 3840,
-  "image_height": 2160,
-  "video_codec": "hvc1",
-  "audio_codec": "mp4a",
-  "camera_model": "HERO13 Black",
-  "camera_serial": null,
-  "firmware": "H24.01.02.10.00"
+  "gps_track": [
+    {
+      "lat": 28.5497403,
+      "lon": 77.1978936,
+      "altitude": 279.215,
+      "speed": 1.7388,
+      "datetime": "2026:04:30 04:38:29.400"
+    },
+    {
+      "lat": 28.5497525,
+      "lon": 77.1978462,
+      "altitude": 270.25,
+      "speed": 1.1304,
+      "datetime": "2026:04:30 04:38:30.400"
+    },
+    {
+      "lat": 28.5497798,
+      "lon": 77.1978192,
+      "altitude": 267.391,
+      "speed": 4.3632,
+      "datetime": "2026:04:30 04:38:31.400"
+    },
+    {
+      "lat": 28.5497872,
+      "lon": 77.1978101,
+      "altitude": 264.814,
+      "speed": 0.6588,
+      "datetime": "2026:04:30 04:38:32.400"
+    },
+    {
+      "lat": 28.5497843,
+      "lon": 77.1977703,
+      "altitude": 253.523,
+      "speed": 1.0332,
+      "datetime": "2026:04:30 04:38:33.400"
+    },
+    {
+      "lat": 28.5497809,
+      "lon": 77.197737,
+      "altitude": 243.965,
+      "speed": 0.396,
+      "datetime": "2026:04:30 04:38:34.400"
+    },
+    {
+      "lat": 28.5497794,
+      "lon": 77.1977261,
+      "altitude": 239.611,
+      "speed": 1.1988,
+      "datetime": "2026:04:30 04:38:35.400"
+    },
+    {
+      "lat": 28.5497794,
+      "lon": 77.1977155,
+      "altitude": 235.796,
+      "speed": 0.6516,
+      "datetime": "2026:04:30 04:38:36.400"
+    },
+    {
+      "lat": 28.5497749,
+      "lon": 77.1977142,
+      "altitude": 233.965,
+      "speed": 0.9432,
+      "datetime": "2026:04:30 04:38:37.380"
+    },
+    {
+      "lat": 28.5497722,
+      "lon": 77.1977134,
+      "altitude": 233.689,
+      "speed": 0.3024,
+      "datetime": "2026:04:30 04:38:38.400"
+    },
+    {
+      "lat": 28.5497603,
+      "lon": 77.1977108,
+      "altitude": 232.622,
+      "speed": 1.7964,
+      "datetime": "2026:04:30 04:38:39.400"
+    },
+    {
+      "lat": 28.5497555,
+      "lon": 77.1977047,
+      "altitude": 231.909,
+      "speed": 0.3132,
+      "datetime": "2026:04:30 04:38:40.400"
+    },
+    {
+      "lat": 28.5497509,
+      "lon": 77.1976989,
+      "altitude": 231.539,
+      "speed": 0.8748,
+      "datetime": "2026:04:30 04:38:41.400"
+    },
+    {
+      "lat": 28.5497509,
+      "lon": 77.1976931,
+      "altitude": 231.738,
+      "speed": 0.468,
+      "datetime": "2026:04:30 04:38:42.400"
+    },
+    {
+      "lat": 28.5497536,
+      "lon": 77.1976727,
+      "altitude": 228.781,
+      "speed": 1.3248,
+      "datetime": "2026:04:30 04:38:43.400"
+    },
+    {
+      "lat": 28.5497468,
+      "lon": 77.1976581,
+      "altitude": 226.147,
+      "speed": 0.8424,
+      "datetime": "2026:04:30 04:38:44.400"
+    },
+    {
+      "lat": 28.5497391,
+      "lon": 77.1976452,
+      "altitude": 223.51,
+      "speed": 1.0224,
+      "datetime": "2026:04:30 04:38:45.400"
+    },
+    {
+      "lat": 28.5497324,
+      "lon": 77.1976391,
+      "altitude": 222.096,
+      "speed": 0.4644,
+      "datetime": "2026:04:30 04:38:46.400"
+    },
+    {
+      "lat": 28.5497293,
+      "lon": 77.1976398,
+      "altitude": 222.112,
+      "speed": 0.1692,
+      "datetime": "2026:04:30 04:38:47.400"
+    },
+    {
+      "lat": 28.5497289,
+      "lon": 77.1976482,
+      "altitude": 223.887,
+      "speed": 0.2844,
+      "datetime": "2026:04:30 04:38:48.400"
+    },
+    {
+      "lat": 28.549732,
+      "lon": 77.1976489,
+      "altitude": 224.597,
+      "speed": 0.8496,
+      "datetime": "2026:04:30 04:38:49.400"
+    },
+    {
+      "lat": 28.5497344,
+      "lon": 77.1976474,
+      "altitude": 224.981,
+      "speed": 0.5544,
+      "datetime": "2026:04:30 04:38:50.400"
+    },
+    {
+      "lat": 28.5497312,
+      "lon": 77.1976479,
+      "altitude": 225.431,
+      "speed": 1.638,
+      "datetime": "2026:04:30 04:38:51.400"
+    },
+    {
+      "lat": 28.5497301,
+      "lon": 77.1976417,
+      "altitude": 224.485,
+      "speed": 0.8532,
+      "datetime": "2026:04:30 04:38:52.400"
+    },
+    {
+      "lat": 28.5497263,
+      "lon": 77.197641,
+      "altitude": 224.407,
+      "speed": 1.4904,
+      "datetime": "2026:04:30 04:38:53.400"
+    },
+    {
+      "lat": 28.5497241,
+      "lon": 77.1976387,
+      "altitude": 224.126,
+      "speed": 0.8964,
+      "datetime": "2026:04:30 04:38:54.400"
+    },
+    {
+      "lat": 28.5497184,
+      "lon": 77.1976418,
+      "altitude": 224.543,
+      "speed": 1.1844,
+      "datetime": "2026:04:30 04:38:55.400"
+    },
+    {
+      "lat": 28.5497139,
+      "lon": 77.197644,
+      "altitude": 224.841,
+      "speed": 1.1448,
+      "datetime": "2026:04:30 04:38:56.400"
+    },
+    {
+      "lat": 28.5497103,
+      "lon": 77.197648,
+      "altitude": 225.378,
+      "speed": 1.0224,
+      "datetime": "2026:04:30 04:38:57.400"
+    },
+    {
+      "lat": 28.5497114,
+      "lon": 77.1976498,
+      "altitude": 225.879,
+      "speed": 1.1304,
+      "datetime": "2026:04:30 04:38:58.400"
+    },
+    {
+      "lat": 28.549709,
+      "lon": 77.1976523,
+      "altitude": 226.398,
+      "speed": 1.098,
+      "datetime": "2026:04:30 04:38:59.400"
+    },
+    {
+      "lat": 28.5497097,
+      "lon": 77.1976511,
+      "altitude": 226.427,
+      "speed": 0.6408,
+      "datetime": "2026:04:30 04:39:00.400"
+    },
+    {
+      "lat": 28.5497109,
+      "lon": 77.1976504,
+      "altitude": 226.483,
+      "speed": 1.0476,
+      "datetime": "2026:04:30 04:39:01.400"
+    },
+    {
+      "lat": 28.5497103,
+      "lon": 77.1976504,
+      "altitude": 226.162,
+      "speed": 0.8712,
+      "datetime": "2026:04:30 04:39:02.400"
+    },
+    {
+      "lat": 28.5497094,
+      "lon": 77.1976474,
+      "altitude": 225.296,
+      "speed": 1.206,
+      "datetime": "2026:04:30 04:39:03.400"
+    },
+    {
+      "lat": 28.5497097,
+      "lon": 77.1976462,
+      "altitude": 224.609,
+      "speed": 1.0584,
+      "datetime": "2026:04:30 04:39:04.400"
+    },
+    {
+      "lat": 28.5497136,
+      "lon": 77.1976417,
+      "altitude": 224.058,
+      "speed": 0.2196,
+      "datetime": "2026:04:30 04:39:05.400"
+    },
+    {
+      "lat": 28.549717,
+      "lon": 77.1976381,
+      "altitude": 223.755,
+      "speed": 0.2736,
+      "datetime": "2026:04:30 04:39:06.400"
+    },
+    {
+      "lat": 28.5497191,
+      "lon": 77.1976364,
+      "altitude": 223.869,
+      "speed": 0.1044,
+      "datetime": "2026:04:30 04:39:07.400"
+    },
+    {
+      "lat": 28.5497195,
+      "lon": 77.1976368,
+      "altitude": 224.214,
+      "speed": 0.1332,
+      "datetime": "2026:04:30 04:39:08.400"
+    },
+    {
+      "lat": 28.5497205,
+      "lon": 77.1976341,
+      "altitude": 223.993,
+      "speed": 0.2016,
+      "datetime": "2026:04:30 04:39:09.400"
+    },
+    {
+      "lat": 28.5497213,
+      "lon": 77.1976331,
+      "altitude": 224.06,
+      "speed": 0.2376,
+      "datetime": "2026:04:30 04:39:10.400"
+    },
+    {
+      "lat": 28.5497218,
+      "lon": 77.1976327,
+      "altitude": 224.226,
+      "speed": 0.5004,
+      "datetime": "2026:04:30 04:39:11.400"
+    },
+    {
+      "lat": 28.5497229,
+      "lon": 77.1976325,
+      "altitude": 224.478,
+      "speed": 0.2556,
+      "datetime": "2026:04:30 04:39:12.400"
+    },
+    {
+      "lat": 28.5497242,
+      "lon": 77.1976313,
+      "altitude": 224.611,
+      "speed": 0.2196,
+      "datetime": "2026:04:30 04:39:13.400"
+    },
+    {
+      "lat": 28.5497257,
+      "lon": 77.1976317,
+      "altitude": 224.971,
+      "speed": 0.3276,
+      "datetime": "2026:04:30 04:39:14.400"
+    },
+    {
+      "lat": 28.5497263,
+      "lon": 77.19763,
+      "altitude": 224.903,
+      "speed": 0.2124,
+      "datetime": "2026:04:30 04:39:15.400"
+    },
+    {
+      "lat": 28.5497294,
+      "lon": 77.1976238,
+      "altitude": 224.264,
+      "speed": 0.7128,
+      "datetime": "2026:04:30 04:39:16.400"
+    },
+    {
+      "lat": 28.54973,
+      "lon": 77.1976226,
+      "altitude": 224.238,
+      "speed": 0.4104,
+      "datetime": "2026:04:30 04:39:17.400"
+    },
+    {
+      "lat": 28.5497275,
+      "lon": 77.1976242,
+      "altitude": 224.515,
+      "speed": 0.0648,
+      "datetime": "2026:04:30 04:39:18.400"
+    },
+    {
+      "lat": 28.5497264,
+      "lon": 77.1976261,
+      "altitude": 224.999,
+      "speed": 0.6984,
+      "datetime": "2026:04:30 04:39:19.400"
+    },
+    {
+      "lat": 28.5497227,
+      "lon": 77.1976307,
+      "altitude": 225.658,
+      "speed": 0.3708,
+      "datetime": "2026:04:30 04:39:20.400"
+    },
+    {
+      "lat": 28.549722,
+      "lon": 77.1976311,
+      "altitude": 225.808,
+      "speed": 0.1584,
+      "datetime": "2026:04:30 04:39:21.400"
+    },
+    {
+      "lat": 28.5497226,
+      "lon": 77.1976304,
+      "altitude": 225.876,
+      "speed": 0.2988,
+      "datetime": "2026:04:30 04:39:22.400"
+    },
+    {
+      "lat": 28.5497245,
+      "lon": 77.1976281,
+      "altitude": 225.774,
+      "speed": 0.18,
+      "datetime": "2026:04:30 04:39:23.400"
+    },
+    {
+      "lat": 28.549724,
+      "lon": 77.1976279,
+      "altitude": 225.905,
+      "speed": 0.0972,
+      "datetime": "2026:04:30 04:39:24.400"
+    },
+    {
+      "lat": 28.549723,
+      "lon": 77.1976281,
+      "altitude": 226.066,
+      "speed": 0.2916,
+      "datetime": "2026:04:30 04:39:25.400"
+    },
+    {
+      "lat": 28.5497227,
+      "lon": 77.1976275,
+      "altitude": 226.107,
+      "speed": 0.2412,
+      "datetime": "2026:04:30 04:39:26.400"
+    },
+    {
+      "lat": 28.5497234,
+      "lon": 77.1976262,
+      "altitude": 226.074,
+      "speed": 0.1764,
+      "datetime": "2026:04:30 04:39:27.400"
+    },
+    {
+      "lat": 28.5497239,
+      "lon": 77.1976259,
+      "altitude": 226.14,
+      "speed": 0.1872,
+      "datetime": "2026:04:30 04:39:28.400"
+    },
+    {
+      "lat": 28.5497239,
+      "lon": 77.1976253,
+      "altitude": 226.116,
+      "speed": 0.1836,
+      "datetime": "2026:04:30 04:39:29.300"
+    }
+  ],
+  "raw": {
+    "SourceFile": "data/delhi/04_30_2026/GX011906.MP4",
+    "ExifToolVersion": 13.25,
+    "FileName": "GX011906.MP4",
+    "Directory": "data/delhi/04_30_2026",
+    "FileSize": 381371695,
+    "FileModifyDate": "2026:04:29 21:42:28-07:00",
+    "FileAccessDate": "2026:05:23 12:34:29-07:00",
+    "FileInodeChangeDate": "2026:05:23 11:33:42-07:00",
+    "FilePermissions": 100664,
+    "FileType": "MP4",
+    "FileTypeExtension": "MP4",
+    "MIMEType": "video/mp4",
+    "MajorBrand": "mp41",
+    "MinorVersion": "2013.10.18",
+    "CompatibleBrands": [
+      "mp41"
+    ],
+    "MediaDataSize": 381295274,
+    "MediaDataOffset": 36,
+    "MovieHeaderVersion": 0,
+    "CreateDate": "2026:04:30 04:41:27",
+    "ModifyDate": "2026:04:30 04:41:27",
+    "TimeScale": 90000,
+    "Duration": 60.94,
+    "PreferredRate": 1,
+    "PreferredVolume": 1,
+    "PreviewTime": 0,
+    "PreviewDuration": 0,
+    "PosterTime": 0,
+    "SelectionTime": 0,
+    "SelectionDuration": 0,
+    "CurrentTime": 0,
+    "NextTrackID": 5,
+    "LensSerialNumber": "LEN1234567891011",
+    "SerialNumberHash": "892aab055e6187941a9d818652a20a83",
+    "MediaUID": "892aab055e6187941a9d818652a20a8300000000000000000000000000000000",
+    "MetadataVersion": "8 2 2",
+    "FirmwareVersion": "H24.01.02.10.00",
+    "CameraSerialNumber": "C3531350765482",
+    "Model": "HERO13 Black",
+    "MediaUniqueID": "95103625 2491900254 2256641306 2198512210 3618500644 1102353912 2513128977 3860625413",
+    "ChapterNumber": 1,
+    "HDRVideo": "N",
+    "AutoRotation": "U",
+    "DigitalZoomOn": "N",
+    "DigitalZoom": 0,
+    "SpotMeter": "N",
+    "Protune": "Y",
+    "WhiteBalance": "AUTO",
+    "Sharpness": "MED",
+    "ColorMode": "NATURAL",
+    "ExposureType": "AUTO",
+    "AutoISOMax": 3200,
+    "AutoISOMin": 100,
+    "ExposureCompensation": 0.0,
+    "Rate": "OFF",
+    "SensorReadoutTime": 16,
+    "ElectronicStabilizationOn": "Y",
+    "ElectronicImageStabilization": "HS EIS",
+    "AutoProtune": "N",
+    "AudioProtuneOption": "OFF",
+    "AudioSetting": "AUTO",
+    "AudioBlueTooth": "N",
+    "LensProjection": "GPRO",
+    "CreationDate": "2026:04:30 10:11:26",
+    "ScheduleCaptureTime": 0,
+    "ScheduleCapture": "N",
+    "CaptureDelayTimer": 0,
+    "DurationSetting": "1HR",
+    "VideoFrameSize": "3840 2160",
+    "HindsightSettings": "OFF",
+    "BitrateSetting": "STANDARD",
+    "MediaMode": "STEREO",
+    "SpeedRampSetting": "",
+    "TimeZone": 330,
+    "DigitalZoomAmount": 1,
+    "ControlLevel": "Pro",
+    "PowerProfile": "PERFORMANCE",
+    "OrientationDataPresent": "Y",
+    "ClassificationDataPresent": "Y",
+    "ProtuneISOMode": "AUTO",
+    "AutoBoostScore": 0,
+    "DiagonalFieldOfView": 107.615928649902,
+    "FieldOfView": "L",
+    "MappingXMode": "x1",
+    "MappingXCoefficients": 1,
+    "MappingYMode": "y1",
+    "MappingYCoefficients": 1,
+    "PolynomialPower": [
+      "r0",
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6"
+    ],
+    "PolynomialCoefficients": "0 1.56476640701294 0.0654229372739792 -1.90725457668304 2.16704988479614 -1.17447185516357 0.322339594364166",
+    "ZoomScaleNormalization": 0.873632788658142,
+    "AspectRatioUnwarped": 1.77777779102325,
+    "AspectRatioWarped": 1.77777779102325,
+    "DeviceName": "Highlights",
+    "TrackHeaderVersion": 0,
+    "TrackCreateDate": "2026:04:30 04:41:27",
+    "TrackModifyDate": "2026:04:30 04:41:27",
+    "TrackID": 1,
+    "TrackDuration": 60.94,
+    "TrackLayer": 0,
+    "TrackVolume": 0,
+    "ImageWidth": 3840,
+    "ImageHeight": 2160,
+    "GraphicsMode": 0,
+    "OpColor": "0 0 0",
+    "CompressorID": "hvc1",
+    "SourceImageWidth": 3840,
+    "SourceImageHeight": 2160,
+    "XResolution": 72,
+    "YResolution": 72,
+    "CompressorName": "GoPro H.265 encoder",
+    "BitDepth": 24,
+    "VideoFrameRate": 50,
+    "TimeCode": 3,
+    "MediaLanguageCode": 32767,
+    "Balance": 0,
+    "AudioFormat": "mp4a",
+    "AudioChannels": 2,
+    "AudioBitsPerSample": 24,
+    "AudioSampleRate": 48000,
+    "TextFont": 21,
+    "TextFace": 0,
+    "TextSize": 10,
+    "TextColor": "0 0 0",
+    "BackgroundColor": "65535 65535 65535",
+    "FontName": "Helvetica",
+    "OtherFormat": "tmcd",
+    "PlaybackFrameRate": 50,
+    "MatrixStructure": "1 0 0 0 1 0 0 0 1",
+    "MediaHeaderVersion": 0,
+    "MediaCreateDate": "2026:04:30 04:41:27",
+    "MediaModifyDate": "2026:04:30 04:41:27",
+    "MediaTimeScale": 1000,
+    "MediaDuration": 60.94,
+    "HandlerClass": "mhlr",
+    "HandlerType": "meta",
+    "HandlerDescription": "GoPro MET",
+    "GenMediaVersion": 0,
+    "GenFlags": "0 0 0",
+    "GenGraphicsMode": 0,
+    "GenOpColor": "0 0 0",
+    "GenBalance": 0,
+    "MetaFormat": "gpmd",
+    "SampleTime": 0,
+    "SampleDuration": 1,
+    "Accelerometer": "(Binary data 10190 bytes, use -b option to extract)",
+    "InputOrientation": "ZXY",
+    "CameraTemperature": 30.20703125,
+    "Gyroscope": "(Binary data 11231 bytes, use -b option to extract)",
+    "ExposureTimes": "0.0011952209752053 0.0011952209752053 0.0011952209752053 0.00120188901200891 0.00120855716522783 0.00120855716522783 0.00121522520203143 0.00121522520203143 0.00122189335525036 0.00122189335525036 0.00122856139205396 0.00122856139205396 0.00123522954527289 0.00123522954527289 0.00124188233166933 0.00124188233166933 0.00124855036847293 0.00124855036847293 0.00125521852169186 0.00125521852169186 0.00126188655849546 0.00126188655849546 0.00126855471171439 0.00127522274851799 0.00127522274851799",
+    "ColorTemperatures": "4950 4950 4950 4950 4950 4950 4950 4950",
+    "WhiteBalanceRGB": "(Binary data 173 bytes, use -b option to extract)",
+    "ISOSpeeds": "100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100",
+    "LumaAverage": "162 163 163 164 165 163 161 161",
+    "InputUniformity": "0 0 0 0 0 0 0 0",
+    "SceneClassification": [
+      "SNOW 0.129999995231628",
+      "URBA 0.159999996423721",
+      "INDO 0.109999999403954",
+      "WATR 0.0900000035762787",
+      "VEGE 0.419999986886978",
+      "BEAC 0.0900000035762787"
+    ],
+    "PrediminantHue": [
+      "49 149",
+      "172 24",
+      "253 17"
+    ],
+    "GPSAltitudeSystem": "MSLV",
+    "GPSLatitude": 28.5497403,
+    "GPSLongitude": 77.1978936,
+    "GPSAltitude": 279.215,
+    "GPSSpeed": 1.7388,
+    "GPSSpeed3D": 2.088,
+    "GPSDateTime": "2026:04:30 04:38:29.400",
+    "GPSDOP": 11.02,
+    "GPSMeasureMode": 3,
+    "CameraOrientation": "(Binary data 3850 bytes, use -b option to extract)",
+    "ImageOrientation": "(Binary data 3864 bytes, use -b option to extract)",
+    "GravityVector": "(Binary data 2704 bytes, use -b option to extract)",
+    "WindProcessing": "0 0 1 84 1 77 1 71 1 65 1 61 1 56 1 52 1 49",
+    "MicrophoneWet": "0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0",
+    "AudioLevel": "-128 -128 -21 -15 -22 -16 -21 -14 -18 -11 -18 -10 -16 -9 -18 -12 -17 -10",
+    "TimeStamp": 0.025845,
+    "FaceDetected": "4 2 0 0.278370336461433 0.676844434271763 0.209887846189059 0.32314030670634 0 51",
+    "ImageSize": "3840 2160",
+    "Megapixels": 8.2944,
+    "AvgBitrate": 50055172,
+    "Rotation": 0,
+    "GPSPosition": "28.5497403 77.1978936"
+  }
 }

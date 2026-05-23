@@ -25,6 +25,15 @@ def get_eligible_frames(
     if not duration or not frame_rate:
         return video.get("frames", [])
 
+    total_skip = start_skip_seconds + end_skip_seconds
+    if duration <= total_skip:
+        video_id = video.get("video_id", "unknown")
+        print(
+            f"Warning: Video {video_id} duration ({duration}s) is shorter than "
+            f"skip window ({total_skip}s), returning all frames"
+        )
+        return video.get("frames", [])
+
     start_frame = int(start_skip_seconds * frame_rate)
     end_frame = int((duration - end_skip_seconds) * frame_rate)
 

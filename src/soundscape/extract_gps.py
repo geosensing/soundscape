@@ -2,6 +2,7 @@
 
 import json
 import math
+import statistics
 import subprocess
 from pathlib import Path
 
@@ -42,7 +43,10 @@ def extract_gps_telemetry(video_path: Path) -> list[dict]:
         check=True,
     )
 
-    data = json.loads(result.stdout)
+    try:
+        data = json.loads(result.stdout)
+    except json.JSONDecodeError as e:
+        raise ValueError(f"exiftool returned invalid JSON for {video_path}: {e}") from e
     if not data:
         return []
 
@@ -92,9 +96,9 @@ def compute_gps_stats(
             "spread_valid": None,
         }
 
-    median_lat = sorted(lats)[len(lats) // 2]
-    median_lon = sorted(lons)[len(lons) // 2]
-    median_alt = sorted(alts)[len(alts) // 2] if alts else None
+    median_lat = statistics.median(lats)
+    median_lon = statistics.median(lons)
+    median_alt = statistics.median(alts) if alts else None
 
     max_dist = 0.0
     for p in points:

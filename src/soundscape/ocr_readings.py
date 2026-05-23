@@ -45,6 +45,9 @@ def create_batch_request(
     if not image_path.exists():
         image_path = Path(frame_info.get("original_path", frame_info["frame_path"]))
 
+    if not image_path.exists():
+        raise FileNotFoundError(f"Frame image not found: {image_path}")
+
     image_data = encode_image_base64(image_path)
 
     return {

@@ -4,43 +4,98 @@ import json
 import subprocess
 from pathlib import Path
 
-from .utils import build_output_prefix, ensure_output_dirs, find_videos, load_config
+from .utils import (build_output_prefix, ensure_output_dirs, find_videos,
+                    load_config)
+
+
+def extract_gps_track(video_path: Path) -> list[dict]:
+    """Extract full GPS track from embedded metadata.
+
+    Uses exiftool -p format to get all GPS points, not just the first one.
+    Returns list of dicts with lat, lon, altitude, speed, datetime.
+    """
+    result = subprocess.run(
+        [
+            "exiftool",
+            "-ee",
+            "-p",
+            "$GPSLatitude,$GPSLongitude,$GPSAltitude,$GPSSpeed,$GPSDateTime",
+            "-n",
+            str(video_path),
+        ],
+        capture_output=True,
+        text=True,
+    )
+
+    gps_track = []
+    for line in result.stdout.strip().split("\n"):
+        if not line.strip():
+            continue
+        parts = line.split(",")
+        if len(parts) < 5:
+            continue
+        try:
+            lat = float(parts[0]) if parts[0] else None
+            lon = float(parts[1]) if parts[1] else None
+            altitude = float(parts[2]) if parts[2] else None
+            speed = float(parts[3]) if parts[3] else None
+            datetime_str = parts[4] if parts[4] else None
+
+            if lat is not None and lon is not None:
+                gps_track.append(
+                    {
+                        "lat": lat,
+                        "lon": lon,
+                        "altitude": altitude,
+                        "speed": speed,
+                        "datetime": datetime_str,
+                    }
+                )
+        except ValueError:
+            continue
+
+    return gps_track
 
 
 def extract_exif_from_video(video_path: Path) -> dict:
-    """Extract EXIF metadata from a single video using exiftool."""
+    """Extract ALL EXIF metadata from a single video using exiftool.
+
+    Uses -ee flag to extract embedded metadata (GPS tracks, etc.) and
+    returns complete raw exiftool output with commonly-used fields
+    normalized at the top level for convenience.
+    """
     result = subprocess.run(
-        ["exiftool", "-json", "-n", str(video_path)],
+        ["exiftool", "-ee", "-json", "-n", str(video_path)],
         capture_output=True,
         text=True,
         check=True,
     )
-    data = json.loads(result.stdout)
+    try:
+        data = json.loads(result.stdout)
+    except json.JSONDecodeError as e:
+        msg = f"exiftool returned invalid JSON for {video_path}: {e}"
+        raise ValueError(msg) from e
     if not data:
         return {}
 
     raw = data[0]
 
+    duration = raw.get("Duration")
+    frame_rate = raw.get("VideoFrameRate")
+    frame_count = raw.get("FrameCount")
+    if frame_rate and duration and not frame_count:
+        frame_count = int(frame_rate * duration)
+
+    gps_track = extract_gps_track(video_path)
+
     exif = {
         "source_file": str(video_path),
-        "file_name": raw.get("FileName"),
-        "file_size_bytes": raw.get("FileSize"),
-        "create_date": raw.get("CreateDate"),
-        "modify_date": raw.get("ModifyDate"),
-        "duration_seconds": raw.get("Duration"),
-        "frame_rate": raw.get("VideoFrameRate"),
-        "frame_count": raw.get("FrameCount"),
-        "image_width": raw.get("ImageWidth"),
-        "image_height": raw.get("ImageHeight"),
-        "video_codec": raw.get("CompressorID") or raw.get("VideoCodec"),
-        "audio_codec": raw.get("AudioFormat"),
-        "camera_model": raw.get("Model"),
-        "camera_serial": raw.get("SerialNumber"),
-        "firmware": raw.get("FirmwareVersion"),
+        "duration_seconds": duration,
+        "frame_rate": frame_rate,
+        "frame_count": frame_count,
+        "gps_track": gps_track,
+        "raw": raw,
     }
-
-    if exif.get("frame_rate") and exif.get("duration_seconds") and not exif.get("frame_count"):
-        exif["frame_count"] = int(exif["frame_rate"] * exif["duration_seconds"])
 
     return exif
 
