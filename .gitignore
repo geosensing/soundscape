@@ -1,0 +1,5 @@
+.DS_Store
+/data/delhi
+/output/frames
+/src/soundscape/__pycache__
+/output/samples

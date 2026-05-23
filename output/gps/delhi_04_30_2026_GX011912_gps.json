@@ -1,0 +1,18 @@
+{
+  "source_file": "data/delhi/04_30_2026/GX011912.MP4",
+  "telemetry_points": [
+    {
+      "latitude": 28.560766,
+      "longitude": 77.1098732,
+      "altitude": 295.179,
+      "datetime": "2026:04:30 10:18:58.799",
+      "speed": 0
+    }
+  ],
+  "point_count": 1,
+  "median_latitude": 28.560766,
+  "median_longitude": 77.1098732,
+  "median_altitude": 295.179,
+  "max_spread_meters": 0.0,
+  "spread_valid": true
+}

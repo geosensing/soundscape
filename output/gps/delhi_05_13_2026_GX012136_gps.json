@@ -1,0 +1,18 @@
+{
+  "source_file": "data/delhi/05_13_2026/GX012136.MP4",
+  "telemetry_points": [
+    {
+      "latitude": 28.6327582,
+      "longitude": 77.3141577,
+      "altitude": 214.295,
+      "datetime": "2026:05:13 07:31:09.799",
+      "speed": 0
+    }
+  ],
+  "point_count": 1,
+  "median_latitude": 28.6327582,
+  "median_longitude": 77.3141577,
+  "median_altitude": 214.295,
+  "max_spread_meters": 0.0,
+  "spread_valid": true
+}

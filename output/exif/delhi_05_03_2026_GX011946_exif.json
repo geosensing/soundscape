@@ -1,0 +1,17 @@
+{
+  "source_file": "data/delhi/05_03_2026/GX011946.MP4",
+  "file_name": "GX011946.MP4",
+  "file_size_bytes": 180455212,
+  "create_date": "2026:05:03 05:57:55",
+  "modify_date": "2026:05:03 05:57:55",
+  "duration_seconds": 36.5226666666667,
+  "frame_rate": 100,
+  "frame_count": 3652,
+  "image_width": 1920,
+  "image_height": 1080,
+  "video_codec": "hvc1",
+  "audio_codec": "mp4a",
+  "camera_model": "HERO13 Black",
+  "camera_serial": null,
+  "firmware": "H24.01.02.10.00"
+}

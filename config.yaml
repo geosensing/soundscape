@@ -1,0 +1,13 @@
+data_dir: data
+output_dir: output
+
+frames:
+  interval: 50
+  quality: 95
+
+gps:
+  max_spread_meters: 50
+  location_method: median
+
+processing:
+  skip_existing: true
