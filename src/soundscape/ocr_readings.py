@@ -8,7 +8,7 @@ from pathlib import Path
 
 import anthropic
 
-from .utils import load_config
+from .utils import get_city_from_manifest, get_city_from_sample_manifest, load_config
 
 OCR_SYSTEM_PROMPT = """You are analyzing images of a sound level meter (decibel meter) display.
 Your task is to read the numerical value shown on the display.
@@ -37,9 +37,7 @@ def path_to_custom_id(frame_path: str) -> str:
     return hashlib.sha256(frame_path.encode()).hexdigest()[:64]
 
 
-def create_batch_request(
-    frame_info: dict, custom_id: str, model: str = "claude-haiku-4-5"
-) -> dict:
+def create_batch_request(frame_info: dict, custom_id: str, model: str = "claude-haiku-4-5") -> dict:
     """Create a single batch request for a frame."""
     image_path = Path(frame_info["frame_path"])
     if not image_path.exists():
@@ -301,15 +299,21 @@ def process(
     output_dir.mkdir(parents=True, exist_ok=True)
 
     if sample_manifest:
-        frames = load_frames_from_sample_manifest(sample_manifest)
-        output_file = output_dir / "sample_readings.json"
-        mapping_file = output_dir / "sample_id_mapping.json"
+        with open(sample_manifest) as f:
+            sample_data = json.load(f)
+        city = get_city_from_sample_manifest(sample_data)
+        frames = sample_data.get("samples", [])
+        output_file = output_dir / f"{city}_sample_readings.json"
+        mapping_file = output_dir / f"{city}_sample_id_mapping.json"
     else:
         if manifest_path is None:
             manifest_path = Path(config["output_dir"]) / "manifest.json"
+        with open(manifest_path) as f:
+            manifest_data = json.load(f)
+        city = get_city_from_manifest(manifest_data)
         frames = load_frames_from_manifest(manifest_path)
-        output_file = output_dir / "readings.json"
-        mapping_file = output_dir / "id_mapping.json"
+        output_file = output_dir / f"{city}_readings.json"
+        mapping_file = output_dir / f"{city}_id_mapping.json"
 
     frame_lookup = {f["frame_path"]: f for f in frames}
 

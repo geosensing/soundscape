@@ -5,7 +5,7 @@ import random
 import shutil
 from pathlib import Path
 
-from .utils import load_config
+from .utils import get_city_from_manifest, load_config
 
 
 def load_manifest(manifest_path: Path) -> dict:
@@ -94,7 +94,9 @@ def sample_frames(
                     "frame_path": str(dst_path),
                     "original_path": frame["path"],
                     "frame_number": frame["frame_number"],
-                    "timestamp_seconds": frame["frame_number"] / frame_rate if frame_rate else None,
+                    "timestamp_seconds": (
+                        frame["frame_number"] / frame_rate if frame_rate else None
+                    ),
                     "gps": {
                         "latitude": video.get("gps", {}).get("median_latitude"),
                         "longitude": video.get("gps", {}).get("median_longitude"),
@@ -132,6 +134,9 @@ def process(
     if output_dir is None:
         output_dir = Path(config["output_dir"]) / "samples"
 
+    manifest = load_manifest(manifest_path)
+    city = get_city_from_manifest(manifest)
+
     print(f"Sampling {frames_per_video} frame(s) per video (seed={seed})...")
     print(f"Skipping first {start_skip_seconds}s and last {end_skip_seconds}s")
 
@@ -144,7 +149,7 @@ def process(
         end_skip_seconds=end_skip_seconds,
     )
 
-    sample_manifest_path = output_dir / "sample_manifest.json"
+    sample_manifest_path = output_dir / f"{city}_sample_manifest.json"
     save_sample_manifest(sampled, sample_manifest_path, seed)
 
     print(f"Sampled {len(sampled)} frames -> {output_dir}")

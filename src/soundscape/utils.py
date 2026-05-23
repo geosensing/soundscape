@@ -78,3 +78,21 @@ def ensure_output_dirs(output_dir: Path) -> None:
     (output_dir / "frames").mkdir(parents=True, exist_ok=True)
     (output_dir / "exif").mkdir(parents=True, exist_ok=True)
     (output_dir / "gps").mkdir(parents=True, exist_ok=True)
+
+
+def get_city_from_manifest(manifest: dict) -> str:
+    """Extract city from manifest video_ids."""
+    for video in manifest.get("videos", []):
+        video_id = video.get("video_id", "")
+        if "_" in video_id:
+            return video_id.split("_")[0]
+    return "unknown"
+
+
+def get_city_from_sample_manifest(sample_manifest: dict) -> str:
+    """Extract city from sample manifest."""
+    for sample in sample_manifest.get("samples", []):
+        video_id = sample.get("video_id", "")
+        if "_" in video_id:
+            return video_id.split("_")[0]
+    return "unknown"

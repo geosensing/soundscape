@@ -4,8 +4,7 @@ import json
 import subprocess
 from pathlib import Path
 
-from .utils import (build_output_prefix, ensure_output_dirs, find_videos,
-                    load_config)
+from .utils import build_output_prefix, ensure_output_dirs, find_videos, load_config
 
 
 def extract_gps_track(video_path: Path) -> list[dict]:
