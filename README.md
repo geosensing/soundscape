@@ -1,19 +1,95 @@
 # Soundscape
 
-Extract frames and OCR sound meter readings from GoPro video recordings.
+Pipeline to extract, OCR, and analyze sound meter readings from GoPro video recordings for street-level noise exposure research.
 
-## Requirements
+## Delhi Street Noise Study
 
-- Python 3.11+
-- ffmpeg (`brew install ffmpeg`)
-- exiftool (`brew install exiftool`)
-- Anthropic API key (for OCR)
+We collected street-level noise measurements across 190 locations in Delhi using a handheld sound meter recorded on GoPro. The analysis covers **3.4 hours of observation** (12,159 valid readings sampled at 1 per second).
+
+### Key Findings
+
+| Metric | Value |
+|--------|-------|
+| Locations sampled | 190 stops |
+| Total observation time | 3.4 hours |
+| Mean noise level | 70.2 dB |
+| Median noise level | 70.3 dB |
+
+**Threshold Exceedance:**
+
+| Threshold | % of readings | Interpretation |
+|-----------|---------------|----------------|
+| ≥70 dB | 51.6% | Louder than conversation |
+| ≥75 dB | 28.3% | Requires raised voice |
+| ≥80 dB | 11.4% | Potential hearing damage with prolonged exposure |
+| ≥85 dB | 4.3% | NIOSH 8-hour exposure limit |
+| ≥91 dB | 1.4% | NIOSH 2-hour exposure limit |
+
+**Per-Location Analysis:**
+- 131 of 190 stops (69%) had at least one reading ≥85 dB
+- 23 stops (12%) recorded peaks ≥100 dB
+- Median peak noise across stops: 89.3 dB
+- Only 1 stop had majority (>50%) of readings above 85 dB
+
+The data shows Delhi streets are consistently noisy (median 70 dB) with frequent spikes above safe occupational limits. Most locations experience brief exposures to harmful noise levels, though sustained high exposure is rare.
+
+### Analysis Outputs
+
+Run `soundscape analyze` to generate publication-ready tables and figures:
+
+```
+output/analysis/
+├── figs/
+│   ├── fig1_map_locations.html    # Interactive map of collection points
+│   ├── fig2_map_static.pdf        # Static map for print
+│   ├── fig3_histogram.pdf         # Distribution with NIOSH thresholds
+│   ├── fig4_stop_distributions.pdf # Per-stop summary statistics
+│   ├── fig5_all_data_by_stop.pdf  # All readings ordered by stop
+│   ├── fig6_per_stop_boxplot.pdf  # Boxplots for each location
+│   ├── fig7_exceedance_curves.pdf # Per-stop exceedance curves
+│   └── fig8_temporal_pattern.pdf  # Noise by position in recording
+├── tabs/
+│   ├── table1_summary.tex         # Overall summary statistics
+│   ├── table2_stop_distribution.tex # Distribution of per-stop metrics
+│   └── table3_threshold_exceedance.tex # Threshold analysis
+├── analysis_data.parquet          # Processed readings
+└── stop_stats.parquet             # Per-stop summary statistics
+```
+
+---
 
 ## Installation
 
+**Requirements:**
+- Python 3.13+
+- ffmpeg (`brew install ffmpeg`)
+- exiftool (`brew install exiftool`)
+- API key for OCR (Anthropic or Google)
+
 ```bash
+# Install with core dependencies
 uv sync
+
+# Install with mapping libraries (for analyze command)
+uv pip install -e ".[maps]"
 ```
+
+## Pipeline Commands
+
+| # | Command | Description |
+|---|---------|-------------|
+| 1 | `extract-frames` | Extract JPEG frames at specified intervals |
+| 2 | `downsample` | Resize frames for efficient OCR processing |
+| 3 | `extract-exif` | Extract video metadata (duration, fps, camera) |
+| 4 | `extract-gps` | Extract GPS coordinates from GoPro telemetry |
+| 5 | `build-manifest` | Combine all metadata into manifest.json |
+| 6 | `sample-frames` | Sample random frames for manual verification |
+| 7 | `ocr-readings` | OCR sound meter values using Claude/Gemini |
+| 8 | `merge-readings` | Merge OCR results into manifest |
+| 9 | `create-archives` | Create tar.gz archives for data sharing |
+| 10 | `validate` | Validate pipeline outputs match inputs |
+| 11 | `viewer` | Generate HTML viewer for OCR verification |
+| 12 | `analyze` | Generate publication-ready tables and figures |
 
 ## Quick Start
 
@@ -23,141 +99,81 @@ uv sync
 # Extract everything and build manifest
 make all
 
-# Run OCR on all frames (requires ANTHROPIC_API_KEY)
-make ocr
+# Run OCR on all frames
+export ANTHROPIC_API_KEY=your_key  # or GOOGLE_API_KEY
+uv run soundscape ocr-readings --manifest output/manifest.json
+
+# Generate analysis
+uv run soundscape analyze --readings output/readings/readings.json
 ```
 
 ### Step-by-Step
 
 ```bash
-# 1. Extract frames (1 per second at 50fps)
+# 1. Extract frames (1 per second from 50fps video)
 uv run soundscape extract-frames --input data/
 
-# 2. Extract video metadata
+# 2. Downsample to 720p for efficient OCR
+uv run soundscape downsample
+
+# 3. Extract video metadata
 uv run soundscape extract-exif --input data/
 
-# 3. Extract GPS coordinates
+# 4. Extract GPS coordinates from GoPro telemetry
 uv run soundscape extract-gps --input data/
 
-# 4. Build manifest combining all data
+# 5. Build manifest combining all metadata
 uv run soundscape build-manifest
 
-# 5. Sample frames for manual verification
-uv run soundscape sample-frames --frames-per-video 1 --seed 42
+# 6. Run OCR (supports Claude and Gemini models)
+uv run soundscape ocr-readings --model gemini-2.5-flash
 
-# 6. Run OCR on frames (batch API - 50% cheaper)
-export ANTHROPIC_API_KEY=your_key
-uv run soundscape ocr-readings --manifest output/manifest.json
+# 7. Generate HTML viewer to verify OCR quality
+uv run soundscape viewer --readings output/readings/readings.json
 
-# 7. Merge readings into manifest
-uv run soundscape merge-readings
+# 8. Run analysis
+uv run soundscape analyze --readings output/readings/readings.json
 ```
 
-### Process Single Video
+## OCR Models
+
+The pipeline supports multiple models for OCR:
+
+| Model | Provider | Notes |
+|-------|----------|-------|
+| `claude-haiku-4-5` | Anthropic | Default, good accuracy |
+| `claude-sonnet-4-5` | Anthropic | Higher accuracy |
+| `gemini-2.0-flash` | Google | Fast, cost-effective |
+| `gemini-2.5-flash` | Google | Good balance |
+| `gemini-2.5-flash-lite` | Google | Fastest |
+| `gemini-3-flash-preview` | Google | Latest |
 
 ```bash
-make single VIDEO=data/delhi/04_30_2026/GX011906.MP4
+# Use Gemini (requires GOOGLE_API_KEY)
+uv run soundscape ocr-readings --model gemini-2.5-flash
+
+# Use Claude batch API (50% cheaper, requires ANTHROPIC_API_KEY)
+uv run soundscape ocr-readings --model claude-haiku-4-5
 ```
-
-## Commands
-
-| # | Command | Description |
-|---|---------|-------------|
-| 1 | `extract-frames` | Extract JPEG frames at specified intervals |
-| 2 | `extract-exif` | Extract video metadata (duration, fps, camera) |
-| 3 | `extract-gps` | Extract GPS coordinates from GoPro telemetry |
-| 4 | `build-manifest` | Combine all metadata into manifest.json |
-| 5 | `sample-frames` | Sample random frames for manual annotation |
-| 6 | `ocr-readings` | OCR sound meter values using Claude batch API |
-| 7 | `merge-readings` | Merge OCR results into manifest |
 
 ## Output Structure
 
 ```
 output/
-├── frames/                 # Extracted JPEG frames
-│   └── {city}_{date}_{video}_{frame}.jpg
-├── exif/                   # Video metadata
-│   └── {city}_{date}_{video}_exif.json
-├── gps/                    # GPS telemetry
-│   └── {city}_{date}_{video}_gps.json
+├── frames/                 # Full-resolution extracted frames
+├── frames_720p/            # Downsampled frames for OCR
+├── exif/                   # Video metadata JSON files
+├── gps/                    # GPS telemetry JSON files
 ├── samples/                # Sampled frames for verification
-│   ├── *.jpg
-│   └── sample_manifest.json
 ├── readings/               # OCR results
-│   └── readings.json
-├── manifest.json           # All metadata combined
-└── manifest_with_readings.json  # Manifest + OCR readings
+│   ├── *.json              # Raw readings
+│   └── *.html              # Verification viewer
+├── analysis/               # Analysis outputs
+│   ├── figs/               # PDF figures + HTML maps
+│   ├── tabs/               # LaTeX tables
+│   └── *.parquet           # Processed data
+└── manifest.json           # Combined metadata
 ```
-
-## Configuration
-
-Edit `config.yaml`:
-
-```yaml
-data_dir: data
-output_dir: output
-
-frames:
-  interval: 50    # Extract every 50th frame (1fps at 50fps)
-  quality: 95     # JPEG quality
-
-gps:
-  max_spread_meters: 50  # Warn if GPS points spread > 50m
-
-processing:
-  skip_existing: true
-```
-
-## Sampling for Manual Verification
-
-Sample random frames to verify OCR quality:
-
-```bash
-# Sample 2 frames per video, skip first 10s and last 5s
-uv run soundscape sample-frames \
-    --frames-per-video 2 \
-    --seed 42 \
-    --start-skip 10.0 \
-    --end-skip 5.0
-```
-
-Frames are saved to `output/samples/` with `sample_manifest.json` tracking which videos they came from.
-
-## OCR with Batch API
-
-The OCR uses Anthropic's Message Batches API for 50% cost savings:
-
-```bash
-# Process all frames (creates batch, polls until done)
-uv run soundscape ocr-readings --model claude-haiku-4-5
-
-# Process only sampled frames
-uv run soundscape ocr-readings --sample-manifest output/samples/sample_manifest.json
-
-# Resume/check existing batch
-uv run soundscape ocr-readings --batch-id msgbatch_abc123
-```
-
-Output format (`readings.json`):
-```json
-{
-  "batch_id": "msgbatch_...",
-  "reading_count": 5483,
-  "readings": [
-    {
-      "frame_path": "output/frames/delhi_04_30_2026_GX011906_000050.jpg",
-      "video_id": "delhi_04_30_2026_GX011906",
-      "frame_number": 50,
-      "timestamp_seconds": 1.0,
-      "gps": {"latitude": 28.5497, "longitude": 77.1979},
-      "reading": {"value": 72.3, "unit": "dB", "confidence": 0.95}
-    }
-  ]
-}
-```
-
-If reading is not visible: `{"value": null, "unit": null, "confidence": 0.0}`
 
 ## Data Directory Structure
 
@@ -179,3 +195,26 @@ data/
     └── 05_01_2026/
         └── GX011917.MP4
 ```
+
+## Configuration
+
+Edit `config.yaml`:
+
+```yaml
+data_dir: data
+output_dir: output
+
+frames:
+  interval: 50    # Extract every 50th frame (1fps at 50fps)
+  quality: 95     # JPEG quality
+
+gps:
+  max_spread_meters: 50  # Warn if GPS points spread > 50m
+
+processing:
+  skip_existing: true
+```
+
+## License
+
+MIT
