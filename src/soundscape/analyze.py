@@ -282,12 +282,19 @@ def make_fig1_map_locations(df: pd.DataFrame, output_dir: Path) -> None:
 
     stop_stats = compute_per_stop_stats(df)
     stop_stats = stop_stats.dropna(subset=["latitude", "longitude"])
-    stop_stats = stop_stats[(stop_stats["latitude"] > 1) & (stop_stats["longitude"] > 1)]
+    stop_stats = stop_stats[
+        (stop_stats["latitude"] > 28.0) & (stop_stats["latitude"] < 29.0) &
+        (stop_stats["longitude"] > 76.5) & (stop_stats["longitude"] < 78.0)
+    ]
+
+    if len(stop_stats) == 0:
+        click.echo("  Skipping fig1 map (no valid coordinates in Delhi bounds)")
+        return
 
     center_lat = stop_stats["latitude"].mean()
     center_lon = stop_stats["longitude"].mean()
 
-    m = folium.Map(location=[center_lat, center_lon], zoom_start=12, tiles="CartoDB Positron")
+    m = folium.Map(location=[center_lat, center_lon], zoom_start=11, tiles="CartoDB Positron")
 
     for _, row in stop_stats.iterrows():
         folium.CircleMarker(
@@ -324,22 +331,26 @@ def make_fig2_static_map(df: pd.DataFrame, output_dir: Path) -> None:
 
     stop_stats = compute_per_stop_stats(df)
     stop_stats = stop_stats.dropna(subset=["latitude", "longitude"])
-    stop_stats = stop_stats[(stop_stats["latitude"] > 1) & (stop_stats["longitude"] > 1)]
+    stop_stats = stop_stats[
+        (stop_stats["latitude"] > 28.0) & (stop_stats["latitude"] < 29.0) &
+        (stop_stats["longitude"] > 76.5) & (stop_stats["longitude"] < 78.0)
+    ]
+
+    if len(stop_stats) == 0:
+        click.echo("  Skipping fig2 static map (no valid coordinates in Delhi bounds)")
+        return
 
     geometry = [Point(xy) for xy in zip(stop_stats["longitude"], stop_stats["latitude"])]
     gdf = gpd.GeoDataFrame(stop_stats, geometry=geometry, crs="EPSG:4326")
-    gdf = gdf.to_crs(epsg=3857)
+    gdf_web = gdf.to_crs(epsg=3857)
 
     fig, ax = plt.subplots(figsize=(10, 10))
-    gdf.plot(ax=ax, color="#3182bd", markersize=50, alpha=0.7, edgecolor="white", linewidth=0.5)
+    gdf_web.plot(ax=ax, color="#e41a1c", markersize=60, alpha=0.8, edgecolor="white", linewidth=0.8)
 
     try:
-        cx.add_basemap(ax, source=cx.providers.OpenStreetMap.Mapnik)
+        cx.add_basemap(ax, source=cx.providers.CartoDB.Positron, zoom=12)
     except Exception:
-        try:
-            cx.add_basemap(ax, source=cx.providers.CartoDB.Positron)
-        except Exception:
-            pass
+        pass
 
     ax.set_axis_off()
     ax.set_title(f"Data Collection Locations in Delhi (N={len(gdf)} stops)", fontsize=14, pad=10)
