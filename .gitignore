@@ -1,13 +1,9 @@
 .DS_Store
 /data/delhi
 /data/rider
-/data/streetaqi/*/images/
-/data/streetaqi/*/*.csv
 /output/frames
 /output/rider/analysis
 !/output/rider/*.json
-/output/streetaqi
-!/output/streetaqi/*.json
 /src/soundscape/__pycache__
 /output/samples/*.jpg
 /output/frames_720p
