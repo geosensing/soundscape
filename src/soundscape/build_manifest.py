@@ -26,13 +26,20 @@ def parse_frame_filename(filename: str) -> dict | None:
     }
 
 
-def build_manifest(output_dir: Path | None = None) -> dict:
+def build_manifest(
+    output_dir: Path | None = None,
+    frames_dir: Path | None = None,
+) -> dict:
     """Build manifest aggregating all metadata and frame paths."""
     config = load_config()
     if output_dir is None:
         output_dir = Path(config["output_dir"])
 
-    frames_dir = output_dir / "frames"
+    if frames_dir is None:
+        frames_dir = output_dir / "frames_720p"
+        if not frames_dir.exists():
+            frames_dir = output_dir / "frames"
+
     exif_dir = output_dir / "exif"
     gps_dir = output_dir / "gps"
 
@@ -116,13 +123,16 @@ def save_manifest(manifest: dict, output_path: Path) -> None:
         json.dump(manifest, f, indent=2)
 
 
-def process(output_dir: Path | None = None) -> Path:
+def process(
+    output_dir: Path | None = None,
+    frames_dir: Path | None = None,
+) -> Path:
     """Build and save manifest."""
     config = load_config()
     if output_dir is None:
         output_dir = Path(config["output_dir"])
 
-    manifest = build_manifest(output_dir)
+    manifest = build_manifest(output_dir, frames_dir)
     output_path = output_dir / "manifest.json"
     save_manifest(manifest, output_path)
 

@@ -4,9 +4,9 @@ from pathlib import Path
 
 import click
 
-from . import (archive, build_manifest, extract_exif, extract_frames,
-               extract_gps, merge_readings, ocr_readings, sample_frames,
-               validate)
+from . import (archive, build_manifest, downsample, extract_exif,
+               extract_frames, extract_gps, merge_readings, ocr_readings,
+               sample_frames, validate)
 
 
 @click.group()
@@ -17,7 +17,7 @@ def main():
 
 
 # =============================================================================
-# 1. Frame Extraction
+# 1. Extract Frames
 # =============================================================================
 
 
@@ -65,7 +65,62 @@ def extract_frames_cmd(input_path, frame_interval, quality, output_dir, force):
 
 
 # =============================================================================
-# 2. EXIF Extraction
+# 2. Downsample Frames
+# =============================================================================
+
+
+@main.command("downsample")
+@click.option(
+    "--input",
+    "input_dir",
+    type=click.Path(exists=True, path_type=Path),
+    default=None,
+    help="Input frames directory (default: output/frames)",
+)
+@click.option(
+    "--output",
+    "output_dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Output directory (default: output/frames_720p)",
+)
+@click.option(
+    "--width",
+    type=int,
+    default=1280,
+    help="Target width in pixels (default: 1280)",
+)
+@click.option(
+    "--height",
+    type=int,
+    default=720,
+    help="Target height in pixels (default: 720)",
+)
+@click.option(
+    "--quality",
+    type=int,
+    default=85,
+    help="JPEG quality 1-100 (default: 85)",
+)
+@click.option(
+    "--force",
+    is_flag=True,
+    help="Overwrite existing files",
+)
+def downsample_cmd(input_dir, output_dir, width, height, quality, force):
+    """2. Downsample frames for efficient OCR processing."""
+    downsample.process(
+        input_dir=input_dir,
+        output_dir=output_dir,
+        target_width=width,
+        target_height=height,
+        quality=quality,
+        skip_existing=not force,
+    )
+
+
+# =============================================================================
+# 3. Extract EXIF
 # =============================================================================
 
 
@@ -90,7 +145,7 @@ def extract_frames_cmd(input_path, frame_interval, quality, output_dir, force):
     help="Overwrite existing files",
 )
 def extract_exif_cmd(input_path, output_dir, force):
-    """2. Extract EXIF metadata from video files."""
+    """3. Extract EXIF metadata from video files."""
     extract_exif.process_videos(
         input_path=input_path,
         output_dir=output_dir,
@@ -99,7 +154,7 @@ def extract_exif_cmd(input_path, output_dir, force):
 
 
 # =============================================================================
-# 3. GPS Extraction
+# 4. Extract GPS
 # =============================================================================
 
 
@@ -130,7 +185,7 @@ def extract_exif_cmd(input_path, output_dir, force):
     help="Overwrite existing files",
 )
 def extract_gps_cmd(input_path, max_spread_meters, output_dir, force):
-    """3. Extract GPS telemetry from video files."""
+    """4. Extract GPS telemetry from video files."""
     extract_gps.process_videos(
         input_path=input_path,
         output_dir=output_dir,
@@ -140,7 +195,7 @@ def extract_gps_cmd(input_path, max_spread_meters, output_dir, force):
 
 
 # =============================================================================
-# 4. Build Manifest
+# 5. Build Manifest
 # =============================================================================
 
 
@@ -152,13 +207,20 @@ def extract_gps_cmd(input_path, max_spread_meters, output_dir, force):
     default=None,
     help="Output directory (default: from config.yaml)",
 )
-def build_manifest_cmd(output_dir):
-    """4. Build manifest.json aggregating all metadata and frames."""
-    build_manifest.process(output_dir=output_dir)
+@click.option(
+    "--frames-dir",
+    "frames_dir",
+    type=click.Path(exists=True, path_type=Path),
+    default=None,
+    help="Frames directory to use (default: output/frames_720p)",
+)
+def build_manifest_cmd(output_dir, frames_dir):
+    """5. Build manifest.json aggregating all metadata and frames."""
+    build_manifest.process(output_dir=output_dir, frames_dir=frames_dir)
 
 
 # =============================================================================
-# 5. Sample Frames
+# 6. Sample Frames
 # =============================================================================
 
 
@@ -204,7 +266,7 @@ def build_manifest_cmd(output_dir):
 def sample_frames_cmd(
     manifest_path, output_dir, frames_per_video, seed, start_skip, end_skip
 ):
-    """5. Sample random frames for manual annotation verification."""
+    """6. Sample random frames for manual annotation verification."""
     sample_frames.process(
         manifest_path=manifest_path,
         output_dir=output_dir,
@@ -216,7 +278,7 @@ def sample_frames_cmd(
 
 
 # =============================================================================
-# 6. OCR Readings (Batch API)
+# 7. OCR Readings
 # =============================================================================
 
 
@@ -262,7 +324,7 @@ def sample_frames_cmd(
 def ocr_readings_cmd(
     manifest_path, sample_manifest, output_dir, model, batch_id, poll_interval
 ):
-    """6. OCR sound meter readings using Claude batch API."""
+    """7. OCR sound meter readings using Claude batch API."""
     ocr_readings.process(
         manifest_path=manifest_path,
         output_dir=output_dir,
@@ -274,7 +336,7 @@ def ocr_readings_cmd(
 
 
 # =============================================================================
-# 7. Merge Readings
+# 8. Merge Readings
 # =============================================================================
 
 
@@ -301,7 +363,7 @@ def ocr_readings_cmd(
     help="Output path for merged manifest (default: output/manifest_with_readings.json)",
 )
 def merge_readings_cmd(manifest_path, readings_path, output_path):
-    """7. Merge OCR readings into manifest."""
+    """8. Merge OCR readings into manifest."""
     merge_readings.process(
         manifest_path=manifest_path,
         readings_path=readings_path,
@@ -310,7 +372,7 @@ def merge_readings_cmd(manifest_path, readings_path, output_path):
 
 
 # =============================================================================
-# 8. Create Archives
+# 9. Create Archives
 # =============================================================================
 
 
@@ -336,7 +398,7 @@ def merge_readings_cmd(manifest_path, readings_path, output_path):
     help="Prefix for archive names (default: city folder name)",
 )
 def create_archives_cmd(input_dir, output_dir, prefix):
-    """8. Create tar.gz archives of video folders for Harvard Dataverse."""
+    """9. Create tar.gz archives of video folders for Harvard Dataverse."""
     archive.process_city_folder(
         city_dir=input_dir,
         output_dir=output_dir,
@@ -345,7 +407,7 @@ def create_archives_cmd(input_dir, output_dir, prefix):
 
 
 # =============================================================================
-# 9. Validate Pipeline
+# 10. Validate Pipeline
 # =============================================================================
 
 
@@ -365,7 +427,7 @@ def create_archives_cmd(input_dir, output_dir, prefix):
     help="Output directory (default: from config.yaml)",
 )
 def validate_cmd(input_path, output_dir):
-    """9. Validate pipeline outputs match video inputs."""
+    """10. Validate pipeline outputs match video inputs."""
     validate.process(input_path=input_path, output_dir=output_dir)
 
 

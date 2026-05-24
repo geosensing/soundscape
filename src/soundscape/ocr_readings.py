@@ -8,21 +8,26 @@ from pathlib import Path
 
 import anthropic
 
-from .utils import (get_city_from_manifest, get_city_from_sample_manifest,
-                    load_config)
+from .utils import get_city_from_manifest, get_city_from_sample_manifest, load_config
 
-OCR_SYSTEM_PROMPT = """You are analyzing images of a sound level meter (decibel meter) display.
-Your task is to read the numerical value shown on the display.
+OCR_SYSTEM_PROMPT = """You are analyzing images containing a handheld sound level meter.
+Your task is to read the numerical dB value shown on the LCD display.
 
-Look for:
-1. The main numerical reading (usually the largest numbers on screen)
-2. The unit (typically dB, dBA, or dBC)
+The meter is a MEXTECH SL-36 with a blue-bordered LCD screen showing large seven-segment digits.
 
 Respond with ONLY a JSON object in this exact format:
-{"value": <number or null>, "unit": "<string or null>", "confidence": <0.0-1.0>}
+{"decibel": <number or null>, "status": "<string>", "confidence": <0.0-1.0>}
 
-If the reading is not visible, unclear, or the image doesn't show a sound meter:
-{"value": null, "unit": null, "confidence": 0.0}
+Status values:
+- "ok": Meter found and reading extracted successfully
+- "meter_not_found": No sound meter visible in the image
+- "display_unreadable": Meter visible but LCD digits cannot be read (blur, angle, glare)
+- "image_unclear": Image too blurry or dark to analyze
+
+Examples:
+- Clear reading of 72.8 dB: {"decibel": 72.8, "status": "ok", "confidence": 0.95}
+- Meter visible but blurry: {"decibel": null, "status": "display_unreadable", "confidence": 0.8}
+- No meter in frame: {"decibel": null, "status": "meter_not_found", "confidence": 0.9}
 
 Do not include any other text or explanation."""
 
@@ -180,12 +185,12 @@ def parse_ocr_response(response_text: str) -> dict:
 
         data = json.loads(text)
         return {
-            "value": data.get("value"),
-            "unit": data.get("unit"),
+            "decibel": data.get("decibel"),
+            "status": data.get("status", "unknown"),
             "confidence": data.get("confidence", 0.0),
         }
     except (json.JSONDecodeError, KeyError):
-        return {"value": None, "unit": None, "confidence": 0.0}
+        return {"decibel": None, "status": "parse_error", "confidence": 0.0}
 
 
 def process_batch_results(
@@ -211,7 +216,7 @@ def process_batch_results(
 
             reading = parse_ocr_response(response_text)
         else:
-            reading = {"value": None, "unit": None, "confidence": 0.0}
+            reading = {"decibel": None, "status": "api_error", "confidence": 0.0}
 
         readings.append(
             {
@@ -305,12 +310,18 @@ def process(
         output_dir = Path(config["output_dir"]) / "readings"
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    model_short = model.replace("claude-", "").replace("-4-5", "")
+    timestamp = time.strftime("%Y%m%d_%H%M%S")
+
     if sample_manifest:
         with open(sample_manifest) as f:
             sample_data = json.load(f)
         city = get_city_from_sample_manifest(sample_data)
         frames = sample_data.get("samples", [])
-        output_file = output_dir / f"{city}_sample_readings.json"
+        n_frames = len(frames)
+        output_file = (
+            output_dir / f"{city}_sample_{n_frames}_{model_short}_{timestamp}.json"
+        )
         mapping_file = output_dir / f"{city}_sample_id_mapping.json"
     else:
         if manifest_path is None:
@@ -319,7 +330,10 @@ def process(
             manifest_data = json.load(f)
         city = get_city_from_manifest(manifest_data)
         frames = load_frames_from_manifest(manifest_path)
-        output_file = output_dir / f"{city}_readings.json"
+        n_frames = len(frames)
+        output_file = (
+            output_dir / f"{city}_full_{n_frames}_{model_short}_{timestamp}.json"
+        )
         mapping_file = output_dir / f"{city}_id_mapping.json"
 
     frame_lookup = {f["frame_path"]: f for f in frames}
