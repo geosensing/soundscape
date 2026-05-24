@@ -1,219 +1,162 @@
-# Soundscape
+# Delhi Street Noise
 
-Pipeline to extract, OCR, and analyze sound meter readings from GoPro video recordings for street-level noise exposure research.
+Street-level noise measurements from 190 locations across Delhi.
 
-## Delhi Street Noise Study
+## Results
 
-We collected street-level noise measurements across 190 locations in Delhi using a handheld sound meter recorded on GoPro. The analysis covers **3.4 hours of observation** (12,159 valid readings sampled at 1 per second).
+We recorded sound meter readings while walking Delhi streets over 11 days in April-May 2026. Each "stop" is a ~1 minute recording at a location.
 
-### Key Findings
+**Summary:**
+- **190 locations** across Delhi
+- **3.4 hours** of total observation (12,159 readings at 1/second)
+- **Median noise: 70 dB** (typical street level)
+- **4.3% of readings exceed 85 dB** (NIOSH occupational limit)
 
-| Metric | Value |
-|--------|-------|
-| Locations sampled | 190 stops |
-| Total observation time | 3.4 hours |
-| Mean noise level | 70.2 dB |
-| Median noise level | 70.3 dB |
+### How noisy is Delhi?
 
-**Threshold Exceedance:**
+| Noise Level | % of Time | What it means |
+|-------------|-----------|---------------|
+| ≥70 dB | 52% | Louder than normal conversation |
+| ≥80 dB | 11% | Hearing damage risk with prolonged exposure |
+| ≥85 dB | 4.3% | NIOSH 8-hour occupational limit |
+| ≥91 dB | 1.4% | NIOSH 2-hour limit |
 
-| Threshold | % of readings | Interpretation |
-|-----------|---------------|----------------|
-| ≥70 dB | 51.6% | Louder than conversation |
-| ≥75 dB | 28.3% | Requires raised voice |
-| ≥80 dB | 11.4% | Potential hearing damage with prolonged exposure |
-| ≥85 dB | 4.3% | NIOSH 8-hour exposure limit |
-| ≥91 dB | 1.4% | NIOSH 2-hour exposure limit |
+### Location-level findings
 
-**Per-Location Analysis:**
-- 131 of 190 stops (69%) had at least one reading ≥85 dB
-- 23 stops (12%) recorded peaks ≥100 dB
-- Median peak noise across stops: 89.3 dB
-- Only 1 stop had majority (>50%) of readings above 85 dB
+- **69% of stops** (131/190) had at least one reading ≥85 dB
+- **12% of stops** (23/190) hit peaks ≥100 dB
+- **Median peak** across stops: 89 dB
+- Only **1 stop** had sustained high noise (>50% of readings ≥85 dB)
 
-The data shows Delhi streets are consistently noisy (median 70 dB) with frequent spikes above safe occupational limits. Most locations experience brief exposures to harmful noise levels, though sustained high exposure is rare.
+Most locations experience brief spikes above safe levels, but sustained harmful exposure is rare.
 
-### Analysis Outputs
+### Figures
 
-Run `soundscape analyze` to generate publication-ready tables and figures:
+![Histogram](output/analysis/figs/fig3_histogram.pdf)
 
-```
-output/analysis/
-├── figs/
-│   ├── fig1_map_locations.html    # Interactive map of collection points
-│   ├── fig2_map_static.pdf        # Static map for print
-│   ├── fig3_histogram.pdf         # Distribution with NIOSH thresholds
-│   ├── fig4_stop_distributions.pdf # Per-stop summary statistics
-│   ├── fig5_all_data_by_stop.pdf  # All readings ordered by stop
-│   ├── fig6_per_stop_boxplot.pdf  # Boxplots for each location
-│   ├── fig7_exceedance_curves.pdf # Per-stop exceedance curves
-│   └── fig8_temporal_pattern.pdf  # Noise by position in recording
-├── tabs/
-│   ├── table1_summary.tex         # Overall summary statistics
-│   ├── table2_stop_distribution.tex # Distribution of per-stop metrics
-│   └── table3_threshold_exceedance.tex # Threshold analysis
-├── analysis_data.parquet          # Processed readings
-└── stop_stats.parquet             # Per-stop summary statistics
-```
+See `output/analysis/figs/` for all figures:
+- `fig1_map_locations.html` - Interactive map of measurement locations
+- `fig3_histogram.pdf` - Distribution of all readings
+- `fig4_stop_distributions.pdf` - Per-location summary statistics
+- `fig6_per_stop_boxplot.pdf` - Boxplots for each location
+- `fig7_exceedance_curves.pdf` - Exceedance curves by location
+
+## Data
+
+### Processed Data
+
+| File | Description |
+|------|-------------|
+| `output/readings/*.json` | OCR'd decibel readings with GPS |
+| `output/analysis/analysis_data.parquet` | All readings as DataFrame |
+| `output/analysis/stop_stats.parquet` | Per-location summary stats |
+| `output/analysis/tabs/*.tex` | LaTeX tables |
+
+### Raw Video (Harvard Dataverse)
+
+Raw GoPro recordings with embedded GPS telemetry:
+
+| Archive | Size | Videos |
+|---------|------|--------|
+| `delhi_04_30_2026.tar.gz` | 1.9 GB | 8 |
+| `delhi_05_01_2026.tar.gz` | 618 MB | 4 |
+| `delhi_05_03_2026.tar.gz` | 2.0 GB | 18 |
+| `delhi_05_04_2026.tar.gz` | 2.0 GB | 20 |
+| `delhi_05_05_2026.tar.gz` | 2.0 GB | 22 |
+| `delhi_05_06_2026.tar.gz` | 2.0 GB | 24 |
+| `delhi_05_07_2026.tar.gz` | 416 MB | 3 |
+| `delhi_05_08_2026.tar.gz` | 1.9 GB | 22 |
+| `delhi_05_09_2026.tar.gz` | 1.9 GB | 24 |
+| `delhi_05_13_2026.tar.gz` | 1.6 GB | 27 |
+| `delhi_05_14_2026.tar.gz` | 1.9 GB | 17 |
+| **Total** | **18 GB** | **192** |
 
 ---
 
-## Installation
+## Reproduce the Analysis
 
-**Requirements:**
+### Requirements
+
 - Python 3.13+
-- ffmpeg (`brew install ffmpeg`)
-- exiftool (`brew install exiftool`)
-- API key for OCR (Anthropic or Google)
+- ffmpeg, exiftool (`brew install ffmpeg exiftool`)
+- Google API key (for OCR)
+
+### Install
 
 ```bash
-# Install with core dependencies
+git clone https://github.com/soodoku/soundscape
+cd soundscape
 uv sync
-
-# Install with mapping libraries (for analyze command)
 uv pip install -e ".[maps]"
 ```
 
-## Pipeline Commands
-
-| # | Command | Description |
-|---|---------|-------------|
-| 1 | `extract-frames` | Extract JPEG frames at specified intervals |
-| 2 | `downsample` | Resize frames for efficient OCR processing |
-| 3 | `extract-exif` | Extract video metadata (duration, fps, camera) |
-| 4 | `extract-gps` | Extract GPS coordinates from GoPro telemetry |
-| 5 | `build-manifest` | Combine all metadata into manifest.json |
-| 6 | `sample-frames` | Sample random frames for manual verification |
-| 7 | `ocr-readings` | OCR sound meter values using Claude/Gemini |
-| 8 | `merge-readings` | Merge OCR results into manifest |
-| 9 | `create-archives` | Create tar.gz archives for data sharing |
-| 10 | `validate` | Validate pipeline outputs match inputs |
-| 11 | `viewer` | Generate HTML viewer for OCR verification |
-| 12 | `analyze` | Generate publication-ready tables and figures |
-
-## Quick Start
-
-### Full Pipeline
+### Run Analysis
 
 ```bash
-# Extract everything and build manifest
-make all
+# Generate figures and tables from existing readings
+uv run soundscape analyze --readings output/readings/delhi_full_12728_3-flash-preview_20260523_190001.json
 
-# Run OCR on all frames
-export ANTHROPIC_API_KEY=your_key  # or GOOGLE_API_KEY
-uv run soundscape ocr-readings --manifest output/manifest.json
+# Open interactive map
+open output/analysis/figs/fig1_map_locations.html
+```
+
+### Reprocess from Raw Video
+
+If you download the raw videos from Dataverse:
+
+```bash
+# Extract frames, GPS, metadata
+uv run soundscape extract-frames --input data/delhi
+uv run soundscape extract-gps --input data/delhi
+uv run soundscape extract-exif --input data/delhi
+uv run soundscape downsample
+uv run soundscape build-manifest
+
+# OCR the sound meter readings
+export GOOGLE_API_KEY=your_key
+uv run soundscape ocr-readings --model gemini-2.5-flash
 
 # Generate analysis
 uv run soundscape analyze --readings output/readings/readings.json
 ```
 
-### Step-by-Step
+## Methods
 
-```bash
-# 1. Extract frames (1 per second from 50fps video)
-uv run soundscape extract-frames --input data/
+### Data Collection
 
-# 2. Downsample to 720p for efficient OCR
-uv run soundscape downsample
+- **Equipment:** Handheld sound level meter + GoPro Hero 12 (4K, 50fps, GPS enabled)
+- **Protocol:** Walk to location, hold meter at arm's length, record ~1 minute
+- **Dates:** April 30 - May 14, 2026
+- **Locations:** 190 stops across Delhi (residential, commercial, roadside)
 
-# 3. Extract video metadata
-uv run soundscape extract-exif --input data/
+### Processing Pipeline
 
-# 4. Extract GPS coordinates from GoPro telemetry
-uv run soundscape extract-gps --input data/
+1. **Extract frames** - Sample 1 frame/second from 50fps video
+2. **Downsample** - Resize to 720p for efficient OCR
+3. **Extract GPS** - Pull coordinates from GoPro telemetry
+4. **OCR readings** - Use Gemini to read decibel value from each frame
+5. **Filter** - Remove readings outside 30-130 dB range (OCR errors)
+6. **Analyze** - Generate tables and figures
 
-# 5. Build manifest combining all metadata
-uv run soundscape build-manifest
+### OCR Validation
 
-# 6. Run OCR (supports Claude and Gemini models)
-uv run soundscape ocr-readings --model gemini-2.5-flash
+- 95.5% of frames successfully OCR'd
+- 5 readings filtered as physically implausible (<30 or >130 dB)
+- Manual spot-check via HTML viewer (`soundscape viewer`)
 
-# 7. Generate HTML viewer to verify OCR quality
-uv run soundscape viewer --readings output/readings/readings.json
+## Pipeline Commands
 
-# 8. Run analysis
-uv run soundscape analyze --readings output/readings/readings.json
-```
-
-## OCR Models
-
-The pipeline supports multiple models for OCR:
-
-| Model | Provider | Notes |
-|-------|----------|-------|
-| `claude-haiku-4-5` | Anthropic | Default, good accuracy |
-| `claude-sonnet-4-5` | Anthropic | Higher accuracy |
-| `gemini-2.0-flash` | Google | Fast, cost-effective |
-| `gemini-2.5-flash` | Google | Good balance |
-| `gemini-2.5-flash-lite` | Google | Fastest |
-| `gemini-3-flash-preview` | Google | Latest |
-
-```bash
-# Use Gemini (requires GOOGLE_API_KEY)
-uv run soundscape ocr-readings --model gemini-2.5-flash
-
-# Use Claude batch API (50% cheaper, requires ANTHROPIC_API_KEY)
-uv run soundscape ocr-readings --model claude-haiku-4-5
-```
-
-## Output Structure
-
-```
-output/
-├── frames/                 # Full-resolution extracted frames
-├── frames_720p/            # Downsampled frames for OCR
-├── exif/                   # Video metadata JSON files
-├── gps/                    # GPS telemetry JSON files
-├── samples/                # Sampled frames for verification
-├── readings/               # OCR results
-│   ├── *.json              # Raw readings
-│   └── *.html              # Verification viewer
-├── analysis/               # Analysis outputs
-│   ├── figs/               # PDF figures + HTML maps
-│   ├── tabs/               # LaTeX tables
-│   └── *.parquet           # Processed data
-└── manifest.json           # Combined metadata
-```
-
-## Data Directory Structure
-
-Expected input structure:
-```
-data/
-└── {city}/
-    └── {MM_DD_YYYY}/
-        └── *.MP4
-```
-
-Example:
-```
-data/
-└── delhi/
-    ├── 04_30_2026/
-    │   ├── GX011906.MP4
-    │   └── GX011907.MP4
-    └── 05_01_2026/
-        └── GX011917.MP4
-```
-
-## Configuration
-
-Edit `config.yaml`:
-
-```yaml
-data_dir: data
-output_dir: output
-
-frames:
-  interval: 50    # Extract every 50th frame (1fps at 50fps)
-  quality: 95     # JPEG quality
-
-gps:
-  max_spread_meters: 50  # Warn if GPS points spread > 50m
-
-processing:
-  skip_existing: true
-```
+| Command | Description |
+|---------|-------------|
+| `extract-frames` | Extract JPEG frames from video |
+| `downsample` | Resize frames to 720p |
+| `extract-exif` | Extract video metadata |
+| `extract-gps` | Extract GPS from GoPro telemetry |
+| `build-manifest` | Combine metadata into manifest.json |
+| `ocr-readings` | OCR sound meter values |
+| `viewer` | Generate HTML viewer for QC |
+| `analyze` | Generate tables and figures |
+| `create-archives` | Create tar.gz for Dataverse |
 
 ## License
 
