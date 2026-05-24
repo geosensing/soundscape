@@ -4,9 +4,19 @@ from pathlib import Path
 
 import click
 
-from . import (archive, build_manifest, downsample, extract_exif,
-               extract_frames, extract_gps, merge_readings, ocr_readings,
-               sample_frames, validate, viewer)
+from . import (
+    archive,
+    build_manifest,
+    downsample,
+    extract_exif,
+    extract_frames,
+    extract_gps,
+    merge_readings,
+    ocr_readings,
+    sample_frames,
+    validate,
+    viewer,
+)
 
 
 @click.group()
@@ -263,9 +273,7 @@ def build_manifest_cmd(output_dir, frames_dir):
     default=5.0,
     help="Skip frames in last N seconds (default: 5.0)",
 )
-def sample_frames_cmd(
-    manifest_path, output_dir, frames_per_video, seed, start_skip, end_skip
-):
+def sample_frames_cmd(manifest_path, output_dir, frames_per_video, seed, start_skip, end_skip):
     """6. Sample random frames for manual annotation verification."""
     sample_frames.process(
         manifest_path=manifest_path,
@@ -305,9 +313,18 @@ def sample_frames_cmd(
 )
 @click.option(
     "--model",
-    type=click.Choice(["claude-haiku-4-5", "claude-sonnet-4-5"]),
+    type=click.Choice(
+        [
+            "claude-haiku-4-5",
+            "claude-sonnet-4-5",
+            "gemini-2.0-flash",
+            "gemini-2.5-flash-lite",
+            "gemini-2.5-flash",
+            "gemini-3-flash-preview",
+        ]
+    ),
     default="claude-haiku-4-5",
-    help="Claude model to use (default: claude-haiku-4-5)",
+    help="Model to use (default: claude-haiku-4-5)",
 )
 @click.option(
     "--batch-id",
@@ -321,10 +338,8 @@ def sample_frames_cmd(
     default=30,
     help="Seconds between status polls (default: 30)",
 )
-def ocr_readings_cmd(
-    manifest_path, sample_manifest, output_dir, model, batch_id, poll_interval
-):
-    """7. OCR sound meter readings using Claude batch API."""
+def ocr_readings_cmd(manifest_path, sample_manifest, output_dir, model, batch_id, poll_interval):
+    """7. OCR sound meter readings using Claude or Gemini API."""
     ocr_readings.process(
         manifest_path=manifest_path,
         output_dir=output_dir,
@@ -429,6 +444,31 @@ def create_archives_cmd(input_dir, output_dir, prefix):
 def validate_cmd(input_path, output_dir):
     """10. Validate pipeline outputs match video inputs."""
     validate.process(input_path=input_path, output_dir=output_dir)
+
+
+# =============================================================================
+# 11. Viewer
+# =============================================================================
+
+
+@main.command("viewer")
+@click.option(
+    "--readings",
+    "readings_path",
+    type=click.Path(exists=True, path_type=Path),
+    required=True,
+    help="Path to readings JSON file",
+)
+@click.option(
+    "--output",
+    "output_path",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Output HTML path (default: same as readings with .html extension)",
+)
+def viewer_cmd(readings_path, output_path):
+    """11. Generate HTML viewer for verifying and correcting OCR results."""
+    viewer.process(readings_path=readings_path, output_path=output_path)
 
 
 if __name__ == "__main__":

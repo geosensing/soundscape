@@ -5,8 +5,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-from .utils import (build_output_prefix, ensure_output_dirs, find_videos,
-                    load_config)
+from .utils import build_output_prefix, ensure_output_dirs, find_videos, load_config
 
 
 def extract_frames_from_video(
@@ -89,15 +88,11 @@ def process_videos(
 
         existing_frames = list(frames_dir.glob(f"{prefix}_*.jpg"))
         if skip_existing and existing_frames:
-            print(
-                f"Skipping {video.name} (frames already exist: {len(existing_frames)} files)"
-            )
+            print(f"Skipping {video.name} (frames already exist: {len(existing_frames)} files)")
             all_frames.extend(existing_frames)
             continue
 
-        print(
-            f"Extracting frames from {video.name} (interval={interval}, quality={quality})..."
-        )
+        print(f"Extracting frames from {video.name} (interval={interval}, quality={quality})...")
         frames = extract_frames_from_video(video, output_dir, prefix, interval, quality)
         all_frames.extend(frames)
         print(f"  -> Extracted {len(frames)} frames")

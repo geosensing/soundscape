@@ -7,8 +7,7 @@ import statistics
 import subprocess
 from pathlib import Path
 
-from .utils import (build_output_prefix, ensure_output_dirs, find_videos,
-                    load_config)
+from .utils import build_output_prefix, ensure_output_dirs, find_videos, load_config
 
 
 def haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
@@ -98,9 +97,7 @@ def extract_gps_telemetry(video_path: Path) -> list[dict]:
     )
 
     for match in gps_pattern.finditer(raw_output):
-        lat_str, lon_str, alt_str, speed_str, speed_3d_str, datetime_str = (
-            match.groups()
-        )
+        lat_str, lon_str, alt_str, speed_str, speed_3d_str, datetime_str = match.groups()
 
         lat = parse_dms_to_decimal(lat_str)
         lon = parse_dms_to_decimal(lon_str)
@@ -167,9 +164,7 @@ def compute_gps_stats(points: list[dict], max_spread_meters: float = 50) -> dict
     max_dist = 0.0
     for p in points:
         if p["latitude"] is not None and p["longitude"] is not None:
-            dist = haversine_distance(
-                median_lat, median_lon, p["latitude"], p["longitude"]
-            )
+            dist = haversine_distance(median_lat, median_lon, p["latitude"], p["longitude"])
             max_dist = max(max_dist, dist)
 
     return {

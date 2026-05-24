@@ -1,12 +1,15 @@
-"""OCR sound meter readings from frames using Claude batch inference API."""
+"""OCR sound meter readings from frames using Claude or Gemini APIs."""
 
 import base64
 import hashlib
 import json
+import os
 import time
 from pathlib import Path
 
 import anthropic
+from google import genai
+from google.genai import types
 
 from .utils import get_city_from_manifest, get_city_from_sample_manifest, load_config
 
@@ -38,14 +41,23 @@ def encode_image_base64(image_path: Path) -> str:
         return base64.standard_b64encode(f.read()).decode("utf-8")
 
 
+def read_image_bytes(image_path: Path) -> bytes:
+    """Read image as bytes."""
+    with open(image_path, "rb") as f:
+        return f.read()
+
+
+def is_gemini_model(model: str) -> bool:
+    """Check if model is a Gemini model."""
+    return model.startswith("gemini-")
+
+
 def path_to_custom_id(frame_path: str) -> str:
     """Convert frame path to valid custom_id (alphanumeric, max 64 chars)."""
     return hashlib.sha256(frame_path.encode()).hexdigest()[:64]
 
 
-def create_batch_request(
-    frame_info: dict, custom_id: str, model: str = "claude-haiku-4-5"
-) -> dict:
+def create_batch_request(frame_info: dict, custom_id: str, model: str = "claude-haiku-4-5") -> dict:
     """Create a single batch request for a frame."""
     image_path = Path(frame_info["frame_path"])
     if not image_path.exists():
@@ -107,9 +119,7 @@ def submit_batch(
             req = create_batch_request(frame, custom_id, model)
             requests.append(req)
         except Exception as e:
-            print(
-                f"Warning: Failed to create request for {frame.get('frame_path')}: {e}"
-            )
+            print(f"Warning: Failed to create request for {frame.get('frame_path')}: {e}")
 
     if not requests:
         raise ValueError("No valid requests to submit")
@@ -179,9 +189,7 @@ def parse_ocr_response(response_text: str) -> dict:
         text = response_text.strip()
         if text.startswith("```"):
             lines = text.split("\n")
-            text = (
-                "\n".join(lines[1:-1]) if lines[-1] == "```" else "\n".join(lines[1:])
-            )
+            text = "\n".join(lines[1:-1]) if lines[-1] == "```" else "\n".join(lines[1:])
 
         data = json.loads(text)
         return {
@@ -191,6 +199,195 @@ def parse_ocr_response(response_text: str) -> dict:
         }
     except (json.JSONDecodeError, KeyError):
         return {"decibel": None, "status": "parse_error", "confidence": 0.0}
+
+
+def process_gemini_ocr(
+    frames: list[dict],
+    model: str = "gemini-2.0-flash",
+    api_key: str | None = None,
+    use_batch: bool = True,
+    poll_interval: int = 30,
+) -> list[dict]:
+    """Process frames using Gemini API.
+
+    If use_batch=True, uses Gemini Batch API (50% cost savings, async).
+    Otherwise, processes synchronously one at a time.
+    """
+    if api_key is None:
+        api_key = os.environ.get("GOOGLE_API_KEY")
+    client = genai.Client(api_key=api_key)
+
+    if use_batch:
+        return _process_gemini_batch(client, frames, model, poll_interval)
+    return _process_gemini_sync(client, frames, model)
+
+
+def _process_gemini_sync(
+    client: genai.Client,
+    frames: list[dict],
+    model: str,
+) -> list[dict]:
+    """Process frames synchronously one at a time."""
+    readings = []
+    total = len(frames)
+
+    for i, frame in enumerate(frames, 1):
+        frame_path = frame["frame_path"]
+        print(f"Processing {i}/{total}: {Path(frame_path).name}...", end=" ", flush=True)
+
+        try:
+            image_path = Path(frame_path)
+            if not image_path.exists():
+                image_path = Path(frame.get("original_path", frame_path))
+
+            if not image_path.exists():
+                print("SKIP (not found)")
+                readings.append(
+                    {
+                        "frame_path": frame_path,
+                        "video_id": frame.get("video_id", "unknown"),
+                        "frame_number": frame.get("frame_number", 0),
+                        "timestamp_seconds": frame.get("timestamp_seconds"),
+                        "gps": frame.get("gps", {}),
+                        "reading": {"decibel": None, "status": "file_not_found", "confidence": 0.0},
+                    }
+                )
+                continue
+
+            image_bytes = read_image_bytes(image_path)
+            image_part = types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg")
+
+            response = client.models.generate_content(
+                model=model,
+                contents=[
+                    OCR_SYSTEM_PROMPT,
+                    image_part,
+                    "Read the sound meter value from this image.",
+                ],
+            )
+
+            response_text = response.text if response.text else ""
+            reading = parse_ocr_response(response_text)
+            print(f"{reading['status']}: {reading['decibel']}")
+
+        except Exception as e:
+            print(f"ERROR: {e}")
+            reading = {"decibel": None, "status": "api_error", "confidence": 0.0}
+
+        readings.append(
+            {
+                "frame_path": frame_path,
+                "video_id": frame.get("video_id", "unknown"),
+                "frame_number": frame.get("frame_number", 0),
+                "timestamp_seconds": frame.get("timestamp_seconds"),
+                "gps": frame.get("gps", {}),
+                "reading": reading,
+            }
+        )
+
+    return readings
+
+
+def _process_gemini_batch(
+    client: genai.Client,
+    frames: list[dict],
+    model: str,
+    poll_interval: int = 30,
+) -> list[dict]:
+    """Process frames using Gemini Batch API (50% cost savings)."""
+    print(f"Preparing batch with {len(frames)} frames...")
+
+    inline_requests = []
+    frame_list = []
+
+    for frame in frames:
+        frame_path = frame["frame_path"]
+        image_path = Path(frame_path)
+        if not image_path.exists():
+            image_path = Path(frame.get("original_path", frame_path))
+
+        if not image_path.exists():
+            continue
+
+        image_data = encode_image_base64(image_path)
+        frame_list.append(frame)
+
+        inline_requests.append(
+            {
+                "contents": [
+                    {
+                        "role": "user",
+                        "parts": [
+                            {"text": OCR_SYSTEM_PROMPT},
+                            {
+                                "inline_data": {
+                                    "mime_type": "image/jpeg",
+                                    "data": image_data,
+                                }
+                            },
+                            {"text": "Read the sound meter value from this image."},
+                        ],
+                    }
+                ],
+            }
+        )
+
+    print(f"Submitting batch job with {len(inline_requests)} requests...")
+    batch_job = client.batches.create(
+        model=model,
+        src=inline_requests,
+        config={"display_name": f"soundscape-ocr-{time.strftime('%Y%m%d_%H%M%S')}"},
+    )
+    print(f"Batch job created: {batch_job.name}")
+
+    while True:
+        batch_job = client.batches.get(name=batch_job.name)
+        state = batch_job.state.name
+        print(f"Batch status: {state}")
+
+        if state == "JOB_STATE_SUCCEEDED":
+            break
+        elif state in ("JOB_STATE_FAILED", "JOB_STATE_CANCELLED"):
+            raise RuntimeError(f"Batch job failed with state: {state}")
+
+        time.sleep(poll_interval)
+
+    print("Processing results...")
+    readings = []
+    inlined_responses = batch_job.dest.inlined_responses or []
+
+    for i, inlined_resp in enumerate(inlined_responses):
+        frame = frame_list[i] if i < len(frame_list) else {}
+
+        try:
+            response = inlined_resp.response
+            if response and response.candidates:
+                parts = response.candidates[0].content.parts
+                response_text = ""
+                for part in parts:
+                    if hasattr(part, "text") and part.text:
+                        response_text = part.text
+                        break
+                reading = parse_ocr_response(response_text)
+            else:
+                reading = {"decibel": None, "status": "no_response", "confidence": 0.0}
+        except Exception as e:
+            print(f"Error parsing response {i}: {e}")
+            reading = {"decibel": None, "status": "parse_error", "confidence": 0.0}
+
+        readings.append(
+            {
+                "frame_path": frame.get("frame_path", ""),
+                "video_id": frame.get("video_id", "unknown"),
+                "frame_number": frame.get("frame_number", 0),
+                "timestamp_seconds": frame.get("timestamp_seconds"),
+                "gps": frame.get("gps", {}),
+                "reading": reading,
+            }
+        )
+
+    print(f"Processed {len(readings)} results")
+    return readings
 
 
 def process_batch_results(
@@ -299,10 +496,12 @@ def process(
     batch_id: str | None = None,
     poll_interval: int = 30,
 ) -> Path:
-    """Run OCR on frames using batch API.
+    """Run OCR on frames using Claude batch API or Gemini API.
 
-    If batch_id is provided, retrieves results from existing batch.
-    Otherwise, submits new batch and polls for completion.
+    For Claude models: uses batch API with polling.
+    For Gemini models: processes synchronously one at a time.
+
+    If batch_id is provided (Claude only), retrieves results from existing batch.
     """
     config = load_config()
 
@@ -310,7 +509,7 @@ def process(
         output_dir = Path(config["output_dir"]) / "readings"
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    model_short = model.replace("claude-", "").replace("-4-5", "")
+    model_short = model.replace("claude-", "").replace("gemini-", "").replace("-4-5", "")
     timestamp = time.strftime("%Y%m%d_%H%M%S")
 
     if sample_manifest:
@@ -319,9 +518,7 @@ def process(
         city = get_city_from_sample_manifest(sample_data)
         frames = sample_data.get("samples", [])
         n_frames = len(frames)
-        output_file = (
-            output_dir / f"{city}_sample_{n_frames}_{model_short}_{timestamp}.json"
-        )
+        output_file = output_dir / f"{city}_sample_{n_frames}_{model_short}_{timestamp}.json"
         mapping_file = output_dir / f"{city}_sample_id_mapping.json"
     else:
         if manifest_path is None:
@@ -331,10 +528,17 @@ def process(
         city = get_city_from_manifest(manifest_data)
         frames = load_frames_from_manifest(manifest_path)
         n_frames = len(frames)
-        output_file = (
-            output_dir / f"{city}_full_{n_frames}_{model_short}_{timestamp}.json"
-        )
+        output_file = output_dir / f"{city}_full_{n_frames}_{model_short}_{timestamp}.json"
         mapping_file = output_dir / f"{city}_id_mapping.json"
+
+    if is_gemini_model(model):
+        print(f"Using Gemini model: {model}")
+        print(f"Processing {len(frames)} frames...")
+        readings = process_gemini_ocr(frames, model)
+        run_id = f"gemini_{timestamp}"
+        save_readings(readings, output_file, run_id)
+        print(f"Saved {len(readings)} readings -> {output_file}")
+        return output_file
 
     frame_lookup = {f["frame_path"]: f for f in frames}
 
@@ -343,9 +547,7 @@ def process(
         if mapping_file.exists():
             id_to_path = load_id_mapping(mapping_file)
         else:
-            id_to_path = {
-                path_to_custom_id(f["frame_path"]): f["frame_path"] for f in frames
-            }
+            id_to_path = {path_to_custom_id(f["frame_path"]): f["frame_path"] for f in frames}
     else:
         batch_id, id_to_path = submit_batch(frames, model)
         print(f"Submitted batch: {batch_id}")

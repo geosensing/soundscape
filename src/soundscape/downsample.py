@@ -55,9 +55,7 @@ def process(
         print(f"No JPG files found in {input_dir}")
         return []
 
-    print(
-        f"Downsampling {len(input_files)} images to {target_width}x{target_height}..."
-    )
+    print(f"Downsampling {len(input_files)} images to {target_width}x{target_height}...")
 
     output_files = []
     target_size = (target_width, target_height)

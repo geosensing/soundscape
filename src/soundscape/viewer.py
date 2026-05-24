@@ -18,7 +18,6 @@ def generate_html(readings_path: Path, output_path: Path | None = None) -> Path:
         data = json.load(f)
 
     readings = data.get("readings", [])
-    batch_id = data.get("batch_id", "unknown")
 
     if output_path is None:
         output_path = readings_path.with_suffix(".html")
@@ -121,10 +120,10 @@ def generate_html(readings_path: Path, output_path: Path | None = None) -> Path:
             gap: 20px;
         }
         .image-container {
-            flex: 0 0 150px;
+            flex: 0 0 350px;
         }
         .image-container img {
-            width: 150px;
+            width: 350px;
             height: auto;
             border-radius: 4px;
         }
@@ -212,12 +211,14 @@ def generate_html(readings_path: Path, output_path: Path | None = None) -> Path:
     <div class="filters">
         <div>
             <strong>Filter:</strong>
-            <label><input type="checkbox" checked onchange="filterCards()" id="filter-ok"> OK</label>
-            <label><input type="checkbox" checked onchange="filterCards()" id="filter-failed"> Failed</label>
+            <label><input type="checkbox" checked onchange="filterCards()"
+                id="filter-ok"> OK</label>
+            <label><input type="checkbox" checked onchange="filterCards()"
+                id="filter-failed"> Failed</label>
         </div>
         <div>
-            <button class="export-btn" onclick="exportCorrections('json')">Export JSON</button>
-            <button class="export-btn" onclick="exportCorrections('csv')">Export CSV</button>
+            <button class="export-btn" onclick="exportGroundTruth('json')">Export JSON</button>
+            <button class="export-btn" onclick="exportGroundTruth('csv')">Export CSV</button>
         </div>
     </div>
 
@@ -241,7 +242,8 @@ def generate_html(readings_path: Path, output_path: Path | None = None) -> Path:
         else:
             img_data = ""
 
-        status_class = f"status-{status}" if status in ["ok", "display_unreadable", "meter_not_found"] else "status-other"
+        known_statuses = ["ok", "display_unreadable", "meter_not_found"]
+        status_class = f"status-{status}" if status in known_statuses else "status-other"
         is_ok = status == "ok"
 
         if decibel is not None:
@@ -256,9 +258,9 @@ def generate_html(readings_path: Path, output_path: Path | None = None) -> Path:
         lon = gps.get("longitude", "N/A")
 
         html_parts.append(f"""
-        <div class="card" data-status="{'ok' if is_ok else 'failed'}" data-index="{i}">
+        <div class="card" data-status="{"ok" if is_ok else "failed"}" data-index="{i}">
             <div class="card-header">
-                <h3>#{i+1} - {video_id} (frame {frame_num})</h3>
+                <h3>#{i + 1} - {video_id} (frame {frame_num})</h3>
                 <span class="status {status_class}">{status}</span>
             </div>
             <div class="card-body">
@@ -269,7 +271,7 @@ def generate_html(readings_path: Path, output_path: Path | None = None) -> Path:
                     <div class="reading {reading_class}">{reading_display}</div>
                     <div class="confidence">Confidence: {confidence:.0%}</div>
                     <div class="correction">
-                        <label>Correct reading (dB):</label>
+                        <label>Correct reading (dB, -1 = unreadable):</label>
                         <input type="number" step="0.1" placeholder="e.g. 72.5"
                                data-index="{i}" onchange="markCorrected(this)">
                     </div>
@@ -320,42 +322,58 @@ def generate_html(readings_path: Path, output_path: Path | None = None) -> Path:
             document.getElementById('corrected-count').textContent = count;
         }
 
-        function exportCorrections(format) {
-            const corrections = [];
+        function exportGroundTruth(format) {
+            const groundTruth = [];
+            let correctionCount = 0;
+
             document.querySelectorAll('.correction input').forEach(input => {
                 const idx = parseInt(input.dataset.index);
                 const correctedValue = input.value.trim();
                 const original = originalReadings[idx];
 
-                if (correctedValue !== '') {
-                    corrections.push({
-                        frame_path: original.frame_path,
-                        video_id: original.video_id,
-                        frame_number: original.frame_number,
-                        timestamp_seconds: original.timestamp_seconds,
-                        latitude: original.gps ? original.gps.latitude : null,
-                        longitude: original.gps ? original.gps.longitude : null,
-                        ocr_decibel: original.reading ? original.reading.decibel : null,
-                        ocr_status: original.reading ? original.reading.status : null,
-                        ocr_confidence: original.reading ? original.reading.confidence : null,
-                        corrected_decibel: parseFloat(correctedValue)
-                    });
-                }
-            });
+                let finalDecibel, finalStatus;
+                const hasCorrectedValue = correctedValue !== '';
 
-            if (corrections.length === 0) {
-                alert('No corrections entered yet.');
-                return;
-            }
+                if (hasCorrectedValue) {
+                    correctionCount++;
+                    const numValue = parseFloat(correctedValue);
+                    if (numValue === -1) {
+                        finalDecibel = null;
+                        finalStatus = 'display_unreadable';
+                    } else {
+                        finalDecibel = numValue;
+                        finalStatus = 'ok';
+                    }
+                } else {
+                    finalDecibel = original.reading ? original.reading.decibel : null;
+                    finalStatus = original.reading ? original.reading.status : null;
+                }
+
+                groundTruth.push({
+                    frame_path: original.frame_path,
+                    video_id: original.video_id,
+                    frame_number: original.frame_number,
+                    timestamp_seconds: original.timestamp_seconds,
+                    latitude: original.gps ? original.gps.latitude : null,
+                    longitude: original.gps ? original.gps.longitude : null,
+                    ocr_decibel: original.reading ? original.reading.decibel : null,
+                    ocr_status: original.reading ? original.reading.status : null,
+                    ocr_confidence: original.reading ? original.reading.confidence : null,
+                    final_decibel: finalDecibel,
+                    final_status: finalStatus,
+                    was_corrected: hasCorrectedValue
+                });
+            });
 
             const dateStr = new Date().toISOString().slice(0,10);
 
             if (format === 'csv') {
-                const headers = ['frame_path', 'video_id', 'frame_number', 'timestamp_seconds',
-                                'latitude', 'longitude', 'ocr_decibel', 'ocr_status',
-                                'ocr_confidence', 'corrected_decibel'];
-                const rows = corrections.map(c =>
-                    headers.map(h => c[h] === null ? '' : c[h]).join(',')
+                const headers = ['frame_path', 'video_id', 'frame_number',
+                    'timestamp_seconds', 'latitude', 'longitude', 'ocr_decibel',
+                    'ocr_status', 'ocr_confidence', 'final_decibel', 'final_status',
+                    'was_corrected'];
+                const rows = groundTruth.map(r =>
+                    headers.map(h => r[h] === null ? '' : r[h]).join(',')
                 );
                 const csv = headers.join(',') + '\\n' + rows.join('\\n');
 
@@ -363,21 +381,23 @@ def generate_html(readings_path: Path, output_path: Path | None = None) -> Path:
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = 'corrections_' + dateStr + '.csv';
+                a.download = 'ground_truth_' + dateStr + '.csv';
                 a.click();
                 URL.revokeObjectURL(url);
             } else {
                 const output = {
                     export_time: new Date().toISOString(),
-                    correction_count: corrections.length,
-                    corrections: corrections
+                    total_count: groundTruth.length,
+                    correction_count: correctionCount,
+                    readings: groundTruth
                 };
 
-                const blob = new Blob([JSON.stringify(output, null, 2)], {type: 'application/json'});
+                const jsonStr = JSON.stringify(output, null, 2);
+                const blob = new Blob([jsonStr], {type: 'application/json'});
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = 'corrections_' + dateStr + '.json';
+                a.download = 'ground_truth_' + dateStr + '.json';
                 a.click();
                 URL.revokeObjectURL(url);
             }
