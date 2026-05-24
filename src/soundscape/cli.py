@@ -4,21 +4,10 @@ from pathlib import Path
 
 import click
 
-from . import (
-    analyze,
-    archive,
-    build_manifest,
-    convert_rider_data,
-    downsample,
-    extract_exif,
-    extract_frames,
-    extract_gps,
-    merge_readings,
-    ocr_readings,
-    sample_frames,
-    validate,
-    viewer,
-)
+from . import (analyze, analyze_rider, archive, build_manifest,
+               compare_locations, downsample, extract_exif, extract_frames,
+               extract_gps, geocode_gopro, merge_readings, ocr_readings,
+               sample_frames, validate, viewer)
 
 
 @click.group()
@@ -275,7 +264,9 @@ def build_manifest_cmd(output_dir, frames_dir):
     default=5.0,
     help="Skip frames in last N seconds (default: 5.0)",
 )
-def sample_frames_cmd(manifest_path, output_dir, frames_per_video, seed, start_skip, end_skip):
+def sample_frames_cmd(
+    manifest_path, output_dir, frames_per_video, seed, start_skip, end_skip
+):
     """6. Sample random frames for manual annotation verification."""
     sample_frames.process(
         manifest_path=manifest_path,
@@ -340,7 +331,9 @@ def sample_frames_cmd(manifest_path, output_dir, frames_per_video, seed, start_s
     default=30,
     help="Seconds between status polls (default: 30)",
 )
-def ocr_readings_cmd(manifest_path, sample_manifest, output_dir, model, batch_id, poll_interval):
+def ocr_readings_cmd(
+    manifest_path, sample_manifest, output_dir, model, batch_id, poll_interval
+):
     """7. OCR sound meter readings using Claude or Gemini API."""
     ocr_readings.process(
         manifest_path=manifest_path,
@@ -499,51 +492,107 @@ def analyze_cmd(readings_path, output_dir):
 
 
 # =============================================================================
-# 13. Convert Rider Data
+# 13. Analyze Rider Data
 # =============================================================================
 
 
-@main.command("convert-rider")
+@main.command("analyze-rider")
 @click.option(
-    "--manifest",
-    "manifest_path",
+    "--readings",
+    "readings_path",
     type=click.Path(exists=True, path_type=Path),
     required=True,
-    help="Path to rider export manifest.json",
+    help="Path to rider readings JSON file",
 )
 @click.option(
     "--output",
     "output_dir",
     type=click.Path(path_type=Path),
     default=None,
-    help="Output directory (default: output/rider)",
+    help="Output directory (default: <readings_dir>/analysis)",
 )
+def analyze_rider_cmd(readings_path, output_dir):
+    """13. Analyze rider-collected noise data with road type metadata."""
+    analyze_rider.process(readings_path=readings_path, output_dir=output_dir)
+
+
+# =============================================================================
+# 14. Compare Locations
+# =============================================================================
+
+
+@main.command("compare-locations")
 @click.option(
-    "--address-cache",
-    "address_cache_path",
+    "--rider",
+    "rider_path",
     type=click.Path(exists=True, path_type=Path),
+    required=True,
+    help="Path to rider readings JSON file",
+)
+@click.option(
+    "--gopro",
+    "gopro_pattern",
+    type=str,
+    required=True,
+    help="Glob pattern for GoPro readings JSON files (e.g., 'output/readings/delhi_*.json')",
+)
+@click.option(
+    "--output",
+    "output_dir",
+    type=click.Path(path_type=Path),
     default=None,
-    help="Path to address_cache.json exported from dashboard",
+    help="Output directory (default: output/comparison)",
 )
 @click.option(
-    "--no-geocode",
-    is_flag=True,
-    help="Skip reverse geocoding (default: geocode all coordinates)",
-)
-@click.option(
-    "--geocode-delay",
+    "--max-distance",
+    "max_distance_m",
     type=float,
-    default=1.1,
-    help="Delay between geocode requests in seconds (default: 1.1)",
+    default=100.0,
+    help="Maximum match distance in meters (default: 100)",
 )
-def convert_rider_cmd(manifest_path, output_dir, address_cache_path, no_geocode, geocode_delay):
-    """13. Convert rider form data to soundscape readings format."""
-    convert_rider_data.process(
-        manifest_path=manifest_path,
+def compare_locations_cmd(rider_path, gopro_pattern, output_dir, max_distance_m):
+    """14. Compare rider and GoPro collection locations for overlap analysis."""
+    compare_locations.process(
+        rider_path=rider_path,
+        gopro_pattern=gopro_pattern,
         output_dir=output_dir,
-        geocode=not no_geocode,
-        geocode_delay=geocode_delay,
-        address_cache_path=address_cache_path,
+        max_distance_m=max_distance_m,
+    )
+
+
+# =============================================================================
+# 15. Geocode GoPro Data
+# =============================================================================
+
+
+@main.command("geocode-gopro")
+@click.option(
+    "--readings",
+    "readings_pattern",
+    type=str,
+    required=True,
+    help="Glob pattern for GoPro readings JSON files (e.g., 'output/readings/delhi_*.json')",
+)
+@click.option(
+    "--output",
+    "output_dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Output directory for geocoded files (default: same as input)",
+)
+@click.option(
+    "--cache-dir",
+    "cache_dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Directory for geocoding cache (default: output/.geocache)",
+)
+def geocode_gopro_cmd(readings_pattern, output_dir, cache_dir):
+    """15. Add road type metadata to GoPro data via reverse geocoding."""
+    geocode_gopro.process(
+        readings_pattern=readings_pattern,
+        output_dir=output_dir,
+        cache_dir=cache_dir,
     )
 
 

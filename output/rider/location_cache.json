@@ -1,0 +1,2322 @@
+{
+  "28.643716,77.298993": {
+    "address": "Karkari Mor Flyover, Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110051, India",
+    "road_type": "primary",
+    "road_name": "Karkari Mor Flyover"
+  },
+  "28.639203,77.299411": {
+    "address": "D Block, Preet Vihar, Preet Vihar Tehsil, East Delhi, Delhi, 110051, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.633892,77.279036": {
+    "address": "Vijay Chowk Road, Laxmi Nagar, Preet Vihar Tehsil, East Delhi, Delhi, 110031, India",
+    "road_type": "residential",
+    "road_name": "Vijay Chowk Road"
+  },
+  "28.651795,77.267224": {
+    "address": "Delhi\u2013Dehradun Expressway, Laxmi Nagar, East Delhi, Delhi, 110031, India",
+    "road_type": "trunk",
+    "road_name": "Delhi\u2013Dehradun Expressway"
+  },
+  "28.669332,77.262908": {
+    "address": "Valmiki Colony, Vivek Vihar Tehsil, Shahdara, Delhi, 420420, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.811622,77.139084": {
+    "address": "Alipur, Alipur Tehsil, North Delhi, Delhi, 110036, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.823377,77.133739": {
+    "address": "Alipur Tehsil, North Delhi, Delhi, 110036, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.827348,77.132344": {
+    "address": "Alipur Tehsil, North Delhi, Delhi, 110036, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.836133,77.122792": {
+    "address": "Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.816512,77.116828": {
+    "address": "Sector B-4, Narela Tehsil, North Delhi, Delhi, 110082, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.833106,77.107504": {
+    "address": "Sector B-4, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.842594,77.101282": {
+    "address": "Sector A-7, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.851895,77.092651": {
+    "address": "Narela, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.852600,77.094223": {
+    "address": "Sector A-9, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.854743,77.102075": {
+    "address": "Sector A-6, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.857787,77.097904": {
+    "address": "Sector A-5, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.861207,77.095418": {
+    "address": "Piyau Maniyari Road, Narela, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "tertiary",
+    "road_name": "Piyau Maniyari Road"
+  },
+  "28.857462,77.102216": {
+    "address": "Sector A-5, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.735136,77.155717": {
+    "address": "NH44, Alipur Tehsil, North Delhi, Delhi, 110042, India",
+    "road_type": "trunk",
+    "road_name": "NH44"
+  },
+  "28.731785,77.158236": {
+    "address": "Mall Road Extension, Kalander Colony, Jahangir Puri, Alipur Tehsil, North Delhi, Delhi, 110033, India",
+    "road_type": "secondary",
+    "road_name": "Mall Road Extension"
+  },
+  "28.735279,77.197521": {
+    "address": "Burari road, Civil Lines Tehsil, Central Delhi, Delhi, 110084, India",
+    "road_type": "secondary",
+    "road_name": "Burari road"
+  },
+  "28.731163,77.188432": {
+    "address": "Doctor KB Hedgewar Marg, Jahangir Puri, Model Town Tehsil, North Delhi, Delhi, 110033, India",
+    "road_type": "trunk",
+    "road_name": "Doctor KB Hedgewar Marg"
+  },
+  "28.744654,77.174650": {
+    "address": "Bhalaswa Golf Course, Gali Number 8, B Block, Rajiv Nagar, Model Town Tehsil, North Delhi, Delhi, 110042, India",
+    "road_type": null,
+    "road_name": "Bhalaswa Golf Course"
+  },
+  "28.748472,77.181911": {
+    "address": "Kalander Colony, Basant Dada Patil Nagar, Civil Lines Tehsil, Central Delhi, Delhi, 110042, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.751734,77.187830": {
+    "address": "Civil Lines Tehsil, Central Delhi, Delhi, 110084, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.755771,77.193229": {
+    "address": "Civil Lines Tehsil, Central Delhi, Delhi, 110084, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.772723,77.196623": {
+    "address": "Civil Lines Tehsil, Central Delhi, Delhi, 110005, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.767412,77.181912": {
+    "address": "Burari road, Civil Lines Tehsil, Central Delhi, Delhi, 110005, India",
+    "road_type": "secondary",
+    "road_name": "Burari road"
+  },
+  "28.759438,77.179436": {
+    "address": "C Block, Indraprastha Colony, Civil Lines Tehsil, Central Delhi, Delhi, 110042, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.569242,77.247498": {
+    "address": "Lajpat Nagar II, Lajpat Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110065, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.568914,77.247526": {
+    "address": "Sapphire Hero, 104;105, Shiv Mandir Marg, Lajpat Nagar II, Lajpat Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110065, India",
+    "road_type": null,
+    "road_name": "Sapphire Hero"
+  },
+  "28.569110,77.243209": {
+    "address": "Lajpat Nagar II, Lajpat Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110065, India",
+    "road_type": "pedestrian",
+    "road_name": ""
+  },
+  "28.569845,77.241953": {
+    "address": "Veer Savarkar Marg, Lajpat Nagar II, Lajpat Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110065, India",
+    "road_type": "tertiary",
+    "road_name": "Veer Savarkar Marg"
+  },
+  "28.570139,77.241262": {
+    "address": "Veer Savarkar Marg, Lajpat Nagar II, Lajpat Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110065, India",
+    "road_type": "tertiary",
+    "road_name": "Veer Savarkar Marg"
+  },
+  "28.570482,77.240207": {
+    "address": "Audio Voice, D-23, Veer Savarkar Marg, Lajpat Nagar II, Lajpat Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110065, India",
+    "road_type": null,
+    "road_name": "Audio Voice"
+  },
+  "28.571362,77.238666": {
+    "address": "Jandi Mandir, Veer Savarkar Marg, Lajpat Nagar II, Lajpat Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110065, India",
+    "road_type": null,
+    "road_name": "Jandi Mandir"
+  },
+  "28.630557,77.133229": {
+    "address": "Mahatma Gandhi Marg, Lohar Basti, Naraina, New Delhi, Delhi, 110028, India",
+    "road_type": "secondary",
+    "road_name": "Mahatma Gandhi Marg"
+  },
+  "28.648193,77.139299": {
+    "address": "Ramesh Nagar, Saraswati Garden, Patel Nagar, West Delhi, Delhi, 110026, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.641990,77.133138": {
+    "address": "Dhanpat Rai Ahuja Marg, Mansarovar Garden, Patel Nagar, West Delhi, Delhi, 110027, India",
+    "road_type": "residential",
+    "road_name": "Dhanpat Rai Ahuja Marg"
+  },
+  "28.652024,77.129346": {
+    "address": "Brahma's - Taste of Trust, B-3/7, Shivaji Marg, DLF Indl Area, Patel Nagar, West Delhi, Delhi, 110015, India",
+    "road_type": null,
+    "road_name": "Brahma's - Taste of Trust"
+  },
+  "28.653320,77.129085": {
+    "address": "Bali Nagar, Patel Nagar, West Delhi, Delhi, 110027, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.650290,77.124746": {
+    "address": "Ring Road, Rajouri Garden, Patel Nagar, West Delhi, Delhi, 110027, India",
+    "road_type": "secondary",
+    "road_name": "Ring Road"
+  },
+  "28.648604,77.121231": {
+    "address": "Vishal Enclave, Patel Nagar, West Delhi, Delhi, 110027, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.650427,77.115686": {
+    "address": "Tagore Garden Extension, Patel Nagar, West Delhi, Delhi, 110027, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.657997,77.117655": {
+    "address": "Patel Nagar, West Delhi, Delhi, 110027, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.677233,77.113548": {
+    "address": "Rohtak Road, Punjabi Bagh Tehsil, West Delhi, Delhi, 110056, India",
+    "road_type": "primary",
+    "road_name": "Rohtak Road"
+  },
+  "28.679503,77.096889": {
+    "address": "Punjabi Bagh Tehsil, West Delhi, Delhi, 110056, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.661872,77.091506": {
+    "address": "Outer Ring Road, State Bank Nagar, Paschim Vihar, Punjabi Bagh Tehsil, West Delhi, Delhi, 110087, India",
+    "road_type": "tertiary",
+    "road_name": "Outer Ring Road"
+  },
+  "28.659040,77.083350": {
+    "address": "Sunder Vihar, Paschim Vihar, Punjabi Bagh Tehsil, West Delhi, Delhi, 110087, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.661311,77.081875": {
+    "address": "Paschim Vihar, Punjabi Bagh Tehsil, West Delhi, Delhi, 110087, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.664908,77.077516": {
+    "address": "Nangloi, Punjabi Bagh Tehsil, West Delhi, Delhi, 110087, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.681579,77.077245": {
+    "address": "Rohtak Road, Nangloi, Punjabi Bagh Tehsil, West Delhi, Delhi, 110083, India",
+    "road_type": "trunk",
+    "road_name": "Rohtak Road"
+  },
+  "28.682040,77.034605": {
+    "address": "Mundka, Punjabi Bagh Tehsil, West Delhi, Delhi, 110041, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.674344,76.998900": {
+    "address": "Hiran Kudna, Punjabi Bagh Tehsil, West Delhi, Delhi, 110081, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.678375,76.998889": {
+    "address": "Punjabi Bagh Tehsil, West Delhi, Delhi, 110081, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.680468,76.999473": {
+    "address": "Kanjhawalan Tehsil, North West Delhi, Delhi, 110081, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.703739,76.977895": {
+    "address": "Kanjhawalan Tehsil, North West Delhi, Delhi, 110081, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.703733,76.977892": {
+    "address": "Kanjhawalan Tehsil, North West Delhi, Delhi, 110081, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.703743,76.977889": {
+    "address": "Kanjhawalan Tehsil, North West Delhi, Delhi, 110081, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.716188,76.959878": {
+    "address": "Kanjhawalan Tehsil, North West Delhi, Delhi, 110081, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.729266,76.997436": {
+    "address": "Kanjhawalan Tehsil, North West Delhi, Delhi, 110081, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.696529,77.000898": {
+    "address": "Kanjhawalan Tehsil, North West Delhi, Delhi, 110081, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.704313,76.988998": {
+    "address": "Kanjhawalan Tehsil, North West Delhi, Delhi, 110081, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.706804,76.968120": {
+    "address": "Kanjhawalan Tehsil, North West Delhi, Delhi, 110081, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.694057,76.969497": {
+    "address": "Punjabi Bagh Tehsil, West Delhi, Delhi, 110081, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.681439,76.974998": {
+    "address": "Punjabi Bagh Tehsil, West Delhi, Delhi, 110081, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.682641,76.974345": {
+    "address": "Punjabi Bagh Tehsil, West Delhi, Delhi, 110081, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.697636,77.029794": {
+    "address": "DSIIDC MLM Hub, Rohini Tehsil, North West Delhi, Delhi, 110081, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.689585,77.027748": {
+    "address": "Mundka, Punjabi Bagh Tehsil, West Delhi, Delhi, 110041, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.626234,77.227500": {
+    "address": "Hailey Road, Connaught Place, Chanakya Puri Tehsil, New Delhi, Delhi, 020626, India",
+    "road_type": "residential",
+    "road_name": "Hailey Road"
+  },
+  "28.621802,77.226114": {
+    "address": "Kasturba Gandhi Marg, Connaught Place, Chanakya Puri Tehsil, New Delhi, Delhi, 020626, India",
+    "road_type": "secondary",
+    "road_name": "Kasturba Gandhi Marg"
+  },
+  "28.624598,77.224431": {
+    "address": "Kasturba Gandhi Marg, Connaught Place, Chanakya Puri Tehsil, New Delhi, Delhi, 110001, India",
+    "road_type": "secondary",
+    "road_name": "Kasturba Gandhi Marg"
+  },
+  "28.632142,77.216455": {
+    "address": "Outer Circle, Connaught Place, Chanakya Puri Tehsil, New Delhi, Delhi, 110001, India",
+    "road_type": null,
+    "road_name": ""
+  },
+  "28.602191,77.180584": {
+    "address": "Simon Bolivar Road, Malcha, Chanakya Puri Tehsil, New Delhi, Delhi, 110021, India",
+    "road_type": "secondary",
+    "road_name": "Simon Bolivar Road"
+  },
+  "28.609280,77.172770": {
+    "address": "Vande Mataram Marg, Central Ridge Reserve Forest, New Delhi, Delhi, 110021, India",
+    "road_type": "secondary",
+    "road_name": "Vande Mataram Marg"
+  },
+  "28.563901,77.133756": {
+    "address": "Delhi Cantonment, New Delhi, Delhi, 110037, India",
+    "road_type": "secondary",
+    "road_name": ""
+  },
+  "28.563489,77.133716": {
+    "address": "Delhi Cantonment, New Delhi, Delhi, 110037, India",
+    "road_type": "secondary",
+    "road_name": ""
+  },
+  "28.546526,77.123381": {
+    "address": "Mahipalpur, Vasant Vihar Tehsil, New Delhi, Delhi, 110037, India",
+    "road_type": "secondary",
+    "road_name": ""
+  },
+  "28.542272,77.072783": {
+    "address": "shahi road, Kapashera, Kapashera Tehsil, South West Delhi, Delhi, 110061, India",
+    "road_type": "tertiary",
+    "road_name": "shahi road"
+  },
+  "28.532378,77.052851": {
+    "address": "shahi road, Kapashera Tehsil, South West Delhi, Delhi, 110061, India",
+    "road_type": "tertiary",
+    "road_name": "shahi road"
+  },
+  "28.630227,76.999857": {
+    "address": "Najafgarh, Najafgarh Tehsil, South West Delhi, Delhi, 110043, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.649696,77.027592": {
+    "address": "Najafgarh, Punjabi Bagh Tehsil, West Delhi, Delhi, 110043, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.653319,77.035151": {
+    "address": "Nangloi road, Nangloi Extension, Punjabi Bagh Tehsil, West Delhi, Delhi, 110041, India",
+    "road_type": "primary",
+    "road_name": "Nangloi road"
+  },
+  "28.640398,77.037818": {
+    "address": "Peer Baba Road, Sethi Enclave, Kumhar Colony, Patel Nagar, West Delhi, Delhi, 110059, India",
+    "road_type": "residential",
+    "road_name": "Peer Baba Road"
+  },
+  "28.635209,77.033403": {
+    "address": "S, Sainik Enclave III, Patel Nagar, West Delhi, Delhi, 110059, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.665171,77.014574": {
+    "address": "JJ Colony, Lok Nayak Puram, Punjabi Bagh Tehsil, West Delhi, Delhi, 110041, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.666385,77.016946": {
+    "address": "JJ Colony, Lok Nayak Puram, Punjabi Bagh Tehsil, West Delhi, Delhi, 110041, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.649813,77.050417": {
+    "address": "Shiv Vihar, Patel Nagar, West Delhi, Delhi, 110041, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.644529,77.088480": {
+    "address": "Gurudwara Road, Widow Colony, Tilak Nagar, Rajouri Garden Tehsil, West Delhi, Delhi, 110018, India",
+    "road_type": "residential",
+    "road_name": "Gurudwara Road"
+  },
+  "28.643825,77.088956": {
+    "address": "Widow Colony, Tilak Nagar, Rajouri Garden Tehsil, West Delhi, Delhi, 110018, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.652512,77.032898": {
+    "address": "Najafgarh Nangloi Road, Nangloi Extension, Punjabi Bagh Tehsil, West Delhi, Delhi, 110041, India",
+    "road_type": "primary",
+    "road_name": "Najafgarh Nangloi Road"
+  },
+  "28.644586,77.017909": {
+    "address": "Najafgarh Nangloi Road, Baprola, Najafgarh, Punjabi Bagh Tehsil, West Delhi, Delhi, 110043, India",
+    "road_type": "primary",
+    "road_name": "Najafgarh Nangloi Road"
+  },
+  "28.644576,77.017920": {
+    "address": "Najafgarh Nangloi Road, Baprola, Najafgarh, Punjabi Bagh Tehsil, West Delhi, Delhi, 110043, India",
+    "road_type": "primary",
+    "road_name": "Najafgarh Nangloi Road"
+  },
+  "28.666183,76.979217": {
+    "address": "Punjabi Bagh Tehsil, West Delhi, Delhi, 124507, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.666210,76.979273": {
+    "address": "Punjabi Bagh Tehsil, West Delhi, Delhi, 124507, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.665220,76.942662": {
+    "address": "Najafgarh Tehsil, South West Delhi, Delhi, 110072, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.655743,76.949673": {
+    "address": "Najafgarh Bahadurgarh Road, Jharodha Kalan, Najafgarh Tehsil, South West Delhi, Delhi, 110072, India",
+    "road_type": "secondary",
+    "road_name": "Najafgarh Bahadurgarh Road"
+  },
+  "28.631286,76.973218": {
+    "address": "Najafgarh, Najafgarh Tehsil, South West Delhi, Delhi, 110043, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.631025,76.970981": {
+    "address": "Najafgarh, Najafgarh Tehsil, South West Delhi, Delhi, 110043, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.628279,76.967082": {
+    "address": "Najafgarh Bahadurgarh Road, Najafgarh, Najafgarh Tehsil, South West Delhi, Delhi, 110043, India",
+    "road_type": "secondary",
+    "road_name": "Najafgarh Bahadurgarh Road"
+  },
+  "28.625925,76.943051": {
+    "address": "Surakhpur, Najafgarh, Najafgarh Tehsil, South West Delhi, Delhi, 110043, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.627103,76.948411": {
+    "address": "Najafgarh, Najafgarh Tehsil, South West Delhi, Delhi, 110072, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.637714,77.207593": {
+    "address": "Palika Niketan, DIZ Area, Chanakya Puri Tehsil, New Delhi, Delhi, 110055, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.646905,77.195066": {
+    "address": "27, Karol Bagh, Karol Bagh Tehsil, Central Delhi, Delhi, 110060, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.650115,77.189472": {
+    "address": "Karol Bagh, Karol Bagh Tehsil, Central Delhi, Delhi, 110060, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.653833,77.182741": {
+    "address": "Arya Samaj Road, 12-B, Civil Lines Tehsil, Central Delhi, Delhi, 110060, India",
+    "road_type": "tertiary",
+    "road_name": "Arya Samaj Road"
+  },
+  "28.663804,77.179189": {
+    "address": "Moti Bagh (East), Anand Parbat, Civil Lines Tehsil, Central Delhi, Delhi, 110052, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.663767,77.180586": {
+    "address": "Swami Narayan Marg, Moti Bagh (East), Sarai Rohilla, Civil Lines Tehsil, Central Delhi, Delhi, 110052, India",
+    "road_type": "secondary",
+    "road_name": "Swami Narayan Marg"
+  },
+  "28.664864,77.195411": {
+    "address": "Rama Park, Civil Lines Tehsil, Central Delhi, Delhi, 110007, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.665987,77.201457": {
+    "address": "Vir Banda Bairagi Marg, Beri Wala Bagh, Sarai Rohilla, Civil Lines Tehsil, Central Delhi, Delhi, 110007, India",
+    "road_type": "secondary",
+    "road_name": "Vir Banda Bairagi Marg"
+  },
+  "28.668571,77.191995": {
+    "address": "Vir Banda Bairagi Marg, Vivekanand Puri, Sarai Rohilla, Civil Lines Tehsil, Central Delhi, Delhi, 110007, India",
+    "road_type": "secondary",
+    "road_name": "Vir Banda Bairagi Marg"
+  },
+  "28.668523,77.182599": {
+    "address": "Moti Bagh (East), Sarai Rohilla, Civil Lines Tehsil, Central Delhi, Delhi, 110052, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.679749,77.094252": {
+    "address": "Rohtak Road, Nangloi, Punjabi Bagh Tehsil, West Delhi, Delhi, 110083, India",
+    "road_type": "trunk",
+    "road_name": "Rohtak Road"
+  },
+  "28.681154,77.082165": {
+    "address": "Rohtak Road, Nangloi, Punjabi Bagh Tehsil, West Delhi, Delhi, 110083, India",
+    "road_type": "trunk",
+    "road_name": "Rohtak Road"
+  },
+  "28.681171,77.082152": {
+    "address": "Rohtak Road, Nangloi, Punjabi Bagh Tehsil, West Delhi, Delhi, 110083, India",
+    "road_type": "trunk",
+    "road_name": "Rohtak Road"
+  },
+  "28.682707,77.026426": {
+    "address": "Rohtak Road, Mundka, Punjabi Bagh Tehsil, West Delhi, Delhi, 110081, India",
+    "road_type": "trunk",
+    "road_name": "Rohtak Road"
+  },
+  "28.692705,77.021775": {
+    "address": "Mundka, Punjabi Bagh Tehsil, West Delhi, Delhi, 110081, India",
+    "road_type": "primary",
+    "road_name": ""
+  },
+  "28.724714,77.040683": {
+    "address": "UER II, Begum Pur, Kanjhawalan Tehsil, North West Delhi, Delhi, 110086, India",
+    "road_type": "primary",
+    "road_name": "UER II"
+  },
+  "28.710997,77.063950": {
+    "address": "Sector 21, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.713103,77.071956": {
+    "address": "Sector 20, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.709135,77.070903": {
+    "address": "Sector 20, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.704021,77.074526": {
+    "address": "100 Feet road, Sector 20, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India",
+    "road_type": "tertiary",
+    "road_name": "100 Feet road"
+  },
+  "28.703905,77.063190": {
+    "address": "Gali Number 4, Sector 20, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India",
+    "road_type": "residential",
+    "road_name": "Gali Number 4"
+  },
+  "28.701692,77.066198": {
+    "address": "Sultanpuri, Rohini Tehsil, North West Delhi, Delhi, 110086, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.688378,77.098873": {
+    "address": "Vidya Vihar, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110056, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.695471,77.090517": {
+    "address": "Mangolpuri Colony, Rohini Tehsil, North West Delhi, Delhi, 110083, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.687849,77.091925": {
+    "address": "Sultanpuri, Rohini Tehsil, North West Delhi, Delhi, 110083, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.688566,77.096287": {
+    "address": "Mangolpuri Flyover, Punjabi Bagh Tehsil, West Delhi, Delhi, 110083, India",
+    "road_type": "trunk",
+    "road_name": "Mangolpuri Flyover"
+  },
+  "28.699943,77.094685": {
+    "address": "Kanjhawala road, Sector 2, Mangolpur Khurd, Rohini Tehsil, North West Delhi, Delhi, 110083, India",
+    "road_type": "secondary",
+    "road_name": "Kanjhawala road"
+  },
+  "28.700714,77.098265": {
+    "address": "Sir Chotu Ram marg, Sector 2, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110083, India",
+    "road_type": "tertiary",
+    "road_name": "Sir Chotu Ram marg"
+  },
+  "28.697848,77.104000": {
+    "address": "Sector 2, Rohini, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110083, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.710211,77.130682": {
+    "address": "Rohini Sports Complex, Prashant vihar road, Sector 14, Rohini, Alipur Tehsil, North Delhi, Delhi, 110085, India",
+    "road_type": null,
+    "road_name": "Rohini Sports Complex"
+  },
+  "28.689460,77.129912": {
+    "address": "Pitampura, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110034, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.689584,77.139989": {
+    "address": "Siddhartha Apartment, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110034, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.693995,77.150633": {
+    "address": "Lala Jagat Narayan marg, Kapil Vihar, Pitampura, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110034, India",
+    "road_type": "secondary",
+    "road_name": "Lala Jagat Narayan marg"
+  },
+  "28.684236,77.163760": {
+    "address": "Maharaja Nahar Singh Marg, Ganeshpura, Ashok Vihar, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110035, India",
+    "road_type": "secondary",
+    "road_name": "Maharaja Nahar Singh Marg"
+  },
+  "28.667196,77.193724": {
+    "address": "Azad Park Road, Padam Nagar, Civil Lines Tehsil, Central Delhi, Delhi, 110007, India",
+    "road_type": "residential",
+    "road_name": "Azad Park Road"
+  },
+  "28.664838,77.195260": {
+    "address": "Railway Quarters, Civil Lines Tehsil, Central Delhi, Delhi, 110007, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.628282,77.216390": {
+    "address": "New Delhi Municipal Corporation (NDMC), 15, Sansad Marg, Connaught Place, Chanakya Puri Tehsil, New Delhi, Delhi, 110001, India",
+    "road_type": null,
+    "road_name": "New Delhi Municipal Corporation (NDMC)"
+  },
+  "28.629715,77.225001": {
+    "address": "Barakhambha Road, Barakhamba Road, Kashmiri Market, Connaught Place, Chanakya Puri Tehsil, New Delhi, Delhi, 110001, India",
+    "road_type": null,
+    "road_name": "Barakhambha Road"
+  },
+  "28.636807,77.231083": {
+    "address": "Maharaja Ranjeet Singh Marg, Kotwali Tehsil, Central Delhi, Delhi, 110002, India",
+    "road_type": "secondary",
+    "road_name": "Maharaja Ranjeet Singh Marg"
+  },
+  "28.660238,77.235590": {
+    "address": "Shyama Prasad Mukherji Marg, Chandni Chowk, Old Delhi, Kotwali Tehsil, Central Delhi, Delhi, 110006, India",
+    "road_type": null,
+    "road_name": ""
+  },
+  "28.658904,77.231588": {
+    "address": "H.C. Sen Marg, Chandni Chowk, Old Delhi, Kotwali Tehsil, Central Delhi, Delhi, 110006, India",
+    "road_type": "unclassified",
+    "road_name": "H.C. Sen Marg"
+  },
+  "28.667453,77.221371": {
+    "address": "Civil Lines, Civil Lines Tehsil, Central Delhi, Delhi, 110054, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.670003,77.219085": {
+    "address": "Court Road, Civil Lines, Civil Lines Tehsil, Central Delhi, Delhi, 110054, India",
+    "road_type": "tertiary",
+    "road_name": "Court Road"
+  },
+  "28.632771,77.314153": {
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.629254,77.324933": {
+    "address": "Ghazipur Dairy, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.620210,77.281773": {
+    "address": "Kali Bari Temple, B-65, Charan Singh Baghel Marg, Pandav Nagar, Mayur Vihar, Mayur Vihar Tehsil, East Delhi, Delhi, 110092, India",
+    "road_type": null,
+    "road_name": "Kali Bari Temple"
+  },
+  "28.640738,77.288466": {
+    "address": "Swasthya Vihar, Preet Vihar Tehsil, East Delhi, Delhi, 110051, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.640157,77.291460": {
+    "address": "44, Gujrat Vihar Road, Swasthya Vihar, Preet Vihar Tehsil, East Delhi, Delhi, 110051, India",
+    "road_type": null,
+    "road_name": ""
+  },
+  "28.644510,77.298711": {
+    "address": "Swami Dayanand Marg, Preet Vihar, Preet Vihar Tehsil, East Delhi, Delhi, 110051, India",
+    "road_type": "secondary",
+    "road_name": "Swami Dayanand Marg"
+  },
+  "28.651285,77.293253": {
+    "address": "Swami Dayanand Marg, Preet Vihar, Preet Vihar Tehsil, East Delhi, Delhi, 110051, India",
+    "road_type": "primary",
+    "road_name": "Swami Dayanand Marg"
+  },
+  "28.662540,77.286709": {
+    "address": "Road Number 57, Karkarduma, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India",
+    "road_type": "primary",
+    "road_name": "Road Number 57"
+  },
+  "28.665999,77.284109": {
+    "address": "Swami Dayanand Marg, Bihari Colony, Shahdara, Vivek Vihar Tehsil, Shahdara, Delhi, 110032, India",
+    "road_type": "primary",
+    "road_name": "Swami Dayanand Marg"
+  },
+  "28.671643,77.280569": {
+    "address": "Road Number 57, Bihari Colony, Shahdara, Vivek Vihar Tehsil, Shahdara, Delhi, 110032, India",
+    "road_type": "primary",
+    "road_name": "Road Number 57"
+  },
+  "28.672482,77.280470": {
+    "address": "Keshav Chowk Underpass, Bihari Colony, Shahdara, Vivek Vihar Tehsil, Shahdara, Delhi, 110032, India",
+    "road_type": "secondary",
+    "road_name": "Keshav Chowk Underpass"
+  },
+  "28.672235,77.274827": {
+    "address": "AH2, Kanti Nagar Extension, Gandhi Nagar, Vivek Vihar Tehsil, Shahdara, Delhi, 110032, India",
+    "road_type": "trunk",
+    "road_name": "AH2"
+  },
+  "28.670763,77.265519": {
+    "address": "AH2, Valmiki Colony, Vivek Vihar Tehsil, Shahdara, Delhi, 420420, India",
+    "road_type": "trunk",
+    "road_name": "AH2"
+  },
+  "28.691605,77.254551": {
+    "address": "Delhi\u2013Dehradun Expressway, Gamri Village, Khajuri, Seelam Pur Tehsil, North East Delhi, Delhi, 420420, India",
+    "road_type": "trunk",
+    "road_name": "Delhi\u2013Dehradun Expressway"
+  },
+  "28.705764,77.256344": {
+    "address": "Delhi-Dehradun Expressway, Khajuri, Seelam Pur Tehsil, North East Delhi, Delhi, 110094, India",
+    "road_type": "motorway",
+    "road_name": "Delhi-Dehradun Expressway"
+  },
+  "28.707833,77.256674": {
+    "address": "Delhi-Dehradun Expressway, Khajuri, Seelam Pur Tehsil, North East Delhi, Delhi, 110094, India",
+    "road_type": "motorway",
+    "road_name": "Delhi-Dehradun Expressway"
+  },
+  "28.707606,77.256717": {
+    "address": "Seelam Pur Tehsil, North East Delhi, Delhi, Ghaziabad, Uttar Pradesh, 110094, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.754414,77.244589": {
+    "address": "Karawal Nagar Tehsil, North East Delhi, Delhi, 110094, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.750099,77.251903": {
+    "address": "Karawal Nagar Tehsil, North East Delhi, Delhi, Ghaziabad, Uttar Pradesh, 110094, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.735761,77.246928": {
+    "address": "Karawal Nagar Tehsil, North East Delhi, Delhi, Ghaziabad, Uttar Pradesh, 110094, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.729457,77.245747": {
+    "address": "Karawal Nagar Tehsil, North East Delhi, Delhi, Ghaziabad, Uttar Pradesh, 110094, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.710262,77.221195": {
+    "address": "Nehru Vihar, Civil Lines Tehsil, Central Delhi, Delhi, 110009, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.718491,77.223175": {
+    "address": "Gandhi Vihar, Civil Lines Tehsil, Central Delhi, Delhi, 110009, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.724930,77.206322": {
+    "address": "Model Town Tehsil, North Delhi, Delhi, 110084, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.723153,77.205820": {
+    "address": "Model Town Tehsil, North Delhi, Delhi, 110084, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.724738,77.198382": {
+    "address": "Shanti Swaroop tyagi marg, Model Town Tehsil, North Delhi, Delhi, 110084, India",
+    "road_type": "secondary",
+    "road_name": "Shanti Swaroop tyagi marg"
+  },
+  "28.728994,77.197174": {
+    "address": "Civil Lines Tehsil, Central Delhi, Delhi, 110084, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.737297,77.160195": {
+    "address": "Doctor KB Hedgewar Marg, Kalander Colony, Basant Dada Patil Nagar, Model Town Tehsil, North Delhi, Delhi, 110042, India",
+    "road_type": "trunk",
+    "road_name": "Doctor KB Hedgewar Marg"
+  },
+  "28.771428,77.145057": {
+    "address": "Swaroop Nagar, Alipur Tehsil, North Delhi, Delhi, 110036, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.813035,77.158790": {
+    "address": "Palla Bakhtawarpur road, Alipur, Alipur Tehsil, North Delhi, Delhi, 110036, India",
+    "road_type": "secondary",
+    "road_name": "Palla Bakhtawarpur road"
+  },
+  "28.830985,77.199546": {
+    "address": "Alipur Tehsil, North Delhi, Delhi, 110005, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.839985,77.183714": {
+    "address": "Alipur Tehsil, North Delhi, Delhi, 110036, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.842190,77.185836": {
+    "address": "Alipur Tehsil, North Delhi, Delhi, 110036, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.840212,77.171197": {
+    "address": "Alipur Tehsil, North Delhi, Delhi, 131028, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.836680,77.168756": {
+    "address": "Alipur Tehsil, North Delhi, Delhi, 110036, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.832842,77.169847": {
+    "address": "Alipur Tehsil, North Delhi, Delhi, 110036, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.799112,77.185442": {
+    "address": "Alipur Tehsil, North Delhi, Delhi, 110005, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.803637,77.177404": {
+    "address": "Alipur Tehsil, North Delhi, Delhi, 110036, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.774737,77.174699": {
+    "address": "Ibrahimpur, Alipur Tehsil, North Delhi, Delhi, 110036, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.779679,77.166225": {
+    "address": "Ibrahimpur, Alipur Tehsil, North Delhi, Delhi, 110036, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.728389,77.145605": {
+    "address": "Outer Ring Road, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110089, India",
+    "road_type": "primary",
+    "road_name": "Outer Ring Road"
+  },
+  "28.744809,77.132367": {
+    "address": "Sector 18, Siraspur, Alipur Tehsil, North Delhi, Delhi, 110089, India",
+    "road_type": "secondary",
+    "road_name": ""
+  },
+  "28.745197,77.136830": {
+    "address": "Siraspur, Alipur Tehsil, North Delhi, Delhi, 110089, India",
+    "road_type": "secondary",
+    "road_name": ""
+  },
+  "28.742778,77.139833": {
+    "address": "Samaypur Underpass, Samaipur Badli, Siraspur, Alipur Tehsil, North Delhi, Delhi, 110089, India",
+    "road_type": "secondary",
+    "road_name": "Samaypur Underpass"
+  },
+  "28.747865,77.144424": {
+    "address": "Siraspur Samaypur Road, Yadav Nagar, Alipur Tehsil, North Delhi, Delhi, 110042, India",
+    "road_type": "tertiary",
+    "road_name": "Siraspur Samaypur Road"
+  },
+  "28.760277,77.135525": {
+    "address": "Siraspur, Alipur Tehsil, North Delhi, Delhi, 110042, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.759613,77.131116": {
+    "address": "Siraspur Main Gurudwara Road, Siraspur, Alipur Tehsil, North Delhi, Delhi, 110042, India",
+    "road_type": "tertiary",
+    "road_name": "Siraspur Main Gurudwara Road"
+  },
+  "28.772011,77.122089": {
+    "address": "Khera Khurd, Alipur Tehsil, North Delhi, Delhi, 110082, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.787496,77.113758": {
+    "address": "Siraspur, Narela Tehsil, North Delhi, Delhi, 110082, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.797587,77.131539": {
+    "address": "Alipur, Alipur Tehsil, North Delhi, Delhi, 110082, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.752533,77.095448": {
+    "address": "Sector 28, Rohini, Alipur Tehsil, North Delhi, Delhi, 110085, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.758378,77.101193": {
+    "address": "Sector 28, Rohini, Alipur Tehsil, North Delhi, Delhi, 110082, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.784638,77.063028": {
+    "address": "Sector 4, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "trunk",
+    "road_name": ""
+  },
+  "28.786939,77.059049": {
+    "address": "Sector 4, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "trunk",
+    "road_name": ""
+  },
+  "28.808458,77.052975": {
+    "address": "J.J. Colony, Sector G-8, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.804884,77.052914": {
+    "address": "J.J. Colony, Sector G-8, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.801691,77.053091": {
+    "address": "J.J. Colony, Sector G-8, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.810888,77.064879": {
+    "address": "Sector G7, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.819673,77.064138": {
+    "address": "Sector G6, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "secondary",
+    "road_name": ""
+  },
+  "28.824046,77.069073": {
+    "address": "Sector G6, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "secondary",
+    "road_name": ""
+  },
+  "28.837874,77.100267": {
+    "address": "Narela Industrial Complex, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "secondary",
+    "road_name": ""
+  },
+  "28.854800,77.090614": {
+    "address": "Narela, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.852667,77.087700": {
+    "address": "Swami Swaroopanand Marg, Narela, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": null,
+    "road_name": ""
+  },
+  "28.852268,77.073454": {
+    "address": "Narela, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.854825,77.073878": {
+    "address": "Narela, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.850889,77.077477": {
+    "address": "Lampur, Narela Tehsil, North Delhi, Delhi, Sonipat, Haryana, 110040, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.845553,77.082496": {
+    "address": "Swatantra Nagar, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.841493,77.078903": {
+    "address": "Narela, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.822497,77.083187": {
+    "address": "Sector G-2, Narela Tehsil, North Delhi, Delhi, 110040, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.816742,77.073766": {
+    "address": "Sector G6, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.813735,77.073173": {
+    "address": "Sector G6, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.812231,77.076159": {
+    "address": "Sector G6, Narela Tehsil, North Delhi, Delhi, 110082, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.811957,77.081994": {
+    "address": "Sector G-3 & G-4, Narela Tehsil, North Delhi, Delhi, 110082, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.701832,77.285966": {
+    "address": "Wazirabad Road, Yamuna Vihar, Yamuna Vihar Tehsil, North East Delhi, Delhi, 110093, India",
+    "road_type": "secondary_link",
+    "road_name": "Wazirabad Road"
+  },
+  "28.721297,77.266919": {
+    "address": "Karawal Nagar Tehsil, North East Delhi, Delhi, 110094, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.724047,77.268177": {
+    "address": "Karawal Nagar Tehsil, North East Delhi, Delhi, 110094, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.724718,77.268473": {
+    "address": "Karawal Nagar Tehsil, North East Delhi, Delhi, 110094, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.725449,77.268934": {
+    "address": "Karawal Nagar Tehsil, North East Delhi, Delhi, 110094, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.725409,77.270994": {
+    "address": "Karawal Nagar Tehsil, North East Delhi, Delhi, 110094, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.723810,77.273865": {
+    "address": "Johripur Road, Karawal Nagar Tehsil, North East Delhi, Delhi, 110094, India",
+    "road_type": "tertiary",
+    "road_name": "Johripur Road"
+  },
+  "28.703471,77.266355": {
+    "address": "Brijpuri, Yamuna Vihar, Seelam Pur Tehsil, North East Delhi, Delhi, 110053, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.707905,77.262716": {
+    "address": "Karawal Nagar Main Road, Seelam Pur Tehsil, North East Delhi, Delhi, 110094, India",
+    "road_type": "tertiary",
+    "road_name": "Karawal Nagar Main Road"
+  },
+  "28.663619,77.278676": {
+    "address": "Raghuveer Pura Road, Azad Nagar, Vivek Vihar Tehsil, Shahdara, Delhi, 110031, India",
+    "road_type": "residential",
+    "road_name": "Raghuveer Pura Road"
+  },
+  "28.653133,77.292938": {
+    "address": "Preet Vihar, Preet Vihar Tehsil, East Delhi, Delhi, 110051, India",
+    "road_type": "secondary",
+    "road_name": ""
+  },
+  "28.658387,77.293074": {
+    "address": "Karkarduma, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.651769,77.295123": {
+    "address": "Kendriya Vidyalaya AGCR, Mangalam Marg, Karkardooma Institutional Area, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India",
+    "road_type": null,
+    "road_name": "Kendriya Vidyalaya AGCR"
+  },
+  "28.661245,77.287510": {
+    "address": "Road Number 57, Karkarduma, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India",
+    "road_type": "primary",
+    "road_name": "Road Number 57"
+  },
+  "28.655111,77.290576": {
+    "address": "Preet Vihar Tehsil, East Delhi, Delhi, 110051, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.652105,77.292779": {
+    "address": "Swami Dayanand Marg, Preet Vihar, Preet Vihar Tehsil, East Delhi, Delhi, 110051, India",
+    "road_type": "primary",
+    "road_name": "Swami Dayanand Marg"
+  },
+  "28.643896,77.290873": {
+    "address": "Preet Vihar, Preet Vihar Tehsil, East Delhi, Delhi, 110051, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.647516,77.279301": {
+    "address": "Patparganj Road, Geeta Colony, Preet Vihar Tehsil, East Delhi, Delhi, 110031, India",
+    "road_type": "tertiary",
+    "road_name": "Patparganj Road"
+  },
+  "28.650332,77.278637": {
+    "address": "Patparganj Road, Geeta Colony, Preet Vihar Tehsil, East Delhi, Delhi, 110031, India",
+    "road_type": "tertiary",
+    "road_name": "Patparganj Road"
+  },
+  "28.655901,77.281810": {
+    "address": "Lal Quarters Road, Krishna Park, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India",
+    "road_type": "residential",
+    "road_name": "Lal Quarters Road"
+  },
+  "28.658252,77.285222": {
+    "address": "Krishna Park, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.662812,77.286425": {
+    "address": "Road Number 57, Karkarduma, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India",
+    "road_type": "primary",
+    "road_name": "Road Number 57"
+  },
+  "28.663963,77.288181": {
+    "address": "Pandav Road, Vishwas Nagar, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India",
+    "road_type": "residential",
+    "road_name": "Pandav Road"
+  },
+  "28.664070,77.292476": {
+    "address": "Vishwas Road, Vishwas Nagar, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India",
+    "road_type": "residential",
+    "road_name": "Vishwas Road"
+  },
+  "28.667178,77.312270": {
+    "address": "Jhilmil Colony, Vivek Vihar, Vivek Vihar Tehsil, Shahdara, Delhi, 110095, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.668921,77.315157": {
+    "address": "Vivek Vihar, Vivek Vihar Tehsil, Shahdara, Delhi, 110095, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.667485,77.315823": {
+    "address": "Vivek Vihar, Vivek Vihar Tehsil, Shahdara, Delhi, 110095, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.666742,77.319683": {
+    "address": "Vivek Vihar, Vivek Vihar Tehsil, Shahdara, Delhi, 110095, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.663293,77.316341": {
+    "address": "Block B Yojana Vihar, Yojana Vihar, Vivek Vihar Tehsil, Shahdara, Delhi, 110095, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.659976,77.310834": {
+    "address": "Major Somnath Marg, Surajmal Vihar, Vivek Vihar Tehsil, Shahdara, Delhi, 110095, India",
+    "road_type": "secondary",
+    "road_name": "Major Somnath Marg"
+  },
+  "28.663379,77.309040": {
+    "address": "Surajmal Vihar, Vivek Vihar Tehsil, Shahdara, Delhi, 110095, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.662772,77.307671": {
+    "address": "Surajmal Vihar, Vivek Vihar Tehsil, Shahdara, Delhi, 110095, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.660248,77.304075": {
+    "address": "Major Somnath Marg, Surajmal Vihar, Vivek Vihar Tehsil, Shahdara, Delhi, 110095, India",
+    "road_type": "secondary",
+    "road_name": "Major Somnath Marg"
+  },
+  "28.660237,77.304149": {
+    "address": "Major Somnath Marg, Surajmal Vihar, Vivek Vihar Tehsil, Shahdara, Delhi, 110095, India",
+    "road_type": "secondary",
+    "road_name": "Major Somnath Marg"
+  },
+  "28.660003,77.307693": {
+    "address": "Major Somnath Marg, Ram Vihar, Vivek Vihar Tehsil, Shahdara, Delhi, 110095, India",
+    "road_type": "secondary",
+    "road_name": "Major Somnath Marg"
+  },
+  "28.659865,77.310580": {
+    "address": "Major Somnath Marg, Surajmal Vihar, Vivek Vihar Tehsil, Shahdara, Delhi, 110095, India",
+    "road_type": "secondary",
+    "road_name": "Major Somnath Marg"
+  },
+  "28.614411,77.322612": {
+    "address": "Kalyan Puri, Mayur Vihar Tehsil, East Delhi, Delhi, 110092, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.621988,77.332448": {
+    "address": "Intergrated Freight Complex, Mayur Vihar Tehsil, East Delhi, Delhi, 110092, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.607470,77.330693": {
+    "address": "Mayur Vihar III, Mayur Vihar Tehsil, East Delhi, Delhi, 110096, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.604575,77.331577": {
+    "address": "Mayur Vihar III, Mayur Vihar Tehsil, East Delhi, Delhi, 110096, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.602607,77.322969": {
+    "address": "Vasundhara Enclave, Mayur Vihar Tehsil, East Delhi, Delhi, 110096, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.599058,77.310653": {
+    "address": "New Ashok Nagar, Mayur Vihar Tehsil, East Delhi, Delhi, 110096, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.599220,77.303944": {
+    "address": "31st Block Main Road, Trilokpuri, Mayur Vihar Tehsil, East Delhi, Delhi, 110091, India",
+    "road_type": "residential",
+    "road_name": "31st Block Main Road"
+  },
+  "28.604580,77.310739": {
+    "address": "Vasundhara Road, Trilokpuri, Mayur Vihar Tehsil, East Delhi, Delhi, 110091, India",
+    "road_type": "tertiary",
+    "road_name": "Vasundhara Road"
+  },
+  "28.604418,77.303537": {
+    "address": "Trilokpuri, Mayur Vihar Tehsil, East Delhi, Delhi, 110091, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.605571,77.296182": {
+    "address": "Patparganj Road, Acharya Niketan, Mayur Vihar, Mayur Vihar Tehsil, East Delhi, Delhi, 110091, India",
+    "road_type": "tertiary",
+    "road_name": "Patparganj Road"
+  },
+  "28.614739,77.290346": {
+    "address": "Kotla Road, Patparganj, Mayur Vihar, Mayur Vihar Tehsil, East Delhi, Delhi, 110091, India",
+    "road_type": "secondary",
+    "road_name": "Kotla Road"
+  },
+  "28.751636,77.079956": {
+    "address": "Bawana road, Sector 30, Rohini, Narela Tehsil, North Delhi, Delhi, 110082, India",
+    "road_type": "primary",
+    "road_name": "Bawana road"
+  },
+  "28.756526,77.065818": {
+    "address": "Sector 36, Rohini, Narela Tehsil, North Delhi, Delhi, 110082, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.752327,77.063306": {
+    "address": "Sector 36, Rohini, Narela Tehsil, North Delhi, Delhi, 110082, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.738072,77.001986": {
+    "address": "Kanjhawala, Kanjhawalan Tehsil, North West Delhi, Delhi, 110081, India",
+    "road_type": "secondary",
+    "road_name": ""
+  },
+  "28.798126,76.960700": {
+    "address": "Qutubgarh, Kanjhawalan Tehsil, North West Delhi, Delhi, India",
+    "road_type": "secondary",
+    "road_name": ""
+  },
+  "28.802652,76.961940": {
+    "address": "Qutubgarh, Kanjhawalan Tehsil, North West Delhi, Delhi, 131103, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.804059,76.977184": {
+    "address": "Narela Tehsil, North Delhi, Delhi, 131103, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.789519,76.975542": {
+    "address": "Kanjhawalan Tehsil, North West Delhi, Delhi, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.777231,76.988284": {
+    "address": "Kanjhawalan Tehsil, North West Delhi, Delhi, 110039, India",
+    "road_type": "unclassified",
+    "road_name": ""
+  },
+  "28.805777,77.001668": {
+    "address": "Razidpur Thakran, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.808837,77.003941": {
+    "address": "Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.809159,77.008172": {
+    "address": "Nangal Main Road, Daryapur Kalan, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "residential",
+    "road_name": "Nangal Main Road"
+  },
+  "28.791048,77.044582": {
+    "address": "Bawana Industrial Area, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.786072,77.053247": {
+    "address": "Bawana Industrial Area, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.778246,77.054295": {
+    "address": "Barwala, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.767150,77.050193": {
+    "address": "Bawana road, Barwala, Narela Tehsil, North Delhi, Delhi, 110039, India",
+    "road_type": "primary",
+    "road_name": "Bawana road"
+  },
+  "28.743896,77.063373": {
+    "address": "Sector 37, Rohini, Narela Tehsil, North Delhi, Delhi, 110086, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.739846,77.066238": {
+    "address": "Sector 32, Rohini, Narela Tehsil, North Delhi, Delhi, 110086, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.728708,77.067139": {
+    "address": "Sector 33, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.724804,77.073226": {
+    "address": "Sector 23, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.734778,77.080058": {
+    "address": "Sector 24, Rohini, Narela Tehsil, North Delhi, Delhi, 110086, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.731372,77.071436": {
+    "address": "Sector 33, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.730410,77.075565": {
+    "address": "Sector 32, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.738451,77.082299": {
+    "address": "Sector 26, Rohini, Narela Tehsil, North Delhi, Delhi, 110082, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.736874,77.111361": {
+    "address": "Dr's Cafe, 69, Doctor Kailash Nath Katju Marg, Sector 11, Rohini, Alipur Tehsil, North Delhi, Delhi, 110085, India",
+    "road_type": null,
+    "road_name": "Dr's Cafe"
+  },
+  "28.724084,77.129994": {
+    "address": "Doctor Kailash Nath Katju Marg, Sector 13, Rohini, Alipur Tehsil, North Delhi, Delhi, 110089, India",
+    "road_type": "primary",
+    "road_name": "Doctor Kailash Nath Katju Marg"
+  },
+  "28.720310,77.135375": {
+    "address": "Sector 13, Rohini, Alipur Tehsil, North Delhi, Delhi, 110089, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.714304,77.156541": {
+    "address": "Shalimar Bagh, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110088, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.725663,77.155959": {
+    "address": "Shalimar Bagh, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110033, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.726292,77.162626": {
+    "address": "Jahangir Puri, Model Town Tehsil, North Delhi, Delhi, 110033, India",
+    "road_type": "secondary",
+    "road_name": ""
+  },
+  "28.730504,77.167591": {
+    "address": "Jahangirpuri Colony, Model Town Tehsil, North Delhi, Delhi, 110033, India",
+    "road_type": "living_street",
+    "road_name": ""
+  },
+  "28.727836,77.167889": {
+    "address": "Mangal Bazar Road, Jahangirpuri Colony, Model Town Tehsil, North Delhi, Delhi, 110033, India",
+    "road_type": "tertiary",
+    "road_name": "Mangal Bazar Road"
+  },
+  "28.724668,77.168299": {
+    "address": "Kushal Cinema Road, Bangali Basti (C Block), Jahangirpuri Colony, Model Town Tehsil, North Delhi, Delhi, 110033, India",
+    "road_type": "tertiary",
+    "road_name": "Kushal Cinema Road"
+  },
+  "28.712295,77.179104": {
+    "address": "17-A, Arihant Marg, Gopal Nagar, Jahangir Puri, Model Town Tehsil, North Delhi, Delhi, 110033, India",
+    "road_type": null,
+    "road_name": ""
+  },
+  "28.709852,77.176240": {
+    "address": "Mahatma Gandhi Marg, Model Town Tehsil, North Delhi, Delhi, 110088, India",
+    "road_type": "secondary",
+    "road_name": "Mahatma Gandhi Marg"
+  },
+  "28.707657,77.179688": {
+    "address": "Mahatma Gandhi Marg, Model Town Tehsil, North Delhi, Delhi, 110088, India",
+    "road_type": "primary",
+    "road_name": "Mahatma Gandhi Marg"
+  },
+  "28.707254,77.182049": {
+    "address": "Model Town Tehsil, North Delhi, Delhi, 110088, India",
+    "road_type": "unclassified",
+    "road_name": ""
+  },
+  "28.706287,77.184201": {
+    "address": "Mahatma Gandhi Marg, Model Town Tehsil, North Delhi, Delhi, 110088, India",
+    "road_type": "primary",
+    "road_name": "Mahatma Gandhi Marg"
+  },
+  "28.693786,77.196890": {
+    "address": "Ishwar Colony, Model Town Tehsil, North Delhi, Delhi, 110009, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.687463,77.205101": {
+    "address": "Daulat Ram College, North Campus, Central Delhi, Delhi, 110007, India",
+    "road_type": null,
+    "road_name": "Daulat Ram College"
+  },
+  "28.681414,77.197931": {
+    "address": "Indra Chandra Shastri Marg, Shakti Nagar, Civil Lines Tehsil, Central Delhi, Delhi, 110007, India",
+    "road_type": "tertiary",
+    "road_name": "Indra Chandra Shastri Marg"
+  },
+  "28.678625,77.193863": {
+    "address": "Shakti Nagar, Civil Lines Tehsil, Central Delhi, Delhi, 110007, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.681514,77.196138": {
+    "address": "Shakti Mandir Marg, Shakti Nagar, Civil Lines Tehsil, Central Delhi, Delhi, 110007, India",
+    "road_type": "residential",
+    "road_name": "Shakti Mandir Marg"
+  },
+  "28.717160,77.076995": {
+    "address": "Sector 23, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.722740,77.084798": {
+    "address": "Sector 23, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.721182,77.089395": {
+    "address": "Rohini Tehsil, North West Delhi, Delhi, 110085, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.736969,77.095302": {
+    "address": "Sector 25, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110085, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.741967,77.084603": {
+    "address": "Sector 26, Rohini, Narela Tehsil, North Delhi, Delhi, 110082, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.745547,77.104324": {
+    "address": "Bawana road, Sector 27, Rohini, Alipur Tehsil, North Delhi, Delhi, 110085, India",
+    "road_type": "secondary",
+    "road_name": "Bawana road"
+  },
+  "28.742929,77.111909": {
+    "address": "Sector 17, Rohini, Alipur Tehsil, North Delhi, Delhi, 110089, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.739652,77.130156": {
+    "address": "Sector 16, Rohini, Alipur Tehsil, North Delhi, Delhi, 110089, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.728119,77.130877": {
+    "address": "B4 road, Sector 15, Rohini, Alipur Tehsil, North Delhi, Delhi, 110089, India",
+    "road_type": "tertiary",
+    "road_name": "B4 road"
+  },
+  "28.701898,77.144265": {
+    "address": "Rath Wala Mandir Marg, Pitampura, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110034, India",
+    "road_type": "residential",
+    "road_name": "Rath Wala Mandir Marg"
+  },
+  "28.719775,77.140339": {
+    "address": "Outer Ring Road, Govind Mohalla, Pitampura, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110089, India",
+    "road_type": "primary",
+    "road_name": "Outer Ring Road"
+  },
+  "28.725590,77.132190": {
+    "address": "Sector 13, Rohini, Alipur Tehsil, North Delhi, Delhi, 110089, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.720134,77.124399": {
+    "address": "Delhi Citizen Apartments, Rohini, Alipur Tehsil, North Delhi, Delhi, 110089, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.713176,77.120773": {
+    "address": "Sector 9, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110085, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.708599,77.118804": {
+    "address": "Shiva Road, Sector 7, Rohini, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110085, India",
+    "road_type": "residential",
+    "road_name": "Shiva Road"
+  },
+  "28.712374,77.110453": {
+    "address": "Sector 6, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110085, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.717328,77.101321": {
+    "address": "Sector 5, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110085, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.714867,77.085264": {
+    "address": "Begampur, Rohini Tehsil, North West Delhi, Delhi, 110083, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.672451,77.132197": {
+    "address": "Shivaji Park, Punjabi Bagh Tehsil, West Delhi, Delhi, 110026, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.672863,77.133715": {
+    "address": "Shivaji Park, Punjabi Bagh Tehsil, West Delhi, Delhi, 110026, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.674229,77.140412": {
+    "address": "Ring Road, Punjabi Bagh, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110026, India",
+    "road_type": "primary_link",
+    "road_name": "Ring Road"
+  },
+  "28.684278,77.145395": {
+    "address": "Guru Harkishan Marg, Shakurpur JJ Colony, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110034, India",
+    "road_type": "secondary",
+    "road_name": "Guru Harkishan Marg"
+  },
+  "28.680762,77.153557": {
+    "address": "Britannia Road, Sarup Nagar, Punjabi Bagh, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110035, India",
+    "road_type": "secondary",
+    "road_name": "Britannia Road"
+  },
+  "28.674905,77.155239": {
+    "address": "Pandit Lekkhram Sharma Marg, Rampura, Punjabi Bagh, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110035, India",
+    "road_type": "residential",
+    "road_name": "Pandit Lekkhram Sharma Marg"
+  },
+  "28.674617,77.165594": {
+    "address": "Shri Balaji Dham Mandir Marg, Lakhu Nagar, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110035, India",
+    "road_type": "tertiary",
+    "road_name": "Shri Balaji Dham Mandir Marg"
+  },
+  "28.675442,77.168215": {
+    "address": "Shanti Nagar, Ashok Vihar, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110052, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.679456,77.174803": {
+    "address": "Nimri Colony, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110052, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.678421,77.167679": {
+    "address": "Wazirpur JJ Colony, Wazirpur, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110035, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.685430,77.169081": {
+    "address": "Ashok Vihar Road, Ashok Vihar - IV, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110052, India",
+    "road_type": "secondary",
+    "road_name": "Ashok Vihar Road"
+  },
+  "28.688610,77.174975": {
+    "address": "Ashok Vihar Road, Ashok Vihar - III, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110052, India",
+    "road_type": "secondary",
+    "road_name": "Ashok Vihar Road"
+  },
+  "28.700292,77.175254": {
+    "address": "Jailer Wala Bagh, Ashok Vihar - II, Model Town Tehsil, North Delhi, Delhi, 110088, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.695373,77.171324": {
+    "address": "Ashok Vihar Phase-2, Ashok Vihar - I, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110052, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.691190,77.176692": {
+    "address": "Ashok Vihar Road, Ashok Vihar - II, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110052, India",
+    "road_type": "secondary",
+    "road_name": "Ashok Vihar Road"
+  },
+  "28.692244,77.182549": {
+    "address": "Ashok Vihar - III, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110052, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.691271,77.176555": {
+    "address": "Ashok Vihar Road, Ashok Vihar - II, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110052, India",
+    "road_type": "secondary",
+    "road_name": "Ashok Vihar Road"
+  },
+  "28.691795,77.170575": {
+    "address": "Ashok Vihar Phase-1, Ashok Vihar - I, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110052, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.695490,77.171342": {
+    "address": "Sociafluence, C 2/21, Shaheed Lalit Narain Misra Marg, Ashok Vihar - II, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110052, India",
+    "road_type": null,
+    "road_name": "Sociafluence"
+  },
+  "28.699399,77.169601": {
+    "address": "Ashok Vihar, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110088, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.703834,77.169773": {
+    "address": "Shalimar Bagh Flyover, Shalimar Bagh, Model Town Tehsil, North Delhi, Delhi, 110088, India",
+    "road_type": "primary",
+    "road_name": "Shalimar Bagh Flyover"
+  },
+  "28.708696,77.166934": {
+    "address": "Shahid Udham Singh Marg, Shalimar Bagh, Model Town Tehsil, North Delhi, Delhi, 110088, India",
+    "road_type": "tertiary",
+    "road_name": "Shahid Udham Singh Marg"
+  },
+  "28.704608,77.165607": {
+    "address": "Shalimar Bagh, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110088, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.596443,77.256500": {
+    "address": "Sarai Kale Khan, Delhi - Meerut Expressway, Defence Colony Tehsil, South East Delhi, Delhi, 110013, India",
+    "road_type": "bus_stop",
+    "road_name": "Sarai Kale Khan"
+  },
+  "28.572205,77.257413": {
+    "address": "Siddharth Enclave, Lajpat Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110014, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.546436,77.252402": {
+    "address": "Kalkaji, Kalkaji Tehsil, South East Delhi, Delhi, 110019, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.546060,77.249938": {
+    "address": "Outer Ring Road, Greater Kailash, Kalkaji Tehsil, South East Delhi, Delhi, 110019, India",
+    "road_type": "primary_link",
+    "road_name": "Outer Ring Road"
+  },
+  "28.543951,77.204997": {
+    "address": "Kalu Sarai, Hauz Khas, Hauz Khas Tehsil, South Delhi, Delhi, 110016, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.545481,77.199400": {
+    "address": "Gamal Abdel Nasser Marg, Hauz Khas Enclave, Hauz Khas, Hauz Khas Tehsil, South Delhi, Delhi, 110016, India",
+    "road_type": "tertiary",
+    "road_name": "Gamal Abdel Nasser Marg"
+  },
+  "28.544376,77.201881": {
+    "address": "Police Colony Road, Kalu Sarai, Hauz Khas, Hauz Khas Tehsil, South Delhi, Delhi, 110016, India",
+    "road_type": "tertiary",
+    "road_name": "Police Colony Road"
+  },
+  "28.542734,77.218574": {
+    "address": "Ho Chi Minh Marg, Panchsheel Park, Hauz Khas, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India",
+    "road_type": "primary",
+    "road_name": "Ho Chi Minh Marg"
+  },
+  "28.526852,77.233649": {
+    "address": "Maharishi Valmiki Marg, Ambedkar Nagar, Sainik Farms, Hauz Khas Tehsil, South Delhi, Delhi, 110062, India",
+    "road_type": "tertiary",
+    "road_name": "Maharishi Valmiki Marg"
+  },
+  "28.523269,77.239842": {
+    "address": "Ambedkar Nagar, Hauz Khas Tehsil, South Delhi, Delhi, 110062, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.517074,77.238321": {
+    "address": "Ambedkar Nagar, Sainik Farms, Hauz Khas Tehsil, South Delhi, Delhi, 110062, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.515795,77.231418": {
+    "address": "Ambedkar Nagar, Sainik Farms, Hauz Khas Tehsil, South Delhi, Delhi, 110062, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.519032,77.225046": {
+    "address": "Pushp Vihar, Sector 3, Hauz Khas Tehsil, South Delhi, Delhi, 110062, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.523409,77.218470": {
+    "address": "Main Road Pushp Vihar Sector 1, Pushp Vihar, Sector 1, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India",
+    "road_type": "residential",
+    "road_name": "Main Road Pushp Vihar Sector 1"
+  },
+  "28.538294,77.217123": {
+    "address": "Khirki Main Road, Malviya Nagar, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India",
+    "road_type": "tertiary",
+    "road_name": "Khirki Main Road"
+  },
+  "28.542055,77.229180": {
+    "address": "Hauz Khas Tehsil, South Delhi, Delhi, 110017, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.541323,77.232562": {
+    "address": "Chirag Delhi Flyover, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India",
+    "road_type": "primary",
+    "road_name": "Chirag Delhi Flyover"
+  },
+  "28.535334,77.240849": {
+    "address": "Greater Kailash II, Alaknanda, Kalkaji Tehsil, South East Delhi, Delhi, 110019, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.532453,77.255246": {
+    "address": "Alaknanda - DDA Flats Road, DDA Flats, Kalkaji, Kalkaji Tehsil, South East Delhi, Delhi, 110019, India",
+    "road_type": "residential",
+    "road_name": "Alaknanda - DDA Flats Road"
+  },
+  "28.534552,77.254222": {
+    "address": "Bipinchandra Pal Marg, Market 2, Chittaranjan Park, Kalkaji Tehsil, South East Delhi, Delhi, 110019, India",
+    "road_type": "tertiary",
+    "road_name": "Bipinchandra Pal Marg"
+  },
+  "28.551186,77.274003": {
+    "address": "Mathura Road, Shaheen Bagh, Kalkaji Tehsil, South East Delhi, Delhi, 110025, India",
+    "road_type": "trunk",
+    "road_name": "Mathura Road"
+  },
+  "28.543787,77.276248": {
+    "address": "Okhla Phase - II, Sarita Vihar Tehsil, South East Delhi, Delhi, 110076, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.558073,77.265995": {
+    "address": "Flatted Factory Complex, Greater Kailash, Kalkaji Tehsil, South East Delhi, Delhi, 110076, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.562057,77.253682": {
+    "address": "Nehru Nagar, Lajpat Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110065, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.557081,77.248673": {
+    "address": "Lajpat Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110065, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.559858,77.246270": {
+    "address": "Lajpat Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110065, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.554612,77.232492": {
+    "address": "Nandi Vithi Marg, Greater Kailash I, Greater Kailash, Kalkaji Tehsil, South East Delhi, Delhi, 110049, India",
+    "road_type": "tertiary",
+    "road_name": "Nandi Vithi Marg"
+  },
+  "28.552464,77.237176": {
+    "address": "100, S. Swaran Singh Bhandari Marg, Greater Kailash, Kalkaji Tehsil, South East Delhi, Delhi, 110049, India",
+    "road_type": null,
+    "road_name": ""
+  },
+  "28.551496,77.247490": {
+    "address": "Lala Lajpat Rai Marg, Kailash Colony, Greater Kailash, Kalkaji Tehsil, South East Delhi, Delhi, 110019, India",
+    "road_type": "secondary",
+    "road_name": "Lala Lajpat Rai Marg"
+  },
+  "28.545739,77.243864": {
+    "address": "Greater Kailash Road, Greater Kailash I, Pamposh Enclave, Kalkaji Tehsil, South East Delhi, Delhi, 110019, India",
+    "road_type": "tertiary",
+    "road_name": "Greater Kailash Road"
+  },
+  "28.535199,77.228298": {
+    "address": "Shaheed Bhagat Singh College, Pandit Trilok Chandra Sharma Marg, Savitri Nagar, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India",
+    "road_type": null,
+    "road_name": "Shaheed Bhagat Singh College"
+  },
+  "28.532501,77.231877": {
+    "address": "Lal Bahadur Shastri Marg, Savitri Nagar, Hauz Khas Tehsil, South Delhi, Delhi, 110062, India",
+    "road_type": "secondary",
+    "road_name": "Lal Bahadur Shastri Marg"
+  },
+  "28.531191,77.228780": {
+    "address": "Pushp Vihar, Sector 7, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.535298,77.232131": {
+    "address": "Lal Bahadur Shastri Marg, Savitri Nagar, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India",
+    "road_type": "secondary",
+    "road_name": "Lal Bahadur Shastri Marg"
+  },
+  "28.544841,77.230489": {
+    "address": "Josip Broz Tito Marg, Hauz Khas Tehsil, South Delhi, Delhi, 110049, India",
+    "road_type": "secondary",
+    "road_name": "Josip Broz Tito Marg"
+  },
+  "28.536031,77.197260": {
+    "address": "Aurobindo Marg, Adchini, Hauz Khas, Hauz Khas Tehsil, South Delhi, Delhi, 110016, India",
+    "road_type": "trunk",
+    "road_name": "Aurobindo Marg"
+  },
+  "28.531460,77.194259": {
+    "address": "Aurobindo Marg, Hauz Khas Tehsil, South Delhi, Delhi, 110030, India",
+    "road_type": "trunk",
+    "road_name": "Aurobindo Marg"
+  },
+  "28.527166,77.189684": {
+    "address": "Anuvrat Marg, Lado Sarai, Saket Tehsil, South Delhi, Delhi, 110030, India",
+    "road_type": "trunk",
+    "road_name": "Anuvrat Marg"
+  },
+  "28.511280,77.183239": {
+    "address": "100 Feet Road, Chhattarpur, Saket Tehsil, South Delhi, Delhi, 110030, India",
+    "road_type": "tertiary",
+    "road_name": "100 Feet Road"
+  },
+  "28.484285,77.188250": {
+    "address": "Sant Shri Nagpal Marg, Satbari, Saket Tehsil, South Delhi, Delhi, 110074, India",
+    "road_type": "secondary",
+    "road_name": "Sant Shri Nagpal Marg"
+  },
+  "28.450596,77.219557": {
+    "address": "Saket Tehsil, South Delhi, Delhi, 110024, India",
+    "road_type": "unclassified",
+    "road_name": ""
+  },
+  "28.460471,77.197602": {
+    "address": "Asola, Saket Tehsil, South Delhi, Delhi, 110074, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.454268,77.195120": {
+    "address": "Fatehpur Beri, Asola, Saket Tehsil, South Delhi, Delhi, 110074, India",
+    "road_type": "unclassified",
+    "road_name": ""
+  },
+  "28.443539,77.190172": {
+    "address": "Asola, Saket Tehsil, South Delhi, Delhi, 110074, India",
+    "road_type": "living_street",
+    "road_name": ""
+  },
+  "28.468612,77.202930": {
+    "address": "Kharak, Satbari, Saket Tehsil, South Delhi, Delhi, 110074, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.505526,77.185517": {
+    "address": "100 Feet Road, Chhattarpur, Saket Tehsil, South Delhi, Delhi, 110030, India",
+    "road_type": "tertiary",
+    "road_name": "100 Feet Road"
+  },
+  "28.516223,77.223352": {
+    "address": "Mehrauli Badarpur Road, Pushp Vihar, Sector 2, Hauz Khas Tehsil, South Delhi, Delhi, 110024, India",
+    "road_type": "primary",
+    "road_name": "Mehrauli Badarpur Road"
+  },
+  "28.513401,77.236047": {
+    "address": "Rajora Niwas, C-1160 Tigri, Mehrauli Badarpur Road, Tigri, Saket Tehsil, South Delhi, Delhi, 110080, India",
+    "road_type": null,
+    "road_name": "Rajora Niwas"
+  },
+  "28.501925,77.255882": {
+    "address": "Sangam Vihar, Kalkaji Tehsil, South East Delhi, Delhi, 110080, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.500381,77.294053": {
+    "address": "Mehrauli Badarpur Road, Vishwakarma Colony, Tughlakabad, Kalkaji Tehsil, South East Delhi, Delhi, 121009, India",
+    "road_type": "primary",
+    "road_name": "Mehrauli Badarpur Road"
+  },
+  "28.513720,77.303348": {
+    "address": "Badarpur, Sarita Vihar Tehsil, South East Delhi, Delhi, 110044, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.513588,77.313009": {
+    "address": "Badarpur, Sarita Vihar Tehsil, South East Delhi, Delhi, 110044, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.525861,77.330535": {
+    "address": "Shaheen Bagh, Sarita Vihar Tehsil, South East Delhi, Delhi, 201313, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.526783,77.317267": {
+    "address": "Sarita Vihar Tehsil, South East Delhi, Delhi, 201313, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.532236,77.316197": {
+    "address": "Kalandi Kunj Road, Sarita Vihar Tehsil, South East Delhi, Delhi, Faridabad, Haryana, 121001, India",
+    "road_type": "tertiary",
+    "road_name": "Kalandi Kunj Road"
+  },
+  "28.555448,77.295770": {
+    "address": "Shaheen Bagh, Sarita Vihar Tehsil, South East Delhi, Delhi, 110025, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.554988,77.281436": {
+    "address": "Sewage Treatment Plant - Okhla, Shaheen Bagh, Sarita Vihar Tehsil, South East Delhi, Delhi, 110025, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.558653,77.284337": {
+    "address": "Jamia Millia Islamia, Kalindi Kunj Road, Okhla, Jamia Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110025, India",
+    "road_type": null,
+    "road_name": "Jamia Millia Islamia"
+  },
+  "28.561618,77.293762": {
+    "address": "Aurangzeb Road, Jamia Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110025, India",
+    "road_type": "secondary",
+    "road_name": "Aurangzeb Road"
+  },
+  "28.565441,77.278683": {
+    "address": "Zakir Bagh, Defence Colony Tehsil, South East Delhi, Delhi, 110025, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.617826,77.249705": {
+    "address": "Mahatma Gandhi Marg, Kotwali Tehsil, Central Delhi, Delhi, 110503, India",
+    "road_type": "trunk",
+    "road_name": "Mahatma Gandhi Marg"
+  },
+  "28.584912,77.229801": {
+    "address": "Bhishma Pitamah Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India",
+    "road_type": "secondary",
+    "road_name": "Bhishma Pitamah Marg"
+  },
+  "28.579950,77.230616": {
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India",
+    "road_type": null,
+    "road_name": "Jawaharlal Nehru Stadium"
+  },
+  "28.570752,77.226808": {
+    "address": "43, Bhishma Pitamah Marg, Kotla Mubarak, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110049, India",
+    "road_type": null,
+    "road_name": ""
+  },
+  "28.572947,77.209088": {
+    "address": "Aurobindo Marg, Kidwai Nagar, Vasant Vihar Tehsil, New Delhi, Delhi, 110029, India",
+    "road_type": "trunk",
+    "road_name": "Aurobindo Marg"
+  },
+  "28.555365,77.184118": {
+    "address": "Sector 3, Ramakrishna Puram, Vasant Vihar Tehsil, New Delhi, Delhi, 110066, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.565031,77.175328": {
+    "address": "Kama Koti Marg, Sector 6, Ramakrishna Puram, Vasant Vihar Tehsil, New Delhi, Delhi, 110022, India",
+    "road_type": "tertiary",
+    "road_name": "Kama Koti Marg"
+  },
+  "28.563325,77.154542": {
+    "address": "Vasant Vihar, New Delhi, Delhi, 110057, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.549602,77.180467": {
+    "address": "Vedant Deshika Marg, Ber Sarai, Vasant Vihar Tehsil, New Delhi, Delhi, 110067, India",
+    "road_type": "secondary",
+    "road_name": "Vedant Deshika Marg"
+  },
+  "28.544389,77.178415": {
+    "address": "Shaheed Jeet Singh Marg, Mehrauli Tehsil, South Delhi, Delhi, 110067, India",
+    "road_type": "secondary",
+    "road_name": "Shaheed Jeet Singh Marg"
+  },
+  "28.526790,77.188193": {
+    "address": "Sarvodaya Bal Senior Secondary Vidyalaya, Sanjay Van walking path, Lado Sarai, Saket Tehsil, South Delhi, Delhi, 110030, India",
+    "road_type": null,
+    "road_name": "Sarvodaya Bal Senior Secondary Vidyalaya"
+  },
+  "28.524163,77.189388": {
+    "address": "Baba Shrichand Marg, Mehrauli, Saket Tehsil, South Delhi, Delhi, 110030, India",
+    "road_type": "tertiary",
+    "road_name": "Baba Shrichand Marg"
+  },
+  "28.518896,77.206329": {
+    "address": "IGNOU Road, Said-ul-Ajaib Village, Neb Sarai, Hauz Khas Tehsil, South Delhi, Delhi, 110068, India",
+    "road_type": "tertiary",
+    "road_name": "IGNOU Road"
+  },
+  "28.514513,77.205165": {
+    "address": "Kerala Store, A-14F, IGNOU Road, Said-ul-Ajaib Village, Neb Sarai, Saket Tehsil, South Delhi, Delhi, 110068, India",
+    "road_type": null,
+    "road_name": "Kerala Store"
+  },
+  "28.542467,77.209828": {
+    "address": "Maharishi Dayanand Marg, Bhavishya Nidhi Enclave, Hauz Khas, Hauz Khas Tehsil, South Delhi, Delhi, 110017, India",
+    "road_type": "secondary",
+    "road_name": "Maharishi Dayanand Marg"
+  },
+  "28.548667,77.257705": {
+    "address": "Outer Ring Road, Greater Kailash, Kalkaji Tehsil, South East Delhi, Delhi, 110019, India",
+    "road_type": "primary",
+    "road_name": "Outer Ring Road"
+  },
+  "28.561281,77.272738": {
+    "address": "C.V. Raman Marg, Pocket B, Kalkaji Tehsil, South East Delhi, Delhi, 110025, India",
+    "road_type": "secondary",
+    "road_name": "C.V. Raman Marg"
+  },
+  "28.564939,77.270626": {
+    "address": "5, C.V. Raman Marg, Bharat Nagar, New Friends Colony, Kalkaji Tehsil, South East Delhi, Delhi, 110025, India",
+    "road_type": null,
+    "road_name": ""
+  },
+  "28.567403,77.269226": {
+    "address": "C.V. Raman Marg, Bharat Nagar, New Friends Colony, Defence Colony Tehsil, South East Delhi, Delhi, 110025, India",
+    "road_type": "secondary",
+    "road_name": "C.V. Raman Marg"
+  },
+  "28.568494,77.264096": {
+    "address": "Maharani Bagh Western Avenue, Maharani Bagh, New Friends Colony, Defence Colony Tehsil, South East Delhi, Delhi, 110014, India",
+    "road_type": "residential",
+    "road_name": "Maharani Bagh Western Avenue"
+  },
+  "28.564512,77.265437": {
+    "address": "Mata Mandir Road, New Friends Colony, Kalkaji Tehsil, South East Delhi, Delhi, 110065, India",
+    "road_type": "tertiary",
+    "road_name": "Mata Mandir Road"
+  },
+  "28.581313,77.246480": {
+    "address": "Central Road, Jangpura Extension, Lajpat Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110014, India",
+    "road_type": "residential",
+    "road_name": "Central Road"
+  },
+  "28.584038,77.246831": {
+    "address": "Birbal Road, Jangpura Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110014, India",
+    "road_type": "residential",
+    "road_name": "Birbal Road"
+  },
+  "28.610443,77.233580": {
+    "address": "Pandara Park, Connaught Place, Chanakya Puri Tehsil, New Delhi, Delhi, 110503, India",
+    "road_type": "secondary",
+    "road_name": ""
+  },
+  "28.608178,77.232515": {
+    "address": "Justice Sunanda Bhandare Marg, Pandara Park, Chanakya Puri Tehsil, New Delhi, Delhi, 110503, India",
+    "road_type": "residential",
+    "road_name": "Justice Sunanda Bhandare Marg"
+  },
+  "28.630916,77.216191": {
+    "address": "hanuman lane, Connaught Place, Chanakya Puri Tehsil, New Delhi, Delhi, 110001, India",
+    "road_type": null,
+    "road_name": ""
+  },
+  "28.593107,77.295152": {
+    "address": "\u0915\u094d\u0932\u092c \u090f\u0935\u0947\u0928\u094d\u092f\u0942, Trilok Puri, Mayur Vihar Tehsil, East Delhi, Delhi, 110091, India",
+    "road_type": null,
+    "road_name": ""
+  },
+  "28.581518,77.272744": {
+    "address": "Delhi-Noida Direct Flyway, Defence Colony Tehsil, East Delhi, Delhi, 110014, India",
+    "road_type": "motorway",
+    "road_name": "Delhi-Noida Direct Flyway"
+  },
+  "28.627871,77.252757": {
+    "address": "Vikas Marg, Kotwali Tehsil, Central Delhi, Delhi, 110002, India",
+    "road_type": "cycleway",
+    "road_name": "Vikas Marg"
+  },
+  "28.579563,77.144555": {
+    "address": "Dhaula Kuan, Delhi Cantonment, New Delhi, Delhi, 110010, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.509662,77.119758": {
+    "address": "Vasant Vihar Tehsil, New Delhi, Delhi, 110038, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.541830,77.118168": {
+    "address": "Rangpuri, Vasant Vihar Tehsil, New Delhi, Delhi, 110037, India",
+    "road_type": "secondary",
+    "road_name": "Rangpuri"
+  },
+  "28.551373,77.056605": {
+    "address": "Sector 21, Dwarka, Kapashera Tehsil, South West Delhi, Delhi, 110061, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.553841,77.058046": {
+    "address": "Sector 21, Dwarka, Kapashera Tehsil, South West Delhi, Delhi, 110061, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.583478,77.164777": {
+    "address": "Benito Juarez Marg, Moti Bagh, Vasant Vihar Tehsil, New Delhi, Delhi, 110057, India",
+    "road_type": "tertiary",
+    "road_name": "Benito Juarez Marg"
+  },
+  "28.566933,77.134815": {
+    "address": "Middle Shankar Vihar, Delhi Cantonment, New Delhi, Delhi, 110010, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.543759,77.131960": {
+    "address": "Vasant Vihar Tehsil, New Delhi, Delhi, 110037, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.537084,77.144062": {
+    "address": "Vasant Kunj, Vasant Vihar Tehsil, New Delhi, Delhi, 110037, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.549786,77.197609": {
+    "address": "Narendra Kumar Pandey Marg, Navin Niketan Colony, Safdarjung Development Area, Hauz Khas Tehsil, South Delhi, Delhi, 110016, India",
+    "road_type": "residential",
+    "road_name": "Narendra Kumar Pandey Marg"
+  },
+  "28.587626,77.166863": {
+    "address": "Satya Niketan, Moti Bagh, New Delhi, Delhi, 110021, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.573952,77.193845": {
+    "address": "Rajmata Vijayaraje Sindhia Marg, Sarojini Nagar, Vasant Vihar Tehsil, New Delhi, Delhi, 110023, India",
+    "road_type": "residential",
+    "road_name": "Rajmata Vijayaraje Sindhia Marg"
+  },
+  "28.594113,77.071552": {
+    "address": "Rd. No. 224, Sector 6, Dwarka, South West Delhi, Delhi, 110045, India",
+    "road_type": "secondary",
+    "road_name": "Rd. No. 224"
+  },
+  "28.573269,77.054191": {
+    "address": "Road 224, Sector 19, Dwarka, South West Delhi, Delhi, 110077, India",
+    "road_type": "secondary",
+    "road_name": "Road 224"
+  },
+  "28.568767,77.010410": {
+    "address": "Shyam Vihar, Kapashera Tehsil, South West Delhi, Delhi, 110043, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.544011,76.987386": {
+    "address": "Kapashera Tehsil, South West Delhi, Delhi, 110071, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.534584,76.986017": {
+    "address": "Kapashera Tehsil, South West Delhi, Delhi, 110071, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.566439,76.982179": {
+    "address": "Najafgarh, Kapashera Tehsil, South West Delhi, Delhi, 110043, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.570251,76.957691": {
+    "address": "Najafgarh, Kapashera Tehsil, South West Delhi, Delhi, 110043, India",
+    "road_type": "tertiary",
+    "road_name": ""
+  },
+  "28.580896,76.957411": {
+    "address": "Najafgarh Daurala Road, Najafgarh, Najafgarh Tehsil, South West Delhi, Delhi, 110043, India",
+    "road_type": "primary",
+    "road_name": "Najafgarh Daurala Road"
+  },
+  "28.606679,77.001766": {
+    "address": "Kakrola Road, Najafgarh, Najafgarh Tehsil, South West Delhi, Delhi, 110043, India",
+    "road_type": "tertiary",
+    "road_name": "Kakrola Road"
+  },
+  "28.606037,77.014188": {
+    "address": "Dwarka, South West Delhi, Delhi, 110078, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.593332,77.098105": {
+    "address": "Palam, Dwarka, South West Delhi, Delhi, 110045, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.608621,77.102020": {
+    "address": "Pankha Road, DABRI, Mahavir Enclave, Dwarka, South West Delhi, Delhi, 110064, India",
+    "road_type": "primary",
+    "road_name": "Pankha Road"
+  },
+  "28.622066,77.115281": {
+    "address": "MS Block, Hari Nagar, Rajouri Garden Tehsil, New Delhi, Delhi, 110064, India",
+    "road_type": "residential",
+    "road_name": ""
+  },
+  "28.644485,77.094659": {
+    "address": "JJ Colony, Patel Nagar, West Delhi, Delhi, 110018, India",
+    "road_type": "residential",
+    "road_name": ""
+  }
+}

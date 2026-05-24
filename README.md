@@ -1,27 +1,53 @@
 # Delhi Street Noise
 
-Street-level noise measurements from 190 locations across Delhi.
+Street-level noise measurements from 655 locations across Delhi.
 
 ## Results
 
-We recorded sound meter readings while walking Delhi streets over 11 days in April-May 2026. Each "stop" is a ~1 minute recording at a location.
+We recorded sound meter readings while walking and riding Delhi streets over 20+ days in April-May 2026.
 
-**Summary:**
-- **190 locations** across Delhi
-- **3.4 hours** of total observation (12,159 readings at 1/second)
-- **Median noise: 70 dB** (typical street level)
-- **4.3% of readings exceed 85 dB** (NIOSH occupational limit)
+**Summary (GoPro continuous + Rider spot measurements):**
+- **655 locations** across Delhi (190 GoPro, 465 Rider)
+- **3.4+ hours** of continuous observation (12,159 GoPro readings at 1/second)
+- **Median GoPro noise: 70 dB** | **Median Rider max: 81 dB**
+- **4.3% of GoPro readings exceed 85 dB** (NIOSH occupational limit)
+- **38% of Rider stops** recorded peaks ≥85 dB
 
 ### How noisy is Delhi?
 
-| Noise Level | % of Time | What it means |
-|-------------|-----------|---------------|
-| ≥70 dB | 52% | Louder than normal conversation |
-| ≥80 dB | 11% | Hearing damage risk with prolonged exposure |
-| ≥85 dB | 4.3% | NIOSH 8-hour occupational limit |
-| ≥91 dB | 1.4% | NIOSH 2-hour limit |
+| Noise Level | GoPro (% of Time) | Rider (% of Stops) | Reference |
+|-------------|-------------------|---------------------|-----------|
+| ≥70 dB | 52% | 82% | Louder than normal conversation |
+| ≥80 dB | 11% | 52% | Hearing damage risk with prolonged exposure |
+| ≥85 dB | 4.3% | 38% | NIOSH 8-hour occupational limit |
+| ≥91 dB | 1.4% | 25% | NIOSH 2-hour limit |
 
-### Location-level findings
+### Comparison to Other Cities
+
+How does Delhi compare to urban traffic noise elsewhere? At traffic stops and jams, you're largely hearing engine idling and slow-moving vehicles - conditions that should produce similar noise levels across cities.
+
+| Location | Average dB | Peak Range | Source |
+|----------|------------|------------|--------|
+| **Delhi (this study)** | 70 dB (GoPro mean) | 49-128 dB | Continuous measurement |
+| NYC streets | 73.4 dBA | 56-95 dB | [Neitzel et al. 2011](https://pmc.ncbi.nlm.nih.gov/articles/PMC4350859/) |
+| NYC high traffic | 77.2 dBA | - | Same study |
+| Manhattan | 74.6 dBA | - | Same study |
+| US busy urban street | 70-80 dB | - | [CODOT](https://www.codot.gov/programs/environmental/noise/noise-faqs) |
+| EU road traffic (67M exposed) | >55 dB Lden | - | [EEA 2024](https://www.eea.europa.eu/en/analysis/indicators/exposure-of-europe-population-to-noise) |
+
+**Key finding:** Delhi's average street noise (~70 dB) is comparable to NYC and other busy urban environments. However, Delhi shows more extreme peaks - 38% of rider stops recorded ≥85 dB, and 25% exceeded 91 dB. This suggests Delhi's noise problem is less about average levels and more about frequent high-intensity spikes (horns, engines revving).
+
+### Noise by Road Type (Rider Data)
+
+| Road Type | N | Mean Max dB | % ≥85 dB |
+|-----------|---|-------------|----------|
+| Trunk (major highway) | 21 | 99.5 | 71% |
+| Primary | 30 | 94.7 | 70% |
+| Secondary | 65 | 92.3 | 65% |
+| Tertiary | 110 | 84.7 | 36% |
+| Residential | 194 | 77.3 | 18% |
+
+### Location-level findings (GoPro continuous data)
 
 - **69% of stops** (131/190) had at least one reading ≥85 dB
 - **12% of stops** (23/190) hit peaks ≥100 dB
@@ -30,16 +56,30 @@ We recorded sound meter readings while walking Delhi streets over 11 days in Apr
 
 Most locations experience brief spikes above safe levels, but sustained harmful exposure is rare.
 
+### Rider data findings (465 spot measurements)
+
+- **Mean max dB: 84** across all stops
+- **Mean min dB: 66** (baseline noise level)
+- **81 traffic stops** and **19 traffic jams** recorded
+- Road type strongly predicts noise: trunk roads average 99.5 dB max vs 77.3 dB on residential streets
+
 ### Figures
 
-![Histogram](output/analysis/figs/fig3_histogram.pdf)
+**GoPro analysis** (`output/analysis/figs/`):
+- `delhi_gopro_fig1_map.html` - Interactive map of measurement locations
+- `delhi_gopro_fig2_histogram.pdf` - Distribution of all readings
+- `delhi_gopro_fig3_stop_distributions.pdf` - Per-location summary statistics
 
-See `output/analysis/figs/` for all figures:
-- `fig1_map_locations.html` - Interactive map of measurement locations
-- `fig3_histogram.pdf` - Distribution of all readings
-- `fig4_stop_distributions.pdf` - Per-location summary statistics
-- `fig6_per_stop_boxplot.pdf` - Boxplots for each location
-- `fig7_exceedance_curves.pdf` - Exceedance curves by location
+**Rider analysis** (`output/rider/analysis/figs/`):
+- `delhi_rider_fig1_map.html` - Interactive map of rider stops
+- `delhi_rider_fig2_histogram.pdf` - Distribution of max dB readings
+- `delhi_rider_fig4_boxplot.pdf` - Noise by road type
+- `delhi_rider_fig5_scatter.pdf` - Min vs max dB correlation
+
+**Comparison** (`output/comparison/figs/`):
+- `delhi_compare_fig1_map.html` - Map showing both datasets with matches
+- `delhi_compare_fig2_correlation.pdf` - Rider max dB vs GoPro mean dB
+- `delhi_compare_fig4_road_type.pdf` - GoPro noise by road type
 
 ## Data
 
@@ -47,10 +87,12 @@ See `output/analysis/figs/` for all figures:
 
 | File | Description |
 |------|-------------|
-| `output/readings/*.json` | OCR'd decibel readings with GPS |
-| `output/analysis/analysis_data.parquet` | All readings as DataFrame |
-| `output/analysis/stop_stats.parquet` | Per-location summary stats |
-| `output/analysis/tabs/*.tex` | LaTeX tables |
+| `output/readings/*.json` | GoPro OCR'd decibel readings with GPS |
+| `output/rider/readings.json` | Rider spot measurements with road type metadata |
+| `output/analysis/delhi_gopro_data.parquet` | GoPro readings as DataFrame |
+| `output/rider/analysis/delhi_rider_data.parquet` | Rider data with road type |
+| `output/comparison/delhi_compare_matched.parquet` | GoPro-Rider location matches |
+| `output/*/tabs/delhi_*.tex` | LaTeX tables |
 
 ### Raw Video (Harvard Dataverse)
 
@@ -155,8 +197,43 @@ uv run soundscape analyze --readings output/readings/readings.json
 | `build-manifest` | Combine metadata into manifest.json |
 | `ocr-readings` | OCR sound meter values |
 | `viewer` | Generate HTML viewer for QC |
-| `analyze` | Generate tables and figures |
+| `analyze` | Generate GoPro analysis tables and figures |
+| `analyze-rider` | Generate rider data analysis with road type breakdown |
+| `compare-locations` | Compare rider and GoPro locations for overlap |
 | `create-archives` | Create tar.gz for Dataverse |
+
+## Rider Data Pipeline
+
+For data collected via the [rider route tool](https://github.com/soodoku/missing-women-rider-route-tool), conversion scripts are in that repo:
+
+```bash
+cd ../missing-women-rider-route-tool
+
+# Sound data -> soundscape
+python3 export_sound.py \
+    --manifest exports/2026-05-24/manifest.json \
+    --output ../soundscape/output/rider \
+    --geocode
+
+# Pollution data -> streetaqi
+python3 export_pollution.py \
+    --manifest exports/2026-05-24/manifest.json \
+    --output ../streetaqi/data/rider \
+    --city delhi \
+    --geocode
+```
+
+### Analyze Rider Data
+
+```bash
+# Generate rider-specific analysis (by road type, traffic conditions)
+uv run soundscape analyze-rider --readings output/rider/readings.json
+
+# Compare rider and GoPro locations for spatial overlap
+uv run soundscape compare-locations \
+    --rider output/rider/readings.json \
+    --gopro "output/readings/delhi_full_*.json"
+```
 
 ## License
 

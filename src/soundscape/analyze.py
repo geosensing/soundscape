@@ -22,7 +22,9 @@ NIOSH_THRESHOLDS = {
 }
 
 
-def load_readings(path: Path, db_min: float = 30.0, db_max: float = 130.0) -> pd.DataFrame:
+def load_readings(
+    path: Path, db_min: float = 30.0, db_max: float = 130.0
+) -> pd.DataFrame:
     """Load readings JSON into a DataFrame with flattened structure.
 
     Supports both GoPro OCR format and rider form format.
@@ -65,6 +67,7 @@ def load_readings(path: Path, db_min: float = 30.0, db_max: float = 130.0) -> pd
                 }
             )
         else:
+            metadata = r.get("metadata", {})
             records.append(
                 {
                     "frame_path": r["frame_path"],
@@ -76,16 +79,23 @@ def load_readings(path: Path, db_min: float = 30.0, db_max: float = 130.0) -> pd
                     "decibel": r["reading"]["decibel"],
                     "status": r["reading"]["status"],
                     "confidence": r["reading"]["confidence"],
+                    "road_type": metadata.get("road_type"),
+                    "road_name": metadata.get("road_name"),
+                    "address": metadata.get("address"),
                 }
             )
 
     df = pd.DataFrame(records)
 
     n_before = len(df[df["status"] == "ok"])
-    df.loc[(df["decibel"] < db_min) | (df["decibel"] > db_max), "status"] = "out_of_range"
+    df.loc[(df["decibel"] < db_min) | (df["decibel"] > db_max), "status"] = (
+        "out_of_range"
+    )
     n_after = len(df[df["status"] == "ok"])
     if n_before > n_after:
-        click.echo(f"  Filtered {n_before - n_after} readings outside {db_min}-{db_max} dB range")
+        click.echo(
+            f"  Filtered {n_before - n_after} readings outside {db_min}-{db_max} dB range"
+        )
 
     return df
 
@@ -131,11 +141,14 @@ def compute_per_stop_stats(df: pd.DataFrame) -> pd.DataFrame:
                 "max_consec_above_88": compute_max_consecutive_above(db, 88),
                 "latitude": g["latitude"].iloc[0],
                 "longitude": g["longitude"].iloc[0],
-                "duration_seconds": g["timestamp_seconds"].max() - g["timestamp_seconds"].min(),
+                "duration_seconds": g["timestamp_seconds"].max()
+                - g["timestamp_seconds"].min(),
             }
         )
 
-    stats = valid.groupby("video_id").apply(stop_agg, include_groups=False).reset_index()
+    stats = (
+        valid.groupby("video_id").apply(stop_agg, include_groups=False).reset_index()
+    )
     return stats
 
 
@@ -164,7 +177,8 @@ def make_table1_summary(df: pd.DataFrame, output_dir: Path) -> None:
     """Generate Table 1: Summary Statistics (LaTeX)."""
     stats = compute_summary_stats(df)
 
-    latex = r"""\begin{table}[htbp]
+    latex = (
+        r"""\begin{table}[htbp]
 \centering
 \caption{Summary Statistics of Decibel Readings}
 \label{tab:summary}
@@ -172,23 +186,48 @@ def make_table1_summary(df: pd.DataFrame, output_dir: Path) -> None:
 \toprule
 Statistic & Value \\
 \midrule
-Total readings & """ + f"{stats['n_total']:,}" + r""" \\
-Valid readings (status = ok) & """ + f"{stats['n_valid']:,}" + r""" \\
-Valid percentage & """ + f"{stats['pct_valid']:.1f}\\%" + r""" \\
-Number of stops (videos) & """ + f"{stats['n_stops']:,}" + r""" \\
+Total readings & """
+        + f"{stats['n_total']:,}"
+        + r""" \\
+Valid readings (status = ok) & """
+        + f"{stats['n_valid']:,}"
+        + r""" \\
+Valid percentage & """
+        + f"{stats['pct_valid']:.1f}\\%"
+        + r""" \\
+Number of stops (videos) & """
+        + f"{stats['n_stops']:,}"
+        + r""" \\
 \midrule
-Mean (dB) & """ + f"{stats['mean']:.1f}" + r""" \\
-Median (dB) & """ + f"{stats['median']:.1f}" + r""" \\
-Standard deviation & """ + f"{stats['std']:.1f}" + r""" \\
-IQR (Q75 - Q25) & """ + f"{stats['iqr']:.1f}" + r""" \\
-25th percentile & """ + f"{stats['q25']:.1f}" + r""" \\
-75th percentile & """ + f"{stats['q75']:.1f}" + r""" \\
-Minimum & """ + f"{stats['min']:.1f}" + r""" \\
-Maximum & """ + f"{stats['max']:.1f}" + r""" \\
+Mean (dB) & """
+        + f"{stats['mean']:.1f}"
+        + r""" \\
+Median (dB) & """
+        + f"{stats['median']:.1f}"
+        + r""" \\
+Standard deviation & """
+        + f"{stats['std']:.1f}"
+        + r""" \\
+IQR (Q75 - Q25) & """
+        + f"{stats['iqr']:.1f}"
+        + r""" \\
+25th percentile & """
+        + f"{stats['q25']:.1f}"
+        + r""" \\
+75th percentile & """
+        + f"{stats['q75']:.1f}"
+        + r""" \\
+Minimum & """
+        + f"{stats['min']:.1f}"
+        + r""" \\
+Maximum & """
+        + f"{stats['max']:.1f}"
+        + r""" \\
 \bottomrule
 \end{tabular}
 \end{table}
 """
+    )
     output_path = output_dir / "table1_summary.tex"
     output_path.write_text(latex)
     click.echo(f"  Created {output_path}")
@@ -319,8 +358,10 @@ def make_fig1_map_locations(df: pd.DataFrame, output_dir: Path) -> None:
     stop_stats = compute_per_stop_stats(df)
     stop_stats = stop_stats.dropna(subset=["latitude", "longitude"])
     stop_stats = stop_stats[
-        (stop_stats["latitude"] > 28.0) & (stop_stats["latitude"] < 29.0) &
-        (stop_stats["longitude"] > 76.5) & (stop_stats["longitude"] < 78.0)
+        (stop_stats["latitude"] > 28.0)
+        & (stop_stats["latitude"] < 29.0)
+        & (stop_stats["longitude"] > 76.5)
+        & (stop_stats["longitude"] < 78.0)
     ]
 
     if len(stop_stats) == 0:
@@ -330,7 +371,9 @@ def make_fig1_map_locations(df: pd.DataFrame, output_dir: Path) -> None:
     center_lat = stop_stats["latitude"].mean()
     center_lon = stop_stats["longitude"].mean()
 
-    m = folium.Map(location=[center_lat, center_lon], zoom_start=11, tiles="CartoDB Positron")
+    m = folium.Map(
+        location=[center_lat, center_lon], zoom_start=11, tiles="CartoDB Positron"
+    )
 
     for _, row in stop_stats.iterrows():
         folium.CircleMarker(
@@ -362,26 +405,39 @@ def make_fig2_static_map(df: pd.DataFrame, output_dir: Path) -> None:
         import geopandas as gpd
         from shapely.geometry import Point
     except ImportError:
-        click.echo("  Skipping fig2 static map (install contextily, geopandas, shapely)")
+        click.echo(
+            "  Skipping fig2 static map (install contextily, geopandas, shapely)"
+        )
         return
 
     stop_stats = compute_per_stop_stats(df)
     stop_stats = stop_stats.dropna(subset=["latitude", "longitude"])
     stop_stats = stop_stats[
-        (stop_stats["latitude"] > 28.0) & (stop_stats["latitude"] < 29.0) &
-        (stop_stats["longitude"] > 76.5) & (stop_stats["longitude"] < 78.0)
+        (stop_stats["latitude"] > 28.0)
+        & (stop_stats["latitude"] < 29.0)
+        & (stop_stats["longitude"] > 76.5)
+        & (stop_stats["longitude"] < 78.0)
     ]
 
     if len(stop_stats) == 0:
         click.echo("  Skipping fig2 static map (no valid coordinates in Delhi bounds)")
         return
 
-    geometry = [Point(xy) for xy in zip(stop_stats["longitude"], stop_stats["latitude"])]
+    geometry = [
+        Point(xy) for xy in zip(stop_stats["longitude"], stop_stats["latitude"])
+    ]
     gdf = gpd.GeoDataFrame(stop_stats, geometry=geometry, crs="EPSG:4326")
     gdf_web = gdf.to_crs(epsg=3857)
 
     fig, ax = plt.subplots(figsize=(10, 10))
-    gdf_web.plot(ax=ax, color="#e41a1c", markersize=60, alpha=0.8, edgecolor="white", linewidth=0.8)
+    gdf_web.plot(
+        ax=ax,
+        color="#e41a1c",
+        markersize=60,
+        alpha=0.8,
+        edgecolor="white",
+        linewidth=0.8,
+    )
 
     try:
         cx.add_basemap(ax, source=cx.providers.CartoDB.Positron, zoom=12)
@@ -389,7 +445,9 @@ def make_fig2_static_map(df: pd.DataFrame, output_dir: Path) -> None:
         pass
 
     ax.set_axis_off()
-    ax.set_title(f"Data Collection Locations in Delhi (N={len(gdf)} stops)", fontsize=14, pad=10)
+    ax.set_title(
+        f"Data Collection Locations in Delhi (N={len(gdf)} stops)", fontsize=14, pad=10
+    )
 
     output_path = output_dir / "fig2_map_static.pdf"
     fig.savefig(output_path)
@@ -459,8 +517,12 @@ def make_fig4_stop_distributions(df: pd.DataFrame, output_dir: Path) -> None:
     for ax, (col, title, unit) in zip(axes.flat, metrics):
         data = stop_stats[col].dropna()
         ax.hist(data, bins=20, color="#3182bd", alpha=0.7, edgecolor="white")
-        ax.axvline(data.median(), color="#d73027", linestyle="--", linewidth=2, label="Median")
-        ax.axvline(data.mean(), color="#2ca02c", linestyle=":", linewidth=2, label="Mean")
+        ax.axvline(
+            data.median(), color="#d73027", linestyle="--", linewidth=2, label="Median"
+        )
+        ax.axvline(
+            data.mean(), color="#2ca02c", linestyle=":", linewidth=2, label="Mean"
+        )
         ax.set_xlabel(unit)
         ax.set_ylabel("Number of Stops")
         ax.set_title(title)
@@ -493,7 +555,9 @@ def make_fig5_all_data_by_stop(df: pd.DataFrame, output_dir: Path) -> None:
         rasterized=True,
     )
 
-    stop_summary = valid.groupby("stop_rank")["decibel"].agg(["median", "mean"]).reset_index()
+    stop_summary = (
+        valid.groupby("stop_rank")["decibel"].agg(["median", "mean"]).reset_index()
+    )
     ax.plot(
         stop_summary["stop_rank"],
         stop_summary["median"],
@@ -502,8 +566,12 @@ def make_fig5_all_data_by_stop(df: pd.DataFrame, output_dir: Path) -> None:
         label="Stop median",
     )
 
-    ax.axhline(85, color="#d73027", linestyle="--", linewidth=2, alpha=0.7, label="NIOSH 85 dB")
-    ax.axhline(70, color="#1a9850", linestyle=":", linewidth=1.5, alpha=0.7, label="70 dB")
+    ax.axhline(
+        85, color="#d73027", linestyle="--", linewidth=2, alpha=0.7, label="NIOSH 85 dB"
+    )
+    ax.axhline(
+        70, color="#1a9850", linestyle=":", linewidth=1.5, alpha=0.7, label="70 dB"
+    )
 
     ax.set_xlabel("Stop (ordered by median dB)")
     ax.set_ylabel("Decibel Level (dBA)")
@@ -521,7 +589,9 @@ def make_fig6_boxplot(df: pd.DataFrame, output_dir: Path) -> None:
     """Generate Figure 6: Per-stop distribution boxplots (all stops)."""
     valid = df[df["status"] == "ok"]
 
-    stop_medians = valid.groupby("video_id")["decibel"].median().sort_values(ascending=False)
+    stop_medians = (
+        valid.groupby("video_id")["decibel"].median().sort_values(ascending=False)
+    )
     ordered_stops = stop_medians.index.tolist()
 
     n_stops = len(ordered_stops)
@@ -530,7 +600,9 @@ def make_fig6_boxplot(df: pd.DataFrame, output_dir: Path) -> None:
     else:
         fig, ax = plt.subplots(figsize=(12, 6))
 
-    plot_data = [valid[valid["video_id"] == vid]["decibel"].values for vid in ordered_stops]
+    plot_data = [
+        valid[valid["video_id"] == vid]["decibel"].values for vid in ordered_stops
+    ]
 
     bp = ax.boxplot(
         plot_data,
@@ -552,7 +624,9 @@ def make_fig6_boxplot(df: pd.DataFrame, output_dir: Path) -> None:
             patch.set_facecolor("#91cf60")
         patch.set_alpha(0.7)
 
-    ax.axhline(85, color="#d73027", linestyle="--", linewidth=2, label="NIOSH 85 dB REL")
+    ax.axhline(
+        85, color="#d73027", linestyle="--", linewidth=2, label="NIOSH 85 dB REL"
+    )
     ax.axhline(70, color="#1a9850", linestyle=":", linewidth=1.5, label="70 dB")
 
     ax.set_xlabel(f"Stop (N={n_stops}, ordered by median dB, highest first)")
@@ -577,7 +651,9 @@ def make_fig7_exceedance(df: pd.DataFrame, output_dir: Path) -> None:
 
     stop_exceed = []
     for t in thresholds:
-        exc = valid.groupby("video_id")["decibel"].apply(lambda x: 100 * (x >= t).mean())
+        exc = valid.groupby("video_id")["decibel"].apply(
+            lambda x: 100 * (x >= t).mean()
+        )
         stop_exceed.append(exc)
 
     stop_exceed_df = pd.DataFrame(stop_exceed, index=thresholds).T
@@ -585,18 +661,28 @@ def make_fig7_exceedance(df: pd.DataFrame, output_dir: Path) -> None:
     fig, ax = plt.subplots(figsize=(10, 6))
 
     for vid in stop_exceed_df.index:
-        ax.plot(thresholds, stop_exceed_df.loc[vid], color="#3182bd", alpha=0.15, linewidth=0.5)
+        ax.plot(
+            thresholds,
+            stop_exceed_df.loc[vid],
+            color="#3182bd",
+            alpha=0.15,
+            linewidth=0.5,
+        )
 
     ax.plot(thresholds, overall_exceed, color="#d73027", linewidth=3, label="Overall")
 
     p25 = [stop_exceed_df[t].quantile(0.25) for t in thresholds]
     p75 = [stop_exceed_df[t].quantile(0.75) for t in thresholds]
-    ax.fill_between(thresholds, p25, p75, alpha=0.3, color="#2ca02c", label="IQR across stops")
+    ax.fill_between(
+        thresholds, p25, p75, alpha=0.3, color="#2ca02c", label="IQR across stops"
+    )
 
     for t in [85, 88, 91]:
         overall = 100 * (valid["decibel"] >= t).mean()
         ax.plot(t, overall, "o", color="#d73027", markersize=8, zorder=5)
-        ax.annotate(f"{t}dB: {overall:.0f}%", xy=(t, overall), xytext=(t + 1, overall + 3))
+        ax.annotate(
+            f"{t}dB: {overall:.0f}%", xy=(t, overall), xytext=(t + 1, overall + 3)
+        )
 
     ax.axvline(85, color="gray", linestyle="--", alpha=0.5)
     ax.set_xlabel("Decibel Threshold (dBA)")
@@ -613,6 +699,127 @@ def make_fig7_exceedance(df: pd.DataFrame, output_dir: Path) -> None:
     click.echo(f"  Created {output_path}")
 
 
+def make_table4_road_type(df: pd.DataFrame, output_dir: Path) -> None:
+    """Generate Table 4: Noise Statistics by Road Type (LaTeX)."""
+    if "road_type" not in df.columns or df["road_type"].isna().all():
+        click.echo("  Skipping table4 (no road_type data)")
+        return
+
+    valid = df[df["status"] == "ok"].copy()
+    valid["road_type"] = valid["road_type"].fillna("unknown")
+
+    stats = (
+        valid.groupby("road_type")
+        .agg(
+            n_readings=("decibel", "count"),
+            n_stops=("video_id", "nunique"),
+            mean_db=("decibel", "mean"),
+            median_db=("decibel", "median"),
+            pct_above_85=("decibel", lambda x: 100 * (x >= 85).mean()),
+        )
+        .reset_index()
+    )
+    stats = stats.sort_values("n_stops", ascending=False)
+
+    rows = []
+    for _, row in stats.iterrows():
+        rt = str(row["road_type"]).replace("_", " ").title()
+        rows.append(
+            f"{rt} & {int(row['n_stops'])} & {int(row['n_readings']):,} & "
+            f"{row['mean_db']:.1f} & {row['median_db']:.1f} & {row['pct_above_85']:.1f}\\% \\\\"
+        )
+
+    latex = (
+        r"""\begin{table}[htbp]
+\centering
+\caption{GoPro Noise Readings by Road Type}
+\label{tab:gopro_road_type}
+\begin{tabular}{lrrrrr}
+\toprule
+Road Type & Stops & Readings & Mean dB & Median dB & \% $\geq$85 dB \\
+\midrule
+"""
+        + "\n".join(rows)
+        + r"""
+\bottomrule
+\end{tabular}
+\end{table}
+"""
+    )
+
+    output_path = output_dir / "table4_road_type.tex"
+    output_path.write_text(latex)
+    click.echo(f"  Created {output_path}")
+
+
+def make_fig9_road_type(df: pd.DataFrame, output_dir: Path) -> None:
+    """Generate Figure 9: Boxplot of GoPro noise by road type."""
+    if "road_type" not in df.columns or df["road_type"].isna().all():
+        click.echo("  Skipping fig9 (no road_type data)")
+        return
+
+    valid = df[df["status"] == "ok"].copy()
+    valid["road_type"] = valid["road_type"].fillna("unknown")
+
+    road_order = (
+        valid.groupby("road_type")["decibel"]
+        .median()
+        .sort_values(ascending=False)
+        .index.tolist()
+    )
+
+    if len(road_order) == 0:
+        click.echo("  Skipping fig9 (no road types)")
+        return
+
+    fig, ax = plt.subplots(figsize=(10, 6))
+
+    plot_data = [valid[valid["road_type"] == rt]["decibel"].values for rt in road_order]
+    counts = [
+        valid[valid["road_type"] == rt]["video_id"].nunique() for rt in road_order
+    ]
+    labels = [f"{rt}\n(n={c})" for rt, c in zip(road_order, counts)]
+
+    plot_data = [d for d in plot_data if len(d) > 0]
+    labels = [
+        label
+        for label, d in zip(
+            labels,
+            [valid[valid["road_type"] == rt]["decibel"].values for rt in road_order],
+        )
+        if len(d) > 0
+    ]
+
+    if not plot_data:
+        click.echo("  Skipping fig9 (no data)")
+        return
+
+    bp = ax.boxplot(
+        plot_data, vert=True, patch_artist=True, widths=0.6, showfliers=False
+    )
+
+    colors = plt.cm.RdYlGn_r(np.linspace(0.2, 0.8, len(plot_data)))
+    for patch, color in zip(bp["boxes"], colors):
+        patch.set_facecolor(color)
+        patch.set_alpha(0.7)
+
+    ax.axhline(
+        85, color="#d73027", linestyle="--", linewidth=2, label="NIOSH 85 dB REL"
+    )
+    ax.axhline(70, color="#1a9850", linestyle=":", linewidth=1.5, label="70 dB")
+
+    ax.set_xticklabels(labels, rotation=45, ha="right")
+    ax.set_ylabel("Decibel Level (dBA)")
+    ax.set_title("GoPro Noise Readings by Road Type")
+    ax.legend(loc="upper right")
+
+    plt.tight_layout()
+    output_path = output_dir / "fig9_road_type.pdf"
+    fig.savefig(output_path)
+    plt.close(fig)
+    click.echo(f"  Created {output_path}")
+
+
 def make_fig8_temporal(df: pd.DataFrame, output_dir: Path) -> None:
     """Generate Figure 8: Temporal pattern within videos."""
     valid = df[df["status"] == "ok"].copy()
@@ -623,7 +830,9 @@ def make_fig8_temporal(df: pd.DataFrame, output_dir: Path) -> None:
     bins = np.linspace(0, 1, 21)
     valid["time_bin"] = pd.cut(valid["normalized_time"], bins=bins, labels=False)
 
-    temporal = valid.groupby("time_bin")["decibel"].agg(["mean", "std", "count"]).reset_index()
+    temporal = (
+        valid.groupby("time_bin")["decibel"].agg(["mean", "std", "count"]).reset_index()
+    )
     temporal["se"] = temporal["std"] / np.sqrt(temporal["count"])
     temporal["time_pct"] = (temporal["time_bin"] + 0.5) * 5
 
@@ -638,7 +847,9 @@ def make_fig8_temporal(df: pd.DataFrame, output_dir: Path) -> None:
     )
     ax.plot(temporal["time_pct"], temporal["mean"], color="#3182bd", linewidth=2)
 
-    ax.axhline(85, color="#d73027", linestyle="--", linewidth=1.5, label="NIOSH 85 dB REL")
+    ax.axhline(
+        85, color="#d73027", linestyle="--", linewidth=1.5, label="NIOSH 85 dB REL"
+    )
 
     ax.set_xlabel("Position Within Video (%)")
     ax.set_ylabel("Mean Decibel Level (dBA)")
@@ -669,7 +880,9 @@ def process(readings_path: Path, output_dir: Path | None = None) -> None:
 
     valid = df[df["status"] == "ok"]
     click.echo(f"  Valid readings: {len(valid):,} ({100*len(valid)/len(df):.1f}%)")
-    click.echo(f"  Decibel range: {valid['decibel'].min():.1f} - {valid['decibel'].max():.1f} dB")
+    click.echo(
+        f"  Decibel range: {valid['decibel'].min():.1f} - {valid['decibel'].max():.1f} dB"
+    )
 
     parquet_path = output_dir / "analysis_data.parquet"
     df.to_parquet(parquet_path)
@@ -686,6 +899,7 @@ def process(readings_path: Path, output_dir: Path | None = None) -> None:
     make_table1_summary(df, tabs_dir)
     make_table2_stop_distribution(df, tabs_dir)
     make_table3_threshold_exceedance(df, tabs_dir)
+    make_table4_road_type(df, tabs_dir)
 
     click.echo("\nGenerating figures...")
     make_fig1_map_locations(df, figs_dir)
@@ -696,6 +910,7 @@ def process(readings_path: Path, output_dir: Path | None = None) -> None:
     make_fig6_boxplot(df, figs_dir)
     make_fig7_exceedance(df, figs_dir)
     make_fig8_temporal(df, figs_dir)
+    make_fig9_road_type(df, figs_dir)
 
     click.echo("\nAnalysis complete!")
     click.echo(f"  Tables: {tabs_dir}")

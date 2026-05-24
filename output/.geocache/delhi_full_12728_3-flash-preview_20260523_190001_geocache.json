@@ -1,0 +1,962 @@
+{
+  "delhi_04_30_2026_60.1": {
+    "road_type": "residential",
+    "road_name": "Rajmata Vijayaraje Sindhia Marg",
+    "address": "Rajmata Vijayaraje Sindhia Marg, Sarojini Nagar, Vasant Vihar Tehsil, New Delhi, Delhi, 110023, India"
+  },
+  "delhi_04_30_2026_GX011906": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Safdarjung Development Area, Hauz Khas Tehsil, South Delhi, Delhi, 110016, India"
+  },
+  "delhi_04_30_2026_GX011907": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Vasant Kunj, Vasant Vihar Tehsil, New Delhi, Delhi, 110037, India"
+  },
+  "delhi_04_30_2026_GX011909": {
+    "road_type": "secondary",
+    "road_name": "",
+    "address": "Bana Singh Enclave, Delhi Cantonment, New Delhi, Delhi, 110010, India"
+  },
+  "delhi_04_30_2026_GX011910": {
+    "road_type": "tertiary",
+    "road_name": "Benito Juarez Marg",
+    "address": "Benito Juarez Marg, Moti Bagh, Vasant Vihar Tehsil, New Delhi, Delhi, 110057, India"
+  },
+  "delhi_04_30_2026_GX011911": {
+    "road_type": "tertiary",
+    "road_name": "Benito Juarez Marg",
+    "address": "Benito Juarez Marg, Moti Bagh, Vasant Vihar Tehsil, New Delhi, Delhi, 110021, India"
+  },
+  "delhi_04_30_2026_GX011912": {
+    "road_type": "secondary",
+    "road_name": "Rangpuri",
+    "address": "Rangpuri, Vasant Vihar Tehsil, New Delhi, Delhi, 110037, India"
+  },
+  "delhi_04_30_2026_GX011913": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Vasant Vihar Tehsil, New Delhi, Delhi, 110038, India"
+  },
+  "delhi_05_01_2026_GX011917": {
+    "road_type": "primary",
+    "road_name": "",
+    "address": "Mayur Vihar, Mayur Vihar Tehsil, East Delhi, Delhi, 110091, India"
+  },
+  "delhi_05_01_2026_GX011924": {
+    "road_type": "residential",
+    "road_name": "Maharani Bagh Western Avenue",
+    "address": "Maharani Bagh Western Avenue, New Friends Colony, Defence Colony Tehsil, South East Delhi, Delhi, 110014, India"
+  },
+  "delhi_05_01_2026_GX011929": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Vasant Vihar, New Delhi, Delhi, 110057, India"
+  },
+  "delhi_05_01_2026_GX011931": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Vasant Vihar, New Delhi, Delhi, 110057, India"
+  },
+  "delhi_05_03_2026_GX011938": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011939": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011940": {
+    "road_type": "construction",
+    "road_name": "DND-KMP Expressway",
+    "address": "DND-KMP Expressway, Jamia Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110025, India"
+  },
+  "delhi_05_03_2026_GX011942": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011944": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011945": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011946": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011947": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011948": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011949": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011950": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011951": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Chhattarpur, Saket Tehsil, South Delhi, Delhi, 110030, India"
+  },
+  "delhi_05_03_2026_GX011952": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011953": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011954": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011956": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011957": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_03_2026_GX011958": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011959": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011961": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011962": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011963": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011964": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011965": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011966": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011967": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Jamia Nagar, Defence Colony Tehsil, South East Delhi, Delhi, 110014, India"
+  },
+  "delhi_05_04_2026_GX011968": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011970": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011971": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011972": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011973": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011974": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011975": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011976": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011977": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011978": {
+    "road_type": "stadium",
+    "road_name": "Maharishi Raman Marg",
+    "address": "Jawaharlal Nehru Stadium, Maharishi Raman Marg, South Extension, Defence Colony Tehsil, South East Delhi, Delhi, 110003, India"
+  },
+  "delhi_05_04_2026_GX011979": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Kalkaji, Kalkaji Tehsil, South East Delhi, Delhi, 110019, India"
+  },
+  "delhi_05_04_2026_GX011981": {
+    "road_type": "trunk",
+    "road_name": "Mahatma Gandhi Marg",
+    "address": "Mahatma Gandhi Marg, Defence Colony Tehsil, South East Delhi, Delhi, 110013, India"
+  },
+  "delhi_05_05_2026_GX011982": {
+    "road_type": "primary_link",
+    "road_name": "Mahatma Gandhi Marg",
+    "address": "Mahatma Gandhi Marg, Defence Colony Tehsil, South East Delhi, Delhi, 110013, India"
+  },
+  "delhi_05_05_2026_GX011983": {
+    "road_type": "primary_link",
+    "road_name": "Mahatma Gandhi Marg",
+    "address": "Mahatma Gandhi Marg, Defence Colony Tehsil, South East Delhi, Delhi, 110013, India"
+  },
+  "delhi_05_05_2026_GX011984": {
+    "road_type": "primary_link",
+    "road_name": "Mahatma Gandhi Marg",
+    "address": "Mahatma Gandhi Marg, Defence Colony Tehsil, South East Delhi, Delhi, 110013, India"
+  },
+  "delhi_05_05_2026_GX011985": {
+    "road_type": "primary_link",
+    "road_name": "Mahatma Gandhi Marg",
+    "address": "Mahatma Gandhi Marg, Defence Colony Tehsil, South East Delhi, Delhi, 110013, India"
+  },
+  "delhi_05_05_2026_GX011986": {
+    "road_type": "primary_link",
+    "road_name": "Mahatma Gandhi Marg",
+    "address": "Mahatma Gandhi Marg, Defence Colony Tehsil, South East Delhi, Delhi, 110013, India"
+  },
+  "delhi_05_05_2026_GX011988": {
+    "road_type": "school",
+    "road_name": "Doctor Bhim Rao Ambedkar Marg",
+    "address": "Sarvodaya Kanya Vidyalaya and Government School, Doctor Bhim Rao Ambedkar Marg, Ashok Vihar - IV, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110052, India"
+  },
+  "delhi_05_05_2026_GX011990": {
+    "road_type": "residential",
+    "road_name": "Pandit Lekkhram Sharma Marg",
+    "address": "Pandit Lekkhram Sharma Marg, Rampura, Punjabi Bagh, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110035, India"
+  },
+  "delhi_05_05_2026_GX011992": {
+    "road_type": "secondary",
+    "road_name": "Guru Harkishan Marg",
+    "address": "Guru Harkishan Marg, Shakurpur JJ Colony, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110034, India"
+  },
+  "delhi_05_05_2026_GX011993": {
+    "road_type": "secondary",
+    "road_name": "Guru Harkishan Marg",
+    "address": "Guru Harkishan Marg, Shakurpur JJ Colony, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110034, India"
+  },
+  "delhi_05_05_2026_GX011994": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Shivaji Park, Punjabi Bagh Tehsil, West Delhi, Delhi, 110026, India"
+  },
+  "delhi_05_05_2026_GX011995": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Sultanpuri, Rohini Tehsil, North West Delhi, Delhi, 110083, India"
+  },
+  "delhi_05_05_2026_GX011996": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Sector 5, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110085, India"
+  },
+  "delhi_05_05_2026_GX011997": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Sector 7, Rohini, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110085, India"
+  },
+  "delhi_05_05_2026_GX011999": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Sector 14, Rohini, Alipur Tehsil, North Delhi, Delhi, 110034, India"
+  },
+  "delhi_05_05_2026_GX012001": {
+    "road_type": "tertiary",
+    "road_name": "",
+    "address": "Sector 19, Rohini, Alipur Tehsil, North Delhi, Delhi, 110089, India"
+  },
+  "delhi_05_05_2026_GX012002": {
+    "road_type": "tertiary",
+    "road_name": "Gyan Shakti Mandir marg",
+    "address": "Gyan Shakti Mandir marg, Shalimar Bagh, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110088, India"
+  },
+  "delhi_05_05_2026_GX012003": {
+    "road_type": "residential",
+    "road_name": "Pipal wala road",
+    "address": "Pipal wala road, Badli, Alipur Tehsil, North Delhi, Delhi, 110089, India"
+  },
+  "delhi_05_05_2026_GX012004": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Govind Mohalla, Shalimar Bagh, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110089, India"
+  },
+  "delhi_05_05_2026_GX012005": {
+    "road_type": "tertiary",
+    "road_name": "Gyan Shakti Mandir marg",
+    "address": "Gyan Shakti Mandir marg, Shalimar Bagh, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110088, India"
+  },
+  "delhi_05_05_2026_GX012007": {
+    "road_type": "tertiary",
+    "road_name": "",
+    "address": "Sector 24, Rohini, Narela Tehsil, North Delhi, Delhi, 110086, India"
+  },
+  "delhi_05_05_2026_GX012008": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Sector 25, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110085, India"
+  },
+  "delhi_05_05_2026_GX012009": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Sector 25, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110085, India"
+  },
+  "delhi_05_05_2026_GX012010": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Puth Kalan Village, Rohini Tehsil, North West Delhi, Delhi, 110086, India"
+  },
+  "delhi_05_05_2026_GX012011": {
+    "road_type": "tertiary",
+    "road_name": "",
+    "address": "Sector 23, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India"
+  },
+  "delhi_05_06_2026_GX012012": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012013": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012015": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012017": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012018": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012020": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012021": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012023": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012026": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012027": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012028": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012029": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012030": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012031": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012032": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012033": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012035": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012036": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012037": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012039": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012040": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012041": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012043": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012044": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_06_2026_GX012045": {
+    "road_type": null,
+    "road_name": "",
+    "address": ""
+  },
+  "delhi_05_07_2026_GX012049": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Trilokpuri, Mayur Vihar Tehsil, East Delhi, Delhi, 110091, India"
+  },
+  "delhi_05_07_2026_GX012055": {
+    "road_type": "secondary",
+    "road_name": "",
+    "address": "Tila Shahbazpur, Ghaziabad, Uttar Pradesh, 201102, India"
+  },
+  "delhi_05_07_2026_GX012065": {
+    "road_type": "residential",
+    "road_name": "Vishwas Road",
+    "address": "Vishwas Road, Vishwas Nagar, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India"
+  },
+  "delhi_05_08_2026_GX012078": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Karkarduma, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India"
+  },
+  "delhi_05_08_2026_GX012079": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Karkarduma, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India"
+  },
+  "delhi_05_08_2026_GX012080": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Karkarduma, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India"
+  },
+  "delhi_05_08_2026_GX012081": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Karkarduma, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India"
+  },
+  "delhi_05_08_2026_GX012082": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Karkarduma, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India"
+  },
+  "delhi_05_08_2026_GX012083": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Karkarduma, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India"
+  },
+  "delhi_05_08_2026_GX012084": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Karkarduma, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India"
+  },
+  "delhi_05_08_2026_GX012085": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Karkarduma, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India"
+  },
+  "delhi_05_08_2026_GX012086": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Karkarduma, Vivek Vihar Tehsil, Shahdara, Delhi, 110051, India"
+  },
+  "delhi_05_08_2026_GX012087": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Narela, Narela Tehsil, North Delhi, Delhi, 110040, India"
+  },
+  "delhi_05_08_2026_GX012088": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Narela, Narela Tehsil, North Delhi, Delhi, 110040, India"
+  },
+  "delhi_05_08_2026_GX012089": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Narela, Narela Tehsil, North Delhi, Delhi, 110040, India"
+  },
+  "delhi_05_08_2026_GX012090": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Narela, Narela Tehsil, North Delhi, Delhi, 110040, India"
+  },
+  "delhi_05_08_2026_GX012091": {
+    "road_type": "secondary",
+    "road_name": "",
+    "address": "Sector G6, Narela Tehsil, North Delhi, Delhi, 110040, India"
+  },
+  "delhi_05_08_2026_GX012092": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Sector G7, Narela Tehsil, North Delhi, Delhi, 110039, India"
+  },
+  "delhi_05_08_2026_GX012093": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Sector 28, Rohini, Alipur Tehsil, North Delhi, Delhi, 110082, India"
+  },
+  "delhi_05_08_2026_GX012094": {
+    "road_type": "unclassified",
+    "road_name": "",
+    "address": "Sector 30, Rohini, Narela Tehsil, North Delhi, Delhi, 110082, India"
+  },
+  "delhi_05_08_2026_GX012095": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Sector 28, Rohini, Alipur Tehsil, North Delhi, Delhi, 110085, India"
+  },
+  "delhi_05_08_2026_GX012096": {
+    "road_type": "tertiary",
+    "road_name": "",
+    "address": "Narela Tehsil, North Delhi, Delhi, 110082, India"
+  },
+  "delhi_05_08_2026_GX012097": {
+    "road_type": "tertiary",
+    "road_name": "",
+    "address": "Khera Khurd, Alipur Tehsil, North Delhi, Delhi, 110082, India"
+  },
+  "delhi_05_08_2026_GX012098": {
+    "road_type": "tertiary",
+    "road_name": "Siraspur Main Gurudwara Road",
+    "address": "Siraspur Main Gurudwara Road, Siraspur, Alipur Tehsil, North Delhi, Delhi, 110042, India"
+  },
+  "delhi_05_08_2026_GX012099": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Siraspur, Alipur Tehsil, North Delhi, Delhi, 110042, India"
+  },
+  "delhi_05_09_2026_GX012102": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Siraspur, Alipur Tehsil, North Delhi, Delhi, 110042, India"
+  },
+  "delhi_05_09_2026_GX012103": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Siraspur, Alipur Tehsil, North Delhi, Delhi, 110042, India"
+  },
+  "delhi_05_09_2026_GX012104": {
+    "road_type": "tertiary",
+    "road_name": "",
+    "address": "Alipur Tehsil, North Delhi, Delhi, 110036, India"
+  },
+  "delhi_05_09_2026_GX012105": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Alipur Tehsil, North Delhi, Delhi, 110005, India"
+  },
+  "delhi_05_09_2026_GX012107": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Alipur Tehsil, North Delhi, Delhi, India"
+  },
+  "delhi_05_09_2026_GX012108": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Alipur Tehsil, North Delhi, Delhi, 110036, India"
+  },
+  "delhi_05_09_2026_GX012109": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Alipur Tehsil, North Delhi, Delhi, 110005, India"
+  },
+  "delhi_05_09_2026_GX012110": {
+    "road_type": "secondary",
+    "road_name": "Palla Bakhtawarpur road",
+    "address": "Palla Bakhtawarpur road, Alipur, Alipur Tehsil, North Delhi, Delhi, 110036, India"
+  },
+  "delhi_05_09_2026_GX012111": {
+    "road_type": "secondary",
+    "road_name": "Palla Bakhtawarpur road",
+    "address": "Palla Bakhtawarpur road, Alipur, Alipur Tehsil, North Delhi, Delhi, 110036, India"
+  },
+  "delhi_05_09_2026_GX012112": {
+    "road_type": "trunk",
+    "road_name": "Doctor KB Hedgewar Marg",
+    "address": "Doctor KB Hedgewar Marg, Kalander Colony, Basant Dada Patil Nagar, Model Town Tehsil, North Delhi, Delhi, 110042, India"
+  },
+  "delhi_05_09_2026_GX012113": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Model Town Tehsil, North Delhi, Delhi, 110084, India"
+  },
+  "delhi_05_09_2026_GX012114": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Model Town Tehsil, North Delhi, Delhi, 110084, India"
+  },
+  "delhi_05_09_2026_GX012115": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Gandhi Vihar, Civil Lines Tehsil, Central Delhi, Delhi, 110009, India"
+  },
+  "delhi_05_09_2026_GX012116": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Khora, Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, 110092, India"
+  },
+  "delhi_05_09_2026_GX012117": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Gandhi Vihar, Civil Lines Tehsil, Central Delhi, Delhi, 110009, India"
+  },
+  "delhi_05_09_2026_GX012119": {
+    "road_type": "tertiary",
+    "road_name": "",
+    "address": "Karawal Nagar Tehsil, North East Delhi, Delhi, Ghaziabad, Uttar Pradesh, 110094, India"
+  },
+  "delhi_05_09_2026_GX012120": {
+    "road_type": "tertiary",
+    "road_name": "",
+    "address": "Karawal Nagar Tehsil, North East Delhi, Delhi, 110094, India"
+  },
+  "delhi_05_09_2026_GX012121": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Khajuri, Seelam Pur Tehsil, North East Delhi, Delhi, 110094, India"
+  },
+  "delhi_05_09_2026_GX012122": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Karawal Nagar Tehsil, North East Delhi, Delhi, 110094, India"
+  },
+  "delhi_05_09_2026_GX012124": {
+    "road_type": "trunk",
+    "road_name": "AH2",
+    "address": "AH2, Kanti Nagar Extension, Shahdara, Vivek Vihar Tehsil, Shahdara, Delhi, 110032, India"
+  },
+  "delhi_05_09_2026_GX012125": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Darbhanga, Bihar, 846004, India"
+  },
+  "delhi_05_09_2026_GX012126": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Swasthya Vihar, Preet Vihar Tehsil, East Delhi, Delhi, 110051, India"
+  },
+  "delhi_05_09_2026_GX012127": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Swasthya Vihar, Preet Vihar Tehsil, East Delhi, Delhi, 110051, India"
+  },
+  "delhi_05_09_2026_GX012128": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012129": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012130": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012131": {
+    "road_type": "restaurant",
+    "road_name": "Inner Circle",
+    "address": "United Coffee House, 15, Inner Circle, Kashmiri Market, Connaught Place, Chanakya Puri Tehsil, New Delhi, Delhi, 110001, India"
+  },
+  "delhi_05_13_2026_GX012132": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012133": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012134": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012135": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012136": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012137": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012138": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012139": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012140": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012141": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012142": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Indraprastha Extension, Preet Vihar Tehsil, East Delhi, Delhi, 110092, India"
+  },
+  "delhi_05_13_2026_GX012143": {
+    "road_type": "residential",
+    "road_name": "Gali Number 4",
+    "address": "Gali Number 4, Sector 20, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India"
+  },
+  "delhi_05_13_2026_GX012144": {
+    "road_type": "tertiary",
+    "road_name": "100 Feet road",
+    "address": "100 Feet road, Sector 20, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India"
+  },
+  "delhi_05_13_2026_GX012145": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Sector 20, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India"
+  },
+  "delhi_05_13_2026_GX012146": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Sector 20, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India"
+  },
+  "delhi_05_13_2026_GX012147": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Sector 21, Rohini, Rohini Tehsil, North West Delhi, Delhi, 110086, India"
+  },
+  "delhi_05_13_2026_GX012148": {
+    "road_type": "primary",
+    "road_name": "UER II",
+    "address": "UER II, Kanjhawalan Tehsil, North West Delhi, Delhi, 110086, India"
+  },
+  "delhi_05_13_2026_GX012149": {
+    "road_type": "primary",
+    "road_name": "",
+    "address": "Mundka, Punjabi Bagh Tehsil, West Delhi, Delhi, 110081, India"
+  },
+  "delhi_05_13_2026_GX012150": {
+    "road_type": "blood_donation",
+    "road_name": "Rohtak Road",
+    "address": "Mission Jan Jagriti Blood Bank, Rohtak Road, Nangloi, Punjabi Bagh Tehsil, West Delhi, Delhi, 110041, India"
+  },
+  "delhi_05_13_2026_GX012151": {
+    "road_type": "trunk",
+    "road_name": "Rohtak Road",
+    "address": "Rohtak Road, Nangloi, Punjabi Bagh Tehsil, West Delhi, Delhi, 110083, India"
+  },
+  "delhi_05_13_2026_GX012152": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Moti Bagh (East), Sarai Rohilla, Civil Lines Tehsil, Central Delhi, Delhi, 110052, India"
+  },
+  "delhi_05_13_2026_GX012153": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Moti Bagh (East), Anand Parbat, Civil Lines Tehsil, Central Delhi, Delhi, 110052, India"
+  },
+  "delhi_05_13_2026_GX012154": {
+    "road_type": "tertiary",
+    "road_name": "Arya Samaj Road",
+    "address": "Arya Samaj Road, 12-B, Karol Bagh, Civil Lines Tehsil, Central Delhi, Delhi, 110060, India"
+  },
+  "delhi_05_13_2026_GX012155": {
+    "road_type": "tertiary",
+    "road_name": "Ramakrishna Ashram Marg",
+    "address": "Ramakrishna Ashram Marg, Palika Niketan, DIZ Area, Chanakya Puri Tehsil, New Delhi, Delhi, 110055, India"
+  },
+  "delhi_05_14_2026_GX012156": {
+    "road_type": "tertiary",
+    "road_name": "",
+    "address": "Najafgarh, Najafgarh Tehsil, South West Delhi, Delhi, 110072, India"
+  },
+  "delhi_05_14_2026_GX012157": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "ANAND KUNJ SOCIETY, Vikaspuri, Patel Nagar, West Delhi, Delhi, 110018, India"
+  },
+  "delhi_05_14_2026_GX012158": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Najafgarh, Najafgarh Tehsil, South West Delhi, Delhi, 110043, India"
+  },
+  "delhi_05_14_2026_GX012159": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Najafgarh, Najafgarh Tehsil, South West Delhi, Delhi, 110043, India"
+  },
+  "delhi_05_14_2026_GX012160": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Najafgarh, Najafgarh Tehsil, South West Delhi, Delhi, 110043, India"
+  },
+  "delhi_05_14_2026_GX012161": {
+    "road_type": "secondary",
+    "road_name": "Najafgarh Bahadurgarh Road",
+    "address": "Najafgarh Bahadurgarh Road, Jharodha Kalan, Najafgarh Tehsil, South West Delhi, Delhi, 110072, India"
+  },
+  "delhi_05_14_2026_GX012163": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Punjabi Bagh Tehsil, West Delhi, Delhi, India"
+  },
+  "delhi_05_14_2026_GX012164": {
+    "road_type": "primary",
+    "road_name": "Najafgarh Nangloi Road",
+    "address": "Najafgarh Nangloi Road, Baprola, Najafgarh, Punjabi Bagh Tehsil, West Delhi, Delhi, 110043, India"
+  },
+  "delhi_05_14_2026_GX012165": {
+    "road_type": "primary",
+    "road_name": "Najafgarh Nangloi Road",
+    "address": "Najafgarh Nangloi Road, Nangloi Extension, Punjabi Bagh Tehsil, West Delhi, Delhi, 110041, India"
+  },
+  "delhi_05_14_2026_GX012166": {
+    "road_type": "primary",
+    "road_name": "Najafgarh Nangloi Road",
+    "address": "Najafgarh Nangloi Road, Nangloi Extension, Punjabi Bagh Tehsil, West Delhi, Delhi, 110041, India"
+  },
+  "delhi_05_14_2026_GX012169": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Nangloi Extension, Punjabi Bagh Tehsil, West Delhi, Delhi, 110041, India"
+  },
+  "delhi_05_14_2026_GX012171": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Razapur Khurd, Patel Nagar, West Delhi, Delhi, 110059, India"
+  },
+  "delhi_05_14_2026_GX012172": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "Nyadar Enclave, Patel Nagar, West Delhi, Delhi, 110041, India"
+  },
+  "delhi_05_14_2026_GX012173": {
+    "road_type": "residential",
+    "road_name": "",
+    "address": "S, Razapur Khurd, Patel Nagar, West Delhi, Delhi, 110059, India"
+  },
+  "delhi_05_14_2026_GX012174": {
+    "road_type": "primary",
+    "road_name": "Nangloi road",
+    "address": "Nangloi road, Nangloi Extension, Punjabi Bagh Tehsil, West Delhi, Delhi, 110041, India"
+  },
+  "delhi_05_14_2026_GX012176": {
+    "road_type": "primary",
+    "road_name": "Nangloi road",
+    "address": "Nangloi road, Nangloi Extension, Punjabi Bagh Tehsil, West Delhi, Delhi, 110041, India"
+  },
+  "delhi_05_14_2026_GX012177": {
+    "road_type": "primary",
+    "road_name": "Nangloi road",
+    "address": "Nangloi road, Nangloi Extension, Punjabi Bagh Tehsil, West Delhi, Delhi, 110041, India"
+  }
+}

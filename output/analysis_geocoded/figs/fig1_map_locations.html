@@ -1,0 +1,3873 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_36f1d2d407f0da43ed9492d8b9ff882e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_36f1d2d407f0da43ed9492d8b9ff882e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_36f1d2d407f0da43ed9492d8b9ff882e = L.map(
+                "map_36f1d2d407f0da43ed9492d8b9ff882e",
+                {
+                    center: [28.658889651084014, 77.1821000677507],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a2e85b42fd05c229ee81e0b8cdf1f37c = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a2e85b42fd05c229ee81e0b8cdf1f37c.addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+            var circle_marker_3ed9f6bc36d5bfde3a3652e8a5bb04fb = L.circleMarker(
+                [28.57427361111111, 77.19428055555557],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_f0f7727dfed6282ab28160d55ca41d17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6603cffa554be7f8270310fe66edd8c = $(`<div id="html_e6603cffa554be7f8270310fe66edd8c" style="width: 100.0%; height: 100.0%;"><b>delhi_04_30_2026_60.1</b><br>N readings: 68<br>Duration: 67s<br>Mean: 73.7 dB<br>Max: 117.4 dB</div>`)[0];
+                popup_f0f7727dfed6282ab28160d55ca41d17.setContent(html_e6603cffa554be7f8270310fe66edd8c);
+            
+        
+
+        circle_marker_3ed9f6bc36d5bfde3a3652e8a5bb04fb.bindPopup(popup_f0f7727dfed6282ab28160d55ca41d17)
+        ;
+
+        
+    
+    
+            var circle_marker_1d8c042c8d65db70a657207760512677 = L.circleMarker(
+                [28.549725000000002, 77.19764444444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_7105fbe21bb714eee20e6d3faef4c8d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_936ce51c93fb0f20d2766e07d80749ef = $(`<div id="html_936ce51c93fb0f20d2766e07d80749ef" style="width: 100.0%; height: 100.0%;"><b>delhi_04_30_2026_GX011906</b><br>N readings: 60<br>Duration: 60s<br>Mean: 77.1 dB<br>Max: 97.4 dB</div>`)[0];
+                popup_7105fbe21bb714eee20e6d3faef4c8d7.setContent(html_936ce51c93fb0f20d2766e07d80749ef);
+            
+        
+
+        circle_marker_1d8c042c8d65db70a657207760512677.bindPopup(popup_7105fbe21bb714eee20e6d3faef4c8d7)
+        ;
+
+        
+    
+    
+            var circle_marker_f1f2a856fdc00e20b8a99fd28b118b9d = L.circleMarker(
+                [28.537322222222222, 77.1440513888889],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_f62a49d8b96f8e6ec82a35106a645e26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fce2168864ac4158be61cb315d6fdfa = $(`<div id="html_5fce2168864ac4158be61cb315d6fdfa" style="width: 100.0%; height: 100.0%;"><b>delhi_04_30_2026_GX011907</b><br>N readings: 122<br>Duration: 124s<br>Mean: 71.3 dB<br>Max: 101.5 dB</div>`)[0];
+                popup_f62a49d8b96f8e6ec82a35106a645e26.setContent(html_5fce2168864ac4158be61cb315d6fdfa);
+            
+        
+
+        circle_marker_f1f2a856fdc00e20b8a99fd28b118b9d.bindPopup(popup_f62a49d8b96f8e6ec82a35106a645e26)
+        ;
+
+        
+    
+    
+            var circle_marker_306ac57409c70b9a00dd233ad5af8ea0 = L.circleMarker(
+                [28.566658333333333, 77.13442500000001],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_435954ed96d60fdf199fce1efbb137aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75c6322c246ac2567968e5a0dbf5122a = $(`<div id="html_75c6322c246ac2567968e5a0dbf5122a" style="width: 100.0%; height: 100.0%;"><b>delhi_04_30_2026_GX011909</b><br>N readings: 131<br>Duration: 130s<br>Mean: 65.1 dB<br>Max: 91.7 dB</div>`)[0];
+                popup_435954ed96d60fdf199fce1efbb137aa.setContent(html_75c6322c246ac2567968e5a0dbf5122a);
+            
+        
+
+        circle_marker_306ac57409c70b9a00dd233ad5af8ea0.bindPopup(popup_435954ed96d60fdf199fce1efbb137aa)
+        ;
+
+        
+    
+    
+            var circle_marker_d0ce9e39764c25130bd4e6c7b90225d8 = L.circleMarker(
+                [28.583502777777777, 77.16472222222222],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_be1624b1ddab2bc5252560765d4f3587 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7252b9c9b5133296c5a183b577a0b68e = $(`<div id="html_7252b9c9b5133296c5a183b577a0b68e" style="width: 100.0%; height: 100.0%;"><b>delhi_04_30_2026_GX011910</b><br>N readings: 126<br>Duration: 125s<br>Mean: 69.8 dB<br>Max: 86.4 dB</div>`)[0];
+                popup_be1624b1ddab2bc5252560765d4f3587.setContent(html_7252b9c9b5133296c5a183b577a0b68e);
+            
+        
+
+        circle_marker_d0ce9e39764c25130bd4e6c7b90225d8.bindPopup(popup_be1624b1ddab2bc5252560765d4f3587)
+        ;
+
+        
+    
+    
+            var circle_marker_64fdd090780128eda296487daf16e29b = L.circleMarker(
+                [28.583333333333332, 77.16434444444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_0638c29193d5fd8dc0f470ba71d3c5fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77b61c0cf502df05bfd97eea0f7bf8e1 = $(`<div id="html_77b61c0cf502df05bfd97eea0f7bf8e1" style="width: 100.0%; height: 100.0%;"><b>delhi_04_30_2026_GX011911</b><br>N readings: 130<br>Duration: 129s<br>Mean: 72.4 dB<br>Max: 109.0 dB</div>`)[0];
+                popup_0638c29193d5fd8dc0f470ba71d3c5fb.setContent(html_77b61c0cf502df05bfd97eea0f7bf8e1);
+            
+        
+
+        circle_marker_64fdd090780128eda296487daf16e29b.bindPopup(popup_0638c29193d5fd8dc0f470ba71d3c5fb)
+        ;
+
+        
+    
+    
+            var circle_marker_71e74cd93805f3d969aae0c33b8e970c = L.circleMarker(
+                [28.541769444444448, 77.11813055555555],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_7c2e49c1fef39154938c3481ab9fb377 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1135148f359bd45798c7e8ae6cdfe633 = $(`<div id="html_1135148f359bd45798c7e8ae6cdfe633" style="width: 100.0%; height: 100.0%;"><b>delhi_04_30_2026_GX011912</b><br>N readings: 134<br>Duration: 133s<br>Mean: 72.7 dB<br>Max: 90.3 dB</div>`)[0];
+                popup_7c2e49c1fef39154938c3481ab9fb377.setContent(html_1135148f359bd45798c7e8ae6cdfe633);
+            
+        
+
+        circle_marker_71e74cd93805f3d969aae0c33b8e970c.bindPopup(popup_7c2e49c1fef39154938c3481ab9fb377)
+        ;
+
+        
+    
+    
+            var circle_marker_88302f57fc457b4923eea84eb7f1d2d0 = L.circleMarker(
+                [28.509616666666666, 77.11972222222222],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_e253adfab7880343d4ecb9427d27a3a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3111a214a9f51163edf96cf05a63da7a = $(`<div id="html_3111a214a9f51163edf96cf05a63da7a" style="width: 100.0%; height: 100.0%;"><b>delhi_04_30_2026_GX011913</b><br>N readings: 116<br>Duration: 115s<br>Mean: 67.6 dB<br>Max: 94.3 dB</div>`)[0];
+                popup_e253adfab7880343d4ecb9427d27a3a4.setContent(html_3111a214a9f51163edf96cf05a63da7a);
+            
+        
+
+        circle_marker_88302f57fc457b4923eea84eb7f1d2d0.bindPopup(popup_e253adfab7880343d4ecb9427d27a3a4)
+        ;
+
+        
+    
+    
+            var circle_marker_e5eaef859a443f279d606f76a78a1af8 = L.circleMarker(
+                [28.591655555555555, 77.29496944444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_ad8ab946467266ab53a0aac750f2d5a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5121277255eb79bbddbb125d06229867 = $(`<div id="html_5121277255eb79bbddbb125d06229867" style="width: 100.0%; height: 100.0%;"><b>delhi_05_01_2026_GX011917</b><br>N readings: 89<br>Duration: 88s<br>Mean: 66.6 dB<br>Max: 100.5 dB</div>`)[0];
+                popup_ad8ab946467266ab53a0aac750f2d5a6.setContent(html_5121277255eb79bbddbb125d06229867);
+            
+        
+
+        circle_marker_e5eaef859a443f279d606f76a78a1af8.bindPopup(popup_ad8ab946467266ab53a0aac750f2d5a6)
+        ;
+
+        
+    
+    
+            var circle_marker_6aa42d7d3bf16d6bafbaee2a4fc0c92a = L.circleMarker(
+                [28.56843611111111, 77.26393888888889],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_b45f2ed030290d3b474a1ddcd8e149c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c01662787ef9328875a8922451c5583 = $(`<div id="html_1c01662787ef9328875a8922451c5583" style="width: 100.0%; height: 100.0%;"><b>delhi_05_01_2026_GX011924</b><br>N readings: 81<br>Duration: 80s<br>Mean: 73.0 dB<br>Max: 89.3 dB</div>`)[0];
+                popup_b45f2ed030290d3b474a1ddcd8e149c6.setContent(html_1c01662787ef9328875a8922451c5583);
+            
+        
+
+        circle_marker_6aa42d7d3bf16d6bafbaee2a4fc0c92a.bindPopup(popup_b45f2ed030290d3b474a1ddcd8e149c6)
+        ;
+
+        
+    
+    
+            var circle_marker_4dee654e0947a0a76ecda5aa0e6e96d4 = L.circleMarker(
+                [28.563258333333334, 77.15470555555557],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_62748c2f06b46a9640a1346975176c66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ae631b616d6e8b131a2e10aee58c9cc = $(`<div id="html_9ae631b616d6e8b131a2e10aee58c9cc" style="width: 100.0%; height: 100.0%;"><b>delhi_05_01_2026_GX011929</b><br>N readings: 74<br>Duration: 73s<br>Mean: 73.5 dB<br>Max: 95.0 dB</div>`)[0];
+                popup_62748c2f06b46a9640a1346975176c66.setContent(html_9ae631b616d6e8b131a2e10aee58c9cc);
+            
+        
+
+        circle_marker_4dee654e0947a0a76ecda5aa0e6e96d4.bindPopup(popup_62748c2f06b46a9640a1346975176c66)
+        ;
+
+        
+    
+    
+            var circle_marker_01ba2a52686db61f7686b111afc3474e = L.circleMarker(
+                [28.563333333333333, 77.15457500000001],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_648850131b65310786744009e176437a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0db8a15b8f8a940b17872cb7c85667a6 = $(`<div id="html_0db8a15b8f8a940b17872cb7c85667a6" style="width: 100.0%; height: 100.0%;"><b>delhi_05_01_2026_GX011931</b><br>N readings: 63<br>Duration: 62s<br>Mean: 65.9 dB<br>Max: 98.0 dB</div>`)[0];
+                popup_648850131b65310786744009e176437a.setContent(html_0db8a15b8f8a940b17872cb7c85667a6);
+            
+        
+
+        circle_marker_01ba2a52686db61f7686b111afc3474e.bindPopup(popup_648850131b65310786744009e176437a)
+        ;
+
+        
+    
+    
+            var circle_marker_4ee3d4e9a3a69982e6aebed481c8f4b7 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_34fae89c7402a2693c2033742d1d824d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0412be367f53767778d8e1739f04f851 = $(`<div id="html_0412be367f53767778d8e1739f04f851" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011938</b><br>N readings: 82<br>Duration: 81s<br>Mean: 64.4 dB<br>Max: 73.9 dB</div>`)[0];
+                popup_34fae89c7402a2693c2033742d1d824d.setContent(html_0412be367f53767778d8e1739f04f851);
+            
+        
+
+        circle_marker_4ee3d4e9a3a69982e6aebed481c8f4b7.bindPopup(popup_34fae89c7402a2693c2033742d1d824d)
+        ;
+
+        
+    
+    
+            var circle_marker_c2fa9ba6aa65c040060eae6b5c9504e0 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_1fde26b9398855b16023d9b2c7e5f06a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4efc0dbeec3f2d381dac31a50f25fdf9 = $(`<div id="html_4efc0dbeec3f2d381dac31a50f25fdf9" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011939</b><br>N readings: 68<br>Duration: 67s<br>Mean: 70.9 dB<br>Max: 81.3 dB</div>`)[0];
+                popup_1fde26b9398855b16023d9b2c7e5f06a.setContent(html_4efc0dbeec3f2d381dac31a50f25fdf9);
+            
+        
+
+        circle_marker_c2fa9ba6aa65c040060eae6b5c9504e0.bindPopup(popup_1fde26b9398855b16023d9b2c7e5f06a)
+        ;
+
+        
+    
+    
+            var circle_marker_ec63916cd88f7fa7ff122ad422cf53b1 = L.circleMarker(
+                [28.5696, 77.29367222222223],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_0a32d402aae651b10aca078fc1c7ebab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29847d76c1a337ca6528f7ceeff0b1b1 = $(`<div id="html_29847d76c1a337ca6528f7ceeff0b1b1" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011940</b><br>N readings: 31<br>Duration: 61s<br>Mean: 69.9 dB<br>Max: 80.4 dB</div>`)[0];
+                popup_0a32d402aae651b10aca078fc1c7ebab.setContent(html_29847d76c1a337ca6528f7ceeff0b1b1);
+            
+        
+
+        circle_marker_ec63916cd88f7fa7ff122ad422cf53b1.bindPopup(popup_0a32d402aae651b10aca078fc1c7ebab)
+        ;
+
+        
+    
+    
+            var circle_marker_ddc0681f378aca9bae47a872f6d40cf0 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_f95a1c89f3d60bb84c1c732d69a184c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef11c6d66be069c307230f62504a5c2b = $(`<div id="html_ef11c6d66be069c307230f62504a5c2b" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011942</b><br>N readings: 74<br>Duration: 77s<br>Mean: 69.9 dB<br>Max: 87.6 dB</div>`)[0];
+                popup_f95a1c89f3d60bb84c1c732d69a184c4.setContent(html_ef11c6d66be069c307230f62504a5c2b);
+            
+        
+
+        circle_marker_ddc0681f378aca9bae47a872f6d40cf0.bindPopup(popup_f95a1c89f3d60bb84c1c732d69a184c4)
+        ;
+
+        
+    
+    
+            var circle_marker_edac684ab39254c6661b6c8815e55e30 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_b504fb6ddd1bd9305a3e8a8afe486c21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_827a01667fccf3eb1908fa12d86dcebb = $(`<div id="html_827a01667fccf3eb1908fa12d86dcebb" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011944</b><br>N readings: 12<br>Duration: 11s<br>Mean: 79.1 dB<br>Max: 102.0 dB</div>`)[0];
+                popup_b504fb6ddd1bd9305a3e8a8afe486c21.setContent(html_827a01667fccf3eb1908fa12d86dcebb);
+            
+        
+
+        circle_marker_edac684ab39254c6661b6c8815e55e30.bindPopup(popup_b504fb6ddd1bd9305a3e8a8afe486c21)
+        ;
+
+        
+    
+    
+            var circle_marker_a3a29dd031da899f87f6948c0a6f6771 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_1cf9331227349a6753881266e6ada7d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa2b8fd8fa34e58415e56bd6f5d38f16 = $(`<div id="html_aa2b8fd8fa34e58415e56bd6f5d38f16" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011945</b><br>N readings: 20<br>Duration: 19s<br>Mean: 69.7 dB<br>Max: 78.2 dB</div>`)[0];
+                popup_1cf9331227349a6753881266e6ada7d4.setContent(html_aa2b8fd8fa34e58415e56bd6f5d38f16);
+            
+        
+
+        circle_marker_a3a29dd031da899f87f6948c0a6f6771.bindPopup(popup_1cf9331227349a6753881266e6ada7d4)
+        ;
+
+        
+    
+    
+            var circle_marker_e81a55f909cbf1914070a6490151de1f = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_9cfe187e301aa535a7252acda71d593d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95316b238fddfb0d67006ae8db8b8554 = $(`<div id="html_95316b238fddfb0d67006ae8db8b8554" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011946</b><br>N readings: 74<br>Duration: 73s<br>Mean: 68.6 dB<br>Max: 90.6 dB</div>`)[0];
+                popup_9cfe187e301aa535a7252acda71d593d.setContent(html_95316b238fddfb0d67006ae8db8b8554);
+            
+        
+
+        circle_marker_e81a55f909cbf1914070a6490151de1f.bindPopup(popup_9cfe187e301aa535a7252acda71d593d)
+        ;
+
+        
+    
+    
+            var circle_marker_5fc9d643bc1e9059ac1110b3d6b13ce6 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_0d39d71ba82528e6ffabd8ccfbc7dce5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62b683a84c9392a05afd0e592247f343 = $(`<div id="html_62b683a84c9392a05afd0e592247f343" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011947</b><br>N readings: 65<br>Duration: 64s<br>Mean: 70.9 dB<br>Max: 95.6 dB</div>`)[0];
+                popup_0d39d71ba82528e6ffabd8ccfbc7dce5.setContent(html_62b683a84c9392a05afd0e592247f343);
+            
+        
+
+        circle_marker_5fc9d643bc1e9059ac1110b3d6b13ce6.bindPopup(popup_0d39d71ba82528e6ffabd8ccfbc7dce5)
+        ;
+
+        
+    
+    
+            var circle_marker_64524f3f34dc64fd2104570b74e671dc = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_c8268d22a2bf7bce42a7118fae80a757 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b5fd9e3049f4d405187c36d7ec53f3d = $(`<div id="html_3b5fd9e3049f4d405187c36d7ec53f3d" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011948</b><br>N readings: 71<br>Duration: 70s<br>Mean: 73.2 dB<br>Max: 100.5 dB</div>`)[0];
+                popup_c8268d22a2bf7bce42a7118fae80a757.setContent(html_3b5fd9e3049f4d405187c36d7ec53f3d);
+            
+        
+
+        circle_marker_64524f3f34dc64fd2104570b74e671dc.bindPopup(popup_c8268d22a2bf7bce42a7118fae80a757)
+        ;
+
+        
+    
+    
+            var circle_marker_4429a0b7c9c61bcdfcd074010b203dcc = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_76667d72a9ca7af323e7584968ee425e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_215c3dd950a49f091ad1be0ce1b98e90 = $(`<div id="html_215c3dd950a49f091ad1be0ce1b98e90" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011949</b><br>N readings: 63<br>Duration: 62s<br>Mean: 64.4 dB<br>Max: 89.8 dB</div>`)[0];
+                popup_76667d72a9ca7af323e7584968ee425e.setContent(html_215c3dd950a49f091ad1be0ce1b98e90);
+            
+        
+
+        circle_marker_4429a0b7c9c61bcdfcd074010b203dcc.bindPopup(popup_76667d72a9ca7af323e7584968ee425e)
+        ;
+
+        
+    
+    
+            var circle_marker_ae44592d4bd8253e7bf6f99780f1c1a2 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_c39ed344f55799cedffcc7bb3c46a88f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_188d88944ffb5ea6c3d4d4e91275ac86 = $(`<div id="html_188d88944ffb5ea6c3d4d4e91275ac86" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011950</b><br>N readings: 59<br>Duration: 62s<br>Mean: 69.2 dB<br>Max: 79.3 dB</div>`)[0];
+                popup_c39ed344f55799cedffcc7bb3c46a88f.setContent(html_188d88944ffb5ea6c3d4d4e91275ac86);
+            
+        
+
+        circle_marker_ae44592d4bd8253e7bf6f99780f1c1a2.bindPopup(popup_c39ed344f55799cedffcc7bb3c46a88f)
+        ;
+
+        
+    
+    
+            var circle_marker_2e6494ce3f06169a7b19dc309a828a93 = L.circleMarker(
+                [28.50838611111111, 77.18400833333334],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_3940f767066a36777759403b2e89b3fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b4952d7ceb6b38cfa2e582d3a12f82d = $(`<div id="html_1b4952d7ceb6b38cfa2e582d3a12f82d" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011951</b><br>N readings: 70<br>Duration: 69s<br>Mean: 66.1 dB<br>Max: 89.8 dB</div>`)[0];
+                popup_3940f767066a36777759403b2e89b3fb.setContent(html_1b4952d7ceb6b38cfa2e582d3a12f82d);
+            
+        
+
+        circle_marker_2e6494ce3f06169a7b19dc309a828a93.bindPopup(popup_3940f767066a36777759403b2e89b3fb)
+        ;
+
+        
+    
+    
+            var circle_marker_4e46b381dff11d3e06c5c283ae9d0de8 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_cc91c673d26bdab9ab84480a895816c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fe903dbb0df2548fb84874a30b1104b = $(`<div id="html_5fe903dbb0df2548fb84874a30b1104b" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011952</b><br>N readings: 52<br>Duration: 64s<br>Mean: 61.2 dB<br>Max: 70.1 dB</div>`)[0];
+                popup_cc91c673d26bdab9ab84480a895816c6.setContent(html_5fe903dbb0df2548fb84874a30b1104b);
+            
+        
+
+        circle_marker_4e46b381dff11d3e06c5c283ae9d0de8.bindPopup(popup_cc91c673d26bdab9ab84480a895816c6)
+        ;
+
+        
+    
+    
+            var circle_marker_5d7c7be293cc47dd42fecfb8a0432447 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_9b2ca80d7097823e5720fe7e10f63d23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ed0ccfa495361d11f69d4ac3d6bbf69 = $(`<div id="html_4ed0ccfa495361d11f69d4ac3d6bbf69" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011953</b><br>N readings: 64<br>Duration: 63s<br>Mean: 71.3 dB<br>Max: 106.1 dB</div>`)[0];
+                popup_9b2ca80d7097823e5720fe7e10f63d23.setContent(html_4ed0ccfa495361d11f69d4ac3d6bbf69);
+            
+        
+
+        circle_marker_5d7c7be293cc47dd42fecfb8a0432447.bindPopup(popup_9b2ca80d7097823e5720fe7e10f63d23)
+        ;
+
+        
+    
+    
+            var circle_marker_947f8ca81279519dfb14b304a03aef6c = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_80ba2af4fdb54d2f632e5f18062b5205 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf066322a4035cc31ef593c27c8d2d30 = $(`<div id="html_cf066322a4035cc31ef593c27c8d2d30" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011954</b><br>N readings: 64<br>Duration: 63s<br>Mean: 69.2 dB<br>Max: 92.8 dB</div>`)[0];
+                popup_80ba2af4fdb54d2f632e5f18062b5205.setContent(html_cf066322a4035cc31ef593c27c8d2d30);
+            
+        
+
+        circle_marker_947f8ca81279519dfb14b304a03aef6c.bindPopup(popup_80ba2af4fdb54d2f632e5f18062b5205)
+        ;
+
+        
+    
+    
+            var circle_marker_390e5234f0cec522e2f2271ffe38f9af = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_e039d0682bacfa1f04d2bcbfc9205a35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9154efbea9e5ca4a223238237db8a29 = $(`<div id="html_e9154efbea9e5ca4a223238237db8a29" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011956</b><br>N readings: 62<br>Duration: 61s<br>Mean: 62.9 dB<br>Max: 76.8 dB</div>`)[0];
+                popup_e039d0682bacfa1f04d2bcbfc9205a35.setContent(html_e9154efbea9e5ca4a223238237db8a29);
+            
+        
+
+        circle_marker_390e5234f0cec522e2f2271ffe38f9af.bindPopup(popup_e039d0682bacfa1f04d2bcbfc9205a35)
+        ;
+
+        
+    
+    
+            var circle_marker_3e8047ddd63e2dcce7e23d1ccf69ef5a = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_a3598399e37cde254da6d2263e17268f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e93d6df9dcf5e73dea2f988ef93b5c0b = $(`<div id="html_e93d6df9dcf5e73dea2f988ef93b5c0b" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011957</b><br>N readings: 62<br>Duration: 62s<br>Mean: 71.7 dB<br>Max: 109.4 dB</div>`)[0];
+                popup_a3598399e37cde254da6d2263e17268f.setContent(html_e93d6df9dcf5e73dea2f988ef93b5c0b);
+            
+        
+
+        circle_marker_3e8047ddd63e2dcce7e23d1ccf69ef5a.bindPopup(popup_a3598399e37cde254da6d2263e17268f)
+        ;
+
+        
+    
+    
+            var circle_marker_aac6e2a5f027639556e330ef457cb7d4 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_75cf804930a9e691d00867086a161c2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_941d328ad21ba7b35006bf8207b86409 = $(`<div id="html_941d328ad21ba7b35006bf8207b86409" style="width: 100.0%; height: 100.0%;"><b>delhi_05_03_2026_GX011958</b><br>N readings: 61<br>Duration: 60s<br>Mean: 73.8 dB<br>Max: 90.0 dB</div>`)[0];
+                popup_75cf804930a9e691d00867086a161c2b.setContent(html_941d328ad21ba7b35006bf8207b86409);
+            
+        
+
+        circle_marker_aac6e2a5f027639556e330ef457cb7d4.bindPopup(popup_75cf804930a9e691d00867086a161c2b)
+        ;
+
+        
+    
+    
+            var circle_marker_57c3dbdb2607ec54a7d9dba60922b831 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_c4a0e3b95feca1871438664ead120f6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74869232ba699eec731e9f3265829b88 = $(`<div id="html_74869232ba699eec731e9f3265829b88" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011959</b><br>N readings: 66<br>Duration: 65s<br>Mean: 71.2 dB<br>Max: 78.5 dB</div>`)[0];
+                popup_c4a0e3b95feca1871438664ead120f6f.setContent(html_74869232ba699eec731e9f3265829b88);
+            
+        
+
+        circle_marker_57c3dbdb2607ec54a7d9dba60922b831.bindPopup(popup_c4a0e3b95feca1871438664ead120f6f)
+        ;
+
+        
+    
+    
+            var circle_marker_8ebd9552f6724da0271c1f1a0bcee156 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_0ad7331ba198845364b58a837c518426 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8bf79abe504cec91adcf4afe02c78faf = $(`<div id="html_8bf79abe504cec91adcf4afe02c78faf" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011961</b><br>N readings: 28<br>Duration: 28s<br>Mean: 70.8 dB<br>Max: 74.0 dB</div>`)[0];
+                popup_0ad7331ba198845364b58a837c518426.setContent(html_8bf79abe504cec91adcf4afe02c78faf);
+            
+        
+
+        circle_marker_8ebd9552f6724da0271c1f1a0bcee156.bindPopup(popup_0ad7331ba198845364b58a837c518426)
+        ;
+
+        
+    
+    
+            var circle_marker_3a9fab8b2be906a3d60f1b0808e9eedb = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_68c68c56990633d0ab38491e9c49754e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31b5c4384032215096fcfbde9c40a4f6 = $(`<div id="html_31b5c4384032215096fcfbde9c40a4f6" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011963</b><br>N readings: 55<br>Duration: 58s<br>Mean: 74.9 dB<br>Max: 83.6 dB</div>`)[0];
+                popup_68c68c56990633d0ab38491e9c49754e.setContent(html_31b5c4384032215096fcfbde9c40a4f6);
+            
+        
+
+        circle_marker_3a9fab8b2be906a3d60f1b0808e9eedb.bindPopup(popup_68c68c56990633d0ab38491e9c49754e)
+        ;
+
+        
+    
+    
+            var circle_marker_03c0b06745f7d421d0fe6f76f0a9c3e8 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_769f2dfbdc54c6372f43f9d23ef0226b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90bbc8be9cb9c4331e1c1c0a570029e7 = $(`<div id="html_90bbc8be9cb9c4331e1c1c0a570029e7" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011964</b><br>N readings: 61<br>Duration: 60s<br>Mean: 78.5 dB<br>Max: 95.6 dB</div>`)[0];
+                popup_769f2dfbdc54c6372f43f9d23ef0226b.setContent(html_90bbc8be9cb9c4331e1c1c0a570029e7);
+            
+        
+
+        circle_marker_03c0b06745f7d421d0fe6f76f0a9c3e8.bindPopup(popup_769f2dfbdc54c6372f43f9d23ef0226b)
+        ;
+
+        
+    
+    
+            var circle_marker_e1c71df527199099438ac6cfdd41c69f = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_5b63549a0688220860af874f05ae481c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b95085fd872e242477fabdd5ce43dcf = $(`<div id="html_1b95085fd872e242477fabdd5ce43dcf" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011965</b><br>N readings: 65<br>Duration: 64s<br>Mean: 67.3 dB<br>Max: 77.4 dB</div>`)[0];
+                popup_5b63549a0688220860af874f05ae481c.setContent(html_1b95085fd872e242477fabdd5ce43dcf);
+            
+        
+
+        circle_marker_e1c71df527199099438ac6cfdd41c69f.bindPopup(popup_5b63549a0688220860af874f05ae481c)
+        ;
+
+        
+    
+    
+            var circle_marker_fd81689332d79886be0d5a467141d311 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_42a70716f79335cfbf7e85f484d2e13a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79669f4735ae2180372c233c5e88f8d7 = $(`<div id="html_79669f4735ae2180372c233c5e88f8d7" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011966</b><br>N readings: 63<br>Duration: 62s<br>Mean: 61.5 dB<br>Max: 98.9 dB</div>`)[0];
+                popup_42a70716f79335cfbf7e85f484d2e13a.setContent(html_79669f4735ae2180372c233c5e88f8d7);
+            
+        
+
+        circle_marker_fd81689332d79886be0d5a467141d311.bindPopup(popup_42a70716f79335cfbf7e85f484d2e13a)
+        ;
+
+        
+    
+    
+            var circle_marker_d62934b1147b85e4a51f36c9dae7fae3 = L.circleMarker(
+                [28.5746, 77.27526666666667],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_d98b08bfe129a2a997339dae3a13b5de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6979e4654bfc408244bd0046cbbf6376 = $(`<div id="html_6979e4654bfc408244bd0046cbbf6376" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011967</b><br>N readings: 65<br>Duration: 64s<br>Mean: 65.4 dB<br>Max: 86.1 dB</div>`)[0];
+                popup_d98b08bfe129a2a997339dae3a13b5de.setContent(html_6979e4654bfc408244bd0046cbbf6376);
+            
+        
+
+        circle_marker_d62934b1147b85e4a51f36c9dae7fae3.bindPopup(popup_d98b08bfe129a2a997339dae3a13b5de)
+        ;
+
+        
+    
+    
+            var circle_marker_e87c3a22c97e20c4e1e22dfcc74cd476 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_69d624dc29baff7bd25c7ae8e3ad70eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47e1e2dd69e4efb008b8581ba943b3ef = $(`<div id="html_47e1e2dd69e4efb008b8581ba943b3ef" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011968</b><br>N readings: 62<br>Duration: 61s<br>Mean: 71.5 dB<br>Max: 85.1 dB</div>`)[0];
+                popup_69d624dc29baff7bd25c7ae8e3ad70eb.setContent(html_47e1e2dd69e4efb008b8581ba943b3ef);
+            
+        
+
+        circle_marker_e87c3a22c97e20c4e1e22dfcc74cd476.bindPopup(popup_69d624dc29baff7bd25c7ae8e3ad70eb)
+        ;
+
+        
+    
+    
+            var circle_marker_d3ff5360c5711c6044421d5180896a98 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_4f7df4989f142acf1f8f6e4a7408a19d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2aa645ab70e111d130643bd24829a46c = $(`<div id="html_2aa645ab70e111d130643bd24829a46c" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011970</b><br>N readings: 62<br>Duration: 62s<br>Mean: 68.5 dB<br>Max: 80.8 dB</div>`)[0];
+                popup_4f7df4989f142acf1f8f6e4a7408a19d.setContent(html_2aa645ab70e111d130643bd24829a46c);
+            
+        
+
+        circle_marker_d3ff5360c5711c6044421d5180896a98.bindPopup(popup_4f7df4989f142acf1f8f6e4a7408a19d)
+        ;
+
+        
+    
+    
+            var circle_marker_3824dee975ecfda3692a6b9c7473903d = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_5577d0331e9ea19be87ff0eea81dab4f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1a412bf66ae0f88b932275aba7204da = $(`<div id="html_e1a412bf66ae0f88b932275aba7204da" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011971</b><br>N readings: 64<br>Duration: 63s<br>Mean: 69.0 dB<br>Max: 96.2 dB</div>`)[0];
+                popup_5577d0331e9ea19be87ff0eea81dab4f.setContent(html_e1a412bf66ae0f88b932275aba7204da);
+            
+        
+
+        circle_marker_3824dee975ecfda3692a6b9c7473903d.bindPopup(popup_5577d0331e9ea19be87ff0eea81dab4f)
+        ;
+
+        
+    
+    
+            var circle_marker_91f22743fa5d3c832cba95c65df37f0f = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_e717976c3ee9bcd2ded49a2a4d8a9a63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83e7687e4d11c211c6cfc18485cb542a = $(`<div id="html_83e7687e4d11c211c6cfc18485cb542a" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011972</b><br>N readings: 62<br>Duration: 61s<br>Mean: 70.3 dB<br>Max: 84.3 dB</div>`)[0];
+                popup_e717976c3ee9bcd2ded49a2a4d8a9a63.setContent(html_83e7687e4d11c211c6cfc18485cb542a);
+            
+        
+
+        circle_marker_91f22743fa5d3c832cba95c65df37f0f.bindPopup(popup_e717976c3ee9bcd2ded49a2a4d8a9a63)
+        ;
+
+        
+    
+    
+            var circle_marker_3075dcb8fa47f573808a7502d3b26b51 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_8122a6cfc4b575f70a1360356a57d99a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b54090314402a43b8d7a2835d209ee9 = $(`<div id="html_6b54090314402a43b8d7a2835d209ee9" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011973</b><br>N readings: 60<br>Duration: 62s<br>Mean: 70.1 dB<br>Max: 95.0 dB</div>`)[0];
+                popup_8122a6cfc4b575f70a1360356a57d99a.setContent(html_6b54090314402a43b8d7a2835d209ee9);
+            
+        
+
+        circle_marker_3075dcb8fa47f573808a7502d3b26b51.bindPopup(popup_8122a6cfc4b575f70a1360356a57d99a)
+        ;
+
+        
+    
+    
+            var circle_marker_843f281b9c8a147dba1eee33a87bfe5a = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_28a53aaaf7b6e7ee18a9969dbcefdc0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_191b750098caaf1bfd5e7477bb391ccb = $(`<div id="html_191b750098caaf1bfd5e7477bb391ccb" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011974</b><br>N readings: 61<br>Duration: 60s<br>Mean: 74.7 dB<br>Max: 89.0 dB</div>`)[0];
+                popup_28a53aaaf7b6e7ee18a9969dbcefdc0d.setContent(html_191b750098caaf1bfd5e7477bb391ccb);
+            
+        
+
+        circle_marker_843f281b9c8a147dba1eee33a87bfe5a.bindPopup(popup_28a53aaaf7b6e7ee18a9969dbcefdc0d)
+        ;
+
+        
+    
+    
+            var circle_marker_bafedd11b99e482f38df3747b5b16bb0 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_8ef5d0f02a914824dd2ed4590afefbf6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0329cc35e0f45bd74a25c96c810a7857 = $(`<div id="html_0329cc35e0f45bd74a25c96c810a7857" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011975</b><br>N readings: 48<br>Duration: 49s<br>Mean: 68.0 dB<br>Max: 89.3 dB</div>`)[0];
+                popup_8ef5d0f02a914824dd2ed4590afefbf6.setContent(html_0329cc35e0f45bd74a25c96c810a7857);
+            
+        
+
+        circle_marker_bafedd11b99e482f38df3747b5b16bb0.bindPopup(popup_8ef5d0f02a914824dd2ed4590afefbf6)
+        ;
+
+        
+    
+    
+            var circle_marker_790cf316abc7a803c08208bbd74ba8f9 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_9d5fe2230a596c340c155a03a3d5b379 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60c0d3518ecc44862ed00f7a640640c4 = $(`<div id="html_60c0d3518ecc44862ed00f7a640640c4" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011976</b><br>N readings: 62<br>Duration: 62s<br>Mean: 71.6 dB<br>Max: 92.8 dB</div>`)[0];
+                popup_9d5fe2230a596c340c155a03a3d5b379.setContent(html_60c0d3518ecc44862ed00f7a640640c4);
+            
+        
+
+        circle_marker_790cf316abc7a803c08208bbd74ba8f9.bindPopup(popup_9d5fe2230a596c340c155a03a3d5b379)
+        ;
+
+        
+    
+    
+            var circle_marker_ff4d0d6a1a3fb2010714feceb3556f42 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_7993b3486eef52dc96d0d59a2920b3dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f609d3ec4f98cb6d1a324f13b3f014a6 = $(`<div id="html_f609d3ec4f98cb6d1a324f13b3f014a6" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011977</b><br>N readings: 72<br>Duration: 71s<br>Mean: 72.6 dB<br>Max: 100.8 dB</div>`)[0];
+                popup_7993b3486eef52dc96d0d59a2920b3dd.setContent(html_f609d3ec4f98cb6d1a324f13b3f014a6);
+            
+        
+
+        circle_marker_ff4d0d6a1a3fb2010714feceb3556f42.bindPopup(popup_7993b3486eef52dc96d0d59a2920b3dd)
+        ;
+
+        
+    
+    
+            var circle_marker_2c0206b0e2beca78f3013cc514da3a37 = L.circleMarker(
+                [28.579933333333333, 77.23062777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_cc261031feef7ccc34f5344547cb2a1a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ee7e19dfae0efef9ad5197f5cc6f8aa = $(`<div id="html_1ee7e19dfae0efef9ad5197f5cc6f8aa" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011978</b><br>N readings: 63<br>Duration: 62s<br>Mean: 74.4 dB<br>Max: 101.5 dB</div>`)[0];
+                popup_cc261031feef7ccc34f5344547cb2a1a.setContent(html_1ee7e19dfae0efef9ad5197f5cc6f8aa);
+            
+        
+
+        circle_marker_2c0206b0e2beca78f3013cc514da3a37.bindPopup(popup_cc261031feef7ccc34f5344547cb2a1a)
+        ;
+
+        
+    
+    
+            var circle_marker_fbb8bad201447a01297c50f5f4eadf14 = L.circleMarker(
+                [28.546400000000002, 77.25367777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_b52029cdb0bd58310e1d5fb03068befb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_193de4430e70e3b75e2da6dea6c7c707 = $(`<div id="html_193de4430e70e3b75e2da6dea6c7c707" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011979</b><br>N readings: 63<br>Duration: 62s<br>Mean: 61.5 dB<br>Max: 80.7 dB</div>`)[0];
+                popup_b52029cdb0bd58310e1d5fb03068befb.setContent(html_193de4430e70e3b75e2da6dea6c7c707);
+            
+        
+
+        circle_marker_fbb8bad201447a01297c50f5f4eadf14.bindPopup(popup_b52029cdb0bd58310e1d5fb03068befb)
+        ;
+
+        
+    
+    
+            var circle_marker_83651b194a0d2b506ec131909cd9742f = L.circleMarker(
+                [28.59508888888889, 77.25701666666667],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_ddeb0c26d90ae2014a89804766d91eef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab0abcb6dcff63c5037f160790900c4d = $(`<div id="html_ab0abcb6dcff63c5037f160790900c4d" style="width: 100.0%; height: 100.0%;"><b>delhi_05_04_2026_GX011981</b><br>N readings: 62<br>Duration: 61s<br>Mean: 70.4 dB<br>Max: 82.9 dB</div>`)[0];
+                popup_ddeb0c26d90ae2014a89804766d91eef.setContent(html_ab0abcb6dcff63c5037f160790900c4d);
+            
+        
+
+        circle_marker_83651b194a0d2b506ec131909cd9742f.bindPopup(popup_ddeb0c26d90ae2014a89804766d91eef)
+        ;
+
+        
+    
+    
+            var circle_marker_d291966b664c6310ba107f55509ad815 = L.circleMarker(
+                [28.591158333333333, 77.25914444444444],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_39ee1aedcb1e71ed46bf9f3e14ad1d2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63c3424e9ff56045602c6a9ad4374c3c = $(`<div id="html_63c3424e9ff56045602c6a9ad4374c3c" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011982</b><br>N readings: 55<br>Duration: 61s<br>Mean: 72.1 dB<br>Max: 88.6 dB</div>`)[0];
+                popup_39ee1aedcb1e71ed46bf9f3e14ad1d2e.setContent(html_63c3424e9ff56045602c6a9ad4374c3c);
+            
+        
+
+        circle_marker_d291966b664c6310ba107f55509ad815.bindPopup(popup_39ee1aedcb1e71ed46bf9f3e14ad1d2e)
+        ;
+
+        
+    
+    
+            var circle_marker_f239f263943091f388fa16e16cc99a15 = L.circleMarker(
+                [28.591158333333333, 77.25914444444444],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_60074616bf6d0a7c5960519ce6d2e69b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_658943c3ba410b10f0550aead62843c0 = $(`<div id="html_658943c3ba410b10f0550aead62843c0" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011983</b><br>N readings: 62<br>Duration: 61s<br>Mean: 67.9 dB<br>Max: 87.2 dB</div>`)[0];
+                popup_60074616bf6d0a7c5960519ce6d2e69b.setContent(html_658943c3ba410b10f0550aead62843c0);
+            
+        
+
+        circle_marker_f239f263943091f388fa16e16cc99a15.bindPopup(popup_60074616bf6d0a7c5960519ce6d2e69b)
+        ;
+
+        
+    
+    
+            var circle_marker_1aed966658627ce1b2fcbc32ced8dc94 = L.circleMarker(
+                [28.591158333333333, 77.25914444444444],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_4d9851449abc7c0ed5110099543d5fa9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_852ff0dca761d99633216d0055e30e0c = $(`<div id="html_852ff0dca761d99633216d0055e30e0c" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011984</b><br>N readings: 80<br>Duration: 80s<br>Mean: 64.1 dB<br>Max: 83.6 dB</div>`)[0];
+                popup_4d9851449abc7c0ed5110099543d5fa9.setContent(html_852ff0dca761d99633216d0055e30e0c);
+            
+        
+
+        circle_marker_1aed966658627ce1b2fcbc32ced8dc94.bindPopup(popup_4d9851449abc7c0ed5110099543d5fa9)
+        ;
+
+        
+    
+    
+            var circle_marker_f7d89d41a88eba65b2c8b3a31770e04c = L.circleMarker(
+                [28.591158333333333, 77.25914444444444],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_8a0f267ed8cf086daba1e9855358ecd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa6d063936e39060da1ca45bb376cac5 = $(`<div id="html_fa6d063936e39060da1ca45bb376cac5" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011985</b><br>N readings: 65<br>Duration: 64s<br>Mean: 62.5 dB<br>Max: 71.0 dB</div>`)[0];
+                popup_8a0f267ed8cf086daba1e9855358ecd4.setContent(html_fa6d063936e39060da1ca45bb376cac5);
+            
+        
+
+        circle_marker_f7d89d41a88eba65b2c8b3a31770e04c.bindPopup(popup_8a0f267ed8cf086daba1e9855358ecd4)
+        ;
+
+        
+    
+    
+            var circle_marker_6c0d1b7b5e1e21ab3343a15d3dfa6d6f = L.circleMarker(
+                [28.591158333333333, 77.25914444444444],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_f56c0996c1393ce0653dce641f5a5a5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01edec26f2efb9ed2466677f69547467 = $(`<div id="html_01edec26f2efb9ed2466677f69547467" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011986</b><br>N readings: 61<br>Duration: 60s<br>Mean: 77.6 dB<br>Max: 97.9 dB</div>`)[0];
+                popup_f56c0996c1393ce0653dce641f5a5a5a.setContent(html_01edec26f2efb9ed2466677f69547467);
+            
+        
+
+        circle_marker_6c0d1b7b5e1e21ab3343a15d3dfa6d6f.bindPopup(popup_f56c0996c1393ce0653dce641f5a5a5a)
+        ;
+
+        
+    
+    
+            var circle_marker_43d451b6811301d22d91a4c5b023605d = L.circleMarker(
+                [28.68353611111111, 77.17085],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_ac9b9ddc94ff19e8d4f480385af25511 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_120f8f6577bb0875d1c1158c53e3f8f2 = $(`<div id="html_120f8f6577bb0875d1c1158c53e3f8f2" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011988</b><br>N readings: 63<br>Duration: 63s<br>Mean: 75.0 dB<br>Max: 93.0 dB</div>`)[0];
+                popup_ac9b9ddc94ff19e8d4f480385af25511.setContent(html_120f8f6577bb0875d1c1158c53e3f8f2);
+            
+        
+
+        circle_marker_43d451b6811301d22d91a4c5b023605d.bindPopup(popup_ac9b9ddc94ff19e8d4f480385af25511)
+        ;
+
+        
+    
+    
+            var circle_marker_a2d6cadf1d83375ab131637ee277b1ac = L.circleMarker(
+                [28.674844444444446, 77.15524444444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_bfae5bfd5e4a61bbf89b8cce4dd519ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7c9d38835dbc8cd789c0d0198269fcb = $(`<div id="html_b7c9d38835dbc8cd789c0d0198269fcb" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011990</b><br>N readings: 64<br>Duration: 63s<br>Mean: 68.2 dB<br>Max: 91.6 dB</div>`)[0];
+                popup_bfae5bfd5e4a61bbf89b8cce4dd519ec.setContent(html_b7c9d38835dbc8cd789c0d0198269fcb);
+            
+        
+
+        circle_marker_a2d6cadf1d83375ab131637ee277b1ac.bindPopup(popup_bfae5bfd5e4a61bbf89b8cce4dd519ec)
+        ;
+
+        
+    
+    
+            var circle_marker_bb31925f4d2ca5a604bd8be3238b5c82 = L.circleMarker(
+                [28.684255555555556, 77.14546666666668],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_d46dbe705d1e5b55c60176ab6fe09fa8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_301c85c5a51dc9f0dba33b4e0bb116c2 = $(`<div id="html_301c85c5a51dc9f0dba33b4e0bb116c2" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011992</b><br>N readings: 57<br>Duration: 56s<br>Mean: 71.8 dB<br>Max: 102.1 dB</div>`)[0];
+                popup_d46dbe705d1e5b55c60176ab6fe09fa8.setContent(html_301c85c5a51dc9f0dba33b4e0bb116c2);
+            
+        
+
+        circle_marker_bb31925f4d2ca5a604bd8be3238b5c82.bindPopup(popup_d46dbe705d1e5b55c60176ab6fe09fa8)
+        ;
+
+        
+    
+    
+            var circle_marker_74471eb8d98552a7fea4e58e98c1fa21 = L.circleMarker(
+                [28.684291666666667, 77.14548333333335],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_5dd3b1a695995312d9092de246f80b93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1568d90e17873c84ee518e37b84b059 = $(`<div id="html_b1568d90e17873c84ee518e37b84b059" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011993</b><br>N readings: 61<br>Duration: 60s<br>Mean: 67.6 dB<br>Max: 78.3 dB</div>`)[0];
+                popup_5dd3b1a695995312d9092de246f80b93.setContent(html_b1568d90e17873c84ee518e37b84b059);
+            
+        
+
+        circle_marker_74471eb8d98552a7fea4e58e98c1fa21.bindPopup(popup_5dd3b1a695995312d9092de246f80b93)
+        ;
+
+        
+    
+    
+            var circle_marker_6171e21fb3b2cd352c8db26b0207264d = L.circleMarker(
+                [28.672425, 77.13214444444444],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_a083f7dad7eec2ada4129eb4a74bdf6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21f50c9f724d0b5ee9eb6659397668da = $(`<div id="html_21f50c9f724d0b5ee9eb6659397668da" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011994</b><br>N readings: 62<br>Duration: 61s<br>Mean: 72.7 dB<br>Max: 86.4 dB</div>`)[0];
+                popup_a083f7dad7eec2ada4129eb4a74bdf6d.setContent(html_21f50c9f724d0b5ee9eb6659397668da);
+            
+        
+
+        circle_marker_6171e21fb3b2cd352c8db26b0207264d.bindPopup(popup_a083f7dad7eec2ada4129eb4a74bdf6d)
+        ;
+
+        
+    
+    
+            var circle_marker_4b5d9c462660b9405cb6ba7bda8ad521 = L.circleMarker(
+                [28.714116666666666, 77.08616388888889],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_b287d94607a8249b1d9100f93637ebc2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22e9873b2b75a6612bf3169bd88a1061 = $(`<div id="html_22e9873b2b75a6612bf3169bd88a1061" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011995</b><br>N readings: 65<br>Duration: 64s<br>Mean: 75.0 dB<br>Max: 98.9 dB</div>`)[0];
+                popup_b287d94607a8249b1d9100f93637ebc2.setContent(html_22e9873b2b75a6612bf3169bd88a1061);
+            
+        
+
+        circle_marker_4b5d9c462660b9405cb6ba7bda8ad521.bindPopup(popup_b287d94607a8249b1d9100f93637ebc2)
+        ;
+
+        
+    
+    
+            var circle_marker_bb9c749ba5171fadef8471f0f56a22ab = L.circleMarker(
+                [28.71443611111111, 77.10729722222221],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_68b8cd855415fdc2c8dd100f7e17f049 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d50e96f69a773477d4d0afe6fc729ab3 = $(`<div id="html_d50e96f69a773477d4d0afe6fc729ab3" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011996</b><br>N readings: 62<br>Duration: 61s<br>Mean: 79.6 dB<br>Max: 114.4 dB</div>`)[0];
+                popup_68b8cd855415fdc2c8dd100f7e17f049.setContent(html_d50e96f69a773477d4d0afe6fc729ab3);
+            
+        
+
+        circle_marker_bb9c749ba5171fadef8471f0f56a22ab.bindPopup(popup_68b8cd855415fdc2c8dd100f7e17f049)
+        ;
+
+        
+    
+    
+            var circle_marker_ce900d35e0ced9a799ac22c7addacdcf = L.circleMarker(
+                [28.71055972222222, 77.12044722222221],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_0b37cfe5a119b6c4ed132dfd8e678387 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59a4d038ae4ef30d38a8d27e1d718e8e = $(`<div id="html_59a4d038ae4ef30d38a8d27e1d718e8e" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011997</b><br>N readings: 63<br>Duration: 62s<br>Mean: 71.2 dB<br>Max: 88.8 dB</div>`)[0];
+                popup_0b37cfe5a119b6c4ed132dfd8e678387.setContent(html_59a4d038ae4ef30d38a8d27e1d718e8e);
+            
+        
+
+        circle_marker_ce900d35e0ced9a799ac22c7addacdcf.bindPopup(popup_0b37cfe5a119b6c4ed132dfd8e678387)
+        ;
+
+        
+    
+    
+            var circle_marker_317b4bf9d2a99c40ef6784a45c4735d3 = L.circleMarker(
+                [28.70853888888889, 77.12993055555555],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_fd8a7ba439a4995206780a424a161b53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3105162d3a30e6295fd003b5876a8802 = $(`<div id="html_3105162d3a30e6295fd003b5876a8802" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX011999</b><br>N readings: 81<br>Duration: 80s<br>Mean: 70.0 dB<br>Max: 92.8 dB</div>`)[0];
+                popup_fd8a7ba439a4995206780a424a161b53.setContent(html_3105162d3a30e6295fd003b5876a8802);
+            
+        
+
+        circle_marker_317b4bf9d2a99c40ef6784a45c4735d3.bindPopup(popup_fd8a7ba439a4995206780a424a161b53)
+        ;
+
+        
+    
+    
+            var circle_marker_3140af235f2aee1a1ff1abb5fd3dd089 = L.circleMarker(
+                [28.729044444444444, 77.13830555555556],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_97a045b6d9b76035132182b55a3854ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93432be3ae64fed81cda88294c460d24 = $(`<div id="html_93432be3ae64fed81cda88294c460d24" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX012001</b><br>N readings: 63<br>Duration: 62s<br>Mean: 72.3 dB<br>Max: 88.8 dB</div>`)[0];
+                popup_97a045b6d9b76035132182b55a3854ba.setContent(html_93432be3ae64fed81cda88294c460d24);
+            
+        
+
+        circle_marker_3140af235f2aee1a1ff1abb5fd3dd089.bindPopup(popup_97a045b6d9b76035132182b55a3854ba)
+        ;
+
+        
+    
+    
+            var circle_marker_f76406a16a9e4d2da8ead145737b3414 = L.circleMarker(
+                [28.708347222222223, 77.15336944444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_ebb15c230f67c575f8bb7aebe7719c11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57692b928751fcb28980526ba177e3ce = $(`<div id="html_57692b928751fcb28980526ba177e3ce" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX012002</b><br>N readings: 61<br>Duration: 60s<br>Mean: 71.2 dB<br>Max: 100.1 dB</div>`)[0];
+                popup_ebb15c230f67c575f8bb7aebe7719c11.setContent(html_57692b928751fcb28980526ba177e3ce);
+            
+        
+
+        circle_marker_f76406a16a9e4d2da8ead145737b3414.bindPopup(popup_ebb15c230f67c575f8bb7aebe7719c11)
+        ;
+
+        
+    
+    
+            var circle_marker_7396389a6f778a286055066d6694b9d4 = L.circleMarker(
+                [28.73316527777778, 77.14265],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_a718ce1895cb64d7bbe2c13954ca0483 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5469c87a132b04c679fe0e5943c0a52 = $(`<div id="html_d5469c87a132b04c679fe0e5943c0a52" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX012003</b><br>N readings: 61<br>Duration: 60s<br>Mean: 59.5 dB<br>Max: 87.5 dB</div>`)[0];
+                popup_a718ce1895cb64d7bbe2c13954ca0483.setContent(html_d5469c87a132b04c679fe0e5943c0a52);
+            
+        
+
+        circle_marker_7396389a6f778a286055066d6694b9d4.bindPopup(popup_a718ce1895cb64d7bbe2c13954ca0483)
+        ;
+
+        
+    
+    
+            var circle_marker_b0fd60187f288e307b3786d4fab138b2 = L.circleMarker(
+                [28.722447222222222, 77.14701111111111],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_e7a945d33664bb31f7696869aa4f7550 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc71d8d707601fbb42eb6ab8b13cb933 = $(`<div id="html_dc71d8d707601fbb42eb6ab8b13cb933" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX012004</b><br>N readings: 58<br>Duration: 60s<br>Mean: 63.0 dB<br>Max: 78.7 dB</div>`)[0];
+                popup_e7a945d33664bb31f7696869aa4f7550.setContent(html_dc71d8d707601fbb42eb6ab8b13cb933);
+            
+        
+
+        circle_marker_b0fd60187f288e307b3786d4fab138b2.bindPopup(popup_e7a945d33664bb31f7696869aa4f7550)
+        ;
+
+        
+    
+    
+            var circle_marker_1c7f3dafa6cf930df1c4ce1966b62173 = L.circleMarker(
+                [28.708347222222223, 77.15336944444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_05ccab34dd22e14c9ccdc3a89c18add5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da3a16c84c69745b855d201cd31efa18 = $(`<div id="html_da3a16c84c69745b855d201cd31efa18" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX012005</b><br>N readings: 55<br>Duration: 59s<br>Mean: 68.5 dB<br>Max: 79.5 dB</div>`)[0];
+                popup_05ccab34dd22e14c9ccdc3a89c18add5.setContent(html_da3a16c84c69745b855d201cd31efa18);
+            
+        
+
+        circle_marker_1c7f3dafa6cf930df1c4ce1966b62173.bindPopup(popup_05ccab34dd22e14c9ccdc3a89c18add5)
+        ;
+
+        
+    
+    
+            var circle_marker_9dbec16a008cbbf3cdf0b80826af7cb4 = L.circleMarker(
+                [28.73164722222222, 77.07804444444444],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_8a2e57cd773d427744336934a612eaf5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0f2bf68a05b9aa8e4f34f35d4316502 = $(`<div id="html_a0f2bf68a05b9aa8e4f34f35d4316502" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX012007</b><br>N readings: 53<br>Duration: 52s<br>Mean: 55.7 dB<br>Max: 98.8 dB</div>`)[0];
+                popup_8a2e57cd773d427744336934a612eaf5.setContent(html_a0f2bf68a05b9aa8e4f34f35d4316502);
+            
+        
+
+        circle_marker_9dbec16a008cbbf3cdf0b80826af7cb4.bindPopup(popup_8a2e57cd773d427744336934a612eaf5)
+        ;
+
+        
+    
+    
+            var circle_marker_f20ed075e6f349147e77e56e927071d7 = L.circleMarker(
+                [28.73688611111111, 77.09525277777777],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_6b68462aeb5fce065197f9aa7086c102 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33cfe60c84d5c404092a4ceac20f5e3c = $(`<div id="html_33cfe60c84d5c404092a4ceac20f5e3c" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX012008</b><br>N readings: 57<br>Duration: 56s<br>Mean: 51.2 dB<br>Max: 92.6 dB</div>`)[0];
+                popup_6b68462aeb5fce065197f9aa7086c102.setContent(html_33cfe60c84d5c404092a4ceac20f5e3c);
+            
+        
+
+        circle_marker_f20ed075e6f349147e77e56e927071d7.bindPopup(popup_6b68462aeb5fce065197f9aa7086c102)
+        ;
+
+        
+    
+    
+            var circle_marker_7a5ebe2a2ff4664dab9dba4bd43f4238 = L.circleMarker(
+                [28.73656666666667, 77.09526666666666],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_69fe7d935f23a46bee57bb0313119ea6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_818537f8214ae3345a340eac824e6105 = $(`<div id="html_818537f8214ae3345a340eac824e6105" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX012009</b><br>N readings: 63<br>Duration: 62s<br>Mean: 75.2 dB<br>Max: 95.3 dB</div>`)[0];
+                popup_69fe7d935f23a46bee57bb0313119ea6.setContent(html_818537f8214ae3345a340eac824e6105);
+            
+        
+
+        circle_marker_7a5ebe2a2ff4664dab9dba4bd43f4238.bindPopup(popup_69fe7d935f23a46bee57bb0313119ea6)
+        ;
+
+        
+    
+    
+            var circle_marker_fcde289b19cb4f0d24762f42897ae53b = L.circleMarker(
+                [28.70866111111111, 77.07856944444444],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_b65155f15f0c016bfd8935c2aef4f0cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b15a73907b1be135580dbf200b074a40 = $(`<div id="html_b15a73907b1be135580dbf200b074a40" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX012010</b><br>N readings: 60<br>Duration: 61s<br>Mean: 72.4 dB<br>Max: 106.5 dB</div>`)[0];
+                popup_b65155f15f0c016bfd8935c2aef4f0cb.setContent(html_b15a73907b1be135580dbf200b074a40);
+            
+        
+
+        circle_marker_fcde289b19cb4f0d24762f42897ae53b.bindPopup(popup_b65155f15f0c016bfd8935c2aef4f0cb)
+        ;
+
+        
+    
+    
+            var circle_marker_e191ffad9eb3ec1e3128a3d21c4e803a = L.circleMarker(
+                [28.717105555555555, 77.07693611111111],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_baba8dce8edec4e9fcdb7aa4fe083df0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f3409fe4a8cb467f1a7de8c6fab3bd5 = $(`<div id="html_8f3409fe4a8cb467f1a7de8c6fab3bd5" style="width: 100.0%; height: 100.0%;"><b>delhi_05_05_2026_GX012011</b><br>N readings: 63<br>Duration: 62s<br>Mean: 74.5 dB<br>Max: 87.5 dB</div>`)[0];
+                popup_baba8dce8edec4e9fcdb7aa4fe083df0.setContent(html_8f3409fe4a8cb467f1a7de8c6fab3bd5);
+            
+        
+
+        circle_marker_e191ffad9eb3ec1e3128a3d21c4e803a.bindPopup(popup_baba8dce8edec4e9fcdb7aa4fe083df0)
+        ;
+
+        
+    
+    
+            var circle_marker_e71b9b6d87a3ac23981dfa132d8ec617 = L.circleMarker(
+                [28.604325000000003, 77.30358333333334],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_2f2f66b14062bbbd58964b0d46fde931 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e4e75737d3dd165db9ef5a6ddea7dc5 = $(`<div id="html_2e4e75737d3dd165db9ef5a6ddea7dc5" style="width: 100.0%; height: 100.0%;"><b>delhi_05_07_2026_GX012049</b><br>N readings: 64<br>Duration: 63s<br>Mean: 64.4 dB<br>Max: 71.3 dB</div>`)[0];
+                popup_2f2f66b14062bbbd58964b0d46fde931.setContent(html_2e4e75737d3dd165db9ef5a6ddea7dc5);
+            
+        
+
+        circle_marker_e71b9b6d87a3ac23981dfa132d8ec617.bindPopup(popup_2f2f66b14062bbbd58964b0d46fde931)
+        ;
+
+        
+    
+    
+            var circle_marker_97afb1addcc7ef9b62aa0af9da235e3f = L.circleMarker(
+                [28.720533333333332, 77.33243888888889],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_6f83fa519cd92d882b51eae2e2c6171e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c69186eb5bc2daaa887b7cbdd1404125 = $(`<div id="html_c69186eb5bc2daaa887b7cbdd1404125" style="width: 100.0%; height: 100.0%;"><b>delhi_05_07_2026_GX012055</b><br>N readings: 62<br>Duration: 61s<br>Mean: 62.0 dB<br>Max: 80.6 dB</div>`)[0];
+                popup_6f83fa519cd92d882b51eae2e2c6171e.setContent(html_c69186eb5bc2daaa887b7cbdd1404125);
+            
+        
+
+        circle_marker_97afb1addcc7ef9b62aa0af9da235e3f.bindPopup(popup_6f83fa519cd92d882b51eae2e2c6171e)
+        ;
+
+        
+    
+    
+            var circle_marker_39883a2f34d2e19c8dca8802f053b09f = L.circleMarker(
+                [28.664255555555552, 77.2929361111111],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_bc6e61aa49702231f680377d592e7e6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_164765191f4504dde177792140ce0164 = $(`<div id="html_164765191f4504dde177792140ce0164" style="width: 100.0%; height: 100.0%;"><b>delhi_05_07_2026_GX012065</b><br>N readings: 62<br>Duration: 61s<br>Mean: 68.0 dB<br>Max: 94.5 dB</div>`)[0];
+                popup_bc6e61aa49702231f680377d592e7e6e.setContent(html_164765191f4504dde177792140ce0164);
+            
+        
+
+        circle_marker_39883a2f34d2e19c8dca8802f053b09f.bindPopup(popup_bc6e61aa49702231f680377d592e7e6e)
+        ;
+
+        
+    
+    
+            var circle_marker_13128435810aae9721ab9cb4acbc5c86 = L.circleMarker(
+                [28.65851111111111, 77.29304444444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_3b78b43dfb7d00d83f60bf4b9a306f35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_742583bfc06c1afa440483525080f4d7 = $(`<div id="html_742583bfc06c1afa440483525080f4d7" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012078</b><br>N readings: 58<br>Duration: 61s<br>Mean: 70.0 dB<br>Max: 82.4 dB</div>`)[0];
+                popup_3b78b43dfb7d00d83f60bf4b9a306f35.setContent(html_742583bfc06c1afa440483525080f4d7);
+            
+        
+
+        circle_marker_13128435810aae9721ab9cb4acbc5c86.bindPopup(popup_3b78b43dfb7d00d83f60bf4b9a306f35)
+        ;
+
+        
+    
+    
+            var circle_marker_a5aadfdb3c0c0858c2a67cf5143f5d0e = L.circleMarker(
+                [28.65851111111111, 77.29304444444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_485216c766eca1e4f8f2057c4b548c76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b86f340cee66981fddab498ac32a045 = $(`<div id="html_3b86f340cee66981fddab498ac32a045" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012079</b><br>N readings: 12<br>Duration: 12s<br>Mean: 76.4 dB<br>Max: 80.3 dB</div>`)[0];
+                popup_485216c766eca1e4f8f2057c4b548c76.setContent(html_3b86f340cee66981fddab498ac32a045);
+            
+        
+
+        circle_marker_a5aadfdb3c0c0858c2a67cf5143f5d0e.bindPopup(popup_485216c766eca1e4f8f2057c4b548c76)
+        ;
+
+        
+    
+    
+            var circle_marker_3c867c9efa825bbfc1cf4190160f2bbe = L.circleMarker(
+                [28.65851111111111, 77.29304444444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_c0d865fd748e8f7a39ee8fb8c6f513ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00eee155d39abbb309f7ea05d03e24ba = $(`<div id="html_00eee155d39abbb309f7ea05d03e24ba" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012080</b><br>N readings: 62<br>Duration: 61s<br>Mean: 77.0 dB<br>Max: 98.7 dB</div>`)[0];
+                popup_c0d865fd748e8f7a39ee8fb8c6f513ba.setContent(html_00eee155d39abbb309f7ea05d03e24ba);
+            
+        
+
+        circle_marker_3c867c9efa825bbfc1cf4190160f2bbe.bindPopup(popup_c0d865fd748e8f7a39ee8fb8c6f513ba)
+        ;
+
+        
+    
+    
+            var circle_marker_d101eed8925330a59c00adf6e496128a = L.circleMarker(
+                [28.65851111111111, 77.29304444444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_b270f2604f0e0e79b927842eb53de858 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e30505967b00fbce3adbb972dbe8b18f = $(`<div id="html_e30505967b00fbce3adbb972dbe8b18f" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012081</b><br>N readings: 60<br>Duration: 59s<br>Mean: 74.7 dB<br>Max: 99.0 dB</div>`)[0];
+                popup_b270f2604f0e0e79b927842eb53de858.setContent(html_e30505967b00fbce3adbb972dbe8b18f);
+            
+        
+
+        circle_marker_d101eed8925330a59c00adf6e496128a.bindPopup(popup_b270f2604f0e0e79b927842eb53de858)
+        ;
+
+        
+    
+    
+            var circle_marker_b7ba5a44a0075225a8863e12a6a78c43 = L.circleMarker(
+                [28.65851111111111, 77.29304444444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_4fd33e2566457ec7b9ab409b5b6c32c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30db75e5de518c36efec7aa90cd96ee0 = $(`<div id="html_30db75e5de518c36efec7aa90cd96ee0" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012082</b><br>N readings: 61<br>Duration: 60s<br>Mean: 73.6 dB<br>Max: 119.9 dB</div>`)[0];
+                popup_4fd33e2566457ec7b9ab409b5b6c32c7.setContent(html_30db75e5de518c36efec7aa90cd96ee0);
+            
+        
+
+        circle_marker_b7ba5a44a0075225a8863e12a6a78c43.bindPopup(popup_4fd33e2566457ec7b9ab409b5b6c32c7)
+        ;
+
+        
+    
+    
+            var circle_marker_1f6556c67b0741dfa5ef57bf05e8a4f5 = L.circleMarker(
+                [28.65851111111111, 77.29304444444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_8400eb930af70f22ed4f62143aad7269 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9719a89c08d64f5d693466356bc0540 = $(`<div id="html_e9719a89c08d64f5d693466356bc0540" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012083</b><br>N readings: 71<br>Duration: 70s<br>Mean: 61.6 dB<br>Max: 98.1 dB</div>`)[0];
+                popup_8400eb930af70f22ed4f62143aad7269.setContent(html_e9719a89c08d64f5d693466356bc0540);
+            
+        
+
+        circle_marker_1f6556c67b0741dfa5ef57bf05e8a4f5.bindPopup(popup_8400eb930af70f22ed4f62143aad7269)
+        ;
+
+        
+    
+    
+            var circle_marker_f5acda68ade54f51d7e535e5bb961882 = L.circleMarker(
+                [28.65851111111111, 77.29304444444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_eb5195afb132c766b8ee67cb4c81ff75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2193a118ff99d70678d1d5f7a2baa547 = $(`<div id="html_2193a118ff99d70678d1d5f7a2baa547" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012084</b><br>N readings: 61<br>Duration: 60s<br>Mean: 71.0 dB<br>Max: 91.2 dB</div>`)[0];
+                popup_eb5195afb132c766b8ee67cb4c81ff75.setContent(html_2193a118ff99d70678d1d5f7a2baa547);
+            
+        
+
+        circle_marker_f5acda68ade54f51d7e535e5bb961882.bindPopup(popup_eb5195afb132c766b8ee67cb4c81ff75)
+        ;
+
+        
+    
+    
+            var circle_marker_312120937d09145503f7e6649f412c80 = L.circleMarker(
+                [28.65851111111111, 77.29304444444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_a78259f8cb4f044f6257524be0bca1f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1048fff562454a34ed735916ab8a9fb = $(`<div id="html_f1048fff562454a34ed735916ab8a9fb" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012085</b><br>N readings: 61<br>Duration: 60s<br>Mean: 73.5 dB<br>Max: 89.9 dB</div>`)[0];
+                popup_a78259f8cb4f044f6257524be0bca1f7.setContent(html_f1048fff562454a34ed735916ab8a9fb);
+            
+        
+
+        circle_marker_312120937d09145503f7e6649f412c80.bindPopup(popup_a78259f8cb4f044f6257524be0bca1f7)
+        ;
+
+        
+    
+    
+            var circle_marker_55689f707cbb6605514712561312effb = L.circleMarker(
+                [28.65851111111111, 77.29304444444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_640835f65b045fff98e9c26424a43829 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_864a17f1da240f3d69c3c1c7ede283c6 = $(`<div id="html_864a17f1da240f3d69c3c1c7ede283c6" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012086</b><br>N readings: 64<br>Duration: 63s<br>Mean: 66.4 dB<br>Max: 87.7 dB</div>`)[0];
+                popup_640835f65b045fff98e9c26424a43829.setContent(html_864a17f1da240f3d69c3c1c7ede283c6);
+            
+        
+
+        circle_marker_55689f707cbb6605514712561312effb.bindPopup(popup_640835f65b045fff98e9c26424a43829)
+        ;
+
+        
+    
+    
+            var circle_marker_c881b74e2723b36e984b7e872b92c05c = L.circleMarker(
+                [28.854730555555555, 77.07392777777777],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_f4810afb888b50db5989c4389233de9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3befa970d6950acb66266ad744f6d3b5 = $(`<div id="html_3befa970d6950acb66266ad744f6d3b5" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012087</b><br>N readings: 61<br>Duration: 60s<br>Mean: 74.0 dB<br>Max: 84.7 dB</div>`)[0];
+                popup_f4810afb888b50db5989c4389233de9b.setContent(html_3befa970d6950acb66266ad744f6d3b5);
+            
+        
+
+        circle_marker_c881b74e2723b36e984b7e872b92c05c.bindPopup(popup_f4810afb888b50db5989c4389233de9b)
+        ;
+
+        
+    
+    
+            var circle_marker_280fde6a91b578a27c29405ff5d169ae = L.circleMarker(
+                [28.852197222222223, 77.07335555555555],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_85b1d11ab4d8939c942490d504da0107 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1cd9468ae2657f6e1c43bfc8a2a71987 = $(`<div id="html_1cd9468ae2657f6e1c43bfc8a2a71987" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012088</b><br>N readings: 62<br>Duration: 61s<br>Mean: 76.8 dB<br>Max: 112.1 dB</div>`)[0];
+                popup_85b1d11ab4d8939c942490d504da0107.setContent(html_1cd9468ae2657f6e1c43bfc8a2a71987);
+            
+        
+
+        circle_marker_280fde6a91b578a27c29405ff5d169ae.bindPopup(popup_85b1d11ab4d8939c942490d504da0107)
+        ;
+
+        
+    
+    
+            var circle_marker_cf2985e3c158dbefd4c9532019a3a25b = L.circleMarker(
+                [28.854747222222223, 77.07391388888888],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_5c4496be2c65ea283f1a1d83563977b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d2b2337185b6b06b05b19ac691773fd = $(`<div id="html_8d2b2337185b6b06b05b19ac691773fd" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012089</b><br>N readings: 58<br>Duration: 57s<br>Mean: 70.5 dB<br>Max: 88.8 dB</div>`)[0];
+                popup_5c4496be2c65ea283f1a1d83563977b0.setContent(html_8d2b2337185b6b06b05b19ac691773fd);
+            
+        
+
+        circle_marker_cf2985e3c158dbefd4c9532019a3a25b.bindPopup(popup_5c4496be2c65ea283f1a1d83563977b0)
+        ;
+
+        
+    
+    
+            var circle_marker_d063e50055a78d592b3a129dac9f894f = L.circleMarker(
+                [28.854747222222223, 77.07391388888888],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_bd88f47bc6035dce2cd11b90322cd0db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d65bfd657a696194f12f32863ee6ee47 = $(`<div id="html_d65bfd657a696194f12f32863ee6ee47" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012090</b><br>N readings: 62<br>Duration: 61s<br>Mean: 64.5 dB<br>Max: 78.2 dB</div>`)[0];
+                popup_bd88f47bc6035dce2cd11b90322cd0db.setContent(html_d65bfd657a696194f12f32863ee6ee47);
+            
+        
+
+        circle_marker_d063e50055a78d592b3a129dac9f894f.bindPopup(popup_bd88f47bc6035dce2cd11b90322cd0db)
+        ;
+
+        
+    
+    
+            var circle_marker_13b388b393ccd1fbfc2578bf83443d6b = L.circleMarker(
+                [28.82415972222222, 77.06902916666667],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_bf79a9a7bb7b2fb1ba87d45b6bdc2ca5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2f5c7618e90489b224e60f1270381f9 = $(`<div id="html_c2f5c7618e90489b224e60f1270381f9" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012091</b><br>N readings: 62<br>Duration: 61s<br>Mean: 64.7 dB<br>Max: 77.8 dB</div>`)[0];
+                popup_bf79a9a7bb7b2fb1ba87d45b6bdc2ca5.setContent(html_c2f5c7618e90489b224e60f1270381f9);
+            
+        
+
+        circle_marker_13b388b393ccd1fbfc2578bf83443d6b.bindPopup(popup_bf79a9a7bb7b2fb1ba87d45b6bdc2ca5)
+        ;
+
+        
+    
+    
+            var circle_marker_9cebc1cce8d9017dde7dfb8093c3f850 = L.circleMarker(
+                [28.810772222222223, 77.06492222222222],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_aa82195aec7fe9c8f70bd292c80b0520 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e4b4c3e8d78930c5f718a29d3cd9192 = $(`<div id="html_1e4b4c3e8d78930c5f718a29d3cd9192" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012092</b><br>N readings: 60<br>Duration: 59s<br>Mean: 70.1 dB<br>Max: 82.3 dB</div>`)[0];
+                popup_aa82195aec7fe9c8f70bd292c80b0520.setContent(html_1e4b4c3e8d78930c5f718a29d3cd9192);
+            
+        
+
+        circle_marker_9cebc1cce8d9017dde7dfb8093c3f850.bindPopup(popup_aa82195aec7fe9c8f70bd292c80b0520)
+        ;
+
+        
+    
+    
+            var circle_marker_fd46ae551b60244864822c16a80d12f0 = L.circleMarker(
+                [28.758452777777777, 77.101125],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_264dc3688e7e69b636a786218140ad2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28e04e81a3ed0f8148e6d83fd19c5de8 = $(`<div id="html_28e04e81a3ed0f8148e6d83fd19c5de8" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012093</b><br>N readings: 62<br>Duration: 61s<br>Mean: 71.0 dB<br>Max: 82.9 dB</div>`)[0];
+                popup_264dc3688e7e69b636a786218140ad2d.setContent(html_28e04e81a3ed0f8148e6d83fd19c5de8);
+            
+        
+
+        circle_marker_fd46ae551b60244864822c16a80d12f0.bindPopup(popup_264dc3688e7e69b636a786218140ad2d)
+        ;
+
+        
+    
+    
+            var circle_marker_3eb33f63cfad11c57a640e92cdc4ca1f = L.circleMarker(
+                [28.754933333333334, 77.0864],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_980d46a612f7ac497ae03452a2d41f6c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_529db6931715af2f840f813e53a07bbe = $(`<div id="html_529db6931715af2f840f813e53a07bbe" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012094</b><br>N readings: 49<br>Duration: 50s<br>Mean: 59.6 dB<br>Max: 99.9 dB</div>`)[0];
+                popup_980d46a612f7ac497ae03452a2d41f6c.setContent(html_529db6931715af2f840f813e53a07bbe);
+            
+        
+
+        circle_marker_3eb33f63cfad11c57a640e92cdc4ca1f.bindPopup(popup_980d46a612f7ac497ae03452a2d41f6c)
+        ;
+
+        
+    
+    
+            var circle_marker_b6d102fe24bb5d06a0bf9bb6de3a6b7f = L.circleMarker(
+                [28.752516666666665, 77.09514444444444],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_fdfd1c93cc4c6ff249ba5a69f7fecc89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_747b03ec32771a20e50a2e55d5a1074f = $(`<div id="html_747b03ec32771a20e50a2e55d5a1074f" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012095</b><br>N readings: 60<br>Duration: 60s<br>Mean: 65.5 dB<br>Max: 99.8 dB</div>`)[0];
+                popup_fdfd1c93cc4c6ff249ba5a69f7fecc89.setContent(html_747b03ec32771a20e50a2e55d5a1074f);
+            
+        
+
+        circle_marker_b6d102fe24bb5d06a0bf9bb6de3a6b7f.bindPopup(popup_fdfd1c93cc4c6ff249ba5a69f7fecc89)
+        ;
+
+        
+    
+    
+            var circle_marker_3e6b28c87c6cae7697ccb23ba5ddffb7 = L.circleMarker(
+                [28.787236111111113, 77.11412777777777],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_999c450cb621b00f769ff2ba18ac09c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d6045b8c9ce5ad97547064314f385b0 = $(`<div id="html_5d6045b8c9ce5ad97547064314f385b0" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012096</b><br>N readings: 53<br>Duration: 60s<br>Mean: 81.3 dB<br>Max: 114.7 dB</div>`)[0];
+                popup_999c450cb621b00f769ff2ba18ac09c9.setContent(html_5d6045b8c9ce5ad97547064314f385b0);
+            
+        
+
+        circle_marker_3e6b28c87c6cae7697ccb23ba5ddffb7.bindPopup(popup_999c450cb621b00f769ff2ba18ac09c9)
+        ;
+
+        
+    
+    
+            var circle_marker_6f515f8e1498c16452f312ffa77cde46 = L.circleMarker(
+                [28.776166666666665, 77.12382222222222],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_10ffdf4cae7bf9376c8c8f9c9ae667ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf577ae3fd343aa70d447307ed241bcf = $(`<div id="html_bf577ae3fd343aa70d447307ed241bcf" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012097</b><br>N readings: 58<br>Duration: 59s<br>Mean: 81.7 dB<br>Max: 100.8 dB</div>`)[0];
+                popup_10ffdf4cae7bf9376c8c8f9c9ae667ec.setContent(html_bf577ae3fd343aa70d447307ed241bcf);
+            
+        
+
+        circle_marker_6f515f8e1498c16452f312ffa77cde46.bindPopup(popup_10ffdf4cae7bf9376c8c8f9c9ae667ec)
+        ;
+
+        
+    
+    
+            var circle_marker_37130aca646c732d9b2b576008935ecb = L.circleMarker(
+                [28.7596, 77.13122777777777],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_eff149671045f4c838303145879f4832 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5974573cc622e1842ace6fea19c5d78 = $(`<div id="html_f5974573cc622e1842ace6fea19c5d78" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012098</b><br>N readings: 64<br>Duration: 63s<br>Mean: 76.3 dB<br>Max: 93.0 dB</div>`)[0];
+                popup_eff149671045f4c838303145879f4832.setContent(html_f5974573cc622e1842ace6fea19c5d78);
+            
+        
+
+        circle_marker_37130aca646c732d9b2b576008935ecb.bindPopup(popup_eff149671045f4c838303145879f4832)
+        ;
+
+        
+    
+    
+            var circle_marker_8fa80404b63f01bfb3f42c9bd6844e0c = L.circleMarker(
+                [28.760091666666668, 77.13580277777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_33e6505d10f5b6928cd55de88fba017c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f29f3abcaa14ddcc8e31392cc436c076 = $(`<div id="html_f29f3abcaa14ddcc8e31392cc436c076" style="width: 100.0%; height: 100.0%;"><b>delhi_05_08_2026_GX012099</b><br>N readings: 62<br>Duration: 61s<br>Mean: 67.1 dB<br>Max: 73.2 dB</div>`)[0];
+                popup_33e6505d10f5b6928cd55de88fba017c.setContent(html_f29f3abcaa14ddcc8e31392cc436c076);
+            
+        
+
+        circle_marker_8fa80404b63f01bfb3f42c9bd6844e0c.bindPopup(popup_33e6505d10f5b6928cd55de88fba017c)
+        ;
+
+        
+    
+    
+            var circle_marker_20bd9b3084e83b67b5bfb4037f2d62cc = L.circleMarker(
+                [28.760408333333334, 77.13577777777779],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_89b22b159e8b5b63e1a1e077569de995 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ef7dc28860feae2bec74f08c56f8de8 = $(`<div id="html_2ef7dc28860feae2bec74f08c56f8de8" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012102</b><br>N readings: 19<br>Duration: 18s<br>Mean: 77.5 dB<br>Max: 89.4 dB</div>`)[0];
+                popup_89b22b159e8b5b63e1a1e077569de995.setContent(html_2ef7dc28860feae2bec74f08c56f8de8);
+            
+        
+
+        circle_marker_20bd9b3084e83b67b5bfb4037f2d62cc.bindPopup(popup_89b22b159e8b5b63e1a1e077569de995)
+        ;
+
+        
+    
+    
+            var circle_marker_936017bd5a632a8037d2bd2c3e5307a3 = L.circleMarker(
+                [28.760408333333334, 77.13577777777779],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_7355549c323bf7622306e8d083a97082 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b11fc3b0ed7dbcd9cd92a30c139bb3e = $(`<div id="html_7b11fc3b0ed7dbcd9cd92a30c139bb3e" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012103</b><br>N readings: 46<br>Duration: 45s<br>Mean: 67.0 dB<br>Max: 74.2 dB</div>`)[0];
+                popup_7355549c323bf7622306e8d083a97082.setContent(html_7b11fc3b0ed7dbcd9cd92a30c139bb3e);
+            
+        
+
+        circle_marker_936017bd5a632a8037d2bd2c3e5307a3.bindPopup(popup_7355549c323bf7622306e8d083a97082)
+        ;
+
+        
+    
+    
+            var circle_marker_710821f5a0baa21cc04412f681b51b8d = L.circleMarker(
+                [28.83277777777778, 77.16962777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_73ffe0d2f49cff60533c7f0e8049e1c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b20ef71bccff1e21ab7d55ebbbc2f091 = $(`<div id="html_b20ef71bccff1e21ab7d55ebbbc2f091" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012104</b><br>N readings: 60<br>Duration: 59s<br>Mean: 74.7 dB<br>Max: 92.3 dB</div>`)[0];
+                popup_73ffe0d2f49cff60533c7f0e8049e1c5.setContent(html_b20ef71bccff1e21ab7d55ebbbc2f091);
+            
+        
+
+        circle_marker_710821f5a0baa21cc04412f681b51b8d.bindPopup(popup_73ffe0d2f49cff60533c7f0e8049e1c5)
+        ;
+
+        
+    
+    
+            var circle_marker_e7a2cbe6f01ab347cbdc765b4b0b248a = L.circleMarker(
+                [28.83666388888889, 77.16876666666667],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_d0e523becca5928716d304781cd40490 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b28306934f4de43a2c55fda3926c88a = $(`<div id="html_7b28306934f4de43a2c55fda3926c88a" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012105</b><br>N readings: 60<br>Duration: 59s<br>Mean: 72.4 dB<br>Max: 95.8 dB</div>`)[0];
+                popup_d0e523becca5928716d304781cd40490.setContent(html_7b28306934f4de43a2c55fda3926c88a);
+            
+        
+
+        circle_marker_e7a2cbe6f01ab347cbdc765b4b0b248a.bindPopup(popup_d0e523becca5928716d304781cd40490)
+        ;
+
+        
+    
+    
+            var circle_marker_76305894357dc766f6f4e62e293f1ef5 = L.circleMarker(
+                [28.84227222222222, 77.18595277777779],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_85beea2a2fc08291419f6dd14ec0b16a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_870e568c398d28290c04a6de40d58ad5 = $(`<div id="html_870e568c398d28290c04a6de40d58ad5" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012107</b><br>N readings: 61<br>Duration: 60s<br>Mean: 67.6 dB<br>Max: 98.3 dB</div>`)[0];
+                popup_85beea2a2fc08291419f6dd14ec0b16a.setContent(html_870e568c398d28290c04a6de40d58ad5);
+            
+        
+
+        circle_marker_76305894357dc766f6f4e62e293f1ef5.bindPopup(popup_85beea2a2fc08291419f6dd14ec0b16a)
+        ;
+
+        
+    
+    
+            var circle_marker_f3d6c77ec402c4aa98aec701641bfb02 = L.circleMarker(
+                [28.839741666666665, 77.1838],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_98ab3308a195d6855c1dd61806518664 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abec30565b3f550434f6bcb4c8bfbed5 = $(`<div id="html_abec30565b3f550434f6bcb4c8bfbed5" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012108</b><br>N readings: 58<br>Duration: 59s<br>Mean: 74.0 dB<br>Max: 88.8 dB</div>`)[0];
+                popup_98ab3308a195d6855c1dd61806518664.setContent(html_abec30565b3f550434f6bcb4c8bfbed5);
+            
+        
+
+        circle_marker_f3d6c77ec402c4aa98aec701641bfb02.bindPopup(popup_98ab3308a195d6855c1dd61806518664)
+        ;
+
+        
+    
+    
+            var circle_marker_b371f929d2c4aa24a0cae60a71596dd0 = L.circleMarker(
+                [28.831174999999998, 77.19972777777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_3dd87390ec111862278b03448b0af728 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9772861aba6642f77103cfec65351c8f = $(`<div id="html_9772861aba6642f77103cfec65351c8f" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012109</b><br>N readings: 61<br>Duration: 60s<br>Mean: 71.9 dB<br>Max: 80.0 dB</div>`)[0];
+                popup_3dd87390ec111862278b03448b0af728.setContent(html_9772861aba6642f77103cfec65351c8f);
+            
+        
+
+        circle_marker_b371f929d2c4aa24a0cae60a71596dd0.bindPopup(popup_3dd87390ec111862278b03448b0af728)
+        ;
+
+        
+    
+    
+            var circle_marker_45bce7ce2df07a3091fc5688f84d75e3 = L.circleMarker(
+                [28.812786111111112, 77.15936388888889],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_80ec50afa02ba48b1979b3e2f7565b63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ce79a2617c0f766736958852a3d2881 = $(`<div id="html_0ce79a2617c0f766736958852a3d2881" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012110</b><br>N readings: 62<br>Duration: 61s<br>Mean: 64.7 dB<br>Max: 89.8 dB</div>`)[0];
+                popup_80ec50afa02ba48b1979b3e2f7565b63.setContent(html_0ce79a2617c0f766736958852a3d2881);
+            
+        
+
+        circle_marker_45bce7ce2df07a3091fc5688f84d75e3.bindPopup(popup_80ec50afa02ba48b1979b3e2f7565b63)
+        ;
+
+        
+    
+    
+            var circle_marker_2e3b4f7cf197a0e12fe6aae049f9e4f1 = L.circleMarker(
+                [28.81316111111111, 77.15880833333334],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_47a23b3bd2e5761a8b01c130f87b89dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf4b75c2b80adb3611474dd020bc4df1 = $(`<div id="html_cf4b75c2b80adb3611474dd020bc4df1" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012111</b><br>N readings: 62<br>Duration: 61s<br>Mean: 64.9 dB<br>Max: 88.5 dB</div>`)[0];
+                popup_47a23b3bd2e5761a8b01c130f87b89dc.setContent(html_cf4b75c2b80adb3611474dd020bc4df1);
+            
+        
+
+        circle_marker_2e3b4f7cf197a0e12fe6aae049f9e4f1.bindPopup(popup_47a23b3bd2e5761a8b01c130f87b89dc)
+        ;
+
+        
+    
+    
+            var circle_marker_f0288b642a5a353c38b5d9e2cdac76e1 = L.circleMarker(
+                [28.7372, 77.16017500000001],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_133ef76732a90c48302e3aaf7e4ab7d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd87f76fce96a3fbedc6b5eeb260742e = $(`<div id="html_cd87f76fce96a3fbedc6b5eeb260742e" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012112</b><br>N readings: 60<br>Duration: 59s<br>Mean: 70.0 dB<br>Max: 89.5 dB</div>`)[0];
+                popup_133ef76732a90c48302e3aaf7e4ab7d7.setContent(html_cd87f76fce96a3fbedc6b5eeb260742e);
+            
+        
+
+        circle_marker_f0288b642a5a353c38b5d9e2cdac76e1.bindPopup(popup_133ef76732a90c48302e3aaf7e4ab7d7)
+        ;
+
+        
+    
+    
+            var circle_marker_af83bea6e2ae784a65a025f4f5b2e058 = L.circleMarker(
+                [28.723108333333332, 77.20584166666667],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_e8295f9bfd2483e9bd6c1f4fefe5be8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e44d2545491c20ef8fbce5da4939627 = $(`<div id="html_3e44d2545491c20ef8fbce5da4939627" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012113</b><br>N readings: 63<br>Duration: 62s<br>Mean: 63.2 dB<br>Max: 88.8 dB</div>`)[0];
+                popup_e8295f9bfd2483e9bd6c1f4fefe5be8c.setContent(html_3e44d2545491c20ef8fbce5da4939627);
+            
+        
+
+        circle_marker_af83bea6e2ae784a65a025f4f5b2e058.bindPopup(popup_e8295f9bfd2483e9bd6c1f4fefe5be8c)
+        ;
+
+        
+    
+    
+            var circle_marker_6e424b16459c5b6fccf9c3a078903c3f = L.circleMarker(
+                [28.724890277777774, 77.20625555555556],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_6f7aceee88da402cf4bbf558068a125d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc266c4ea4b9c1cfa667706c29445c5a = $(`<div id="html_cc266c4ea4b9c1cfa667706c29445c5a" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012114</b><br>N readings: 61<br>Duration: 60s<br>Mean: 70.8 dB<br>Max: 86.6 dB</div>`)[0];
+                popup_6f7aceee88da402cf4bbf558068a125d.setContent(html_cc266c4ea4b9c1cfa667706c29445c5a);
+            
+        
+
+        circle_marker_6e424b16459c5b6fccf9c3a078903c3f.bindPopup(popup_6f7aceee88da402cf4bbf558068a125d)
+        ;
+
+        
+    
+    
+            var circle_marker_bd85c09157c2c864b28fb2a7afc6887c = L.circleMarker(
+                [28.71821111111111, 77.22285000000001],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_a77590ed08957d2beba4f589c65a4466 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9634f4d8d02e5aa5013990c0a8c9cee = $(`<div id="html_a9634f4d8d02e5aa5013990c0a8c9cee" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012115</b><br>N readings: 61<br>Duration: 60s<br>Mean: 70.6 dB<br>Max: 87.1 dB</div>`)[0];
+                popup_a77590ed08957d2beba4f589c65a4466.setContent(html_a9634f4d8d02e5aa5013990c0a8c9cee);
+            
+        
+
+        circle_marker_bd85c09157c2c864b28fb2a7afc6887c.bindPopup(popup_a77590ed08957d2beba4f589c65a4466)
+        ;
+
+        
+    
+    
+            var circle_marker_ae2b879cf4dbdde29665788f8594cce3 = L.circleMarker(
+                [28.628725, 77.33591944444444],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_fce36394934b5011112a81783f21ffce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bd9f31ab864012729925b50907ae01f = $(`<div id="html_2bd9f31ab864012729925b50907ae01f" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012116</b><br>N readings: 58<br>Duration: 59s<br>Mean: 75.8 dB<br>Max: 99.4 dB</div>`)[0];
+                popup_fce36394934b5011112a81783f21ffce.setContent(html_2bd9f31ab864012729925b50907ae01f);
+            
+        
+
+        circle_marker_ae2b879cf4dbdde29665788f8594cce3.bindPopup(popup_fce36394934b5011112a81783f21ffce)
+        ;
+
+        
+    
+    
+            var circle_marker_730686dc6c5191f54b77252362f3f3e2 = L.circleMarker(
+                [28.718605555555555, 77.22306944444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_64be3a599c2c66fbefa95d15d4453355 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f92b2fabfb940b650411afdc7bbbecf = $(`<div id="html_9f92b2fabfb940b650411afdc7bbbecf" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012117</b><br>N readings: 62<br>Duration: 61s<br>Mean: 73.3 dB<br>Max: 93.2 dB</div>`)[0];
+                popup_64be3a599c2c66fbefa95d15d4453355.setContent(html_9f92b2fabfb940b650411afdc7bbbecf);
+            
+        
+
+        circle_marker_730686dc6c5191f54b77252362f3f3e2.bindPopup(popup_64be3a599c2c66fbefa95d15d4453355)
+        ;
+
+        
+    
+    
+            var circle_marker_cda826b2e3c513861610cafdbca8b4ea = L.circleMarker(
+                [28.750180555555556, 77.25166944444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_ff270a7592ce44f977b36acfd0f3b5aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13184e3b166ed4d2b667eede7ae75de5 = $(`<div id="html_13184e3b166ed4d2b667eede7ae75de5" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012119</b><br>N readings: 59<br>Duration: 60s<br>Mean: 71.7 dB<br>Max: 84.4 dB</div>`)[0];
+                popup_ff270a7592ce44f977b36acfd0f3b5aa.setContent(html_13184e3b166ed4d2b667eede7ae75de5);
+            
+        
+
+        circle_marker_cda826b2e3c513861610cafdbca8b4ea.bindPopup(popup_ff270a7592ce44f977b36acfd0f3b5aa)
+        ;
+
+        
+    
+    
+            var circle_marker_2aaf9c97276abc075c14b9c1d1114403 = L.circleMarker(
+                [28.754541666666668, 77.24441388888889],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_4e7994689837cd74ffcc853c875cace9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2cc35ee649ca87e3b33dbac04c046aa = $(`<div id="html_a2cc35ee649ca87e3b33dbac04c046aa" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012120</b><br>N readings: 63<br>Duration: 62s<br>Mean: 66.9 dB<br>Max: 87.4 dB</div>`)[0];
+                popup_4e7994689837cd74ffcc853c875cace9.setContent(html_a2cc35ee649ca87e3b33dbac04c046aa);
+            
+        
+
+        circle_marker_2aaf9c97276abc075c14b9c1d1114403.bindPopup(popup_4e7994689837cd74ffcc853c875cace9)
+        ;
+
+        
+    
+    
+            var circle_marker_3551aa2f30704fa994f624e80ba6b12a = L.circleMarker(
+                [28.70768888888889, 77.25691388888889],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_1c4149f8a7028d938dcf548518ccae8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c0e8cb89b5189750415cc827d2b0cee = $(`<div id="html_2c0e8cb89b5189750415cc827d2b0cee" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012121</b><br>N readings: 66<br>Duration: 65s<br>Mean: 60.0 dB<br>Max: 69.4 dB</div>`)[0];
+                popup_1c4149f8a7028d938dcf548518ccae8a.setContent(html_2c0e8cb89b5189750415cc827d2b0cee);
+            
+        
+
+        circle_marker_3551aa2f30704fa994f624e80ba6b12a.bindPopup(popup_1c4149f8a7028d938dcf548518ccae8a)
+        ;
+
+        
+    
+    
+            var circle_marker_6f60cb025c59ef7abd886eede2a612b5 = L.circleMarker(
+                [28.7156625, 77.25103055555556],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_8b37a2c43f4fbcddec4935173da4ba77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b518d1617be85f0bea43cd9c8a8873ae = $(`<div id="html_b518d1617be85f0bea43cd9c8a8873ae" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012122</b><br>N readings: 58<br>Duration: 57s<br>Mean: 73.2 dB<br>Max: 89.8 dB</div>`)[0];
+                popup_8b37a2c43f4fbcddec4935173da4ba77.setContent(html_b518d1617be85f0bea43cd9c8a8873ae);
+            
+        
+
+        circle_marker_6f60cb025c59ef7abd886eede2a612b5.bindPopup(popup_8b37a2c43f4fbcddec4935173da4ba77)
+        ;
+
+        
+    
+    
+            var circle_marker_f48621fecc6eb97c1309e9daaee8ff2a = L.circleMarker(
+                [28.672147222222222, 77.27468888888889],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_33949a9e66c499c4b24c293e403a8611 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0f00472ed3f99ccc23d1f756feb470c = $(`<div id="html_b0f00472ed3f99ccc23d1f756feb470c" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012124</b><br>N readings: 54<br>Duration: 53s<br>Mean: 72.9 dB<br>Max: 88.6 dB</div>`)[0];
+                popup_33949a9e66c499c4b24c293e403a8611.setContent(html_b0f00472ed3f99ccc23d1f756feb470c);
+            
+        
+
+        circle_marker_f48621fecc6eb97c1309e9daaee8ff2a.bindPopup(popup_33949a9e66c499c4b24c293e403a8611)
+        ;
+
+        
+    
+    
+            var circle_marker_629b1b4d4f1f0323781d7950f7f00522 = L.circleMarker(
+                [28.64095, 77.28849444444444],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_2758e5c8167427343d143203a1535bcc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f00a7212d86ba74bfa608a1df4bc9c7 = $(`<div id="html_2f00a7212d86ba74bfa608a1df4bc9c7" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012126</b><br>N readings: 62<br>Duration: 61s<br>Mean: 72.0 dB<br>Max: 83.6 dB</div>`)[0];
+                popup_2758e5c8167427343d143203a1535bcc.setContent(html_2f00a7212d86ba74bfa608a1df4bc9c7);
+            
+        
+
+        circle_marker_629b1b4d4f1f0323781d7950f7f00522.bindPopup(popup_2758e5c8167427343d143203a1535bcc)
+        ;
+
+        
+    
+    
+            var circle_marker_32f8bf298e18f0f882236607497cdbc9 = L.circleMarker(
+                [28.640897222222222, 77.28860555555555],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_5e13e71e55755b4b993e26a15e757eb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8dee6c4a15c52e236308fb0cbb276600 = $(`<div id="html_8dee6c4a15c52e236308fb0cbb276600" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012127</b><br>N readings: 61<br>Duration: 60s<br>Mean: 73.5 dB<br>Max: 88.7 dB</div>`)[0];
+                popup_5e13e71e55755b4b993e26a15e757eb7.setContent(html_8dee6c4a15c52e236308fb0cbb276600);
+            
+        
+
+        circle_marker_32f8bf298e18f0f882236607497cdbc9.bindPopup(popup_5e13e71e55755b4b993e26a15e757eb7)
+        ;
+
+        
+    
+    
+            var circle_marker_9bdff20438cc19e79e572280c37fbd32 = L.circleMarker(
+                [28.632805555555557, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_4d5631e282cd5508e8729aa30395d28c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e093c3d427e87e9d2ff64762898f43ed = $(`<div id="html_e093c3d427e87e9d2ff64762898f43ed" style="width: 100.0%; height: 100.0%;"><b>delhi_05_09_2026_GX012128</b><br>N readings: 60<br>Duration: 59s<br>Mean: 77.3 dB<br>Max: 98.1 dB</div>`)[0];
+                popup_4d5631e282cd5508e8729aa30395d28c.setContent(html_e093c3d427e87e9d2ff64762898f43ed);
+            
+        
+
+        circle_marker_9bdff20438cc19e79e572280c37fbd32.bindPopup(popup_4d5631e282cd5508e8729aa30395d28c)
+        ;
+
+        
+    
+    
+            var circle_marker_090d1959de74fe082232d784b71a7c33 = L.circleMarker(
+                [28.632758333333335, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_b83da0a6aa91f94f3a9a60d8da288b6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44c9568f7811c9570aebf5b27e512602 = $(`<div id="html_44c9568f7811c9570aebf5b27e512602" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012129</b><br>N readings: 62<br>Duration: 61s<br>Mean: 74.9 dB<br>Max: 93.3 dB</div>`)[0];
+                popup_b83da0a6aa91f94f3a9a60d8da288b6b.setContent(html_44c9568f7811c9570aebf5b27e512602);
+            
+        
+
+        circle_marker_090d1959de74fe082232d784b71a7c33.bindPopup(popup_b83da0a6aa91f94f3a9a60d8da288b6b)
+        ;
+
+        
+    
+    
+            var circle_marker_46db8432fb7f71030b1d5f605c2ee757 = L.circleMarker(
+                [28.632758333333335, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_b04b8a297e89050b3fdc02743d8a46e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21762adac6b6c2563c512cb6d0187c4e = $(`<div id="html_21762adac6b6c2563c512cb6d0187c4e" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012130</b><br>N readings: 62<br>Duration: 61s<br>Mean: 71.7 dB<br>Max: 79.9 dB</div>`)[0];
+                popup_b04b8a297e89050b3fdc02743d8a46e0.setContent(html_21762adac6b6c2563c512cb6d0187c4e);
+            
+        
+
+        circle_marker_46db8432fb7f71030b1d5f605c2ee757.bindPopup(popup_b04b8a297e89050b3fdc02743d8a46e0)
+        ;
+
+        
+    
+    
+            var circle_marker_c5a42f9ddb366afd2da87327866e3f76 = L.circleMarker(
+                [28.632758333333335, 77.22046944444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_113b091d97eef3eb44ac46d7b6dcadf5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5fd96482d4c96ccd69fb312ebccb9a0 = $(`<div id="html_f5fd96482d4c96ccd69fb312ebccb9a0" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012131</b><br>N readings: 65<br>Duration: 64s<br>Mean: 73.9 dB<br>Max: 89.2 dB</div>`)[0];
+                popup_113b091d97eef3eb44ac46d7b6dcadf5.setContent(html_f5fd96482d4c96ccd69fb312ebccb9a0);
+            
+        
+
+        circle_marker_c5a42f9ddb366afd2da87327866e3f76.bindPopup(popup_113b091d97eef3eb44ac46d7b6dcadf5)
+        ;
+
+        
+    
+    
+            var circle_marker_d7d7804dcff99b0b27f99e6d3757bdc5 = L.circleMarker(
+                [28.632758333333335, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_b488f68ff28ef78d81adc524b9ac254e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f9f3803b9ec614192030af2dcb89282 = $(`<div id="html_0f9f3803b9ec614192030af2dcb89282" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012132</b><br>N readings: 62<br>Duration: 61s<br>Mean: 67.9 dB<br>Max: 80.5 dB</div>`)[0];
+                popup_b488f68ff28ef78d81adc524b9ac254e.setContent(html_0f9f3803b9ec614192030af2dcb89282);
+            
+        
+
+        circle_marker_d7d7804dcff99b0b27f99e6d3757bdc5.bindPopup(popup_b488f68ff28ef78d81adc524b9ac254e)
+        ;
+
+        
+    
+    
+            var circle_marker_632214deffa08e7fcc077d3bdf2153e4 = L.circleMarker(
+                [28.632758333333335, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_b648bbc81e09a4bdcc4937c583b96cc3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f4c19fab9e2a749818705d807423d88 = $(`<div id="html_6f4c19fab9e2a749818705d807423d88" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012133</b><br>N readings: 64<br>Duration: 63s<br>Mean: 73.8 dB<br>Max: 97.2 dB</div>`)[0];
+                popup_b648bbc81e09a4bdcc4937c583b96cc3.setContent(html_6f4c19fab9e2a749818705d807423d88);
+            
+        
+
+        circle_marker_632214deffa08e7fcc077d3bdf2153e4.bindPopup(popup_b648bbc81e09a4bdcc4937c583b96cc3)
+        ;
+
+        
+    
+    
+            var circle_marker_dfdf437816636c847449f4037740f9b9 = L.circleMarker(
+                [28.632758333333335, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_4fdff0349678ef8d00146d5b05f58882 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_018a6a14fd57e42a5325e9d539618565 = $(`<div id="html_018a6a14fd57e42a5325e9d539618565" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012134</b><br>N readings: 62<br>Duration: 61s<br>Mean: 69.2 dB<br>Max: 98.0 dB</div>`)[0];
+                popup_4fdff0349678ef8d00146d5b05f58882.setContent(html_018a6a14fd57e42a5325e9d539618565);
+            
+        
+
+        circle_marker_dfdf437816636c847449f4037740f9b9.bindPopup(popup_4fdff0349678ef8d00146d5b05f58882)
+        ;
+
+        
+    
+    
+            var circle_marker_4bfd778600614fede69cf4006a492635 = L.circleMarker(
+                [28.632758333333335, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_e54af5b4ff2198da3ebdb107dcc5a24b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_adfe3f861537362d9884c17db87b8c3d = $(`<div id="html_adfe3f861537362d9884c17db87b8c3d" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012135</b><br>N readings: 57<br>Duration: 60s<br>Mean: 83.3 dB<br>Max: 99.3 dB</div>`)[0];
+                popup_e54af5b4ff2198da3ebdb107dcc5a24b.setContent(html_adfe3f861537362d9884c17db87b8c3d);
+            
+        
+
+        circle_marker_4bfd778600614fede69cf4006a492635.bindPopup(popup_e54af5b4ff2198da3ebdb107dcc5a24b)
+        ;
+
+        
+    
+    
+            var circle_marker_4e0b3d0dbadbccb5f4deb59d31db327b = L.circleMarker(
+                [28.632758333333335, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_a91b30f650baf7ae92c78555fdd30170 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10ab929c392f8cc531c654b7f6f842f8 = $(`<div id="html_10ab929c392f8cc531c654b7f6f842f8" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012136</b><br>N readings: 62<br>Duration: 61s<br>Mean: 71.6 dB<br>Max: 90.0 dB</div>`)[0];
+                popup_a91b30f650baf7ae92c78555fdd30170.setContent(html_10ab929c392f8cc531c654b7f6f842f8);
+            
+        
+
+        circle_marker_4e0b3d0dbadbccb5f4deb59d31db327b.bindPopup(popup_a91b30f650baf7ae92c78555fdd30170)
+        ;
+
+        
+    
+    
+            var circle_marker_4ea56afc05c1e5e62b1f20349cc2e8be = L.circleMarker(
+                [28.632758333333335, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_4bbb0cad82c5c36de73a756e1ee706e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4ca788756a87b0be9bf2337387f4948 = $(`<div id="html_a4ca788756a87b0be9bf2337387f4948" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012137</b><br>N readings: 63<br>Duration: 62s<br>Mean: 71.6 dB<br>Max: 90.5 dB</div>`)[0];
+                popup_4bbb0cad82c5c36de73a756e1ee706e6.setContent(html_a4ca788756a87b0be9bf2337387f4948);
+            
+        
+
+        circle_marker_4ea56afc05c1e5e62b1f20349cc2e8be.bindPopup(popup_4bbb0cad82c5c36de73a756e1ee706e6)
+        ;
+
+        
+    
+    
+            var circle_marker_6afdfc618fbcdd927e335ff52f8fc7af = L.circleMarker(
+                [28.632758333333335, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_74bde345bae77b6ba7fea247bf3a2e13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ce49b6f5222359a6eceffabaee46565 = $(`<div id="html_3ce49b6f5222359a6eceffabaee46565" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012138</b><br>N readings: 62<br>Duration: 61s<br>Mean: 77.1 dB<br>Max: 83.1 dB</div>`)[0];
+                popup_74bde345bae77b6ba7fea247bf3a2e13.setContent(html_3ce49b6f5222359a6eceffabaee46565);
+            
+        
+
+        circle_marker_6afdfc618fbcdd927e335ff52f8fc7af.bindPopup(popup_74bde345bae77b6ba7fea247bf3a2e13)
+        ;
+
+        
+    
+    
+            var circle_marker_3ae4e7a4cafcf2c8952839568c3b1011 = L.circleMarker(
+                [28.632758333333335, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_380806aa21a8d31fb0b8cbc20013cde7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f39d5829348ace74111683b1682a92fe = $(`<div id="html_f39d5829348ace74111683b1682a92fe" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012139</b><br>N readings: 60<br>Duration: 62s<br>Mean: 73.8 dB<br>Max: 80.7 dB</div>`)[0];
+                popup_380806aa21a8d31fb0b8cbc20013cde7.setContent(html_f39d5829348ace74111683b1682a92fe);
+            
+        
+
+        circle_marker_3ae4e7a4cafcf2c8952839568c3b1011.bindPopup(popup_380806aa21a8d31fb0b8cbc20013cde7)
+        ;
+
+        
+    
+    
+            var circle_marker_9a08e5ed98c0d43c666a98018a8fab6e = L.circleMarker(
+                [28.632758333333335, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_41f8b80f033c39d45c6a547a174dfc6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_202edea2df424f0278363e93337f6635 = $(`<div id="html_202edea2df424f0278363e93337f6635" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012140</b><br>N readings: 62<br>Duration: 61s<br>Mean: 79.5 dB<br>Max: 93.4 dB</div>`)[0];
+                popup_41f8b80f033c39d45c6a547a174dfc6a.setContent(html_202edea2df424f0278363e93337f6635);
+            
+        
+
+        circle_marker_9a08e5ed98c0d43c666a98018a8fab6e.bindPopup(popup_41f8b80f033c39d45c6a547a174dfc6a)
+        ;
+
+        
+    
+    
+            var circle_marker_70248546a40535a2ff0a5771c4f3d7c3 = L.circleMarker(
+                [28.632758333333335, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_71e01ee3b27964b15642f74aa06cd89c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07536c08b37b6bf3592b91adb582cb46 = $(`<div id="html_07536c08b37b6bf3592b91adb582cb46" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012141</b><br>N readings: 64<br>Duration: 63s<br>Mean: 73.3 dB<br>Max: 88.5 dB</div>`)[0];
+                popup_71e01ee3b27964b15642f74aa06cd89c.setContent(html_07536c08b37b6bf3592b91adb582cb46);
+            
+        
+
+        circle_marker_70248546a40535a2ff0a5771c4f3d7c3.bindPopup(popup_71e01ee3b27964b15642f74aa06cd89c)
+        ;
+
+        
+    
+    
+            var circle_marker_44abb65ce5544c9eb25280408bad14d6 = L.circleMarker(
+                [28.632758333333335, 77.31415833333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_2e0eb492cc9ed2809e4ab6cab88e57e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8895d04ab761a94225cec90c24e0b60e = $(`<div id="html_8895d04ab761a94225cec90c24e0b60e" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012142</b><br>N readings: 51<br>Duration: 60s<br>Mean: 77.4 dB<br>Max: 88.8 dB</div>`)[0];
+                popup_2e0eb492cc9ed2809e4ab6cab88e57e5.setContent(html_8895d04ab761a94225cec90c24e0b60e);
+            
+        
+
+        circle_marker_44abb65ce5544c9eb25280408bad14d6.bindPopup(popup_2e0eb492cc9ed2809e4ab6cab88e57e5)
+        ;
+
+        
+    
+    
+            var circle_marker_605ee0791da033c72fabdcae19531846 = L.circleMarker(
+                [28.703888888888887, 77.06313333333333],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_c977e98897c93fa901c0f73dd1e5fce2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d84efa10a1e4419650de67510eb6e9bf = $(`<div id="html_d84efa10a1e4419650de67510eb6e9bf" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012143</b><br>N readings: 60<br>Duration: 61s<br>Mean: 74.6 dB<br>Max: 94.1 dB</div>`)[0];
+                popup_c977e98897c93fa901c0f73dd1e5fce2.setContent(html_d84efa10a1e4419650de67510eb6e9bf);
+            
+        
+
+        circle_marker_605ee0791da033c72fabdcae19531846.bindPopup(popup_c977e98897c93fa901c0f73dd1e5fce2)
+        ;
+
+        
+    
+    
+            var circle_marker_0a942e9eae123d783d7f79c76d2168cb = L.circleMarker(
+                [28.704155555555555, 77.07452638888888],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_9ac2b2fb3d499b07c6cbe278a2ee03ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b225c6ff4e3fe38202e536dba4929a3 = $(`<div id="html_6b225c6ff4e3fe38202e536dba4929a3" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012144</b><br>N readings: 71<br>Duration: 70s<br>Mean: 68.7 dB<br>Max: 83.2 dB</div>`)[0];
+                popup_9ac2b2fb3d499b07c6cbe278a2ee03ca.setContent(html_6b225c6ff4e3fe38202e536dba4929a3);
+            
+        
+
+        circle_marker_0a942e9eae123d783d7f79c76d2168cb.bindPopup(popup_9ac2b2fb3d499b07c6cbe278a2ee03ca)
+        ;
+
+        
+    
+    
+            var circle_marker_1119b00cc2c57f2272b52f3c6e21bf16 = L.circleMarker(
+                [28.709175, 77.07085555555555],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_3f8f28fef534dd6c2daf699dba5ca265 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9ceee50860df2bde195fc65f1c4ad72 = $(`<div id="html_c9ceee50860df2bde195fc65f1c4ad72" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012145</b><br>N readings: 61<br>Duration: 60s<br>Mean: 59.9 dB<br>Max: 98.8 dB</div>`)[0];
+                popup_3f8f28fef534dd6c2daf699dba5ca265.setContent(html_c9ceee50860df2bde195fc65f1c4ad72);
+            
+        
+
+        circle_marker_1119b00cc2c57f2272b52f3c6e21bf16.bindPopup(popup_3f8f28fef534dd6c2daf699dba5ca265)
+        ;
+
+        
+    
+    
+            var circle_marker_6318c3ef1a817a4c30a6db0f3fa00a05 = L.circleMarker(
+                [28.71302777777778, 77.07189444444444],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_a5abdacdcf5a6d36d4518247eab0ee80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96d9efe1f9c7c738fbb5aa30151baaeb = $(`<div id="html_96d9efe1f9c7c738fbb5aa30151baaeb" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012146</b><br>N readings: 59<br>Duration: 60s<br>Mean: 60.4 dB<br>Max: 70.0 dB</div>`)[0];
+                popup_a5abdacdcf5a6d36d4518247eab0ee80.setContent(html_96d9efe1f9c7c738fbb5aa30151baaeb);
+            
+        
+
+        circle_marker_6318c3ef1a817a4c30a6db0f3fa00a05.bindPopup(popup_a5abdacdcf5a6d36d4518247eab0ee80)
+        ;
+
+        
+    
+    
+            var circle_marker_a679f5040970141df40e197cd8540290 = L.circleMarker(
+                [28.710958333333334, 77.06395277777777],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_de97fa2a71b0b3f10d34e318d1bbca4c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba82353562a2d37ff953186cb8209d9c = $(`<div id="html_ba82353562a2d37ff953186cb8209d9c" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012147</b><br>N readings: 62<br>Duration: 61s<br>Mean: 69.5 dB<br>Max: 82.1 dB</div>`)[0];
+                popup_de97fa2a71b0b3f10d34e318d1bbca4c.setContent(html_ba82353562a2d37ff953186cb8209d9c);
+            
+        
+
+        circle_marker_a679f5040970141df40e197cd8540290.bindPopup(popup_de97fa2a71b0b3f10d34e318d1bbca4c)
+        ;
+
+        
+    
+    
+            var circle_marker_68b96d25cb19624dc0d220ddef17b059 = L.circleMarker(
+                [28.72465833333333, 77.04068611111111],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_b5364619a677ca73c4535975791cd439 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0313ba7074db5dd521954051575f170 = $(`<div id="html_c0313ba7074db5dd521954051575f170" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012148</b><br>N readings: 60<br>Duration: 60s<br>Mean: 79.1 dB<br>Max: 104.5 dB</div>`)[0];
+                popup_b5364619a677ca73c4535975791cd439.setContent(html_c0313ba7074db5dd521954051575f170);
+            
+        
+
+        circle_marker_68b96d25cb19624dc0d220ddef17b059.bindPopup(popup_b5364619a677ca73c4535975791cd439)
+        ;
+
+        
+    
+    
+            var circle_marker_b4ca6687370f418b2748b1c440b32b78 = L.circleMarker(
+                [28.692663888888887, 77.02180277777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_55eac488f4c6f08ebaf440dfeebc0564 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_077bb0a73b5cba7559605ff8cbfdbf8e = $(`<div id="html_077bb0a73b5cba7559605ff8cbfdbf8e" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012149</b><br>N readings: 60<br>Duration: 61s<br>Mean: 76.2 dB<br>Max: 87.9 dB</div>`)[0];
+                popup_55eac488f4c6f08ebaf440dfeebc0564.setContent(html_077bb0a73b5cba7559605ff8cbfdbf8e);
+            
+        
+
+        circle_marker_b4ca6687370f418b2748b1c440b32b78.bindPopup(popup_55eac488f4c6f08ebaf440dfeebc0564)
+        ;
+
+        
+    
+    
+            var circle_marker_2d7f52ca133b2a570eae3e76486bd6a8 = L.circleMarker(
+                [28.68128888888889, 77.08231388888889],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_a8fbd43300e530d748e40d45f8006360 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_147e84c74b120a3384b7239495410b38 = $(`<div id="html_147e84c74b120a3384b7239495410b38" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012150</b><br>N readings: 57<br>Duration: 59s<br>Mean: 73.9 dB<br>Max: 91.4 dB</div>`)[0];
+                popup_a8fbd43300e530d748e40d45f8006360.setContent(html_147e84c74b120a3384b7239495410b38);
+            
+        
+
+        circle_marker_2d7f52ca133b2a570eae3e76486bd6a8.bindPopup(popup_a8fbd43300e530d748e40d45f8006360)
+        ;
+
+        
+    
+    
+            var circle_marker_a8c2fcb6f233457818d0f3ea3e2a3de2 = L.circleMarker(
+                [28.681175, 77.08233333333332],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_2300382e2bab518241272830ad499535 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_423cf7018294cbd941a18f85c9f4df06 = $(`<div id="html_423cf7018294cbd941a18f85c9f4df06" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012151</b><br>N readings: 61<br>Duration: 60s<br>Mean: 71.3 dB<br>Max: 89.9 dB</div>`)[0];
+                popup_2300382e2bab518241272830ad499535.setContent(html_423cf7018294cbd941a18f85c9f4df06);
+            
+        
+
+        circle_marker_a8c2fcb6f233457818d0f3ea3e2a3de2.bindPopup(popup_2300382e2bab518241272830ad499535)
+        ;
+
+        
+    
+    
+            var circle_marker_67baa8ce7102be7f1178b4b3e0ec26ed = L.circleMarker(
+                [28.668577777777777, 77.18264444444445],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_90a011c7376cd61f685fa6ab2f312e6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b23bf5f8c4b2c76f08762ac3e202f1d = $(`<div id="html_9b23bf5f8c4b2c76f08762ac3e202f1d" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012152</b><br>N readings: 62<br>Duration: 61s<br>Mean: 66.9 dB<br>Max: 78.7 dB</div>`)[0];
+                popup_90a011c7376cd61f685fa6ab2f312e6f.setContent(html_9b23bf5f8c4b2c76f08762ac3e202f1d);
+            
+        
+
+        circle_marker_67baa8ce7102be7f1178b4b3e0ec26ed.bindPopup(popup_90a011c7376cd61f685fa6ab2f312e6f)
+        ;
+
+        
+    
+    
+            var circle_marker_199fb80fbabed572ceafac8d41ba2970 = L.circleMarker(
+                [28.663980555555554, 77.17880833333334],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_2ae75b7084f7d65edccfb4126fbb0f2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb5545426ad13f8b82434ddf8fb63e4d = $(`<div id="html_eb5545426ad13f8b82434ddf8fb63e4d" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012153</b><br>N readings: 52<br>Duration: 51s<br>Mean: 71.7 dB<br>Max: 84.8 dB</div>`)[0];
+                popup_2ae75b7084f7d65edccfb4126fbb0f2e.setContent(html_eb5545426ad13f8b82434ddf8fb63e4d);
+            
+        
+
+        circle_marker_199fb80fbabed572ceafac8d41ba2970.bindPopup(popup_2ae75b7084f7d65edccfb4126fbb0f2e)
+        ;
+
+        
+    
+    
+            var circle_marker_1adb6d1eb47a73e6db15fd5a9bf3e984 = L.circleMarker(
+                [28.637780555555555, 77.20749166666667],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_9d8d02babbb1d3c7fca501e47c576d64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5225f59deb474519693b8f94b4dd58a = $(`<div id="html_c5225f59deb474519693b8f94b4dd58a" style="width: 100.0%; height: 100.0%;"><b>delhi_05_13_2026_GX012155</b><br>N readings: 55<br>Duration: 54s<br>Mean: 60.7 dB<br>Max: 84.4 dB</div>`)[0];
+                popup_9d8d02babbb1d3c7fca501e47c576d64.setContent(html_c5225f59deb474519693b8f94b4dd58a);
+            
+        
+
+        circle_marker_1adb6d1eb47a73e6db15fd5a9bf3e984.bindPopup(popup_9d8d02babbb1d3c7fca501e47c576d64)
+        ;
+
+        
+    
+    
+            var circle_marker_386edb6dc6e01eed0d28bf8d47a23b9d = L.circleMarker(
+                [28.634686111111108, 76.94724722222223],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_538ceda1a14103311c7d41bafbee3759 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b529ec0bf83a70d5f4e75c9e3c5b818 = $(`<div id="html_0b529ec0bf83a70d5f4e75c9e3c5b818" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012156</b><br>N readings: 61<br>Duration: 60s<br>Mean: 63.4 dB<br>Max: 78.8 dB</div>`)[0];
+                popup_538ceda1a14103311c7d41bafbee3759.setContent(html_0b529ec0bf83a70d5f4e75c9e3c5b818);
+            
+        
+
+        circle_marker_386edb6dc6e01eed0d28bf8d47a23b9d.bindPopup(popup_538ceda1a14103311c7d41bafbee3759)
+        ;
+
+        
+    
+    
+            var circle_marker_0857a22645caa0f90e78194a3b5e850d = L.circleMarker(
+                [28.637780555555555, 77.08000972222223],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_180454a6396ea3ae2894d3f21c930c27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_318e8d0260687bfac9076c7170279f4a = $(`<div id="html_318e8d0260687bfac9076c7170279f4a" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012157</b><br>N readings: 61<br>Duration: 60s<br>Mean: 82.4 dB<br>Max: 97.9 dB</div>`)[0];
+                popup_180454a6396ea3ae2894d3f21c930c27.setContent(html_318e8d0260687bfac9076c7170279f4a);
+            
+        
+
+        circle_marker_0857a22645caa0f90e78194a3b5e850d.bindPopup(popup_180454a6396ea3ae2894d3f21c930c27)
+        ;
+
+        
+    
+    
+            var circle_marker_fda81b21371a90b32b8220fe486c6fb1 = L.circleMarker(
+                [28.63350833333333, 76.96822916666667],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_ce0cd43cf4033df356ad873b98514c85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9739e080999a5ecc8a26111c039860da = $(`<div id="html_9739e080999a5ecc8a26111c039860da" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012158</b><br>N readings: 54<br>Duration: 60s<br>Mean: 69.4 dB<br>Max: 89.5 dB</div>`)[0];
+                popup_ce0cd43cf4033df356ad873b98514c85.setContent(html_9739e080999a5ecc8a26111c039860da);
+            
+        
+
+        circle_marker_fda81b21371a90b32b8220fe486c6fb1.bindPopup(popup_ce0cd43cf4033df356ad873b98514c85)
+        ;
+
+        
+    
+    
+            var circle_marker_7b5af85f67b60dcc0b6c09dc8a0dfd9f = L.circleMarker(
+                [28.630986111111113, 76.9709],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_05f937cd8dffc88650fa1ea2fd0f1455 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0d9da6f7e27d24f6cba34d41a236ee1 = $(`<div id="html_f0d9da6f7e27d24f6cba34d41a236ee1" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012159</b><br>N readings: 52<br>Duration: 51s<br>Mean: 72.2 dB<br>Max: 92.5 dB</div>`)[0];
+                popup_05f937cd8dffc88650fa1ea2fd0f1455.setContent(html_f0d9da6f7e27d24f6cba34d41a236ee1);
+            
+        
+
+        circle_marker_7b5af85f67b60dcc0b6c09dc8a0dfd9f.bindPopup(popup_05f937cd8dffc88650fa1ea2fd0f1455)
+        ;
+
+        
+    
+    
+            var circle_marker_55dbc777e8acd7a81c4c4556f5a0ab3f = L.circleMarker(
+                [28.631280555555556, 76.97320277777779],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_17048116e70de305f0c6059f24054509 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d73f359d1bdbae4d06579b199ce0c811 = $(`<div id="html_d73f359d1bdbae4d06579b199ce0c811" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012160</b><br>N readings: 61<br>Duration: 60s<br>Mean: 74.2 dB<br>Max: 84.7 dB</div>`)[0];
+                popup_17048116e70de305f0c6059f24054509.setContent(html_d73f359d1bdbae4d06579b199ce0c811);
+            
+        
+
+        circle_marker_55dbc777e8acd7a81c4c4556f5a0ab3f.bindPopup(popup_17048116e70de305f0c6059f24054509)
+        ;
+
+        
+    
+    
+            var circle_marker_c29c8e2319fcc1dbb2794286be9bdc62 = L.circleMarker(
+                [28.655719444444443, 76.94969722222223],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_7a342340a9f451493c9514d17b85dc77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bfb8b242f2a5cf9975b4c2312efc1bf = $(`<div id="html_1bfb8b242f2a5cf9975b4c2312efc1bf" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012161</b><br>N readings: 61<br>Duration: 60s<br>Mean: 66.9 dB<br>Max: 80.2 dB</div>`)[0];
+                popup_7a342340a9f451493c9514d17b85dc77.setContent(html_1bfb8b242f2a5cf9975b4c2312efc1bf);
+            
+        
+
+        circle_marker_c29c8e2319fcc1dbb2794286be9bdc62.bindPopup(popup_7a342340a9f451493c9514d17b85dc77)
+        ;
+
+        
+    
+    
+            var circle_marker_c8683add94038244886bf7996e1aae9d = L.circleMarker(
+                [28.666158333333332, 76.97913055555556],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_c1ca9a3042208f59dd2d89f691744f92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5457ea6c65d0dd7e7a87197bf1be2b75 = $(`<div id="html_5457ea6c65d0dd7e7a87197bf1be2b75" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012163</b><br>N readings: 62<br>Duration: 61s<br>Mean: 64.4 dB<br>Max: 82.8 dB</div>`)[0];
+                popup_c1ca9a3042208f59dd2d89f691744f92.setContent(html_5457ea6c65d0dd7e7a87197bf1be2b75);
+            
+        
+
+        circle_marker_c8683add94038244886bf7996e1aae9d.bindPopup(popup_c1ca9a3042208f59dd2d89f691744f92)
+        ;
+
+        
+    
+    
+            var circle_marker_f8ec09caea702a7f23becb66d2817ee8 = L.circleMarker(
+                [28.644580555555557, 77.017875],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_09c0772597cd919069468d10d2f09a89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6c0b227763150ce5d8bc4dcb0815883 = $(`<div id="html_b6c0b227763150ce5d8bc4dcb0815883" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012164</b><br>N readings: 60<br>Duration: 59s<br>Mean: 70.9 dB<br>Max: 87.9 dB</div>`)[0];
+                popup_09c0772597cd919069468d10d2f09a89.setContent(html_b6c0b227763150ce5d8bc4dcb0815883);
+            
+        
+
+        circle_marker_f8ec09caea702a7f23becb66d2817ee8.bindPopup(popup_09c0772597cd919069468d10d2f09a89)
+        ;
+
+        
+    
+    
+            var circle_marker_d02b0be3f1748a5349c314c9b11c93ef = L.circleMarker(
+                [28.652519444444444, 77.03290555555556],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_a983f6013c5cc1958a94c025b8852796 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9551d3f1c92bc8c46a6764b610c70e98 = $(`<div id="html_9551d3f1c92bc8c46a6764b610c70e98" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012165</b><br>N readings: 61<br>Duration: 60s<br>Mean: 69.0 dB<br>Max: 88.4 dB</div>`)[0];
+                popup_a983f6013c5cc1958a94c025b8852796.setContent(html_9551d3f1c92bc8c46a6764b610c70e98);
+            
+        
+
+        circle_marker_d02b0be3f1748a5349c314c9b11c93ef.bindPopup(popup_a983f6013c5cc1958a94c025b8852796)
+        ;
+
+        
+    
+    
+            var circle_marker_d26d3ed27ddd33fc1b751271431bccdf = L.circleMarker(
+                [28.652502777777777, 77.0329],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_8fab4d6d8ee1280d0f7d57f71d02878f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f12cd77505f5684b726fc4523cebc1a3 = $(`<div id="html_f12cd77505f5684b726fc4523cebc1a3" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012166</b><br>N readings: 62<br>Duration: 61s<br>Mean: 58.1 dB<br>Max: 98.8 dB</div>`)[0];
+                popup_8fab4d6d8ee1280d0f7d57f71d02878f.setContent(html_f12cd77505f5684b726fc4523cebc1a3);
+            
+        
+
+        circle_marker_d26d3ed27ddd33fc1b751271431bccdf.bindPopup(popup_8fab4d6d8ee1280d0f7d57f71d02878f)
+        ;
+
+        
+    
+    
+            var circle_marker_857f9f264abf2c631b633feadf4271eb = L.circleMarker(
+                [28.653619444444445, 77.05294166666667],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_09ae363b407b43959007855f9c343069 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe8cd3f9476afec698c7c3acea9769ac = $(`<div id="html_fe8cd3f9476afec698c7c3acea9769ac" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012169</b><br>N readings: 60<br>Duration: 59s<br>Mean: 62.4 dB<br>Max: 98.9 dB</div>`)[0];
+                popup_09ae363b407b43959007855f9c343069.setContent(html_fe8cd3f9476afec698c7c3acea9769ac);
+            
+        
+
+        circle_marker_857f9f264abf2c631b633feadf4271eb.bindPopup(popup_09ae363b407b43959007855f9c343069)
+        ;
+
+        
+    
+    
+            var circle_marker_307ebca2d46120251480ab242d0a66a0 = L.circleMarker(
+                [28.64299722222222, 77.03108888888889],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_83bc67c2475b1ce4eb4a375c586cc8f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a25025fdd1513330b1a376f0c0def17a = $(`<div id="html_a25025fdd1513330b1a376f0c0def17a" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012171</b><br>N readings: 66<br>Duration: 65s<br>Mean: 74.3 dB<br>Max: 96.7 dB</div>`)[0];
+                popup_83bc67c2475b1ce4eb4a375c586cc8f0.setContent(html_a25025fdd1513330b1a376f0c0def17a);
+            
+        
+
+        circle_marker_307ebca2d46120251480ab242d0a66a0.bindPopup(popup_83bc67c2475b1ce4eb4a375c586cc8f0)
+        ;
+
+        
+    
+    
+            var circle_marker_1d2d733b45a09a27dce7b909c06e7921 = L.circleMarker(
+                [28.64577222222222, 77.04269027777778],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_d0ab3491d35413d946fe56d33c696a18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34f357b4f51c14a692d1d2fbca2e1c95 = $(`<div id="html_34f357b4f51c14a692d1d2fbca2e1c95" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012172</b><br>N readings: 61<br>Duration: 60s<br>Mean: 60.9 dB<br>Max: 72.0 dB</div>`)[0];
+                popup_d0ab3491d35413d946fe56d33c696a18.setContent(html_34f357b4f51c14a692d1d2fbca2e1c95);
+            
+        
+
+        circle_marker_1d2d733b45a09a27dce7b909c06e7921.bindPopup(popup_d0ab3491d35413d946fe56d33c696a18)
+        ;
+
+        
+    
+    
+            var circle_marker_f2b740e3cde77e0ac8cde6f8e8c351a5 = L.circleMarker(
+                [28.635205555555554, 77.03329722222222],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_a73ca1bc82e7e6c06ec978ca1686e790 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8e0acac6f0bc957ab58d5af8e23deda = $(`<div id="html_a8e0acac6f0bc957ab58d5af8e23deda" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012173</b><br>N readings: 62<br>Duration: 61s<br>Mean: 69.7 dB<br>Max: 89.2 dB</div>`)[0];
+                popup_a73ca1bc82e7e6c06ec978ca1686e790.setContent(html_a8e0acac6f0bc957ab58d5af8e23deda);
+            
+        
+
+        circle_marker_f2b740e3cde77e0ac8cde6f8e8c351a5.bindPopup(popup_a73ca1bc82e7e6c06ec978ca1686e790)
+        ;
+
+        
+    
+    
+            var circle_marker_d632ab23cb0b258d32a033ceed5a7663 = L.circleMarker(
+                [28.653241666666666, 77.03526666666666],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_74f6d11c916ffb39708fc946ad736bf1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd876fda19bc83cb292fba658e6d8017 = $(`<div id="html_bd876fda19bc83cb292fba658e6d8017" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012174</b><br>N readings: 63<br>Duration: 62s<br>Mean: 74.9 dB<br>Max: 83.0 dB</div>`)[0];
+                popup_74f6d11c916ffb39708fc946ad736bf1.setContent(html_bd876fda19bc83cb292fba658e6d8017);
+            
+        
+
+        circle_marker_d632ab23cb0b258d32a033ceed5a7663.bindPopup(popup_74f6d11c916ffb39708fc946ad736bf1)
+        ;
+
+        
+    
+    
+            var circle_marker_3edc67d9254dfb68d6a7618552802580 = L.circleMarker(
+                [28.653241666666666, 77.03526666666666],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_6a86d9f4340677417b548754cefacb51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02c7e23524109ad59be538e13b2a2e1e = $(`<div id="html_02c7e23524109ad59be538e13b2a2e1e" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012176</b><br>N readings: 371<br>Duration: 387s<br>Mean: 71.3 dB<br>Max: 95.2 dB</div>`)[0];
+                popup_6a86d9f4340677417b548754cefacb51.setContent(html_02c7e23524109ad59be538e13b2a2e1e);
+            
+        
+
+        circle_marker_3edc67d9254dfb68d6a7618552802580.bindPopup(popup_6a86d9f4340677417b548754cefacb51)
+        ;
+
+        
+    
+    
+            var circle_marker_9eaab65c9f467caa7e839c4bb8aed41c = L.circleMarker(
+                [28.653241666666666, 77.03526666666666],
+                {"bubblingMouseEvents": true, "color": "#3182bd", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3182bd", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(map_36f1d2d407f0da43ed9492d8b9ff882e);
+        
+    
+        var popup_c5b84ae4bdf9501528a677ab47aa69fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9dcbfc9057fd6f70ee9ab8f6c247af90 = $(`<div id="html_9dcbfc9057fd6f70ee9ab8f6c247af90" style="width: 100.0%; height: 100.0%;"><b>delhi_05_14_2026_GX012177</b><br>N readings: 71<br>Duration: 70s<br>Mean: 64.6 dB<br>Max: 78.7 dB</div>`)[0];
+                popup_c5b84ae4bdf9501528a677ab47aa69fc.setContent(html_9dcbfc9057fd6f70ee9ab8f6c247af90);
+            
+        
+
+        circle_marker_9eaab65c9f467caa7e839c4bb8aed41c.bindPopup(popup_c5b84ae4bdf9501528a677ab47aa69fc)
+        ;
+
+        
+    
+</script>
+</html>
