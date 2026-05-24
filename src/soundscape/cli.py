@@ -6,7 +6,7 @@ import click
 
 from . import (archive, build_manifest, downsample, extract_exif,
                extract_frames, extract_gps, merge_readings, ocr_readings,
-               sample_frames, validate)
+               sample_frames, validate, viewer)
 
 
 @click.group()
