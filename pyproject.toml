@@ -24,13 +24,26 @@ dependencies = [
     "anthropic>=0.40",
     "google-genai>=1.0",
     "pillow>=12.2.0",
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "pyarrow>=14.0",
 ]
 
 [project.optional-dependencies]
+maps = [
+    "contextily>=1.4",
+    "folium>=0.14",
+    "geopandas>=0.14",
+    "shapely>=2.0",
+]
 dev = [
     "pytest>=8.0",
     "ruff>=0.4",
     "pydoclint>=0.8",
+]
+all = [
+    "soundscape[maps]",
 ]
 
 [project.scripts]

@@ -5,6 +5,7 @@ from pathlib import Path
 import click
 
 from . import (
+    analyze,
     archive,
     build_manifest,
     downsample,
@@ -469,6 +470,31 @@ def validate_cmd(input_path, output_dir):
 def viewer_cmd(readings_path, output_path):
     """11. Generate HTML viewer for verifying and correcting OCR results."""
     viewer.process(readings_path=readings_path, output_path=output_path)
+
+
+# =============================================================================
+# 12. Analyze
+# =============================================================================
+
+
+@main.command("analyze")
+@click.option(
+    "--readings",
+    "readings_path",
+    type=click.Path(exists=True, path_type=Path),
+    required=True,
+    help="Path to readings JSON file",
+)
+@click.option(
+    "--output",
+    "output_dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Output directory (default: output/analysis)",
+)
+def analyze_cmd(readings_path, output_dir):
+    """12. Generate publication-ready analysis tables and figures."""
+    analyze.process(readings_path=readings_path, output_dir=output_dir)
 
 
 if __name__ == "__main__":
