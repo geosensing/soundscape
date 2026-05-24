@@ -8,6 +8,7 @@ from . import (
     analyze,
     archive,
     build_manifest,
+    convert_rider_data,
     downsample,
     extract_exif,
     extract_frames,
@@ -495,6 +496,55 @@ def viewer_cmd(readings_path, output_path):
 def analyze_cmd(readings_path, output_dir):
     """12. Generate publication-ready analysis tables and figures."""
     analyze.process(readings_path=readings_path, output_dir=output_dir)
+
+
+# =============================================================================
+# 13. Convert Rider Data
+# =============================================================================
+
+
+@main.command("convert-rider")
+@click.option(
+    "--manifest",
+    "manifest_path",
+    type=click.Path(exists=True, path_type=Path),
+    required=True,
+    help="Path to rider export manifest.json",
+)
+@click.option(
+    "--output",
+    "output_dir",
+    type=click.Path(path_type=Path),
+    default=None,
+    help="Output directory (default: output/rider)",
+)
+@click.option(
+    "--address-cache",
+    "address_cache_path",
+    type=click.Path(exists=True, path_type=Path),
+    default=None,
+    help="Path to address_cache.json exported from dashboard",
+)
+@click.option(
+    "--no-geocode",
+    is_flag=True,
+    help="Skip reverse geocoding (default: geocode all coordinates)",
+)
+@click.option(
+    "--geocode-delay",
+    type=float,
+    default=1.1,
+    help="Delay between geocode requests in seconds (default: 1.1)",
+)
+def convert_rider_cmd(manifest_path, output_dir, address_cache_path, no_geocode, geocode_delay):
+    """13. Convert rider form data to soundscape readings format."""
+    convert_rider_data.process(
+        manifest_path=manifest_path,
+        output_dir=output_dir,
+        geocode=not no_geocode,
+        geocode_delay=geocode_delay,
+        address_cache_path=address_cache_path,
+    )
 
 
 if __name__ == "__main__":

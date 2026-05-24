@@ -1,7 +1,10 @@
 .DS_Store
 /data/delhi
+/data/rider
 /output/frames
+/output/rider
 /src/soundscape/__pycache__
 /output/samples/*.jpg
 /output/frames_720p
 /data/archives
+ms/soundscape.tex

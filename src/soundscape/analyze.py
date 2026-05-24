@@ -25,27 +25,60 @@ NIOSH_THRESHOLDS = {
 def load_readings(path: Path, db_min: float = 30.0, db_max: float = 130.0) -> pd.DataFrame:
     """Load readings JSON into a DataFrame with flattened structure.
 
+    Supports both GoPro OCR format and rider form format.
     Filters out physically implausible readings (outside db_min to db_max range).
     Default range 30-130 dB covers all realistic sound meter readings.
     """
     with open(path) as f:
         data = json.load(f)
 
+    source = data.get("source", "gopro_ocr")
+    is_rider = source == "rider_form"
+
     records = []
     for r in data["readings"]:
-        records.append(
-            {
-                "frame_path": r["frame_path"],
-                "video_id": r["video_id"],
-                "frame_number": r["frame_number"],
-                "timestamp_seconds": r["timestamp_seconds"],
-                "latitude": r["gps"]["latitude"] if r.get("gps") else None,
-                "longitude": r["gps"]["longitude"] if r.get("gps") else None,
-                "decibel": r["reading"]["decibel"],
-                "status": r["reading"]["status"],
-                "confidence": r["reading"]["confidence"],
-            }
-        )
+        if is_rider:
+            reading = r.get("reading", {})
+            metadata = r.get("metadata", {})
+            records.append(
+                {
+                    "frame_path": r.get("frame_path"),
+                    "stop_id": r.get("id"),
+                    "video_id": r.get("id"),
+                    "timestamp": r.get("timestamp"),
+                    "timestamp_seconds": 0,
+                    "frame_number": 0,
+                    "latitude": r["gps"]["latitude"] if r.get("gps") else None,
+                    "longitude": r["gps"]["longitude"] if r.get("gps") else None,
+                    "min_db": reading.get("min_db"),
+                    "max_db": reading.get("max_db"),
+                    "decibel": reading.get("max_db"),
+                    "status": reading.get("status", "ok"),
+                    "confidence": 1.0,
+                    "day": metadata.get("day"),
+                    "itinerary": metadata.get("itinerary"),
+                    "title": metadata.get("title"),
+                    "is_traffic_stop": metadata.get("is_traffic_stop", False),
+                    "is_traffic_jam": metadata.get("is_traffic_jam", False),
+                    "address": metadata.get("address"),
+                    "note_raw": metadata.get("note_raw"),
+                }
+            )
+        else:
+            records.append(
+                {
+                    "frame_path": r["frame_path"],
+                    "video_id": r["video_id"],
+                    "frame_number": r["frame_number"],
+                    "timestamp_seconds": r["timestamp_seconds"],
+                    "latitude": r["gps"]["latitude"] if r.get("gps") else None,
+                    "longitude": r["gps"]["longitude"] if r.get("gps") else None,
+                    "decibel": r["reading"]["decibel"],
+                    "status": r["reading"]["status"],
+                    "confidence": r["reading"]["confidence"],
+                }
+            )
+
     df = pd.DataFrame(records)
 
     n_before = len(df[df["status"] == "ok"])
@@ -69,7 +102,10 @@ def compute_max_consecutive_above(series: pd.Series, threshold: float) -> int:
 def compute_per_stop_stats(df: pd.DataFrame) -> pd.DataFrame:
     """Compute comprehensive per-stop (video) statistics."""
     valid = df[df["status"] == "ok"].copy()
-    valid = valid.sort_values(["video_id", "timestamp_seconds"])
+    sort_cols = ["video_id"]
+    if "timestamp_seconds" in valid.columns:
+        sort_cols.append("timestamp_seconds")
+    valid = valid.sort_values(sort_cols)
 
     def stop_agg(g):
         db = g["decibel"]
