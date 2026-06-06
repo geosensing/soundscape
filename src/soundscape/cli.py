@@ -4,10 +4,24 @@ from pathlib import Path
 
 import click
 
-from . import (analyze, analyze_rider, archive, build_manifest,
-               compare_locations, downsample, extract_exif, extract_frames,
-               extract_gps, geocode_gopro, merge_readings, ocr_readings,
-               sample_frames, validate, viewer)
+from . import (
+    analyze,
+    analyze_rider,
+    archive,
+    build_manifest,
+    compare_locations,
+    downsample,
+    extract_exif,
+    extract_frames,
+    extract_gps,
+    geocode_gopro,
+    merge_readings,
+    ocr_readings,
+    sample_frames,
+    upload,
+    validate,
+    viewer,
+)
 
 
 @click.group()
@@ -413,6 +427,66 @@ def create_archives_cmd(input_dir, output_dir, prefix):
         city_dir=input_dir,
         output_dir=output_dir,
         prefix=prefix,
+    )
+
+
+# =============================================================================
+# 9b. Upload Archives to Harvard Dataverse
+# =============================================================================
+
+
+@main.command("upload-dataverse")
+@click.option(
+    "--input",
+    "input_dir",
+    type=click.Path(exists=True, file_okay=False, path_type=Path),
+    default=Path("data/archives"),
+    help="Directory of .tar.gz archives (default: data/archives)",
+)
+@click.option(
+    "--doi",
+    type=str,
+    required=True,
+    help="Dataset persistent identifier (e.g. doi:10.7910/DVN/S8ZBLX)",
+)
+@click.option(
+    "--server",
+    type=str,
+    default=upload.DEFAULT_SERVER,
+    help=f"Dataverse base URL (default: {upload.DEFAULT_SERVER})",
+)
+@click.option(
+    "--token",
+    type=str,
+    default=None,
+    envvar="DATAVERSE_API_TOKEN",
+    help="Dataverse API token (default: from DATAVERSE_API_TOKEN env var)",
+)
+@click.option(
+    "--no-skip-existing",
+    is_flag=True,
+    help="Re-upload files even if a file of the same name is already in the dataset",
+)
+@click.option(
+    "--file",
+    "files",
+    type=click.Path(exists=True, dir_okay=False, path_type=Path),
+    multiple=True,
+    help="Specific archive(s) to upload instead of scanning --input (repeatable)",
+)
+def upload_dataverse_cmd(input_dir, doi, server, token, no_skip_existing, files):
+    """9b. Upload tar.gz archives to a Harvard Dataverse dataset via the API."""
+    if not token:
+        raise click.UsageError(
+            "No API token provided. Pass --token or set DATAVERSE_API_TOKEN."
+        )
+    upload.upload_archives(
+        archives_dir=input_dir,
+        doi=doi,
+        token=token,
+        server=server,
+        skip_existing=not no_skip_existing,
+        files=list(files) or None,
     )
 
 

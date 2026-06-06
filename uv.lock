@@ -1456,6 +1456,7 @@ source = { editable = "." }
 dependencies = [
     { name = "anthropic" },
     { name = "click" },
+    { name = "docstring-parser" },
     { name = "google-genai" },
     { name = "matplotlib" },
     { name = "numpy" },
@@ -1463,6 +1464,7 @@ dependencies = [
     { name = "pillow" },
     { name = "pyarrow" },
     { name = "pyyaml" },
+    { name = "requests" },
 ]
 
 [package.optional-dependencies]
@@ -1489,6 +1491,7 @@ requires-dist = [
     { name = "anthropic", specifier = ">=0.40" },
     { name = "click", specifier = ">=8.1" },
     { name = "contextily", marker = "extra == 'maps'", specifier = ">=1.4" },
+    { name = "docstring-parser", specifier = ">=0.18.0" },
     { name = "folium", marker = "extra == 'maps'", specifier = ">=0.14" },
     { name = "geopandas", marker = "extra == 'maps'", specifier = ">=0.14" },
     { name = "google-genai", specifier = ">=1.0" },
@@ -1500,6 +1503,7 @@ requires-dist = [
     { name = "pydoclint", marker = "extra == 'dev'", specifier = ">=0.8" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=8.0" },
     { name = "pyyaml", specifier = ">=6.0" },
+    { name = "requests", specifier = ">=2.31" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.4" },
     { name = "shapely", marker = "extra == 'maps'", specifier = ">=2.0" },
     { name = "soundscape", extras = ["maps"], marker = "extra == 'all'" },
