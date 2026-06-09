@@ -16,6 +16,62 @@ import requests
 DEFAULT_SERVER = "https://dataverse.harvard.edu"
 MIME_TYPE = "application/gzip"
 _READ_CHUNK = 8 * 1024 * 1024  # 8 MB streaming chunk
+_MAX_ATTEMPTS = 6
+_BASE_DELAY = 15  # seconds; doubles each retry
+
+
+def _is_retryable(exc: Exception) -> bool:
+    """Return whether an exception is a transient error worth retrying.
+
+    Args:
+        exc: The exception raised during an upload step.
+
+    Returns:
+        True for connection/timeout errors and HTTP 5xx responses; False for
+        client errors (e.g. 4xx) that will not resolve on retry.
+    """
+    if isinstance(
+        exc,
+        (
+            requests.exceptions.ConnectionError,
+            requests.exceptions.Timeout,
+            requests.exceptions.ChunkedEncodingError,
+        ),
+    ):
+        return True
+    if isinstance(exc, requests.exceptions.HTTPError) and exc.response is not None:
+        return exc.response.status_code >= 500
+    return False
+
+
+def _with_retries(fn, what: str):
+    """Call ``fn`` retrying transient network/server failures with backoff.
+
+    Args:
+        fn: Zero-argument callable performing the operation.
+        what: Short description used in retry log messages.
+
+    Returns:
+        The return value of ``fn``.
+
+    Raises:
+        Exception: The last exception if all attempts fail, or immediately for
+            non-retryable errors.
+    """
+    for attempt in range(1, _MAX_ATTEMPTS + 1):
+        try:
+            return fn()
+        except Exception as exc:  # noqa: BLE001 - re-raised below if not retryable
+            if attempt == _MAX_ATTEMPTS or not _is_retryable(exc):
+                raise
+            delay = _BASE_DELAY * 2 ** (attempt - 1)
+            print(
+                f"  {what} failed ({type(exc).__name__}); "
+                f"retry {attempt}/{_MAX_ATTEMPTS - 1} in {delay}s",
+                flush=True,
+            )
+            time.sleep(delay)
+    raise RuntimeError("unreachable")  # loop always returns or raises
 
 
 class _BoundedReader:
@@ -68,14 +124,18 @@ def _existing_filenames(server: str, doi: str, token: str) -> set[str]:
     Returns:
         Set of filenames currently in the dataset (empty if the dataset has no files).
     """
-    resp = requests.get(
-        f"{server}/api/datasets/:persistentId/versions/:latest",
-        params={"persistentId": doi},
-        headers={"X-Dataverse-key": token},
-        timeout=60,
-    )
-    resp.raise_for_status()
-    files = resp.json().get("data", {}).get("files", [])
+
+    def _do():
+        resp = requests.get(
+            f"{server}/api/datasets/:persistentId/versions/:latest",
+            params={"persistentId": doi},
+            headers={"X-Dataverse-key": token},
+            timeout=60,
+        )
+        resp.raise_for_status()
+        return resp.json()
+
+    files = _with_retries(_do, "list dataset files").get("data", {}).get("files", [])
     names = set()
     for entry in files:
         data_file = entry.get("dataFile", {})
@@ -98,14 +158,18 @@ def _request_upload_urls(server: str, doi: str, token: str, size: int) -> dict:
         The ``data`` object from the response (single-part has ``url``; multipart has
         ``urls``, ``complete``, ``abort``).
     """
-    resp = requests.get(
-        f"{server}/api/datasets/:persistentId/uploadurls",
-        params={"persistentId": doi, "size": size},
-        headers={"X-Dataverse-key": token},
-        timeout=60,
-    )
-    resp.raise_for_status()
-    return resp.json()["data"]
+
+    def _do():
+        resp = requests.get(
+            f"{server}/api/datasets/:persistentId/uploadurls",
+            params={"persistentId": doi, "size": size},
+            headers={"X-Dataverse-key": token},
+            timeout=60,
+        )
+        resp.raise_for_status()
+        return resp.json()["data"]
+
+    return _with_retries(_do, "request upload urls")
 
 
 def _put_part(url: str, reader, length: int) -> str:
@@ -143,13 +207,17 @@ def _complete_multipart(server: str, complete_url: str, token: str, etags: dict[
         token: Dataverse API token.
         etags: Mapping of part number (as string) to ETag.
     """
-    resp = requests.put(
-        f"{server}{complete_url}",
-        json=etags,
-        headers={"X-Dataverse-key": token},
-        timeout=300,
-    )
-    resp.raise_for_status()
+
+    def _do():
+        resp = requests.put(
+            f"{server}{complete_url}",
+            json=etags,
+            headers={"X-Dataverse-key": token},
+            timeout=300,
+        )
+        resp.raise_for_status()
+
+    _with_retries(_do, "complete multipart")
 
 
 def _abort_multipart(server: str, abort_url: str, token: str) -> None:
@@ -160,11 +228,15 @@ def _abort_multipart(server: str, abort_url: str, token: str) -> None:
         abort_url: Relative ``abort`` path returned by the uploadurls call.
         token: Dataverse API token.
     """
-    requests.delete(
-        f"{server}{abort_url}",
-        headers={"X-Dataverse-key": token},
-        timeout=300,
-    )
+    try:
+        requests.delete(
+            f"{server}{abort_url}",
+            headers={"X-Dataverse-key": token},
+            timeout=300,
+        )
+    except requests.exceptions.RequestException:
+        # Best-effort cleanup; never mask the original upload error.
+        pass
 
 
 def _register_file(
@@ -189,14 +261,18 @@ def _register_file(
         '{"storageIdentifier":"%s","fileName":"%s","mimeType":"%s",'
         '"checksum":{"@type":"MD5","@value":"%s"}}' % (storage_id, filename, MIME_TYPE, md5)
     )
-    resp = requests.post(
-        f"{server}/api/datasets/:persistentId/add",
-        params={"persistentId": doi},
-        headers={"X-Dataverse-key": token},
-        files={"jsonData": (None, json_data)},
-        timeout=300,
-    )
-    resp.raise_for_status()
+
+    def _do():
+        resp = requests.post(
+            f"{server}/api/datasets/:persistentId/add",
+            params={"persistentId": doi},
+            headers={"X-Dataverse-key": token},
+            files={"jsonData": (None, json_data)},
+            timeout=300,
+        )
+        resp.raise_for_status()
+
+    _with_retries(_do, "register file")
 
 
 def upload_file(server: str, doi: str, token: str, path: Path) -> None:
@@ -214,24 +290,34 @@ def upload_file(server: str, doi: str, token: str, path: Path) -> None:
     storage_id = info["storageIdentifier"]
 
     if "urls" in info:
-        # Multipart upload.
+        # Multipart upload. Each part is retried individually (re-seeking to its
+        # offset) so a connection reset only re-sends that part, not the whole file.
         part_size = int(info["partSize"])
         urls = info["urls"]
         etags: dict[str, str] = {}
         try:
             with path.open("rb") as f:
-                for part_no in sorted(urls, key=int):
-                    remaining = size - f.tell()
-                    length = min(part_size, remaining)
-                    etags[part_no] = _put_part(urls[part_no], _BoundedReader(f, length), length)
+                for idx, part_no in enumerate(sorted(urls, key=int)):
+                    offset = idx * part_size
+                    length = min(part_size, size - offset)
+
+                    def put(po=part_no, off=offset, ln=length):
+                        f.seek(off)
+                        return _put_part(urls[po], _BoundedReader(f, ln), ln)
+
+                    label = f"part {part_no}/{len(urls)} of {path.name}"
+                    etags[part_no] = _with_retries(put, label)
             _complete_multipart(server, info["complete"], token, etags)
         except Exception:
             _abort_multipart(server, info["abort"], token)
             raise
     else:
-        # Single-part upload.
-        with path.open("rb") as f:
-            _put_part(info["url"], f, size)
+        # Single-part upload, retried as a unit (re-opening the file each attempt).
+        def put_single():
+            with path.open("rb") as f:
+                return _put_part(info["url"], f, size)
+
+        _with_retries(put_single, f"upload {path.name}")
 
     _register_file(server, doi, token, storage_id, path.name, md5)
 
@@ -273,14 +359,17 @@ def upload_archives(
     for path in archives:
         size_gb = path.stat().st_size / (1024**3)
         if skip_existing and path.name in existing:
-            print(f"skip: {path.name} (already in dataset)")
+            print(f"skip: {path.name} (already in dataset)", flush=True)
             skipped += 1
             continue
-        print(f"uploading: {path.name} ({size_gb:.2f} GB)...")
+        print(f"uploading: {path.name} ({size_gb:.2f} GB)...", flush=True)
         start = time.monotonic()
         upload_file(server, doi, token, path)
         elapsed = time.monotonic() - start
-        print(f"  done in {elapsed:.0f}s ({size_gb / max(elapsed, 1) * 1024:.1f} MB/s)")
+        print(
+            f"  done in {elapsed:.0f}s ({size_gb / max(elapsed, 1) * 1024:.1f} MB/s)",
+            flush=True,
+        )
         uploaded += 1
 
-    print(f"\nUploaded {uploaded} archive(s), skipped {skipped}.")
+    print(f"\nUploaded {uploaded} archive(s), skipped {skipped}.", flush=True)
