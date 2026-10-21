@@ -20,7 +20,20 @@ __all__ = [
     "viewer",
 ]
 
-from . import (analyze, analyze_rider, archive, build_manifest,
-               compare_locations, downsample, extract_exif, extract_frames,
-               extract_gps, geocode_gopro, merge_readings, ocr_readings,
-               sample_frames, validate, viewer)
+from . import (
+    analyze,
+    analyze_rider,
+    archive,
+    build_manifest,
+    compare_locations,
+    downsample,
+    extract_exif,
+    extract_frames,
+    extract_gps,
+    geocode_gopro,
+    merge_readings,
+    ocr_readings,
+    sample_frames,
+    validate,
+    viewer,
+)

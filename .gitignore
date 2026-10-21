@@ -9,3 +9,12 @@
 /output/frames_720p
 /data/archives
 ms/soundscape.tex
+
+.venv/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+dist/
+build/
+*.egg-info/

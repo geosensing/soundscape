@@ -9,7 +9,9 @@ https://guides.dataverse.org/en/latest/developers/s3-direct-upload-api.html
 
 import hashlib
 import time
+from collections.abc import Callable
 from pathlib import Path
+from typing import Any, BinaryIO
 
 import requests
 
@@ -27,7 +29,7 @@ def _is_retryable(exc: Exception) -> bool:
         exc: The exception raised during an upload step.
 
     Returns:
-        True for connection/timeout errors and HTTP 5xx responses; False for
+        bool: True for connection/timeout errors and HTTP 5xx responses; False for
         client errors (e.g. 4xx) that will not resolve on retry.
     """
     if isinstance(
@@ -44,7 +46,7 @@ def _is_retryable(exc: Exception) -> bool:
     return False
 
 
-def _with_retries(fn, what: str):
+def _with_retries(fn: Callable[[], Any], what: str) -> Any:
     """Call ``fn`` retrying transient network/server failures with backoff.
 
     Args:
@@ -52,11 +54,12 @@ def _with_retries(fn, what: str):
         what: Short description used in retry log messages.
 
     Returns:
-        The return value of ``fn``.
+        Any: The return value of ``fn``.
 
     Raises:
         Exception: The last exception if all attempts fail, or immediately for
             non-retryable errors.
+        RuntimeError: If no retry attempt is configured.
     """
     for attempt in range(1, _MAX_ATTEMPTS + 1):
         try:
@@ -104,7 +107,7 @@ def _md5(path: Path) -> str:
         path: File to hash.
 
     Returns:
-        Lowercase hex MD5 digest.
+        str: Lowercase hex MD5 digest.
     """
     h = hashlib.md5()
     with path.open("rb") as f:
@@ -122,7 +125,7 @@ def _existing_filenames(server: str, doi: str, token: str) -> set[str]:
         token: Dataverse API token.
 
     Returns:
-        Set of filenames currently in the dataset (empty if the dataset has no files).
+        set[str]: Filenames currently in the dataset, empty if it has no files.
     """
 
     def _do():
@@ -155,7 +158,7 @@ def _request_upload_urls(server: str, doi: str, token: str, size: int) -> dict:
         size: File size in bytes.
 
     Returns:
-        The ``data`` object from the response (single-part has ``url``; multipart has
+        dict: The ``data`` object (single-part has ``url``; multipart has
         ``urls``, ``complete``, ``abort``).
     """
 
@@ -172,7 +175,7 @@ def _request_upload_urls(server: str, doi: str, token: str, size: int) -> dict:
     return _with_retries(_do, "request upload urls")
 
 
-def _put_part(url: str, reader, length: int) -> str:
+def _put_part(url: str, reader: BinaryIO | _BoundedReader, length: int) -> str:
     """PUT bytes to a presigned S3 URL and return the ETag.
 
     Args:
@@ -181,7 +184,7 @@ def _put_part(url: str, reader, length: int) -> str:
         length: Number of bytes to upload.
 
     Returns:
-        The ETag returned by S3, with surrounding quotes stripped.
+        str: The ETag returned by S3, with surrounding quotes stripped.
     """
     headers = {"Content-Length": str(length)}
     # The presigned URL declares which headers S3 expects in its signature; if it
@@ -283,6 +286,9 @@ def upload_file(server: str, doi: str, token: str, path: Path) -> None:
         doi: Dataset persistent identifier.
         token: Dataverse API token.
         path: File to upload.
+
+    Raises:
+        Exception: If multipart upload fails after retries.
     """
     size = path.stat().st_size
     md5 = _md5(path)

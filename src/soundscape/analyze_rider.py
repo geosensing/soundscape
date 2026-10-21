@@ -93,9 +93,7 @@ def compute_stats_by_road_type(df: pd.DataFrame) -> pd.DataFrame:
             }
         )
 
-    stats = (
-        valid.groupby("road_type").apply(agg_stats, include_groups=False).reset_index()
-    )
+    stats = valid.groupby("road_type").apply(agg_stats, include_groups=False).reset_index()
     stats = stats.sort_values("n", ascending=False)
     return stats
 
@@ -280,9 +278,7 @@ def make_fig1_map(df: pd.DataFrame, output_dir: Path) -> None:
     center_lat = valid["latitude"].mean()
     center_lon = valid["longitude"].mean()
 
-    m = folium.Map(
-        location=[center_lat, center_lon], zoom_start=11, tiles="CartoDB Positron"
-    )
+    m = folium.Map(location=[center_lat, center_lon], zoom_start=11, tiles="CartoDB Positron")
 
     def get_color(max_db):
         if max_db >= 91:
@@ -389,10 +385,7 @@ def make_fig4_boxplot(df: pd.DataFrame, output_dir: Path) -> None:
     valid["road_type"] = valid["road_type"].fillna("unknown")
 
     road_order = (
-        valid.groupby("road_type")["max_db"]
-        .median()
-        .sort_values(ascending=False)
-        .index.tolist()
+        valid.groupby("road_type")["max_db"].median().sort_values(ascending=False).index.tolist()
     )
 
     fig, ax = plt.subplots(figsize=(10, 6))
@@ -401,18 +394,14 @@ def make_fig4_boxplot(df: pd.DataFrame, output_dir: Path) -> None:
     counts = [len(d) for d in plot_data]
     labels = [f"{rt}\n(n={c})" for rt, c in zip(road_order, counts)]
 
-    bp = ax.boxplot(
-        plot_data, vert=True, patch_artist=True, widths=0.6, showfliers=True
-    )
+    bp = ax.boxplot(plot_data, vert=True, patch_artist=True, widths=0.6, showfliers=True)
 
     colors = plt.cm.RdYlGn_r(np.linspace(0.2, 0.8, len(road_order)))
     for patch, color in zip(bp["boxes"], colors):
         patch.set_facecolor(color)
         patch.set_alpha(0.7)
 
-    ax.axhline(
-        85, color="#d73027", linestyle="--", linewidth=2, label="NIOSH 85 dB REL"
-    )
+    ax.axhline(85, color="#d73027", linestyle="--", linewidth=2, label="NIOSH 85 dB REL")
     ax.axhline(70, color="#1a9850", linestyle=":", linewidth=1.5, label="70 dB")
 
     ax.set_xticklabels(labels, rotation=45, ha="right")
@@ -549,13 +538,9 @@ def process(readings_path: Path, output_dir: Path | None = None) -> None:
     click.echo(f"  Loaded {len(df):,} stops")
 
     valid = df[df["status"] == "ok"]
-    click.echo(f"  Valid readings: {len(valid):,} ({100*len(valid)/len(df):.1f}%)")
-    click.echo(
-        f"  Max dB range: {valid['max_db'].min():.1f} - {valid['max_db'].max():.1f}"
-    )
-    click.echo(
-        f"  Min dB range: {valid['min_db'].min():.1f} - {valid['min_db'].max():.1f}"
-    )
+    click.echo(f"  Valid readings: {len(valid):,} ({100 * len(valid) / len(df):.1f}%)")
+    click.echo(f"  Max dB range: {valid['max_db'].min():.1f} - {valid['max_db'].max():.1f}")
+    click.echo(f"  Min dB range: {valid['min_db'].min():.1f} - {valid['min_db'].max():.1f}")
 
     road_counts = df["road_type"].value_counts(dropna=False)
     click.echo("\n  Road type distribution:")

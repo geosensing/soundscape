@@ -33,9 +33,7 @@ def geocode_location(lat: float, lon: float) -> dict:
     headers = {"User-Agent": USER_AGENT}
 
     try:
-        response = requests.get(
-            NOMINATIM_URL, params=params, headers=headers, timeout=10
-        )
+        response = requests.get(NOMINATIM_URL, params=params, headers=headers, timeout=10)
         response.raise_for_status()
         data = response.json()
 
@@ -90,7 +88,7 @@ def geocode_stops(stops: dict, cache_path: Path | None = None) -> dict:
         cache_path: Optional path to load/save cache
 
     Returns:
-        Dict mapping video_id to geocoding results
+        dict: Mapping of video_id to geocoding results
     """
     cache = {}
     if cache_path and cache_path.exists():
@@ -120,9 +118,7 @@ def geocode_stops(stops: dict, cache_path: Path | None = None) -> dict:
             click.echo(f"  Saved cache to {cache_path}")
 
     for vid in stops:
-        results[vid] = cache.get(
-            vid, {"road_type": None, "road_name": None, "address": None}
-        )
+        results[vid] = cache.get(vid, {"road_type": None, "road_name": None, "address": None})
 
     return results
 
@@ -173,9 +169,7 @@ def process(
         click.echo(f"\nProcessing {path.name}")
 
         data = load_readings(path)
-        click.echo(
-            f"  Loaded {data.get('reading_count', len(data['readings']))} readings"
-        )
+        click.echo(f"  Loaded {data.get('reading_count', len(data['readings']))} readings")
 
         stops = get_unique_stops(data)
         click.echo(f"  Found {len(stops)} unique stops")

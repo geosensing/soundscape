@@ -24,10 +24,7 @@ def haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> fl
     delta_phi = np.radians(lat2 - lat1)
     delta_lambda = np.radians(lon2 - lon1)
 
-    a = (
-        np.sin(delta_phi / 2) ** 2
-        + np.cos(phi1) * np.cos(phi2) * np.sin(delta_lambda / 2) ** 2
-    )
+    a = np.sin(delta_phi / 2) ** 2 + np.cos(phi1) * np.cos(phi2) * np.sin(delta_lambda / 2) ** 2
     c = 2 * np.arctan2(np.sqrt(a), np.sqrt(1 - a))
 
     return R * c
@@ -165,16 +162,10 @@ def make_fig1_map(
     center_lat = float(np.mean(all_lats))
     center_lon = float(np.mean(all_lons))
 
-    m = folium.Map(
-        location=[center_lat, center_lon], zoom_start=11, tiles="CartoDB Positron"
-    )
+    m = folium.Map(location=[center_lat, center_lon], zoom_start=11, tiles="CartoDB Positron")
 
-    matched_rider_ids = (
-        set(matches_df["rider_stop_id"]) if len(matches_df) > 0 else set()
-    )
-    matched_gopro_ids = (
-        set(matches_df["gopro_stop_id"]) if len(matches_df) > 0 else set()
-    )
+    matched_rider_ids = set(matches_df["rider_stop_id"]) if len(matches_df) > 0 else set()
+    matched_gopro_ids = set(matches_df["gopro_stop_id"]) if len(matches_df) > 0 else set()
 
     for _, row in valid_rider.iterrows():
         is_matched = row["rider_stop_id"] in matched_rider_ids
@@ -388,9 +379,7 @@ def make_fig4_road_type(matches_df: pd.DataFrame, output_dir: Path) -> None:
         patch.set_facecolor(color)
         patch.set_alpha(0.7)
 
-    ax.axhline(
-        85, color="#d73027", linestyle="--", linewidth=2, label="NIOSH 85 dB REL"
-    )
+    ax.axhline(85, color="#d73027", linestyle="--", linewidth=2, label="NIOSH 85 dB REL")
 
     ax.set_xticklabels(labels, rotation=45, ha="right")
     ax.set_ylabel("GoPro Mean dB")
@@ -570,9 +559,7 @@ def make_fig5_validation(matches_df: pd.DataFrame, output_dir: Path) -> None:
     ax2.set_title("Maximum dB Comparison")
     ax2.legend(loc="lower right")
 
-    plt.suptitle(
-        f"Validation: GoPro vs Rider at Matched Locations (N={len(valid)})", y=1.02
-    )
+    plt.suptitle(f"Validation: GoPro vs Rider at Matched Locations (N={len(valid)})", y=1.02)
     plt.tight_layout()
     output_path = output_dir / f"{CITY}_compare_fig5_validation.pdf"
     fig.savefig(output_path)
@@ -592,8 +579,7 @@ def make_table1_summary(matches_df: pd.DataFrame, output_dir: Path) -> None:
     rider_mean = matches_df["rider_max_db"].mean()
     dist_mean = matches_df["distance_m"].mean()
     rows.append(
-        f"Overall & {len(matches_df)} & {gopro_mean:.1f} & "
-        f"{rider_mean:.1f} & {dist_mean:.1f} \\\\"
+        f"Overall & {len(matches_df)} & {gopro_mean:.1f} & {rider_mean:.1f} & {dist_mean:.1f} \\\\"
     )
 
     rows.append("\\midrule")

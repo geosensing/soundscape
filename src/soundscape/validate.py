@@ -11,8 +11,12 @@ def validate_pipeline(
 ) -> dict:
     """Validate that pipeline outputs match video inputs.
 
+    Args:
+        input_path: Video file or directory to check.
+        output_dir: Directory containing extracted outputs.
+
     Returns:
-        Dictionary with validation results and any issues found
+        dict: Validation results and any issues found
     """
     config = load_config()
 
