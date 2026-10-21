@@ -38,7 +38,7 @@ def process(
         skip_existing: Skip if output file exists
 
     Returns:
-        List of output file paths
+        list[Path]: Output file paths
     """
     config = load_config()
 

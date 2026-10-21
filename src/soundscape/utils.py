@@ -33,7 +33,9 @@ def find_videos(input_path: Path) -> list[Path]:
         if input_path.suffix.upper() == ".MP4":
             return [input_path]
         return []
-    return sorted(input_path.rglob("*.MP4"))
+    return sorted(
+        path for path in input_path.rglob("*") if path.is_file() and path.suffix.upper() == ".MP4"
+    )
 
 
 def parse_video_path(video_path: Path) -> dict:

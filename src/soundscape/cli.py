@@ -278,9 +278,7 @@ def build_manifest_cmd(output_dir, frames_dir):
     default=5.0,
     help="Skip frames in last N seconds (default: 5.0)",
 )
-def sample_frames_cmd(
-    manifest_path, output_dir, frames_per_video, seed, start_skip, end_skip
-):
+def sample_frames_cmd(manifest_path, output_dir, frames_per_video, seed, start_skip, end_skip):
     """6. Sample random frames for manual annotation verification."""
     sample_frames.process(
         manifest_path=manifest_path,
@@ -345,9 +343,7 @@ def sample_frames_cmd(
     default=30,
     help="Seconds between status polls (default: 30)",
 )
-def ocr_readings_cmd(
-    manifest_path, sample_manifest, output_dir, model, batch_id, poll_interval
-):
+def ocr_readings_cmd(manifest_path, sample_manifest, output_dir, model, batch_id, poll_interval):
     """7. OCR sound meter readings using Claude or Gemini API."""
     ocr_readings.process(
         manifest_path=manifest_path,
@@ -477,9 +473,7 @@ def create_archives_cmd(input_dir, output_dir, prefix):
 def upload_dataverse_cmd(input_dir, doi, server, token, no_skip_existing, files):
     """9b. Upload tar.gz archives to a Harvard Dataverse dataset via the API."""
     if not token:
-        raise click.UsageError(
-            "No API token provided. Pass --token or set DATAVERSE_API_TOKEN."
-        )
+        raise click.UsageError("No API token provided. Pass --token or set DATAVERSE_API_TOKEN.")
     upload.upload_archives(
         archives_dir=input_dir,
         doi=doi,

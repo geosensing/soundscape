@@ -17,7 +17,7 @@ def create_archive(
         prefix: Prefix for archive name (default: "delhi")
 
     Returns:
-        Path to created archive
+        Path: Path to created archive
     """
     folder_name = input_dir.name
     archive_name = f"{prefix}_{folder_name}.tar.gz"
@@ -53,7 +53,10 @@ def process_city_folder(
         prefix: Prefix for archive names (default: city folder name)
 
     Returns:
-        List of created archive paths
+        list[Path]: Created archive paths
+
+    Raises:
+        ValueError: If city_dir is not a directory.
     """
     if not city_dir.is_dir():
         raise ValueError(f"Not a directory: {city_dir}")
