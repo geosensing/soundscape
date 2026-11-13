@@ -72,3 +72,7 @@ check-yield-types = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.codespell]
+builtin = "clear,rare,en-GB_to_en-US"
+skip = "*.pdf,*.png,*.jpg,*.jpeg,*.csv,*.tsv,*.json,*.geojson,*.graphml,*.ipynb,*.html,*.svg,*.bib,*.bbl,*.lock,*.parquet"
